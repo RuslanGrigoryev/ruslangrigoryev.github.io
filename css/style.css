@@ -58,7 +58,7 @@ body {
 	font-family: 'Roboto', Arial, sans-serif;
 }
 .main {
-	max-width: 1000px;
+	max-width: 960px;
 	min-width: 320px;
 	min-height: 1000px;
 	padding: 10px;
@@ -287,7 +287,7 @@ header {
 .thumbs {}
 .thumbs__item {
     float: left;
-    width: 310px;
+    width: 300px;
     height: 250px;
     margin: 20px 5px;
     padding: 1px;
@@ -299,6 +299,7 @@ header {
     height: 250px;
 }
 .thumbs__item--image {
+	width: 300px;
 }
 .thumbs__item--caption {
     display: block;
@@ -311,7 +312,7 @@ header {
 }
 .flip-container {
   position: relative;
-  width: 320px;
+  width: 30	0px;
   height: 250px;
   z-index: 1;
 }
