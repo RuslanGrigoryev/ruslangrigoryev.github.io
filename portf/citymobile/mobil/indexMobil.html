@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		if((navigator.userAgent.match(/iPhone/i))){
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 0.5,minimum-scale = 0.5,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}else{
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 0.5,minimum-scale = 0.1,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}
+	</script>
+
+	<meta name="MobileOptimized"              content="650">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly"             content="true">
+	<meta name="format-detection"             content="telephone=yes">
+	<meta name="PalmComputingPlatform"        content="yes">
+	<title>CityMobil</title>
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+	<!-- <link href="../css/core.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="../css/core-ui-select.css" media="screen" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="../css/style-mobile.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<div class="main">
+			<div class="container">
+				<div class="sidebar">
+					<ul class="sidebar-menu">
+						<li class="sidebar-menu-item"><a href="indexMobil2.html" data-ajax="false">Главная</a></li>
+						<li class="sidebar-menu-item"><a href="tariffsMobil.html" data-ajax="false">Тарифы</a></li>
+						<li class="sidebar-menu-item"><a href="airportMobil.html" data-ajax="false">В аэропорт</a></li>
+						<li class="sidebar-menu-item"><a href="taxoparkMobil.html" data-ajax="false">Таксопарк</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetLoginMobil.html" data-ajax="false">Вход</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetMobilV2.html" data-ajax="false">Личный кабинет</a></li>
+						<li class="sidebar-menu-item"><a href="companiesMobil.html" data-ajax="false">Компаниям</a></li>
+						<li class="sidebar-menu-item"><a href="driversMobil.html" data-ajax="false">Водителям</a></li>
+						<li class="sidebar-menu-item"><a href="contactMobil.html" data-ajax="false">Контакты</a></li>						
+					</ul>
+				</div>
+				<div class="order" id="first">
+					<div class="cf center logo-block">
+						<a href="#" class="sidebar-button"></a>
+						<a href="#" class="logo"><img src="../i/markup/logo-big.png" alt=""></a>
+					</div>
+					<div class="wrap-order-header">
+						<form>
+							<div class="ui-field-contain">
+								<label for="select-native-1">Заказ такси в </label>
+								<select name="select-native-1" id="select-native-1">
+									<option value="1">Москве</option>
+									<option value="2">Киеве</option>
+									<option value="3">Минске</option>
+								</select>
+							</div>
+						</form>
+					</div>
+					<div class="or-tel">+7 (945) 500-50-50</div>
+					<div class="wrap-order-street">
+						<!--<label class="hiden-label" for="from"><a href="#">Выбрать аэропорт/вокзал</a></label>-->
+						<input class="name-street" type="text" id="from" value="" placeholder="Откуда">
+						<a href="#" class="icon-trans icon-walk"></a>
+					</div>
+					<div class="wrap-order-notnec">
+						<input class="name-street disabled-name-street" type="text" value="" placeholder="Куда (не обязательно)">
+					</div>
+					<div class="wrap-order-time">
+						<div class="sel-date">
+							<div class="ui-field-contain">
+								<select name="select-native-1" id="select-native-1">
+									<option value="01">Сегодня, 01 янв</option>
+									<option value="02">02 янв</option>
+									<option value="03">03 янв</option>
+									<option value="04">04 янв</option>
+									<option value="05">05 янв</option>
+									<option value="06">06 янв</option>
+									<option value="07">07 янв</option>
+									<option value="08">08 янв</option>
+									<option value="09">09 янв</option>
+									<option value="10">10 янв</option>
+									<option value="11">11 янв</option>
+									<option value="12">12 янв</option>
+									<option value="13">13 янв</option>
+									<option value="14">14 янв</option>
+									<option value="15">15 янв</option>
+									<option value="16">16 янв</option>
+									<option value="17">17 янв</option>
+									<option value="18">18 янв</option>
+									<option value="19">19 янв</option>
+									<option value="20">20 янв</option>
+									<option value="21">21 янв</option>
+									<option value="22">22 янв</option>
+									<option value="23">23 янв</option>
+									<option value="24">24 янв</option>
+									<option value="25">25 янв</option>
+									<option value="26">26 янв</option>
+									<option value="27">27 янв</option>
+									<option value="28">28 янв</option>
+									<option value="29">29 янв</option>
+									<option value="30">30 янв</option>
+									<option value="31">31 янв</option>
+								</select>
+							</div>
+						</div>
+						<div class="sel-hours">
+							<div class="ui-field-contain">
+								<select name="select-native-1" id="select-native-1">
+									<option value="00">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+								</select>
+							</div>
+						</div>
+						<div class="sel-min">
+							<div class="ui-field-contain">
+								<select name="select-native-1" id="select-native-1">
+									<option value="01">00</option>
+									<option value="01">01</option>
+									<option value="02">02</option>
+									<option value="03">03</option>
+									<option value="04">04</option>
+									<option value="05">05</option>
+									<option value="06">06</option>
+									<option value="07">07</option>
+									<option value="08">08</option>
+									<option value="09">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+									<option value="13">13</option>
+									<option value="14">14</option>
+									<option value="15">15</option>
+									<option value="16">16</option>
+									<option value="17">17</option>
+									<option value="18">18</option>
+									<option value="19">19</option>
+									<option value="20">20</option>
+									<option value="21">21</option>
+									<option value="22">22</option>
+									<option value="23">23</option>
+									<option value="24">24</option>
+									<option value="25">25</option>
+									<option value="26">26</option>
+									<option value="27">27</option>
+									<option value="28">28</option>
+									<option value="29">29</option>
+									<option value="30">30</option>
+									<option value="31">31</option>
+									<option value="32">32</option>
+									<option value="33">33</option>
+									<option value="34">34</option>
+									<option value="35">35</option>
+									<option value="36">36</option>
+									<option value="37">37</option>
+									<option value="38">38</option>
+									<option value="39">39</option>
+									<option value="40">40</option>
+									<option value="41">41</option>
+									<option value="42">42</option>
+									<option value="43">43</option>
+									<option value="44">44</option>
+									<option value="45">45</option>
+									<option value="46">46</option>
+									<option value="47">47</option>
+									<option value="48">48</option>
+									<option value="49">49</option>
+									<option value="50">50</option>
+									<option value="51">51</option>
+									<option value="52">52</option>
+									<option value="53">53</option>
+									<option value="54">54</option>
+									<option value="55">55</option>
+									<option value="56">56</option>
+									<option value="57">57</option>
+									<option value="58">58</option>
+									<option value="59">59</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="accordion" class="accordion order-list">
+						<h3>Тариф <label><input type="text" value="" placeholder="Не выбрано" readonly></label></h3>
+						<div>
+							<p>Эконом</p>
+							<p>Комфорт</p>
+							<p>Бизнес</p>
+							<p>Трезвый водитель</p>
+							<p>V.I.P</p>
+							<p>Минивен</p>
+						</div>
+						<h3>Опции <label><input type="text" value="" placeholder="Не выбрано" readonly></label></h3>
+						<div>
+							<p>Опция 00</p>
+							<p>Опция 01</p>
+							<p>Опция 02</p>
+							<p>Опция 03</p>
+							<p>Опция 04</p>
+							<p>Опция 05</p>
+						</div>
+					</div>
+					<button id="submit-order" type="submit">Заказать</button>
+				</div>
+			</div>
+	</div>
+	
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="../js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="../js/jquery.maskedinput.min.js"></script>
+	<script src="../js/jquery.ui.accordion.js"></script>
+	<script src="../js/script-mobile.js"></script>
+</body>
+</html>

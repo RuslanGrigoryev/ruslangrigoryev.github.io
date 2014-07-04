@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		if((navigator.userAgent.match(/iPhone/i))){
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 0.5,minimum-scale = 0.5,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}else{
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 1,minimum-scale = 0.5,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}
+	</script>
+	<meta name="MobileOptimized"              content="650">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly"             content="true">
+	<meta name="format-detection"             content="telephone=yes">
+	<meta name="PalmComputingPlatform"        content="yes">
+	<title>CityMobil</title>
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.1.min.css">
+	<link href="../css/core.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="../css/core-ui-select.css" media="screen" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/style-mobile.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<div class="main">
+			<div class="container">
+				
+				<div class="sidebar">
+					<ul class="sidebar-menu">
+						<li class="sidebar-menu-item"><a href="airportMobil.html" data-ajax="false">В аэропорт</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetLoginMobil.html" data-ajax="false">Вход</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetMobil.html" data-ajax="false">Личный кабинет V1</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetMobilV2.html" data-ajax="false">Личный кабинет V2</a></li>
+						<li class="sidebar-menu-item"><a href="companiesMobil.html" data-ajax="false">Компаниям</a></li>
+						<li class="sidebar-menu-item"><a href="contactMobil.html" data-ajax="false">Контакты</a></li>
+						<li class="sidebar-menu-item"><a href="driversMobil.html" data-ajax="false">Водителям</a></li>
+						<li class="sidebar-menu-item"><a href="indexMobil.html" data-ajax="false">Заказ</a></li>
+						<li class="sidebar-menu-item"><a href="indexMobil1.html" data-ajax="false">Звонок водителю</a></li>
+						<li class="sidebar-menu-item"><a href="indexMobil2.html" data-ajax="false">Заказ 2</a></li>
+						<li class="sidebar-menu-item"><a href="tariffsMobil.html" data-ajax="false">Тарифы</a></li>
+						<li class="sidebar-menu-item"><a href="taxoparkMobil.html" data-ajax="false">Таксопарк</a></li>
+					</ul>
+				</div>
+				<div class="order" id="first">
+					<div class="cf center logo-block">
+						<a href="#" class="sidebar-button"></a>
+						<a href="#" class="logo"><img src="../i/markup/logo-big.png" alt=""></a>
+					</div>
+					<h2 class="cont-header airport">Личный кабинет</h2>
+					<div id="accordion" class="accordion my-cabinet">
+						<h3>Мои данные</h3>
+							<div>
+								<table>
+									<tr>
+										<td>Имя</td>
+										<td class="disabled">Не указано</td>
+									</tr>
+									<tr>
+										<td>Телефон</td>
+										<td>8 (987) 654-32-11</td>
+									</tr>
+									<tr>
+										<td>E-mail</td>
+										<td>taxiuser@gmail.com</td>
+									</tr>
+									<tr>
+										<td>Карта</td>
+										<td><button class="or-button mini" type="button">Привязать</button></td>
+									</tr>
+								</table>
+								<div class="bonus cf">
+									<p class="min-bonus">Бонусы:&nbsp;<span>200</span></p>
+									<button class="or-button" type="button">Сохранить</button>
+									<button class="or-button dissabled-but" type="button">Выйти</button>
+								</div>
+							</div>
+						<h3>Избранные адреса</h3>
+							<div>
+								<table>
+									<tr class="add-address">
+										<td><input type="text" placeholder="Улица, дом, корпус"></td>
+										<td><button class="or-button mini" type="button">Добавить</button></td>
+									</tr>
+									<tr>
+										<td>ул. Луначарского 53</td>
+										<td><button class="del-button">Удалить</button></td>
+									</tr>
+									<tr>
+										<td>ул. Тверитина 37</td>
+										<td><button class="del-button">Удалить</button></td>
+									</tr>
+									<tr>
+										<td>ул. Верхний Поперечный Михайловский проезд</td>
+										<td><button class="del-button">Удалить</button></td>
+									</tr>
+									<tr>
+										<td>ул. 1-я За Линией Октябрьской Железной Дороги</td>
+										<td><button class="del-button">Удалить</button></td>
+									</tr>
+								</table>
+							</div>
+						<h3>История заказов</h3>
+							<div class="history-order">
+								<table>
+									<tbody>
+										<tr>
+											<td>23 января 2014</td>
+											<td><p class="price">1 600 руб. наличными</p></td>
+										</tr>
+										<tr>
+											<td><span>ул. Старых большевиков, 78</span></td>
+											<td><span>Аэропорт “Шереметьево”</span></td>
+										</tr>
+										<tr>
+											<td>
+												<p>Тариф:&nbsp;<span>Эконом</span></p>
+												<p>Опции:&nbsp;<span class="disabled">не выбраны</span></p>
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>14 декабря 2013</td>
+											<td><p class="price">830 руб. картой</p></td>
+										</tr>
+										<tr>
+											<td>ул. Тверитина, 37</td>
+											<td>ул. Циолковского, 20</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Тариф:&nbsp;<span>Комфорт</span></p>
+												<p>Опции:&nbsp;<span>детское кресло</span></p>
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>24 февраля 2014</td>
+											<td><p class="price">19 849 руб. картой</p></td>
+										</tr>
+										<tr>
+											<td>ул. 1-я За Линией Октябрьской Железной Дороги</td>
+											<td>ул. Верхний Поперечный Михайловский проезд</td>
+										</tr>
+										<tr>
+											<td>
+												<p>Тариф:&nbsp;<span>Комфорт</span></p>
+												<p>Опции:&nbsp;<span>детское кресло</span></p>
+											</td>
+											<td></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/jquery.mobile-1.4.1.min.js"></script>
+	<script src="../js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="../js/jquery.maskedinput.min.js"></script>
+	<script src="../js/jquery.ui.accordion.js"></script>
+	<script src="../js/script-mobile.js"></script>
+</body>
+</html>

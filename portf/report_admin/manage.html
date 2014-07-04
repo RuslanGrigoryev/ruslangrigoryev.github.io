@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Report Admin</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="left-vertical-bar">
+		<div class="logo">
+			<a href="#" title="#">
+				<img src="i/markup/logo.png" alt="logo">
+				<span class="logo-text">Information agency</span>
+			</a>
+		</div>
+		<nav class="left-menu">
+			<ul class="left-menu__ul">
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--post">Posts</a>
+				</li>
+				<li class="left-menu__list left-menu__list--empty">
+					<a href="#" title="#" class="left-menu__link left-menu__link--media">Media</a>
+					<ul class="left-menu__list-sub-menu">
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">All posts</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Add New</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Categories</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Tags</a>
+						</li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--page">Pages</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--comments">Comments</a>
+					<span class="comments-amount">2</span>
+				</li>
+				<li class="left-menu__list left-menu__list--active">
+					<a href="#" title="#" class="left-menu__link left-menu__link--user">Users</a>
+					<ul class="left-menu__sub-menu">
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">All Users</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">Add New</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#"  class="left-menu__sub-menu__link">Groups</a></li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--tools">Tools (SEO)</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--setting">Settings</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--exit">Exit</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="wrap-main">
+		<div class="top-menu">
+			<ul class="top-menu__ul">
+				<li class="top-menu__list"><a href="#" title="#" class="top-menu__link">Home page</a></li>
+				<li class="top-menu__list">Comments awaiting moderation: <a href="#" title="#" class="top-menu__link top-menu__link-count">45</a></li>
+				<li class="top-menu__list">
+					Add new:
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">Post</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">media</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">page</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">user</a>
+				</li>
+				<li class="top-menu__list">
+					<a href="#" title="#" class="top-menu__link">
+						<img src="i/img-01.jpg" alt="user-img" class="top-menu__link-user-img">
+						<span class="top-menu__link-user-name">MAMMAD ALAKPAROV</span>
+					</a>
+				</li>
+			</ul>
+			<span class="top-menu__list top-menu__list-exit">
+				<a href="#" title="#" class="top-menu__link">log out</a>
+			</span>
+		</div>
+		<div class="manage-access">
+			<h1 class="post-name">Manage access</h1>
+			<div class="widget">
+				<div class="wrap-field">
+					<span class="field-span">Role</span>
+					<input type="text" class="field-input">
+				</div>
+				<div class="wrap-field">
+					<span class="field-span">Parent</span>
+					<select id="parent">
+					    <option value="hide">&nbsp;</option>
+					    <option value="1">parent1</option>
+					    <option value="2">parent2</option>
+					    <option value="3">parent3</option>
+					</select>
+				</div>
+				<div class="clear"></div>
+				<div class="wrap-checkbox">
+					<input type="checkbox" name="checkboxG1" id="checkboxG1" class="role-checkbox" checked />
+					<label for="checkboxG1" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG2" id="checkboxG2" class="role-checkbox" />
+					<label for="checkboxG2" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG3" id="checkboxG3" class="role-checkbox" />
+					<label for="checkboxG3" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG4" id="checkboxG4" class="role-checkbox" />
+					<label for="checkboxG4" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG5" id="checkboxG5" class="role-checkbox" />
+					<label for="checkboxG5" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG6" id="checkboxG6" class="role-checkbox" />
+					<label for="checkboxG6" class="role-label">Rule 1</label>
+
+					<input type="checkbox" name="checkboxG7" id="checkboxG7" class="role-checkbox" />
+					<label for="checkboxG7" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG8" id="checkboxG8" class="role-checkbox" />
+					<label for="checkboxG8" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG9" id="checkboxG9" class="role-checkbox" />
+					<label for="checkboxG9" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG10" id="checkboxG10" class="role-checkbox" />
+					<label for="checkboxG10" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG11" id="checkboxG11" class="role-checkbox" />
+					<label for="checkboxG11" class="role-label">Rule 1</label>
+					<input type="checkbox" name="checkboxG12" id="checkboxG12" class="role-checkbox" />
+					<label for="checkboxG12" class="role-label">Rule 1</label>
+				</div>
+				<button class="orange-btn orange-btn__save">Save</button>
+			</div>
+		</div>
+		<div class="manage-operations">
+			<h1 class="post-name">Manage operations</h1>
+			<div class="widget">
+				<div class="wrap-field">
+					<span class="field-span">Name</span>
+					<input type="text" class="field-input">
+				</div>
+				<div class="wrap-field wrap-field__description">
+					<span class="field-span">Description</span>
+					<input type="text" class="field-input">
+				</div>
+				<input type="checkbox" name="checkboxG13" id="checkboxG13" class="role-checkbox" checked />
+				<label for="checkboxG13" class="role-label label-operations">Rule</label>
+				<button class="widget-btn btn-create">Create</button>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

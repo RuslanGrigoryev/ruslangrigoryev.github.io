@@ -1,0 +1,276 @@
+body {
+    background: #ddd;
+}
+input {
+    outline: none;
+}
+#pa_form {
+    background: url(../i/bg_form.png);
+    box-shadow: 0 5px 5px #ccc;
+    display: block;
+    width: 885px;
+    margin: 10px auto;
+    border-radius: 20px;
+    font-family: Trebuchet MS,sans-serif;
+    position: relative;
+    min-height: 327px;
+}
+.pa_form_btn__wrap {
+    width: 151px;
+    height: 79px;
+    background: url(../i/bg_flower.png) no-repeat;
+    position: absolute;
+    bottom: 49px;
+    right: 106px;
+    z-index: 99;
+}
+.pa_form_btn__wrap__add {
+    height: 112px;
+}
+.pa_form_title {
+    padding: 47px 0 0 55px;
+    margin: 0;
+    font-size: 21px;
+}
+    .pa_form_step2 .pa_form_title {
+        padding-bottom: 10px;
+        padding-right: 5px;
+        display: inline-block;
+    }
+.pa_form_input_line {
+    padding: 50px 0 50px 70px;
+    position: relative;
+}
+    .pa_form_step2 .pa_form_input_line {
+        padding: 37px 0 7px 113px;
+    }
+    .pa_form_input_label {
+        display: inline;
+        padding-left: 3px;
+        position: relative;
+    }
+        .pa_form_input_required {
+            padding-right: 12px;
+        }
+        .pa_form_input_required:after {
+            content: '*';
+            color: #f00;
+            font-size: 17px;
+            position: absolute;
+            top: 0;
+            right: -1px;
+        }
+    .pa_form_input_wrap {
+        width: 498px;
+        display: block;
+        position: absolute;
+        top: 46px;
+        left: 242px;
+        line-height: 11px;
+    }
+        .pa_form_step2 .pa_form_input_wrap {
+            left: 335px;
+            top: 36px;
+            width: 406px;
+        }
+        .pa_form_input_wrap.pa_form_input_wrap_small {
+            width: 112px;
+        }
+            .pa_form_input_wrap_small.pa_form_input_wrap_small_middle {
+                left: 482px;
+            }
+            .pa_form_input_wrap_small.pa_form_input_wrap_small_right {
+                left: 629px;
+            }
+        .pa_form_input_wrap.pa_form_input_wrap_medium {
+            width: 239px;
+        }
+        .pa_form_input_loading:after {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 4px;
+            right: -34px;
+            background: url('../i/loader.gif') 0 0 no-repeat;
+        }
+        .pa_form_input {
+            border: 1px solid #FCBC99;
+            border-radius: 5px;
+            width: 100%;
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 7px 9px;
+            margin: 0;
+            font-size: 14px;
+            background: #fff;
+        }
+        .pa_form_input[disabled] {
+            background: #F5F5F5;
+            border-color: #B9B9B9;
+        }
+        .pa_form_input_note {
+            font-size: 11px;
+            color: #ccc;
+        }
+            .pa_form_input_note_nowrap {
+                white-space: nowrap;
+            }
+.pa_form_btn {
+    display: block;
+    background: #FF5900;
+    border: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 17px;
+    padding: 5px 30px;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #999;
+    z-index: 100;
+}
+    .pa_form_btn:hover {
+        text-shadow: 0 0 2px #fff;
+    }
+    .pa_form_btn:active {
+        box-shadow: inset 2px 2px 4px #999;
+        padding: 6px 29px 4px 31px;
+    }
+    .pa_form_btn[disabled] {
+        box-shadow: none;
+        background: #828282;
+        color: #fff;
+    }
+    .pa_form_btn[disabled]:hover {
+        text-shadow: none;
+    }
+    .pa_form_btn[disabled]:active {
+        box-shadow: none;
+        padding: 5px 30px;
+    }
+    #pa_btn_add {
+        bottom: 32px;
+        padding: 5px 15px;
+    }
+.pa_form_close {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #E2C2C2;
+    display: block;
+    width: 19px;
+    height: 19px;
+    overflow: hidden;
+}
+.pa_form_close:hover {
+    color: #C17B7B;
+}
+.pa_cities_list {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1000;
+    max-height: 200px;
+    overflow: auto;
+}
+    .pa_cities_list li {
+        padding: 6px 10px;
+        margin: 0;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .pa_cities_list li:nth-child(2n) {
+        background: #F5F5F5;
+    }
+    .pa_cities_list li:hover {
+        background: #ddd;
+    }
+    .pa_cities_list::-webkit-scrollbar {
+        width: 12px;
+    }
+    .pa_cities_list::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+    .pa_cities_list::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: rgb(255,89,0);
+        background: rgba(255,89,0,0.8);
+    }
+    .pa_cities_list::-webkit-scrollbar-thumb:window-inactive {
+        background: rgb(255,89,0);
+        background: rgba(255,89,0,0.4);
+    }
+
+.pa_form_step2 {
+    display: none;
+    padding-bottom: 62px;
+}
+#pa_form_fulladdress {
+    border: 1px solid #B9B9B9;
+    border-radius: 5px;
+    margin: 53px 0 0 116px;
+    width: 443px;
+    height: 53px;
+    overflow: auto;
+    font-size: 15px;
+    padding: 5px 10px;
+    color: #5F5F5F;
+}
+.pa_index_change, .pa_city_change {
+    color: #000;
+    text-decoration: none;
+}
+    .pa_index_change i, .pa_city_change i {
+        font-style: normal;
+        border-bottom: 1px dashed #947647;
+    }
+    .pa_index_change:hover i, .pa_city_change:hover i {
+        border-bottom: 0;
+    }
+.pa_index_change {
+    position: absolute;
+    top: 40px;
+    left: 610px;
+}
+#pa_mkad_km {
+    width: 112px;
+    margin-right: 6px;
+    display: inline;
+}
+#pa_mkad_km_wrap {
+    width: 140px;
+}
+    #pa_mkad_km_wrap.pa_form_input_loading:after {
+        right: -27px;
+    }
+.pa_hidden {
+    display: none;
+}
+.pa_error .pa_form_input {
+    border-color: #E76F6F;
+    background: #FFEBEB;
+}
+.pa_error .pa_form_input_note {
+    color: #f00;
+}
+.full_address_text {
+    color: #e10000;
+}

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CityMobil</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo"><img src="i/markup/logo.png" alt="logo"></a>
+			<a class="main-link order-taxi" href="#">Заказать такси</a>
+			<ul class="main-nav cabinet-nav">
+				<li><a class="main-link" href="#">Тарифы</a></li>
+				<li><a class="main-link" href="#">Компаниям</a></li>
+				<li><a class="main-link" href="#">Личный кабинет</a></li>
+			</ul>
+			<dl class="main-phone">
+				<dt>Телефон в 
+				<a id="change-city-number" class="main-link" href="#"><span>Москве</span>
+					<ul class="dropdown-city">
+						<li>Москве</li>
+						<li>Киеве</li>
+						<li>Ереване</li>
+					</ul>
+				</a>
+				</dt>
+				<dd>+7 (496) 500-50-50</dd>
+				<dd class="languages">
+					<a href="#" class="lang">RU</a>
+					<a href="#" class="lang">EN</a>
+					<a href="#" class="lang">ARM</a>
+				</dd>
+			</dl>			
+		</div>
+	</header>
+	<section class="action">
+		<div class="container">
+			<p>Акция: с 1 по 28 февраля при заказе такси через мобильное приложение CitiMobil вы получите скидку 10%.</p>
+			<a href="#" class="abs detail">Подробнее</a>
+			<a href="#" class="abs close-action"></a>
+		</div>
+	</section>
+	<section class="pers-cabinet">
+		<div class="container">
+			<h2 class="cont-header">Личный кабинет</h2>
+			<div class="grey-field first-gr">
+				<form class="personal-data" action="index.html">
+					<div class="add-file">
+						<div class="photo">
+							<span class="add-photo">Добавить<br>фото</span>
+								<div class="bon">+100<br><span class="bon-amount">бонусов</span></div>
+						</div>
+					</div>
+					<ul class="in-gr data-cont">
+						<li class="in-gr-item"><label>Имя<input class="name-street" type="text" placeholder="Не указано"></label></li>
+						<li class="in-gr-item"><label>Телефон<input id="phNum" class="name-street or-i" type="text" placeholder="8 (987) 654-32-11"></label></li>
+						<li class="in-gr-item"><label>E-mail<input class="name-street or-i" type="text" placeholder="taxiuser@gmail.com"></label></li>
+						<li class="in-gr-item">
+							<span>Карта</span>
+							<a class="or-button to-right tie" href="#">Привязать</a>
+						</li>
+					</ul>
+					<button class="or-button submit-button" type="submit">Сохранить</button>
+					<button class="gr-button submit-button" type="submit">Выйти</button>
+				</form>
+				<div class="bonus">Бонусы:<span class="bonus-amount to-right">200</span></div>
+			</div>
+			<div class="grey-field">
+				<h5>Избранные адреса</h5>
+				<ul class="in-gr adr">
+					<li class="in-gr-item"><input class="name-street" id="newStreet" type="text" placeholder="Улица, дом, корпус"><a class="or-button add-adress to-right" href="#">Добавить</a></li>
+					<li class="in-gr-item">ул. Луначарского 53<a href="#" class="close-item"></a></li>
+					<li class="in-gr-item">ул. Тверитина 37<a href="#" class="close-item"></a></li>
+				</ul>
+			</div>
+		</div>		
+	</section>
+	<section class="history">
+		<div class="container">
+			<h2 class="cont-header">История заказов</h2>
+			<div class="order-container">
+				<div class="order-c-item">
+					<div class="when-where i-b">
+						<div class="when">23 января 2014</div>
+						<div class="where">ул. Старых большевиков 78&nbsp;&nbsp;<span class="arrow-w i-b"></span>&nbsp;&nbsp;Аэропорт “Шереметьево”</div>
+					</div>
+					<div class="tar i-b">
+						<div class="tarif">Тариф:&nbsp;<span class="tar-name">Эконом</span></div>
+						<div class="options-t">Опции:&nbsp;<span class="opt-name disabled">не выбраны</span></div>
+					</div>
+					<div class="price i-b">
+						<div class="sum">1 600 руб</div>
+						<div class="manner-of-payment">Наличными</div>
+					</div>
+				</div>
+				<div class="order-c-item">
+					<div class="when-where i-b">
+						<div class="when">14 декабря 2013</div>
+						<div class="where">ул. Тверитина 37&nbsp;&nbsp;<span class="arrow-w i-b"></span>&nbsp;&nbsp;ул. Циолковского 20</div>
+					</div>
+					<div class="tar i-b">
+						<div class="tarif">Тариф:&nbsp;<span class="tar-name">Комфорт</span></div>
+						<div class="options-t">Опции:&nbsp;<span class="opt-name">детское кресло</span></div>
+					</div>
+					<div class="price i-b">
+						<div class="sum">830 руб</div>
+						<div class="manner-of-payment">Картой</div>
+					</div>
+				</div>
+				<div class="order-c-item">
+					<div class="when-where i-b">
+						<div class="when">3 декабря 2013</div>
+						<div class="where">ул. Старых большевиков 78&nbsp;&nbsp;<span class="arrow-w i-b"></span>&nbsp;&nbsp;ул. Тверитина 37”</div>
+					</div>
+					<div class="tar i-b">
+						<div class="tarif">Тариф:&nbsp;<span class="tar-name">Эконом</span></div>
+						<div class="options-t">Опции:&nbsp;<span class="opt-name disabled">не выбраны</span></div>
+					</div>
+					<div class="price i-b">
+						<div class="sum">430 руб</div>
+						<div class="manner-of-payment">Бонусами</div>
+					</div>
+				</div>
+				<div class="order-c-item">
+					<div class="when-where i-b">
+						<div class="when">27 ноября 2013</div>
+						<div class="where">ул. Тверитина 37&nbsp;&nbsp;<span class="arrow-w i-b"></span>&nbsp;&nbsp;Аэропорт “Домодедово”</div>
+					</div>
+					<div class="tar i-b">
+						<div class="tarif">Тариф:&nbsp;<span class="tar-name">Эконом</span></div>
+						<div class="options-t">Опции:&nbsp;<span class="opt-name disabled">не выбраны</span></div>
+					</div>
+					<div class="price i-b">
+						<div class="sum">1 330 руб</div>
+						<div class="manner-of-payment">Наличными</div>
+					</div>
+				</div>
+				<div class="order-c-item">
+					<div class="when-where i-b">
+						<div class="when">12 ноября 2013</div>
+						<div class="where">ул. Тверитина 37&nbsp;&nbsp;<span class="arrow-w i-b"></span>&nbsp;&nbsp;ул. Циолковского 20</div>
+					</div>
+					<div class="tar i-b">
+						<div class="tarif">Тариф:&nbsp;<span class="tar-name">Комфорт</span></div>
+						<div class="options-t">Опции:&nbsp;<span class="opt-name">детское кресло</span></div>
+					</div>
+					<div class="price i-b">
+						<div class="sum">790 руб</div>
+						<div class="manner-of-payment">Наличными</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="or-button submit-button show-all">Показать еще</a>
+	</section>
+	<footer>
+		<div class="container">
+			<a href="#" class="logo"><img src="i/markup/logo-mini.png" alt="logo"></a>
+			<ul>
+				<li><a href="#">Тарифы</a></li>
+				<li><a href="#">Таксопарк</a></li>
+				<li><a href="#">Водителям</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="bottom-menu">
+				<li><a href="#">В аэропорт</a></li>
+				<li><a href="#">Компаниям</a></li>
+				<li><a href="#">Форум</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<div class="ho-hide visible"></div>
+	<div class="pop-up card-edit visible">
+		<ul class="c-e-list">
+			<li class="c-e-item">
+				<span class="c-e-name">Номер карты</span>
+				<span class="c-e-descr">**** **** **** 7654</span>
+				<div class="clr"></div>
+			</li>
+			<li class="c-e-item">
+				<span class="c-e-name">Срок действия</span>
+				<span class="c-e-descr">12 / 2014</span>
+				<div class="clr"></div>				
+			</li>
+			<li class="c-e-item">
+				<span class="c-e-name">Имя владельца</span>
+				<span class="c-e-descr">Ivan Ivanov</span>
+				<div class="clr"></div>				
+			</li>
+			<li class="c-e-item">
+				<span class="c-e-name">Тип карты</span>
+				<span class="c-e-descr">VISA</span>
+				<div class="clr"></div>				
+			</li>
+		</ul>
+		<a href="#" class="gr-button close-pop-up">Закрыть</a>
+		<a href="#" class="or-button">Готово</a>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	
+	<script src="js/script.js"></script>
+</body>
+</html>
+

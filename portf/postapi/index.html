@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>POST-API мне запили</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="" id="pa_form">
+        <div class="pa_form_step1">
+            <h3 class="pa_form_title">Добавить адрес</h3>
+            <div class="pa_form_input_line">
+                <label for="pa_zipandcity" class="pa_form_input_label pa_form_input_required">Индекс или город</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_zipandcity" placeholder="Город или индекс" class="pa_form_input">
+                    <span class="pa_form_input_note">Введите город или почтовый индекс города, куда будет доставляться товар</span>
+                </div>
+            </div>
+            <div class="pa_form_btn__wrap">
+                <input type="button" value="Продолжить" class="pa_form_btn" id="pa_btn_next">
+            </div>
+        </div>
+        <div class="pa_form_step2">
+            <h3 id="pa_city_name" class="pa_form_title">Название города</h3>
+            <a href="#" class="pa_city_change pa_to_start pa_hidden pa_page5 pa_page6 pa_page7">(<i>сменить город</i>)</a>
+            <div class="pa_form_input_line">
+                <label for="pa_index" class="pa_form_input_label pa_form_input_required">Почтовый индекс</label>
+                <div class="pa_form_input_wrap pa_form_input_wrap_medium">
+                    <input type="text" id="pa_index" class="pa_form_input">
+                </div>
+                <a href="#" class="pa_index_change pa_to_start pa_hidden pa_page2 pa_page3 pa_page4">(<i>сменить индекс</i>)</a>
+            </div>
+            <div class="pa_form_input_line pa_hidden pa_page8">
+                <label for="pa_region" class="pa_form_input_label">Край / Респ. / Обл.</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_region" class="pa_form_input">
+                    <span class="pa_form_input_note">Укажите край, республику или область</span>
+                </div>
+            <div class="pa_form_input_line pa_hidden pa_page8">
+                <label for="pa_district" class="pa_form_input_label">Район</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_district" class="pa_form_input">
+                </div>
+            </div>
+            </div>
+            <div class="pa_form_input_line pa_hidden pa_page8">
+                <label for="pa_city" class="pa_form_input_label pa_form_input_required">Город</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_city" class="pa_form_input">
+                    <span class="pa_form_input_note">Укажите название населенного пункта (город, поселок, село, деревня)</span>
+                </div>
+            </div>
+            <div class="pa_form_input_line">
+                <label for="pa_street" class="pa_form_input_label pa_form_input_required">Улица</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_street" class="pa_form_input">
+                    <span class="pa_form_input_note">Наберите первые буквы названия улицы и выберите подходящую из списка</span>
+                </div>
+            </div>
+            <div class="pa_form_input_line">
+                <label for="pa_house" class="pa_form_input_label pa_form_input_required">Дом</label> /
+                <label for="pa_suite" class="pa_form_input_label">Строение</label> /
+                <label for="pa_building" class="pa_form_input_label">Корпус</label>
+                <div class="pa_form_input_wrap pa_form_input_wrap_small">
+                    <input type="text" id="pa_house" class="pa_form_input">
+                </div>
+                <div class="pa_form_input_wrap pa_form_input_wrap_small pa_form_input_wrap_small_middle">
+                    <input type="text" id="pa_suite" class="pa_form_input">
+                </div>
+                <div class="pa_form_input_wrap pa_form_input_wrap_small pa_form_input_wrap_small_right">
+                    <input type="text" id="pa_building" class="pa_form_input">
+                </div>
+            </div>
+            <div class="pa_form_input_line">
+                <label for="pa_common" class="pa_form_input_label pa_form_input_required">Квартира (офис)</label>
+                <div class="pa_form_input_wrap pa_form_input_wrap_small">
+                    <input type="text" id="pa_common" class="pa_form_input">
+                </div>
+            </div>
+            <div class="pa_form_input_line">
+                <label for="pa_domofon" class="pa_form_input_label">Домофон</label>
+                <div class="pa_form_input_wrap pa_form_input_wrap_small">
+                    <input type="text" id="pa_domofon" class="pa_form_input">
+                </div>
+            </div>
+            <div class="pa_form_input_line pa_hidden pa_page2 pa_page5">
+                <label for="pa_metro" class="pa_form_input_label">Ближайшее метро</label>
+                <div class="pa_form_input_wrap">
+                    <input type="text" id="pa_metro" class="pa_form_input">
+                </div>
+            </div>
+            <div class="pa_form_input_line pa_hidden pa_page3 pa_page6">
+                <label for="pa_mkad_km" class="pa_form_input_label">Расстояние от МКАД</label>
+                <div id="pa_mkad_km_wrap" class="pa_form_input_wrap pa_form_input_wrap_small">
+                    <input type="text" id="pa_mkad_km" class="pa_form_input">км
+                    <span class="pa_form_input_note pa_form_input_note_nowrap">Удаленность от МКАД влияет на стоимость доставки.<br>Уточните, пожалуйста, расстояние</span>
+                </div>
+            </div>
+            <div id="pa_form_fulladdress">
+            <em class="full_address_index"></em>
+            <em class="full_address_region"></em>
+            <em class="full_address_district"></em>
+            <em class="full_address_city"></em> 
+            <em class="full_address_street"></em> 
+            <em class="full_address_house"></em> 
+            <em class="full_address_suite"></em>
+            <em class="full_address_building"></em>
+            <em class="full_address_common"></em>
+            <em class="full_address_domofon"></em>
+            <em class="full_address_metro"></em>
+            <em class="full_address_mkad"></em>
+            </div>
+            <div class="pa_form_btn__wrap pa_form_btn__wrap__add">
+                <input type="button" value="Добавить адрес" class="pa_form_btn" id="pa_btn_add">
+            </div>
+        </div>
+        <a href="#" class="pa_form_close">&times;</a>
+    </form>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.10.2.min.js"%3E%3C/script%3E'))</script>
+    <script src="js/jquery.jsonp-2.4.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

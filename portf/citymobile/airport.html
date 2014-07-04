@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CityMobil</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<a href="#" class="logo"><img src="i/markup/logo.png" alt="logo"></a>
+			<a class="main-link order-taxi" href="#">Заказать такси</a>
+			<ul class="main-nav cabinet-nav">
+				<li><a class="main-link" href="#">Тарифы</a></li>
+				<li><a class="main-link" href="#">Компаниям</a></li>
+				<li><a class="main-link" href="#">Личный кабинет</a></li>
+			</ul>
+			<dl class="main-phone">
+				<dt>Телефон в 
+				<a id="change-city-number" class="main-link" href="#"><span>Москве</span>
+					<ul class="dropdown-city">
+						<li>Москве</li>
+						<li>Киеве</li>
+						<li>Ереване</li>
+					</ul>
+				</a>
+				</dt>
+				<dd>+7 (496) 500-50-50</dd>
+				<dd class="languages">
+					<a href="#" class="lang">RU</a>
+					<a href="#" class="lang">EN</a>
+					<a href="#" class="lang">ARM</a>
+				</dd>
+			</dl>			
+		</div>
+	</header>
+	<section class="action">
+		<div class="container">
+			<p>Акция: с 1 по 28 февраля при заказе такси через мобильное приложение CitiMobil вы получите скидку 10%.</p>
+			<a href="#" class="abs detail">Подробнее</a>
+			<a href="#" class="abs close-action"></a>
+		</div>
+	</section>
+	<section class="meetings">
+		<div class="container">
+			<h2 class="cont-header">Встречи, проводы, трансферы в аэропортах</h2>
+			<div id="selections" class="to-left air">
+				<div class="comp-descr">
+					<div class="air-descr air0 visible">
+						<div class="clr"></div>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar" id="selectTar1">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<div class="chose-area">Выберите округ начала поездки</div>
+					</div>
+					<div class="air-descr air1">
+						<h5>ЮЗАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar" id="selectTar1">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air2">
+						<h5>ЮАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar1" id="selectTar2">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air3">
+						<h5>ЮВАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar2" id="selectTar3">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air4">
+						<h5>BАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar3" id="selectTar4">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air5">
+						<h5>ЗАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar4" id="selectTar5">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air6">
+						<h5>СЗАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar5" id="selectTar6">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air7">
+						<h5>САО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar6" id="selectTar7">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air8">
+						<h5>СBАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar7" id="selectTar8">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air9">
+						<h5>ЮBАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar9" id="selectTar9">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r"></div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+					<div class="air-descr air10">
+						<h5>ЦАО</h5>
+						<div class="to-right meet-tarif">
+							<span class="tar-sel">Тариф</span>
+							<select data-custom="select" name="tar10" id="selectTar10">
+								<option value="Moscow">Эконом</option>
+								<option value="Kiev">Эконом</option>
+								<option value="Minsk">Эконом</option>
+							</select>
+						</div>
+						<div class="clr"></div>
+						<ul class="tb">
+							<li class="th">Встреча</li>
+							<li><span>Шереметьево</span><span class="to-right">1200</span></li>
+							<li><span>Домодедово</span><span class="to-right">1150</span></li>
+							<li><span>Внуково</span><span class="to-right">1050</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">Проводы</li>
+							<li><span>Шереметьево</span><span class="to-right">1000</span></li>
+							<li><span>Домодедово</span><span class="to-right">950</span></li>
+							<li><span>Внуково</span><span class="to-right">850</span></li>
+						</ul>
+						<ul class="tb">
+							<li class="th">
+								<div class="i-b trans">Трансфер</div>
+								<div class="i-b sher t-r">Шереметьево</div>
+								<div class="i-b domo t-r">Домодедово</div>
+								<div class="i-b vnuk t-r">Внуково</div>
+							</li>
+							<li>
+								<div class="i-b trans">Шереметьево</div>
+								<div class="i-b sher t-r">800</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Домодедово</div>
+								<div class="i-b sher t-r">1600</div>
+								<div class="i-b domo t-r">800</div>
+								<div class="i-b vnuk t-r">1400</div>
+							</li>
+							<li>
+								<div class="i-b trans">Внуково</div>
+								<div class="i-b sher t-r">1400</div>
+								<div class="i-b domo t-r">1600</div>
+								<div class="i-b vnuk t-r">800</div>
+							</li>
+							<li>
+								<div class="i-b trans">Вокзалы</div>
+								<div class="i-b sher t-r">1150</div>
+								<div class="i-b domo t-r">1150</div>
+								<div class="i-b vnuk t-r">1150</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="to-right air">
+				<img id="map" src="i/map.png" alt="" usemap="#veg_map">
+				<map id="veg_map" name="veg_map">
+					<area data-state="uzao" shape="poly" name="uzao" coords=" 160,365, 166,360, 177,353, 186,344, 199,328, 194,321, 204,310, 216,295, 224,293, 237,314, 237,318, 240,320, 236,325, 235,330, 237,339, 236,344, 236,354, 228,350, 224,350, 221,354, 221,358, 221,363, 220,367, 223,373, 218,377, 218,382, 219,385, 218,389, 216,392, 218,398, 221,401, 221,411, 220,416, 219,422, 228,430, 231,432, 233,437, 228,444, 226,462, 226,470, 224,476, 224,483, 230,488, 232,493, 235,496, 236,501, 234,506, 232,507, 229,505, 227,503, 226,498, 228,495, 228,490, 222,483, 218,482, 213,486, 209,486, 207,488, 206,492, 206,496, 205,496, 203,495, 206,486, 206,483, 198,479, 196,476, 193,473, 187,473, 185,472, 183,470, 181,471, 176,470, 172,469, 171,469, 171,467, 179,466, 184,463, 191,459, 199,450, 208,451, 214,450, 217,443, 216,438, 214,436, 213,432, 208,430, 207,428, 214,424, 211,418, 211,413, 201,409, 197,408, 188,402, 179,391, 173,381, 163,367" href="#" alt="uzao"/>
+					<area data-state="uao" shape="poly" name="uao" coords=" 234,294, 240,286, 255,285, 257,284, 264,283, 269,279, 272,291, 272,295, 273,301, 275,306, 284,308, 291,310, 296,314, 296,319, 286,324, 277,331, 274,347, 279,355, 288,361, 298,365, 304,366, 309,365, 314,365, 320,366, 326,365, 331,363, 337,360, 339,359, 340,367, 341,373, 344,380, 342,383, 333,392, 324,399, 314,408, 307,412, 301,416, 294,421, 290,424, 282,428, 264,427, 247,425, 242,426, 239,428, 236,423, 229,421, 230,416, 230,411, 233,405, 230,402, 231,398, 228,394, 230,388, 231,383, 233,376, 235,370, 230,367, 231,363, 240,364, 244,364, 245,349, 249,341, 245,329, 250,323, 249,316, 247,313, 244,313, 244,309, 236,297" href="#" alt="uao"/>
+					<area data-state="vao"  shape="poly" name="vao"  coords=" 278,277, 279,288, 281,296, 283,300, 294,302, 301,307, 306,312, 306,319, 302,325, 284,336, 283,346, 295,356, 307,358, 316,357, 323,358, 341,349, 348,349, 348,364, 350,374, 363,359, 375,343, 369,312, 371,309, 384,319, 387,314, 384,309, 385,306, 383,303, 382,300, 359,286, 335,271, 330,266, 322,265, 316,257, 303,251, 303,239, 303,230, 298,234, 293,237, 292,235, 290,240, 285,244, 283,244, 285,248, 294,253, 298,259, 295,273, 292,275, 288,273, 281,277" href="#" alt="vao"/>
+					<area data-state="bao" shape="poly" name="bao"  coords=" 282,176, 272,197, 271,204, 289,211, 298,211, 305,214, 312,230, 311,243, 319,250, 328,255, 336,259, 344,267, 357,273, 370,281, 381,287, 392,295, 394,299, 399,293, 404,290, 411,290, 417,290, 422,288, 423,285, 424,282, 428,280, 432,279, 429,275, 424,277, 418,278, 411,278, 408,280, 404,282, 400,283, 395,281, 390,279, 384,274, 384,269, 386,266, 388,262, 391,260, 393,257, 398,255, 401,254, 401,253, 389,257, 383,258, 379,257, 376,255, 374,252, 375,224, 374,208, 373,196, 373,183, 367,171, 315,124, 310,127, 306,130, 302,133, 310,133, 310,138, 310,146, 307,152, 303,154, 296,153, 291,152, 285,160, 282,163, 283,175" href="#" alt="bao"/>
+					<area data-state="zao" shape="poly" name="zao"  coords=" 109,231, 118,232, 124,231, 132,227, 140,229, 146,228, 151,225, 157,234, 153,242, 143,246, 141,249, 141,254, 148,261, 153,262, 162,260, 168,254, 170,248, 170,235, 173,233, 179,236, 183,239, 186,244, 188,250, 191,256, 195,259, 200,259, 205,259, 209,257, 212,254, 216,251, 219,253, 217,259, 214,263, 208,266, 204,270, 200,275, 199,282, 201,286, 204,289, 206,292, 185,318, 183,321, 188,328, 157,358, 146,340, 142,339, 137,338, 131,338, 128,343, 128,347, 128,352, 129,355, 129,360, 127,368, 122,368, 119,370, 117,367, 113,366, 108,373, 105,369, 103,368, 99,365, 95,363, 89,365, 86,361, 87,355, 90,351, 94,347, 95,345, 96,343, 102,338, 103,344, 107,345, 112,345, 114,340, 120,342, 126,342, 134,336, 129,329, 133,324, 136,322, 135,312, 128,301, 118,287, 116,280, 113,269, 108,254, 108,233" href="#" alt="zao"/>
+					<area data-state="szao" shape="poly" name="szao"   coords=" 111,212, 109,217, 110,222, 115,223, 120,223, 126,221, 129,218, 140,219, 151,217, 158,218, 162,222, 164,228, 165,233, 163,241, 158,247, 148,251, 152,255, 157,255, 161,252, 165,247, 166,241, 167,228, 171,225, 178,226, 189,236, 180,221, 178,209, 168,186, 170,175, 166,176, 163,170, 163,165, 149,129, 142,122, 138,124, 127,120, 124,113, 122,102, 118,98, 114,94, 114,88, 108,92, 108,97, 112,100, 113,105, 112,109, 111,114, 120,120, 130,127, 122,144, 111,146, 107,144, 106,140, 108,136, 108,133, 103,132, 93,140, 92,147, 89,150, 96,151, 98,155, 94,160, 96,164, 96,169, 101,169, 106,166, 117,165, 122,166, 120,190, 111,209" href="#" alt="szao"/>
+					<area data-state="cao" shape="poly" name="cao"  coords=" 149,119, 158,125, 158,132, 172,165, 176,168, 180,170, 177,181, 186,203, 188,219, 195,232, 202,225, 208,220, 223,218, 227,205, 225,192, 225,187, 221,175, 220,167, 223,158, 220,147, 220,134, 216,120, 216,106, 199,93, 194,80, 188,51, 169,25, 159,19, 153,12, 145,9, 141,8, 139,1, 130,8, 121,13, 114,19, 111,23, 111,30, 108,33, 97,39, 92,39, 87,44, 91,53, 87,58, 93,71, 100,64, 109,75, 105,81, 108,86, 113,80, 118,83, 148,119" href="#" alt="cao"/>
+					<area data-state="sbao" shape="poly" name="sbao"   coords=" 210,92, 223,101, 224,111, 225,122, 228,134, 229,144, 231,156, 229,165, 229,171, 229,175, 232,181, 236,188, 233,194, 234,201, 239,200, 242,206, 244,209, 244,201, 253,201, 256,197, 259,196, 262,197, 266,189, 270,182, 274,173, 273,159, 274,155, 277,154, 285,148, 282,142, 284,136, 289,136, 295,140, 297,145, 301,145, 302,141, 299,140, 290,134, 303,120, 307,117, 310,115, 292,104, 286,104, 281,103, 275,105, 249,98, 231,90, 223,88, 217,89, 218,73, 217,63, 220,57, 216,45, 227,45, 228,42, 221,39, 212,43, 209,40, 206,42, 207,50, 195,54, 203,87, 209,92" href="#" alt="sbao"/>
+					<area data-state="ubao" shape="poly" name="ubao" coords=" 292,152, 281,163, 282,174, 270,200, 271,206, 290,212, 299,213, 305,215, 312,231, 310,244, 326,255, 332,257, 344,266, 391,294, 392,299, 398,294, 402,290, 422,288, 423,283, 425,280, 431,280, 430,275, 424,277, 418,277, 407,279, 402,283, 395,280, 385,276, 384,270, 387,264, 390,259, 396,256, 402,254, 402,252, 382,257, 376,256, 375,252, 375,222, 373,185, 381,184, 385,189, 388,187, 392,187, 395,185, 399,181, 403,180, 408,182, 403,178, 399,179, 393,177, 388,179, 384,183, 373,182, 368,170, 316,123, 312,126, 308,126, 302,133, 308,133, 310,138, 311,145, 307,151, 303,152, 295,152" href="#" alt="ubao"/>
+					<area data-state="tsao" shape="poly" name="tsao" coords=" 195,243, 199,251, 205,248, 211,245, 216,243, 223,244, 226,249, 226,254, 221,265, 208,275, 208,281, 210,285, 214,287, 224,284, 229,286, 234,279, 238,275, 244,276, 250,277, 262,274, 262,271, 263,268, 268,268, 270,264, 275,263, 279,265, 283,264, 284,262, 288,261, 291,263, 286,257, 276,251, 274,247, 275,244, 275,238, 282,235, 286,227, 290,224, 295,226, 298,222, 295,220, 282,218, 265,211, 261,206, 260,209, 251,209, 250,215, 248,218, 243,218, 238,216, 236,210, 233,210, 232,219, 230,224, 224,227, 214,228, 207,230, 203,236, 196,242" href="#" alt="tsao"/>
+				</map>
+			</div>	
+			<div class="clr"></div>
+			<div class="comp-descr">
+				<h6>Ожидание клиента и отказ от заказа</h6>
+				<p>В стоимость <a class="or-link under" href="#">встречи в аэропорту</a> входит 30 мин. бесплатного ожидания. При трансферах из аэропорта в аэропорт время бесплатного ожидания такси составляет 1 час. Последующее время ожидания тарифицируется по соответствующему городскому тарифу.<br>Тарифы на ОТКАЗЫ в аэропорту действуют круглосуточно: Эконом - 450 рублей, Комфорт - 500 рублей, Бизнес - 600 рублей.<br>Отказ от минивенов в аэропорту: 5-7 мест - 750р., 8-14 мест - 1000р., 15-20 мест - 1300р.<br>Отказ от минивенов в городе: 5-7 мест - 500 руб., 8-14 мест - 700 руб., 15-20 мест - 1000 руб.<br>Отказ от встречи в аэропорту (V.I.P) 1500 руб., отказ в городе - 1000 руб.</p>
+				<h6>Лимит предоплаченного времени в пути</h6>
+				<p>Фиксированная стоимость встреч, проводов и трансферов в аэропортах включает в себя 2 часа предоплаченного времени. Дополнительное время в пути оплачивается по соответствующему городскому тарифу. <br>Стоимость фиксированная, если поездка без заездов. В случае заезда стоимость рассчитывается как две поездки - городская </p>
+				<h6>Тарификация поездок за МКАД</h6>
+				<p>При подаче автомобиля за МКАД для поездок в аэропорт или поездках за МКАД из аэропорта стоимость поездки получается суммированием тарифа для ближайшего округа к населенному пункту плюс <a class="or-link under" href="#">дополнительная плата</a> за подачу автомобиля и поездок за МКАД по соответствующему тарифу.</p>
+			</div>
+		</div>
+	</section>
+	<section class="separate">
+		<div class="container">
+			<div class="gr-line"></div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<a href="#" class="logo"><img src="i/markup/logo-mini.png" alt="logo"></a>
+			<ul>
+				<li><a href="#">Тарифы</a></li>
+				<li><a href="#">Таксопарк</a></li>
+				<li><a href="#">Водителям</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="bottom-menu">
+				<li><a href="#">В аэропорт</a></li>
+				<li><a href="#">Компаниям</a></li>
+				<li><a href="#">Форум</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.imagemapster.js"></script>	
+	<script src="js/script.js"></script>
+</body>
+</html>
+

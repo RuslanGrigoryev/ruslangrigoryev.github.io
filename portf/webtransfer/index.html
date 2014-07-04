@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+    <title>WebTansfer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=device-dpi"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=false"> -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="skrollr-body">
+<!-- ARROWS fixed-->
+<a href="#" title="#" class="arrows-link arrow-up"></a>
+<a href="#" title="#" class="arrows-link arrow-down"></a>
+<!--HEADER BLOCK-->
+<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
+  <div class="container-fluid">
+        <div class="wrapper row">
+            <div class="col-sm-3">
+                <h1 class="header-logo">
+                    <a href="#" title="Company Name" class="header-logo__link">WEBTRANSFER</a>
+                </h1>
+            </div>
+            <div class="col-sm-7 social-menu">
+                <p class="social-menu__text">Войти через</p>
+                <ul class="social-menu__list">
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--facebook"></a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--vk"></a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--odnokl"></a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--mail-ru"></a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--google"></a></li>
+                    <li class="social-menu__item"><a href="" class="social-menu__link social-menu__link--twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+   </div>
+</div>
+
+<!--HEADER BLOCK END-->
+
+
+<!--MAIN CONTENT-->
+<div class="slides">
+    <!--INTRO-->
+    <div class="slide-item active-slide-item" id="intro">
+
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <div id="carousel-example-generic" class="carousel slide" data-interval="2000" data-ride="carousel">
+                    <!-- Indicators -->
+                    <a href="http://webtransfer-finance.com/page/about-company" class="link-btn orange-btn">О проекте</a>
+                    <ol class="carousel-indicators">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img class="slide-img" src="i/img-01.jpg" alt="people">
+                        <div class="slide-bar">
+                          <h1 class="slide-bar__header">
+                              Социальная кредитная сеть Webtransfer
+                          </h1>
+                          <p class="slide-bar__text">
+                              объединяет участников социальных сетей 
+                              с целью получения и выдачи ими друг-другу 
+                              краткосрочных займов
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img class="slide-img" src="i/img-02.jpg" alt="money">
+                        <div class="slide-bar">
+                          <h1 class="slide-bar__header">
+                              Социальная кредитная сеть Webtransfer
+                          </h1>
+                          <p class="slide-bar__text">
+                              объединяет участников социальных сетей 
+                              с целью получения и выдачи ими друг-другу 
+                              краткосрочных займов
+                          </p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img class="slide-img" src="i/img-03.jpg" alt="graphs">
+                        <div class="slide-bar">
+                          <h1 class="slide-bar__header">
+                              Социальная кредитная сеть Webtransfer
+                          </h1>
+                          <p class="slide-bar__text">
+                              объединяет участников социальных сетей 
+                              с целью получения и выдачи ими друг-другу 
+                              краткосрочных займов
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="slider-bar navbar-primary">
+                  <div class="wrapper row">
+                    <div class="col-sm-6 slider-bar__item">
+                      <p class="slider-bar__text">
+                        <span class="slider-bar__counter">113, 456, 567</span>
+                        <span class="slider-bar__counter-text">пользователи Webtransfer</span>
+                      </p>
+                    </div>
+                    <div class="col-sm-6 slider-bar__item m-slider-bar__item">
+                      <ul class="share-block">
+                        <li class="share-block__item">
+                          <a onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC')" class="share-block__link share-block__link--facebook"></a>
+                          <span class="share-block__counter">734 т.</span>
+                        </li>
+                        <li class="share-block__item">
+                          <a href="" class="share-block__link share-block__link--google"></a>
+                          <span class="share-block__counter">4526</span>
+                        </li>
+                        <li class="share-block__item">
+                          <a onclick="Share.twitter('URL','TITLE')" class="share-block__link share-block__link--twitter"></a>
+                          <span class="share-block__counter">734 т.</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--INTRO END-->
+
+    <!--COLLECTION-->
+    <!-- delete data-zoom to prevent zoom on photos -->
+    <div class="slide-item" id="collection" data-zoom="zoom">
+        <div class="slide-content-wrap">
+            <div class="slide-content">
+              <div class="wrapper">
+                  <div class="col-sm-7">
+                    <h1 class="section-header">Ваши деньги растут каждый день</h1>
+                    <p class="section-text">
+                      Высокодоходный рынок микрофинансирования 
+                      теперь доступен для Вас. Мы убрали посредников, 
+                      позволив всем желающим инвестировать деньги 
+                      в микрокредиты, объединив их с людьми, 
+                      которым нужны эти деньги.
+                    </p>
+                    <a href="http://webtransfer-finance.com/page/vlojit-dengi" class="graph-link common-btn">Начать зарабатывать</a>
+                  </div>
+                  <div class="col-sm-5">
+                    <div class="graph-block">
+                      <div class="graph-block__wrap graph-block__profit">
+                        <span class="graph-block__text graph-block__text--profit">Доход по вкладам</span>
+                        <img src="i/markup/profit.png" alt="profit" class="graph-block__img graph-block__img--profit">
+                      </div>
+                      <div class="graph-block__wrap graph-block__bank">
+                        <span class="graph-block__text graph-block__text--bank">Банки зарабатывают *</span>
+                        <img src="i/markup/webtransfer.png" alt="bank" class="graph-block__img graph-block__img--bank">
+                      </div>
+                      <div class="graph-block__wrap graph-block__organization">
+                        <span class="graph-block__text graph-block__text--organizations">Микрофинансовые организации **</span>
+                        <img src="i/markup/organization.png" alt="organizations" class="graph-block__img graph-block__img--organization">
+                      </div>
+                    </div>
+                  </div>
+                <div class="footnotes">
+                  <p class="footnotes-text">* По данным международного рейтингового агенства Fitch от 12.12.2013 года.</p>
+                  <p class="footnotes-text">** По данным международного бюро кредитных историй “Эквифакс”.</p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <img class="background-image" width="1920" height="1250" src="i/slides/3.jpg" alt="collection">
+            </div>
+        </div>
+
+    </div>
+    <!--COLLECTION END-->
+
+    <!--ABOUT-->
+    <div class="slide-item garantee" id="about">
+        <div class="slide-content">
+            <div class="container-fluid">
+              <div class="wrapper row">
+                <div class="col-sm-7 garantee-text__wrap">
+                  <h1 class="section-header">Гарантированные обязательства</h1>
+                  <p class="section-text garantee-text">
+                    Выдача займа в кредитной социальной сети
+                    подтверждается <button class="modal-btn" data-toggle="modal" data-target="#myModal"> кредитным сертификатом.</button>
+                  </p>
+                  <!-- Modal -->
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                      <div class="wrap-modal-img">
+                        <img class="sert-img" src="i/sert.png" alt="sertific">
+                        <button class="modal-btn__close" data-dismiss="modal"></button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="section-text garantee-text">
+                    Кредитный сертификат обеспечен выданным
+                    по нему займом.
+                  </p>
+                  <p class="section-text garantee-text">
+                    В случае невозврата займа заемщиком, Вам
+                    выплачивают деньги из средств гарантийного фодда кредитной сети, в обмен на право требования долга с заемщика.
+                  </p>
+                  <a href="http://webtransfer-finance.com/page/about-company/pravila-raboti " target="_blank" class="garantee-link">См. Правила и условия использования</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <img class="background-image" width="1920" height="1250" src="i/slides/4.jpg" alt="collection">
+            </div>
+        </div>
+    </div>
+    <!--ABOUT END-->
+
+    <!--PRODUCTION-->
+    <div class="slide-item" id="production">
+        <div class="slide-content">
+          <div class="wrapper row">
+            <h1 class="section-header section-header__partnership text-center">
+              Зарабатывай, помогая другим!
+            </h1>
+            <h2 class="section-header__secondary text-center">
+              Участие в кредитной сети Webtransfer выходит за рамки выдачи и получения займов:
+            </h2>
+            <div class="col-sm-6 partnership__discount">
+              <strong class="partnership__discount--amount">50%</strong>
+              <p class="partnership__discount--text">от прибыли Webtransfer получают партнеры-агенты</p>
+            </div>
+            <div class="col-sm-6 partnership__discount">
+              <strong class="partnership__discount--amount">75%</strong>
+              <p class="partnership__discount--text">от прибыли Webtransfer получают партнеры-франчайзеры</p>
+            </div>
+            <a href="http://webtransfer-finance.com/page/partnership" class="graph-link partnership-link common-btn center-btn">Стать партнером</a>
+          </div>    
+        </div>
+
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <img class="background-image" width="1920" height="1250" src="i/slides/5.jpg" alt="collection">
+            </div>
+        </div>
+    </div>
+    <!--PRODUCTION END-->
+
+    <!--EVENTS-->
+    <div class="slide-item" id="events">
+        <div class="slide-content">
+            <div class="wrapper row">
+             <div class="col-sm-7 took-money-slide">
+              <h1 class="section-header">Вы всегда при наличных</h1>
+              <p class="section-text garantee-text">
+                 Получайте наличные и бонусы, переводите 
+                деньги другим участникам сети моментально.</p>
+                 <p class="section-text garantee-text">
+                Карта Webtransfer MasterCard дает 
+                возможность пользоваться деньгами 
+                в то время как они работают на Вас.
+                </p>
+             </div>
+            </div>
+            <a href="http://webtransfer-finance.com/page/vzyat-kredit " class="graph-link partnership-link getMoney-link common-btn center-btn">Получить деньги</a>
+        </div>
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <img class="background-image" width="1920" height="1250" src="i/slides/2.jpg" alt="collection">
+            </div>
+        </div>
+    </div>
+    <!--EVENTS END-->
+
+    <!--CONTACT-->
+    <div class="slide-item" id="contact">
+        <div class="slide-content">
+            <div class="wrapper row">
+
+              <div class="col-sm-7">
+                <h1 class="section-header">На расстоянии пары кликов</h1>
+                <p class="section-text">
+                  Получить заём или самому дать кредит — никогда не было так удобно!</p>
+                <p class="section-text">Вы всегда контролируете ситуацию.</p>
+              </div>
+
+              <div class="col-sm-5 overflow-mobile-img-wrap">
+                <div class="overflow-mobile-img__wrap-block">
+                    <img src="i/markup/img-mobile.png" alt="hand-mobile-img">
+                </div>
+                <img src="i/markup/hand-mobile.png" alt="mobile-app">
+              </div>
+
+              <div class="col-sm-6 apps-download">
+                <div class="col-sm-4">
+                  <a href="#" class="apps-download__link apps-download__link--apple">
+                    <span class="apps-download__link--text">
+                      Доступно на
+                    </span>
+                  </a>
+                </div>
+                <div class="col-sm-4">
+                  <a href="#" class="apps-download__link apps-download__link--google">
+                    <span class="apps-download__link--text">
+                      Доступно на
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <div class="background background-first">
+                <img class="background-image" width="1920" height="1250" src="i/slides/6.jpg" alt="collection">
+            </div>
+        </div>
+    </div>
+    <!--CONTACT END-->
+
+    <!--MASS-MEDIA START-->
+    <div class="slide-item mass-media" id="mass-media">
+        <div class="slide-content">
+            <div class="wrapper row">
+              <h1 class="section-header text-center">Пресса о нас:</h1>
+              
+              <div class="slider">
+                <div class="slide-list">
+                  <div class="slide-wrap play">
+
+                    <a href="http://www.cnews.ru/news/line/index.shtml?2011/12/13/468774" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-04.jpg" alt="" />
+                    </a>
+                    <a href="http://moneynews.ru/News/15235/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-09.jpg" alt="" />
+                      
+                    </a>
+                    <a href="http://www.banki.ru/news/lenta/?id=2913914" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-06.jpg" alt="" />
+                      
+                    </a>
+                    <a href="http://www.e-moneynews.ru/webtransfer-plany-i-lecenziya/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-07.jpg" alt="" />
+                      
+                    </a>
+                    <a href="http://moneynews.ru/News/16066/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-09.jpg" alt="" />
+                    </a>
+                    <a href="http://bankir.ru/novosti/s/novie-vozmojnosti-onlain-platejei-ot-kompanii-webtransfer-9567762/#ixzz1oKuFCslV" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-08.jpg" alt="" />
+                    </a>
+                    <a href="http://www.ifin.ru/news/read/8971.stm" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-10.jpg" alt="" />
+                    </a>
+                    <a href="http://payspacemagazine.com/archives/1722" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-11.jpg" alt="" />
+                    </a>
+                    <a href="http://moneynews.ru/News/15815/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-05.jpg" alt="" />
+                    </a>
+                    <a href="http://moneynews.ru/News/15041/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-09.jpg" alt="" />
+                    </a>
+                    <a href="http://www.cnews.ru/news/line/index.shtml?2012/02/10/477071" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-04.jpg" alt="" />
+                    </a>
+                    <a href="http://moneynews.ru/News/15982/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-09.jpg" alt="" />
+                    </a>
+                    <a href="http://www.cnews.ru/news/line/index.shtml?2013/07/30/537143" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-04.jpg" alt="" />
+                    </a>
+                    <a href="http://www.banks-rating.ru/creditcard/?id=4539" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-09.jpg" alt="" />
+                    </a>
+                    <a href="http://www.e-moneynews.ru/straxovanie-elektronnyx-deneg/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-07.jpg" alt="" />
+                    </a>
+                    <a href="http://club.cnews.ru/blogs/entry/analiz_investitsionnoj_aktivnosti_i_novye_instrumenty_vysokodohodnogo_investirovaniya_v_rossii" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-16.jpg" alt="" />
+                    </a>
+                    <a href="http://alfabank.ru/retail/2012/2/10/27768.html" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-17.jpg" alt="" />
+                    </a>
+                    <a href="http://pay2.ru/2012/02/webtransfer-alfa-click/" class="slide-item-mm mass-media__link link-hover">
+                      <img class="blurred" src="i/img-19.jpg" alt="" />
+                    </a>
+
+
+                    
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <a name="prev" class="left carousel-control navy prev-slide" href="#carousel-example-generic-mass-media" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a name="next" class="right carousel-control navy next-slide" href="#carousel-example-generic-mass-media" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+
+
+              <div class="empty"></div>
+
+              <div class="wrapper row mass-media-footer">
+                <div class="col-sm-3">
+                  <h3 class="footer-menu__header">По проекту</h3>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer-finance.com/page/about-company/questions" class="footer-menu__link">FAQ</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer-finance.com/page/about-company/kak-rabotaem" class="footer-menu__link">Как это работает</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="https://webtransfer-finance.com/page/vlojit-dengi/kurs#today" class="footer-menu__link">Выкуп займов</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer-finance.com/page/about-company/contacts" class="footer-menu__link">Обратная связь</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <h3 class="footer-menu__header">Документы</h3>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer-finance.com/page/about-company/pravila-raboti" class="footer-menu__link">Правила и условия</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="https://docs.google.com/file/d/0B4El5eMyfMmUczFqUjQ3Z2FpS1E/edit" class="footer-menu__link">Конфиденциальность</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="https://docs.google.com/file/d/0B4El5eMyfMmUekFmbk5QNlZoVFU/edit" class="footer-menu__link">Приемлимое использование</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer-finance.com/page/about-company/guarantee" class="footer-menu__link">Гарантии</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <h3 class="footer-menu__header">Перевод средств</h3>
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer.com/en/termsofuse.html" class="footer-menu__link">Terms of Use</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a href="http://webtransfer.com/en/complaints.html" class="footer-menu__link">Complaints Policy</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 footer-menu__social-menu">
+                  <h3 class="footer-menu__header">Мы в социальных сетях</h3>
+
+                  <ul class="social-menu__list">
+                      <li class="social-menu__item"><a href="https://www.facebook.com/Webtransfer" class="social-menu__link social-menu__link--facebook"></a></li>
+                      <li class="social-menu__item"><a href="http://my.mail.ru/community/webtransfer/" class="social-menu__link social-menu__link--mail-ru"></a></li>
+                      <li class="social-menu__item"><a href="https://vk.com/club55660968" class="social-menu__link social-menu__link--vk"></a></li>
+                      <li class="social-menu__item"><a href="https://plus.google.com/u/0/118412304892954038780/posts" class="social-menu__link social-menu__link--google"></a></li>
+                      <li class="social-menu__item"><a href="http://www.odnoklassniki.ru/webtransfer" class="social-menu__link social-menu__link--odnokl"></a></li>
+                      <li class="social-menu__item"><a href="https://twitter.com/webtransfercom" class="social-menu__link social-menu__link--twitter"></a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="collection-wrap">
+            <div class="background background-first">
+            </div>
+        </div>
+    </div>
+    <!--MASS-MEDIA END-->
+    <div class="slide-item footer footer-info footer-top" id="footer">
+            <div class="wrapper row">
+              <h3 class="section-header">Оператор социальной кредитной сети:</h3>
+              <p class="section-text">Unified Webtransfer LLC., идентификационный № L12000111881, Майами, Флорида, США.</p>
+              <h3 class="section-header">Оператор денежных переводов:</h3>
+              <p class="section-text">Webtransfer Europe Ltd., регистрационный № 06453803, Лондон, Великобритания.</p>  <p class="section-text">Лицензия на предоставление финансовых услуг<a class="link" href="http://www.fsa.gov.uk/register/psdFirmBasicDetails.do?sid=287999">№ 569645</a> от 17/01/2012.</p> <p class="section-text">Регулируется Financial Conduct Authority (FCA), в соответствии с Payment Service Regulations 2009.</p>
+            </div>
+    </div>
+    <div class="footer footer-bottom">
+        <div class="wrapper row">
+          <div class="col-sm-3 text-left"><a href="#"><img src="i/img-12.jpg" alt="cards" width="120" height="66"></a></div>
+          <div class="col-sm-3 text-center"><a href="#"><img src="i/img-13.jpg" alt="cards"  width="120" height="66"></a></div>
+          <div class="col-sm-3 text-center"><a href="#"><img src="i/img-14.jpg" alt="cards"  width="120" height="66"></a></div>
+          <div class="col-sm-3 text-right"><a href="#"><img src="i/img-15.jpg" alt="cards"  width="120" height="66"></a></div>
+        </div>
+        <div class="wrapper row">
+          <p class="footer-copyright">© Webtransfer, 2006—2014</p>
+        </div>
+    </div>
+</div>
+
+<div class="slider-bar navbar-primary fixed-menu">
+  <div class="wrapper row">
+            <div class="col-sm-3">
+              <h1 class="header-logo">
+                <a href="#" title="Company Name" class="header-logo__link">WEBTRANSFER</a>
+              </h1>
+            </div>
+            <div class="col-sm-9 primary-menu">
+              <ul class="primary-menu__list">
+                <li class="primary-menu__item">
+                  <a href="" class="primary-menu__link">О проекте</a>
+                </li>
+                <li class="primary-menu__item">
+                  <a href="" class="primary-menu__link">Кредиторам</a>
+                </li>
+                <li class="primary-menu__item">
+                  <a href="" class="primary-menu__link">Заемщикам</a>
+                </li>
+                <li class="primary-menu__item">
+                  <a href="" class="primary-menu__link">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+</div>
+<!--MAIN CONTENT END-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
+<script src="js/libs/jquery.mousewheel.js"></script>
+<script src="js/libs/jquery.scrollTo.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/script-app.js"></script>
+<script src="js/slider-module.js"></script>
+</body>
+</html>

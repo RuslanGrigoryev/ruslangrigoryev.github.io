@@ -1,0 +1,358 @@
+/*ORDER LIST 
+	1. RESET STYLES
+	2. GENERAL STYLES
+	3. HEADER STYLES
+	4. MAIN STYLES
+	5. PORTFOLIO STYLES
+*/
+
+/*1. RESET STYLES*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*2. GENERAL STYLES*/
+
+body {
+	line-height: 1;
+	font-size: 16px;
+	color: #333;
+	background: #ecf0f1;	
+	font-family: 'Roboto', Arial, sans-serif;
+}
+.main {
+	max-width: 1024px;
+	min-width: 320px;
+	min-height: 1000px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+h1 {
+	font-size: 1.5em;
+	color: #000;
+	margin: 10px 0 10px 0;
+}
+h2 {
+	padding-left: 10px;
+	font-size: 1.2em;
+	color: #000;
+	margin: 10px 0;
+}
+h3 {
+	padding-left: 20px;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #000;
+	margin: 10px 0;
+}
+p {
+	text-indent: 40px;
+	line-height: 1.5em;
+}
+a {
+	text-decoration: underline;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #f00;
+}
+ol {
+	margin: 10px 0 10px 20px;
+	list-style: disc;
+}
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+
+/*3. HEADER STYLES*/
+
+header {
+	height: 50px;
+	position: relative;
+}
+.main-link {
+	font-size: 2.2em;
+	text-decoration: none;
+	display: inline-block;
+	vertical-align: 17px;
+}
+.main-menu {
+	float: right;
+	line-height: 3em;
+}
+.main-menu__back {
+	float: left;
+}
+.main-menu__item {
+	display: inline-block;
+}
+.main-menu__item__link--active {
+	font-weight: 800;
+}
+.social-list {
+	display: inline-block;
+	margin: 0 0 0 20px;
+}
+.social-item {
+	float: left;
+	margin: 0 2px;
+}
+.social-link {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	display: block;
+}
+.social-link:hover .social-link__wrap {
+	opacity: 0;
+}
+.social-link:hover .social-link__hover {
+	opacity: 1;
+}
+.social-link__wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../i/markup/sprite.png) no-repeat;
+	transition: all 2s ease;
+	-webkit-transition: all 2s ease;
+}
+.portf-link .social-link__wrap {
+	transition: all 3s ease;
+	-webkit-transition: all 3s ease;
+}
+.social-link__hover {
+	opacity: 0;
+}
+.social-link__facebook {
+	background-position: 0px -72px;
+}
+.social-link__facebook--hover {
+	background-position: 0px -152px;
+}
+.social-link__twitter {
+	background-position: -71px -72px;
+}
+.social-link__twitter--hover {
+	background-position: -71px -152px;
+}
+.social-link__gplus {
+	background-position: -142px -72px;
+}
+.social-link__gplus--hover {
+	background-position: -142px -152px;
+}
+.social-link__linkedin {
+	background-position: -210px -72px;
+}
+.social-link__linkedin--hover {
+	background-position: -210px -152px;
+}
+.social-link__github {
+	background-position: -275px -72px;
+}
+.social-link__github--hover {
+	background-position: -275px -152px;
+}
+.social-link--mail {
+	background-position: -344px -72px;
+}
+.social-link__mail--hover {
+	background-position: -344px -152px;
+}
+.social-link__portf {
+	background-position: -412px -72px;
+}
+.social-link__portf--hover {
+	background-position: -412px -152px;
+}
+.social-link__back {
+	background-position: -480px -72px;
+}
+.social-link__back--hover {
+	background-position: -480px -152px;
+}
+/*4. MAIN STYLES*/
+
+.skype-button {
+	display: inline-block;
+}
+.skype-button img {
+	margin: 0 !important;
+	vertical-align: -4px !important;
+}
+.skype-button p {
+	text-indent: 0px;
+}
+.check-list {
+	margin: 0 0 0 60px;
+}
+.check-list__item {
+	line-height: 1.8em;
+}
+.date {
+	float: right;
+	margin: 0;
+	clear: none;
+	color: #000;
+	font-weight: bold;
+	font-size: 0.7em;
+}
+.freelance-list {
+	margin: 0 0 0 40px;
+}
+.freelance-list__item {
+	line-height: 1.5em;
+	list-style: disc;
+}
+.pdf-link {
+	display: inline-block;
+	vertical-align: 17px;
+	margin-left: 20px;
+	padding-left: 20px;
+	background: url(../i/markup/sprite.png) 1px -1px no-repeat;
+}
+.skill-list {
+	margin: 0 0 0 40px;
+}
+.skill-list__item {
+	list-style: disc;
+	line-height: 1.5em;
+	display: table-row;
+}
+.skill-list__item strong {
+	display: table-cell;
+	color: #000;
+	font-weight: bold;
+	width: 17%;
+}
+.skill-list__item .wrap {
+	display: table-cell;
+	width: 60%;
+}
+.skill-list__item  .elem {
+    background: rgb(159, 164, 223);
+    width: 5%;
+    height: 12px;
+}
+
+/*5. PORTFOLIO STYLES*/
+
+.thumbs {}
+.thumbs__item {
+    float: left;
+    width: 320px;
+    height: 250px;
+    margin: 20px 5px;
+    padding: 1px;
+}
+.thumbs__item:hover {
+}
+.thumbs__link {
+    display: block;
+    height: 250px;
+}
+.thumbs__item--image {
+}
+.thumbs__item--caption {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px 0 0 0;
+}
+.thumbs__item--caption--strong {
+	font-weight: bold;
+}
+.flip-container {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  z-index: 1;
+}
+.flip-container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+}
+.flip-card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transition: all 1.0s linear;  
+  -webkit-transition: all 1.0s linear;
+  -moz-transition: all 1.0s linear;
+
+}
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);  
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  box-shadow: 0px 0px 0px 1px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden;
+
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}

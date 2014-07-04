@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CityMobil</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="sidebar-button"></a>
+            <a href="#" class="logo"><img src="i/markup/logo.png" alt="logo"></a>
+            <ul class="main-nav">
+                <li><a class="main-link" href="#">Тарифы</a></li>
+                <li><a class="main-link" href="#">Компаниям</a></li>
+                <li><a class="main-link" href="#">Личный кабинет</a></li>
+            </ul>
+            <dl class="main-phone">
+                <dt>Телефон в 
+                <a id="change-city-number" class="main-link" href="#"><span>Москве</span>
+                    <ul class="dropdown-city">
+                        <li>Москве</li>
+                        <li>Киеве</li>
+                        <li>Ереване</li>
+                    </ul>
+                </a>
+                </dt>
+                <dd>+7 (496) 500-50-50</dd>
+                <dd class="languages">
+                    <a href="#" class="lang">RU</a>
+                    <a href="#" class="lang">EN</a>
+                    <a href="#" class="lang">ARM</a>
+                </dd>
+            </dl>
+            <div class="order" id="first">
+                <div class="wrap-order-header">
+                    <span>Заказ такси в </span>
+                    <select data-custom="select" name="city" id="selectCity">
+                        <option value="Moscow">Москве</option>
+                        <option value="Kiev">Киеве</option>
+                        <option value="Minsk">Минске</option>
+                    </select>
+                </div>
+                <div class="or-tel">+7 (945) 500-50-50</div>
+                <div class="wrap-order-street">
+                    <input class="name-street" type="text" value="ул. Восточная, 27">
+                    <a href="#" class="icon-trans icon-train"></a>
+                    <a href="#" class="icon-trans icon-fly"></a>
+                    <a href="#" class="icon-trans icon-walk"></a>
+                </div>
+                <div class="wrap-order-notnec">
+                <input class="name-street disabled-name-street" type="text" value="Куда (не обязательно)">
+                </div>
+                <div class="wrap-order-time">
+                    <span class="wh640">Когда</span>
+                    <select class="chDate" data-custom="select" name="order-date" id="orderDate">
+                        <option value="today">Сегодня, 23 янв</option>
+                    </select>
+                    <select  data-custom="select" name="order-time-hours" id="orderTimeHours">
+                        <option value="hours">22</option>
+                    </select>
+                    <select data-custom="select" name="order-time-minutes" id="orderTimeMinutes">
+                        <option value="minutes">00</option>
+                    </select>
+                </div>
+                <div class="wrap-order-tariff">
+                    <span>Тариф</span>
+                    <a class="dropdown" href="#" id="chooseTariff">Эконом</a>
+                </div>
+                <ul class="list-tariffs">
+                    <li class="active"><a href="#">Эконом</a><span class="tariff-active"></span></li>
+                    <li><a href="#">Комфорт</a><span></span></li>
+                    <li><a href="#">Бизнес</a><span></span></li>
+                    <li><a href="#">Трезвый водитель</a><span></span></li>
+                    <li><a href="#">V.I.P</a><span></span></li>
+                    <li><a href="#">Минивен</a><span></span></li>
+                </ul>
+                <div class="wrap-order-options">
+                    <span>Опции</span>
+                    <a href="#" class="dropdown" id="chooseOption">Не выбраны</a>
+                </div>
+                <ul class="list-tariffs">
+                    <li class="active"><a href="#">Опция-</a><span class="tariff-active"></span></li>
+                    <li><a href="#">Опция--</a><span></span></li>
+                    <li><a href="#">Опция---</a><span></span></li>
+                    <li><a href="#">Опция----</a><span></span></li>
+                    <li><a href="#">Опция-----</a><span></span></li>
+                    <li><a href="#">Опция------</a><span></span></li>
+                </ul>
+                <div class="predict">
+                    <div class="predict-row">
+                        <span class="predict-text">Прогноз времени поездки</span>
+                        <span class="predict-count">25 мин.</span>
+                    </div>
+                    <div class="predict-row">
+                        <span class="predict-text">Прогноз стоимости поездки</span>
+                        <span class="predict-count predict-disabled">-</span>
+                    </div>
+                </div>
+                <button id="submit-order" type="submit">Заказать</button>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div id="map">
+        </div>
+        <div class="bottom-adv">
+            <div class="container">
+                <p>Акция: с 1 по 28 февраля при заказе такси через мобильное приложение CitiMobil вы получите скидку 10%. <a href="#">Подробнее</a><a href="#" class="close"></a></p>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="tariff">
+                <div class="col col-left">
+                    <h3>Тариф</h3>
+                    <h2>Эконом</h2>
+                </div>
+                <div class="col col-middle">
+                    <div class="row">
+                        <i class="sun-icon"></i>
+                        <span> 340 руб. (20 мин), далее 12 руб./мин.</span>
+                    </div>
+                    <div class="row">
+                        <i class="moon-icon"></i>
+                        <span> 390 руб. (20 мин), далее 13 руб./мин.</span>
+                    </div>
+                </div>
+                <div class="col col-right">
+                    <a href="#" class="simple-link">Все тарифы</a>
+                </div>
+            </div>
+            <div class="slogan">
+                <h1>Заказывайте такси <br> из приложения</h1>
+            </div>
+        </div>
+    </section>
+    <section class="middle">
+        <div class="container">
+        <nav class="offer">
+            <ul class="offer-ul">
+                <li>Вызов такси без звонков и разговоров</li>
+                <li>Возврат на бонусный счет до 10% от стоимости поездки</li>
+                <li>Время подачи от 1 минуты</li>
+                <li>Мониторинг передвижений такси на карте до подачи <br>и в товремя, когда оно возит Ваших близких </li>
+            </ul>
+        </nav>
+        <nav class="download-apps">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="download-app-icon iphone-icon"></i>
+                        <div class="wrap-download-app-text">
+                            <p>Загрузить из</p>
+                            <h3>App Store</h3>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="download-app-icon android-icon"></i>
+                        <div class="wrap-download-app-text">
+                            <p>Загрузить из</p>
+                            <h3 class="smaller-header">GOOGLE PLAY</h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+            <img src="i/img-01.png" alt="phone">
+        </div>
+    </section>
+    <section class="advanced">
+        <div class="container">
+            <h1>Наши преимущества</h1>
+            <ul>
+                <li>5% стоимости каждого заказа в Вашу копилку</li>
+                <li>Накопили 500 руб бонусов? Оплатите ими заказ!</li>
+                <li>Подача автомобиля за минимальное время — всего от 5 минут</li>
+                <li>В автопарке только иномарки: от “Эконом” до “VIP”</li>
+                <li>500-50-50 — номер, который легко запомнить</li>
+                <li>Полное SMS-сопровождение заказов</li>
+            </ul>
+            <ul>
+                <li>Низкие цены при высоком качества предоставляемых услуг</li>
+                <li>Диспетчерская служда Сити-Мобил доступна круглосуточко и без выходных</li>
+                <li>Возможность заказать по телефону, на сайте и с помощью мобильного телефона</li>
+                <li>Профессиональные водители</li>
+                <li>Постоянный контроль качества</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <a href="#" class="logo"><img src="i/markup/logo-mini.png" alt="logo"></a>
+            <ul>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Таксопарк</a></li>
+                <li><a href="#">Водителям</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="bottom-menu">
+                <li><a href="#">В аэропорт</a></li>
+                <li><a href="#">Компаниям</a></li>
+                <li><a href="#">Форум</a></li>
+            </ul>
+            <div class="clr"></div>
+            <a href="indexMobil.html" class="mobile-version">Перейти на мобильную версию сайта</a>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=29uD3jKC-8XFdTlfCwkxSmnSQkYPbrYH&amp;id=map"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

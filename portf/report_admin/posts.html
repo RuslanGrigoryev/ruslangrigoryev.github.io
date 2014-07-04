@@ -1,0 +1,136 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Report Admin</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="left-vertical-bar">
+		<div class="logo">
+			<a href="#" title="#">
+				<img src="i/markup/logo.png" alt="logo">
+				<span class="logo-text">Information agency</span>
+			</a>
+		</div>
+		<nav class="left-menu">
+			<ul class="left-menu__ul">
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--post">Posts</a>
+				</li>
+				<li class="left-menu__list left-menu__list--empty">
+					<a href="#" title="#" class="left-menu__link left-menu__link--media">Media</a>
+					<ul class="left-menu__list-sub-menu">
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">All posts</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Add New</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Categories</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Tags</a>
+						</li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--page">Pages</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--comments">Comments</a>
+					<span class="comments-amount">2</span>
+				</li>
+				<li class="left-menu__list left-menu__list--active">
+					<a href="#" title="#" class="left-menu__link left-menu__link--user">Users</a>
+					<ul class="left-menu__sub-menu">
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">All Users</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">Add New</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#"  class="left-menu__sub-menu__link">Groups</a></li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--tools">Tools (SEO)</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--setting">Settings</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--exit">Exit</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="wrap-main">
+		<div class="top-menu">
+			<ul class="top-menu__ul">
+				<li class="top-menu__list"><a href="#" title="#" class="top-menu__link">Home page</a></li>
+				<li class="top-menu__list">Comments awaiting moderation: <a href="#" title="#" class="top-menu__link top-menu__link-count">45</a></li>
+				<li class="top-menu__list">
+					Add new:
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">Post</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">media</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">page</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">user</a>
+				</li>
+				<li class="top-menu__list">
+					<a href="#" title="#" class="top-menu__link">
+						<img src="i/img-01.jpg" alt="user-img" class="top-menu__link-user-img">
+						<span class="top-menu__link-user-name">MAMMAD ALAKPAROV</span>
+					</a>
+				</li>
+			</ul>
+			<span class="top-menu__list top-menu__list-exit">
+				<a href="#" title="#" class="top-menu__link">log out</a>
+			</span>
+		</div>
+		<div class="widget">
+			<div class="wrap-top-select-row">
+				<select class="posts-select actions" id="actions">
+				    <option value="hide">- Bulk actions -</option>
+				    <option value="one">action 1</option>
+				    <option value="two">action 2</option>
+				    <option value="three">action 3</option>
+				</select>
+				<select class="posts-select select-date" id="date">
+				    <option value="hide">Show all dates</option>
+				    <option value="one">11-04-2014</option>
+				    <option value="two">12-04-2014</option>
+				    <option value="three">13-04-2014</option>
+				</select>
+				<select class="posts-select view-categories" id="cat">
+				    <option value="hide">View all categories</option>
+				    <option value="one">Siyasət<em class="view-categories__amount">34</em></option>
+				    <option value="two">İqtisadiyyat<em class="view-categories__amount">18</em></option>
+				    <option value="three">Cəmiyyət<em class="view-categories__amount">363</em></option>
+				    <option value="three">Şou-biznes<em class="view-categories__amount">45</em></option>
+				    <option value="three">İdman<em class="view-categories__amount">23</em></option>
+				    <option value="three">Mədəniyyət<em class="view-categories__amount">67</em></option>
+				    <option value="three">Dünya<em class="view-categories__amount">21</em></option>
+				</select>
+				<button class="widget-btn btn-check"></button>
+				<div class="search-area">
+				    <button class="search-button" type="submit" tabindex="2"><span class="search-area-icon searc-area-icon__search"></span></button>
+				    <div class="search-area-wrap-input">
+				        <input class="search-area__input" type="text" id="search-input" tabindex="1" placeholder="Xəbərlərdə axtar.." />
+				    </div>
+				</div>
+				<div class="wrap-bar-view">
+					<a href="#" title="#" class="bar-view__link bar-view__link-line bar-view__link-line--active"></a>
+					<a href="#" title="#" class="bar-view__link bar-view__link-row "></a>
+				</div>
+				<div class="wrap-post-tab">
+					<a href="#" title="#" class="post-tab-link">All posts<span class="post-tab-count">(345)</span></a>
+					<a href="#" title="#" class="post-tab-link">Awaiting moderation<span class="post-tab-count">(34)</span></a>
+					<a href="#" title="#" class="post-tab-link">Moderated<span class="post-tab-count">(214)</span></a>
+					<a href="#" title="#" class="post-tab-link">Canceled<span class="post-tab-count">(54)</span></a>
+					.
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

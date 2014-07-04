@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		if((navigator.userAgent.match(/iPhone/i))){
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 0.5,minimum-scale = 0.5,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}else{
+			document.getElementsByTagName('head')[0].innerHTML += '<meta name="viewport" content="width = device-width,initial-scale = 0.5,minimum-scale = 0.1,maximum-scale = 1.5,target-densitydpi = device-dpi">';
+		}
+	</script>
+
+	<meta name="MobileOptimized"              content="650">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="HandheldFriendly"             content="true">
+	<meta name="format-detection"             content="telephone=yes">
+	<meta name="PalmComputingPlatform"        content="yes">
+	<title>CityMobil</title>
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.2.min.css">
+	<!-- <link href="../css/core.css" media="screen" rel="stylesheet" type="text/css">
+	<link href="../css/core-ui-select.css" media="screen" rel="stylesheet" type="text/css"> -->
+	<link rel="stylesheet" href="../css/style-mobile.css">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
+</head>
+<body>
+	<div class="main">
+			<div class="container">
+				<div class="sidebar">
+					<ul class="sidebar-menu">
+						<li class="sidebar-menu-item"><a href="indexMobil2.html" data-ajax="false">Главная</a></li>
+						<li class="sidebar-menu-item"><a href="tariffsMobil.html" data-ajax="false">Тарифы</a></li>
+						<li class="sidebar-menu-item"><a href="airportMobil.html" data-ajax="false">В аэропорт</a></li>
+						<li class="sidebar-menu-item"><a href="taxoparkMobil.html" data-ajax="false">Таксопарк</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetLoginMobil.html" data-ajax="false">Вход</a></li>
+						<li class="sidebar-menu-item"><a href="cabinetMobilV2.html" data-ajax="false">Личный кабинет</a></li>
+						<li class="sidebar-menu-item"><a href="companiesMobil.html" data-ajax="false">Компаниям</a></li>
+						<li class="sidebar-menu-item"><a href="driversMobil.html" data-ajax="false">Водителям</a></li>
+						<li class="sidebar-menu-item"><a href="contactMobil.html" data-ajax="false">Контакты</a></li>						
+					</ul>
+				</div>
+				<div class="order" id="first">
+					<div class="cf center logo-block">
+						<a href="#" class="sidebar-button"></a>
+						<a href="#" class="logo"><img src="../i/markup/logo-big.png" alt=""></a>
+					</div>
+					<form class="tel-send" action="indexMobil1.html">
+						<div class="phone-descr">
+							Укажите номер телефона,<br>по которому с вами сможет<br>связаться водитель
+						</div>
+						<div class="ph-num">
+							<input class="or-inp phone-number" id="num" name="num" type="tel" placeholder="+7">
+						</div>
+						<button class="or-button" type="submit">Подтвердить</button>
+						<a class="or-button dissabled-but" href="#">Отменить</a>
+					</form>
+					
+				</div>
+			</div>
+	</div>
+	
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="../js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="../js/jquery.maskedinput.min.js"></script>
+	<script src="../js/jquery.ui.accordion.js"></script>
+	<script src="../js/script-mobile.js"></script>
+</body>
+</html>

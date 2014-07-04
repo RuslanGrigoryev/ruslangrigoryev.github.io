@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Report Admin</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="left-vertical-bar">
+		<div class="logo">
+			<a href="#" title="#">
+				<img src="i/markup/logo.png" alt="logo">
+				<span class="logo-text">Information agency</span>
+			</a>
+		</div>
+		<nav class="left-menu">
+			<ul class="left-menu__ul">
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--post">Posts</a>
+				</li>
+				<li class="left-menu__list left-menu__list--empty">
+					<a href="#" title="#" class="left-menu__link left-menu__link--media">Media</a>
+					<ul class="left-menu__list-sub-menu">
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">All posts</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Add New</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Categories</a>
+						</li>
+						<li class="left-menu__list-sub-menu__list">
+							<a href="#" title="#" class="left-menu__list-sub-menu__link">Tags</a>
+						</li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--page">Pages</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--comments">Comments</a>
+					<span class="comments-amount">2</span>
+				</li>
+				<li class="left-menu__list left-menu__list--active">
+					<a href="#" title="#" class="left-menu__link left-menu__link--user">Users</a>
+					<ul class="left-menu__sub-menu">
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">All Users</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#" class="left-menu__sub-menu__link">Add New</a></li>
+						<li class="left-menu__sub-menu__list"><a href="#" title="#"  class="left-menu__sub-menu__link">Groups</a></li>
+					</ul>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--tools">Tools (SEO)</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--setting">Settings</a>
+				</li>
+				<li class="left-menu__list">
+					<a href="#" title="#" class="left-menu__link left-menu__link--exit">Exit</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="wrap-main">
+		<div class="top-menu">
+			<ul class="top-menu__ul">
+				<li class="top-menu__list"><a href="#" title="#" class="top-menu__link">Home page</a></li>
+				<li class="top-menu__list">Comments awaiting moderation: <a href="#" title="#" class="top-menu__link top-menu__link-count">45</a></li>
+				<li class="top-menu__list">
+					Add new:
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">Post</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">media</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">page</a>
+					<a href="#" title="#" class="top-menu__link top-menu__link-add-new">user</a>
+				</li>
+				<li class="top-menu__list">
+					<a href="#" title="#" class="top-menu__link">
+						<img src="i/img-01.jpg" alt="user-img" class="top-menu__link-user-img">
+						<span class="top-menu__link-user-name">MAMMAD ALAKPAROV</span>
+					</a>
+				</li>
+			</ul>
+			<span class="top-menu__list top-menu__list-exit">
+				<a href="#" title="#" class="top-menu__link">log out</a>
+			</span>
+		</div>
+		<div class="main">
+			<h1 class="post-name">New post</h1>
+			<div class="lang-menu">
+				<ul class="lang-menu__ul">
+					<li class="lang-menu__list"><a href="#" title="#" class="lang-menu__link">Russian</a></li>
+					<li class="lang-menu__list lang-menu__list--active"><a href="#" title="#" class="lang-menu__link">Aseri</a></li>
+					<li class="lang-menu__list"><a href="#" title="#" class="lang-menu__link">English</a></li>
+				</ul>
+				<select id="mounth">
+				    <option value="hide">-- Select category --</option>
+				    <option value="january">Cat1</option>
+				    <option value="february">Cat2</option>
+				    <option value="march">Cat3</option>
+				</select>
+			</div>
+			<div class="post-editor">
+				<input type="text" class="post-editor__input-text" placeholder="Enter title here">
+				<input type="text" class="post-editor__input-text" placeholder="URL">
+				<h2 class="post-editor__section-head">Description</h2>
+				<textarea name="description" id="editorDescription" cols="30" rows="7" class="post-editor__descr"></textarea>
+				<div class="post-editor__word-count-left fix">
+					<p class="word-count-left-text">Word count: <span class="word-count-left__total">0</span></p>
+				</div>
+				<div class="wrapper">
+					<h2 class="post-editor__section-head">Content</h2>
+					<div class="wrap-upload-btn">
+						<button class="upload-btn" id="upload">Add Media</button>
+						<input class="upload-input" id="actual-upload" type="file" />
+					</div>
+				</div>
+				<form>
+				    <textarea name="editor1" id="editor1" rows="10" cols="80">
+				    </textarea>
+				</form>
+				<div class="post-editor__word-count-left">
+					<p class="word-count-left-text">Word count: <span class="word-count-left__total">0</span></p>
+				</div>
+				<div class="wrapper wrap-btn">
+					<button class="orange-btn orange-btn__create" id="create-article">Create article</button>
+				</div>
+			</div>
+		</div>
+		<div class="right-widget-bar">
+			<div class="widget publish">
+				<a href="#" title="#" class="widget-head-link"><h3 class="widget-header">Publish</h3></a>
+				<div class="wrap-widget">
+					<button class="widget-btn btn-save-draft">Save draft</button>
+					<button class="widget-btn btn-prev">Preview</button>
+					<p class="line-adjust">
+						<span class="line-adjust__title">Status:</span>
+						<em class="line-adjust__current">Draft</em>
+						<a href="#" title="#" class="widget-link widget-link__edit">Edit</a>
+					</p>
+					<p class="line-adjust">
+						<span class="line-adjust__title">Visibility:</span>
+						<em class="line-adjust__current">Public</em>
+						<a href="#" title="#" class="widget-link widget-link__edit">Edit</a>
+					</p>
+					<p class="line-adjust">
+						<span class="line-adjust__title">Publish:</span>
+						<em class="line-adjust__current">immediately</em>
+						<a href="#" title="#" class="widget-link widget-link__edit">Edit</a>
+					</p>
+					<a href="#" title="#" class="widget-link widget-link__publish">Move to trash</a>
+					<button class="orange-btn orange-btn__publish">Publish</button>
+				</div>
+					
+			</div>
+			<div class="widget format">
+				<a href="#" title="#" class="widget-head-link"><h3 class="widget-header">format</h3></a>
+				<div class="wrap-widget">
+					<input type="radio" name="radio" id="radioStandart" class="widget-radio" checked />
+					<label for="radioStandart" class="widget-label"><span class="widget-span widget-span__standart">Standard</span></label>
+					<input type="radio" name="radio" id="radioAside" class="widget-radio" />
+					<label for="radioAside" class="widget-label"><span class="widget-span widget-span__aside">Aside</span></label>
+					<input type="radio" name="radio" id="radioImage" class="widget-radio" />
+					<label for="radioImage" class="widget-label"><span class="widget-span widget-span__image">Image</span></label>
+					<input type="radio" name="radio" id="radioVideo" class="widget-radio" />
+					<label for="radioVideo" class="widget-label"><span class="widget-span widget-span__video">Video</span></label>
+					<input type="radio" name="radio" id="radioAudio" class="widget-radio" />
+					<label for="radioAudio" class="widget-label"><span class="widget-span widget-span__audio">Audio</span></label>
+					<input type="radio" name="radio" id="radioQuote" class="widget-radio" />
+					<label for="radioQuote" class="widget-label"><span class="widget-span widget-span__quote">Quote</span></label>
+					<input type="radio" name="radio" id="radioLink" class="widget-radio" />
+					<label for="radioLink" class="widget-label"><span class="widget-span widget-span__link">Link</span></label>
+					<input type="radio" name="radio" id="radioGallery" class="widget-radio" />
+					<label for="radioGallery" class="widget-label"><span class="widget-span widget-span__gallery"> Gallery</span></label>
+				</div>
+			</div>
+			<div class="widget categories">
+				<a href="#" title="#" class="widget-head-link"><h3 class="widget-header">categories</h3></a>
+				<div class="wrap-widget">
+					<a href="#" title="#" class="categories__tab-link categories__tab-link--active">
+						All categories
+					</a>
+					<a href="#" title="#" class="categories__tab-link">
+						Most used
+					</a>
+					<div class="tab-link__inner">
+						<label for="uncategorized" class="inner-checkbox"><input type="checkbox" id="uncategorized">Uncategorized</label>
+					</div>
+					<a href="#" title="#" class="widget-link">+ Add New Category</a>
+				</div>
+			</div>
+			<div class="widget tags">
+				<a href="#" title="#" class="widget-head-link"><h3 class="widget-header">tags</h3></a>
+				<div class="wrap-widget">
+					<div class="search-area">
+					    <button type="submit" tabindex="2"><span class="search-area-icon"></span></button>
+					    <div class="search-area-wrap-input">
+					        <input type="text" id="search-input" tabindex="1" placeholder="Name of tag..." />
+					    </div>
+					</div>
+					<p class="tags-simple-text">Separate tags with commas</p>
+					<div class="tag"><a href="#" title="#" class="tag-close-link"></a><span class="tag-text">Qarabağ</span></div>
+					<div class="tag"><a href="#" title="#" class="tag-close-link"></a><span class="tag-text">siyasət</span></div>
+					<div class="tag"><a href="#" title="#" class="tag-close-link"></a><span class="tag-text">müharibə</span></div>
+					<a href="#" title="#" class="widget-link">Choose from the most used tags</a>
+				</div>
+			</div>
+			<div class="widget featured-image">
+				<a href="#" title="#" class="widget-head-link"><h3 class="widget-header">featured image</h3></a>
+				<div class="wrap-widget">
+					<a href="#" title="#" class="widget-link">Set featured image</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="ckeditor/ckeditor.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+	    // Replace the <textarea id="editor1"> with a CKEditor
+	    // instance, using default configuration.
+	    CKEDITOR.replace( 'editor1' );
+	</script>
+</body>
+</html>
