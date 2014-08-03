@@ -366,9 +366,11 @@ q:before, q:after {
 }
 .wrap-user-info {
 	height: 42px;
-	float: right;
-	width: 170px;
+	width: 200px;
 	padding-top: 4px;
+	position: absolute;
+	right: 0;
+	top: 13px;
 }
 .user-photo {
 	float: left;

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<header>
+			
+			<div class="logo">
+				<a href="index.html" class="logo__link">
+					<img src="images/markup/logo.png" alt="logo" class="logo__link_image">
+					<span class="logo__link_caption">Секретный архив учреждения</span>
+				</a>
+			</div>
+
+			<div class="seal">
+				<img src="images/markup/seal.png" alt="seal" class="seal__image">
+			</div>
+
+		</header>
+
+		<section class="content">
+			<h1 class="head">
+				<img src="images/markup/head.png" alt="header" class="head__image">
+			</h1>
+
+			<div class="main-data">
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Полное ФИО</strong>
+					<span class="main-data__text">Григорьев Руслан Евгеньевич</span>
+				</div>
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Год рождения</strong>
+					<span class="main-data__text">1986</span>
+				</div>
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Место жительства</strong>
+					<span class="main-data__text">г. Киев, Украина</span>
+				</div>
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Скайп</strong>
+					<span class="main-data__text">rus.grigoryev</span>
+				</div>
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Почта</strong>
+					<span class="main-data__text">rus.grigoryev@gmail.com</span>
+				</div>
+				<div class="main-data__wrap">
+					<strong class="main-data__title">Выпускник</strong>
+					<a href="http://htmlacademy.ru/" class="main-data__link">htmlacademy.ru</a>
+					<form action="/" class="main-data__form">
+						<input class="pool-radio" type="radio" id="gradeYes" name="grade">
+						<label class="pool-label" for="gradeYes">Да</label>
+						<input class="pool-radio" type="radio" id="gradeNo" name="grade" checked>
+						<label class="pool-label" for="gradeNo">Нет</label>
+					</form>
+				</div>
+			</div>
+
+			<div class="skill-data">
+				<strong class="skill-data__title">Практические навыки</strong>
+				<p class="skill-data__text">
+					<span class="skill-data__text__star">*</span>
+					Отмeтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+				</p>
+				<form action="/" class="skill-data__form">
+					<ul class="skill-data__form__list">
+						<li class="skill-data__form__item">
+							<input id="bem" type="checkbox" class="skill-data__input" checked>
+							<label for="bem" class="skill-data__label">
+								Методология БЭМ
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="jquery" type="checkbox" class="skill-data__input" checked>
+							<label for="jquery" class="skill-data__label">
+								jQuery
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="grunt" type="checkbox" class="skill-data__input" checked>
+							<label for="grunt" class="skill-data__label">
+								Использую GRUNT
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="haml" type="checkbox" class="skill-data__input">
+							<label for="haml" class="skill-data__label">
+								HAML
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="sass" type="checkbox" class="skill-data__input" checked>
+							<label for="sass" class="skill-data__label">
+								SASS
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="less" type="checkbox" class="skill-data__input" checked>
+							<label for="less" class="skill-data__label">
+								LESS
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="coffee" type="checkbox" class="skill-data__input">
+							<label for="coffee" class="skill-data__label">
+								CoffeeScript
+							</label>
+						</li>
+					</ul>
+					<ul class="skill-data__form__list skill-data__form__list-center">
+						<li class="skill-data__form__item">
+							<input id="jade" type="checkbox" class="skill-data__input">
+							<label for="jade" class="skill-data__label">
+								Jade
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="stylus" type="checkbox" class="skill-data__input" checked>
+							<label for="stylus" class="skill-data__label">
+								Stylus
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="angular" type="checkbox" class="skill-data__input">
+							<label for="angular" class="skill-data__label">
+								Знаю (изучаю) Angular
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="androidMarkup" type="checkbox" class="skill-data__input" checked>
+							<label for="androidMarkup" class="skill-data__label">
+								Верстка под Android
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="iosMarkup" type="checkbox" class="skill-data__input" checked>
+							<label for="iosMarkup" class="skill-data__label">
+								Верстка под iOS
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="winPhoneMarkup" type="checkbox" class="skill-data__input" checked>
+							<label for="winPhoneMarkup" class="skill-data__label">
+								Верстка под Windows Phone
+							</label>
+						</li>
+					</ul>
+					<ul class="skill-data__form__list">
+						<li class="skill-data__form__item">
+							<input id="emailMarkup" type="checkbox" class="skill-data__input" checked>
+							<label for="emailMarkup" class="skill-data__label">
+								Верстка рассылок
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="responsiveMarkup" type="checkbox" class="skill-data__input" checked>
+							<label for="responsiveMarkup" class="skill-data__label">
+								Адаптивная верстка
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="DropBoxUsage" type="checkbox" class="skill-data__input" checked>
+							<label for="DropBoxUsage" class="skill-data__label">
+								Использую Dropbox
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="gMailUsage" type="checkbox" class="skill-data__input" checked>
+							<label for="gMailUsage" class="skill-data__label">
+								Использую Gmail
+							</label>
+						</li>
+						<li class="skill-data__form__item">
+							<input id="gitUsage" type="checkbox" class="skill-data__input" checked>
+							<label for="gitUsage" class="skill-data__label">
+								Использую GitHub
+							</label>
+						</li>
+					</ul>
+				</form>
+			</div>
+
+			<div class="skill-js">
+				<strong class="main-data__title">Уровень владения JavaScript</strong>
+				<div id="slider"></div>
+				<div class="dividers">
+					<div class="dividers__long dividers__0"></div>
+					<div class="dividers__short dividers__25"></div>
+					<div class="dividers__short dividers__50"></div>
+					<div class="dividers__long dividers__100"></div>
+				</div>
+				<div class="text-divider">
+					<div class="text-divider__dividers dividers__0">
+						<p>Не владею</p>
+					</div>
+					<div class="text-divider__dividers dividers__25">
+						<p>Использую готовые решения</p>
+					</div>
+					<div class="text-divider__dividers dividers__50">
+						Использую готовые решения<br>
+						и умею их переделывать
+					</div>
+					<div class="text-divider__dividers dividers__100">
+						Пишу сложные скрипты
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<footer>
+			
+			<div class="main-data__wrap">
+				<strong class="main-data__title">Дата заполнения</strong>
+				<span class="main-data__text">21.07.2014</span>
+			</div>
+
+		</footer>
+
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
