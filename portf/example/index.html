@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example</title>
+	<style>
+		body {
+			margin: 0 auto;
+			width: 960px;
+			padding-top: 50px;
+			font-family: Arial, sans-serif;
+		} 
+		.links {
+			margin: 20px;
+		}
+		a {
+			color: #f00;
+			display: inline-block;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		.block__item {
+			width: 150px;
+			height: 80px;
+			border-radius: 6px;
+			background: #ccc;
+			text-align: center;
+			padding-top: 40px;
+			margin: 10px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="links">
+		<a href="#" class="link" data-link="1">First</a>
+		<a href="#" class="link" data-link="2">Second</a>
+		<a href="#" class="link" data-link="3">Third</a>
+		<a href="#" class="link" data-link="4">Fourth</a>
+		<a href="#" class="link" data-link="5">Fifth</a>
+	</div>
+
+	<div class="blocks">
+		<div class="block__item" data-link="1">First block</div>
+		<div class="block__item" data-link="2">Second block</div>
+		<div class="block__item" data-link="3">Third block</div>
+		<div class="block__item" data-link="4">Fourth block</div>
+		<div class="block__item" data-link="5">Fifth block</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
