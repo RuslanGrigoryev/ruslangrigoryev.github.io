@@ -117,6 +117,11 @@ table {
 	height: 13px;
 	background: url(../../images/markup/ico-search.png) no-repeat;
 }
+.logo-header {
+	height: 75px;
+	border-bottom: 1px solid #e2e6e7;
+	box-shadow: 1px 4px 2px rgba(243,245,246,.9)
+}
 .grey-gradient {
 	background: #e6e3e1; /* Old browsers */
 	background: -moz-linear-gradient(top,  #e6e3e1 1%, #ffffff 100%); /* FF3.6+ */
@@ -172,6 +177,48 @@ table {
 		padding: 0 2px;
 		&--enter {
 			margin-right: 5px;
+		}
+	}
+}
+.logo__link {
+	width: 200px;
+	display: block;
+	padding-top: 13px;
+	&__image {
+		margin-bottom: 4px;
+	}
+	&__text {
+		text-transform: uppercase;
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: 14px;
+		color: #625d5d;
+	}
+	&:hover {
+		color: #625d5d;
+	}
+}
+.main-menu {
+	float: right;
+	padding-top: 20px;
+	&__list {
+		float: left;
+		&--add {
+			background: url(../../images/markup/bg-btn-active.png) repeat-x;
+		}
+		&__link {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 14px;
+			display: block;
+			color: #625d5d;
+			padding: 10px 30px;
+			&--active {
+				color: #fff;
+				background: url(../../images/markup/ico-plus.png) 10px 10px no-repeat;
+				&:hover {
+					color: #fff;
+				}
+			}
 		}
 	}
 }
