@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #676e7d; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #676e7d;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #676e7d;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #676e7d; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+input, textarea, input:focus, textarea:focus {
+  outline: none;
+  padding: 5px;
+  color: #676e7d; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  min-height: 100%; }
+
+body {
+  line-height: 1;
+  background: #f8f8f8;
+  font-family: 'Exo 2', 'Arial', sans-serif;
+  font-size: 14px; }
+
+a, a:hover {
+  text-decoration: none; }
+
+.wrap-header {
+  border-bottom: 1px solid #e2e6e7;
+  box-shadow: 1px 2px 2px rgba(243, 245, 246, 0.9);
+  background: #f3f3f3; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header-top {
+  height: 30px; }
+
+.input-search {
+  border: none;
+  border-right: 1px solid #cdd5dd;
+  border-left: 1px solid #cdd5dd;
+  width: 180px;
+  height: 32px;
+  float: left;
+  font-family: 'Exo 2', 'Arial', sans-serif;
+  font-size: 12px;
+  padding: 10px 10px 10px 10px; }
+
+.wrap-input {
+  position: relative;
+  width: 180px;
+  float: right;
+  height: 30px;
+  margin-right: 60px; }
+
+.ico-search {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 12px;
+  height: 13px;
+  background: url(../../images/markup/ico-search.png) no-repeat; }
+
+.grey-gradient {
+  background: #e6e3e1;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e6e3e1 1%, white 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #e6e3e1), color-stop(100%, white));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e6e3e1 1%, white 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e6e3e1 1%, white 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e6e3e1 1%, white 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #e6e3e1 1%, white 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e3e1', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
+/*bootstrap styles fixed*/
+.container-fluid {
+  min-width: 1100px;
+  max-width: 1600px; }
+
+/*main styles*/
+.top-menu__list__item {
+  float: left;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #e1e1e1; }
+.top-menu__list__item:first-child {
+  border-left: none; }
+.top-menu__list__item__link {
+  font-size: 12px;
+  color: #6c6c6c;
+  padding: 10px 20px;
+  display: block;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75); }
+
+.login-menu {
+  float: right;
+  margin-top: 7px;
+  font-size: 12px; }
+.login-menu__ico {
+  width: 16px;
+  height: 14px;
+  vertical-align: -2px;
+  display: inline-block;
+  background: url(../../images/markup/ico-login.png) 0px 0px no-repeat; }
+.login-menu__link {
+  color: #177db8;
+  padding: 0 2px;
+  font-size: 12px;
+  border-bottom: 1px dashed #177db8;
+  padding-bottom: 2px;
+  padding: 0 2px; }
+.login-menu__link--enter {
+  margin-right: 5px; }
