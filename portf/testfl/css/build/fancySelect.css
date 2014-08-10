@@ -150,3 +150,12 @@ div.fancy-select ul.options li.hover {
 .custom-select-input div.fancy-select {
 	width: 58px;
 }
+.tab-route div.fancy-select div.trigger{
+	width: 100%;
+}
+.tab-route div.fancy-select ul.options {
+	min-width: 100%;
+}
+.tab-route div.fancy-select {
+	width: 100%;
+}

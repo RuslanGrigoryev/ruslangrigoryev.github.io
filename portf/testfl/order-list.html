@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link href='http://fonts.googleapis.com/css?family=Exo+2:300,400,600,700,800,500,300italic,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" href="css/build/bootstrap.min.css">
 	<link rel="stylesheet" href="css/build/style.css">
 	<link rel="stylesheet" href="css/build/fancySelect.css">
@@ -120,7 +121,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-md-6__mod">
 				<span>Статус заявки:</span>
 				<select name="status" id="status" class="custom-select">
 					<option value="cont">Активная</option>
@@ -673,7 +674,83 @@
 					</tr>
 				</table>
 			</div>
-			<div class="col-md-3"></div>
+			<div class="col-md-3 tab-route-wrap">
+				<div class="row">
+					<a href="#" class="col-md-6 tab-route__link tab-route__link--active">По маршруту</a>
+					<a href="#" class="col-md-6 tab-route__link">По региону</a>
+				</div>
+				<div class="row tab-route">
+					<h5 class="tab-route__header">Откуда</h5>
+					<select class="custom-select" name="country" id="country">
+						<option value="country">Страна</option>
+						<option value="ua">Украина</option>
+						<option value="ru">Россия</option>
+						<option value="usa">США</option>
+					</select>
+					<select class="custom-select" name="district" id="district">
+						<option value="dis">Область (регион)</option>
+						<option value="msk">Московская</option>
+						<option value="omsk">Омская</option>
+					</select>
+					<h5 class="tab-route__header">Куда</h5>
+					<select class="custom-select" name="country" id="country">
+						<option value="country">Страна</option>
+						<option value="ua">Украина</option>
+						<option value="ru">Россия</option>
+						<option value="usa">США</option>
+					</select>
+					<select class="custom-select" name="district" id="district">
+						<option value="dis">Область (регион)</option>
+						<option value="msk">Московская</option>
+						<option value="omsk">Омская</option>
+					</select>
+					<div class="wrap-form">
+						<input type="checkbox" name="radiog_pool" id="radio4" class="pool-checkbox" />
+						<label for="radio4" class="pool-label">обратный маршрут</label>
+					</div>
+					<h5 class="tab-route__header">Расстояние, км</h5>
+					<div class="wrap-form">
+						от <input type="text" class="input-simple">
+						до <input type="text" class="input-simple">
+					</div>
+					<h5 class="tab-route__header">Вес, кг</h5>
+					<div class="wrap-form">
+						от <input type="text" class="input-simple">
+						до <input type="text" class="input-simple">
+					</div>
+					
+					<h5 class="tab-route__header">Дата перевозки</h5>
+					
+					<div class="wrap-input-date">
+						<input type="text" class="input-simple input-simple--date" id="datepicker1">
+					</div>-
+					<div class="wrap-input-date">
+						<input type="text" class="input-simple input-simple--date" id="datepicker2">
+					</div>
+
+
+					<h5 class="tab-route__header">Категории</h5>
+					
+					<div class="wrap-form wrap-form-cat">
+						<input type="checkbox" name="radiog_pool" id="radio1" class="pool-checkbox" checked />
+						<label for="radio1" class="pool-label">Переезд</label>
+						<input type="checkbox" name="radiog_pool" id="radio2" class="pool-checkbox" checked />
+						<label for="radio2" class="pool-label">Личные вещи</label>
+						<input type="checkbox" name="radiog_pool" id="radio3" class="pool-checkbox" checked />
+						<label for="radio3" class="pool-label">Пассажиры</label>
+						<input type="checkbox" name="radiog_pool" id="radio5" class="pool-checkbox" checked />
+						<label for="radio5" class="pool-label">Покупки</label>
+						<input type="checkbox" name="radiog_pool" id="radio6" class="pool-checkbox" checked />
+						<label for="radio6" class="pool-label">Пиломатериалы</label>
+						<input type="checkbox" name="radiog_pool" id="radio7" class="pool-checkbox" checked />
+						<label for="radio7" class="pool-label">Автомобили</label>
+						<input type="checkbox" name="radiog_pool" id="radio8" class="pool-checkbox" checked />
+						<label for="radio8" class="pool-label">Мототехника</label>
+						<input type="checkbox" name="radiog_pool" id="radio9" class="pool-checkbox" checked />
+						<label for="radio9" class="pool-label">Пианино и сейфы</label>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -821,10 +898,21 @@
 	</footer>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script src="js/libs/fancySelect.js"></script>
 <script src="js/script.js"></script>
 <script>
 	$('.custom-select').fancySelect();
+	$( "#datepicker1" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
+	$( "#datepicker2" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
 </script>
 </body>
 </html>

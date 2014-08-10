@@ -497,6 +497,15 @@ $(function () {
         $(this).addClass('sort-bar__link--active');
     });
 
+    var tabRouteLink = $('.tab-route__link');
+
+    tabRouteLink.on('click', function (e) {
+
+        e.preventDefault();
+        tabRouteLink.removeClass('tab-route__link--active');
+        $(this).addClass('tab-route__link--active');
+    });
+
 });
 
 // slider
