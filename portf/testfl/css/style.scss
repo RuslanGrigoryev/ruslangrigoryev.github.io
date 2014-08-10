@@ -78,6 +78,9 @@ a, a:hover {
 		height: 452px;
 		padding-top: 10px;
 	}
+	&--top-bg {
+		background: url(../../images/markup/bg-header-top.png) repeat-x
+	}
 }
 .row {
 	margin-left: 0;
@@ -139,17 +142,18 @@ table {
 .logo-header {
 	height: 75px;
 	border-bottom: 1px solid #e2e6e7;
-	box-shadow: 1px 4px 2px rgba(243,245,246,.9)
+	box-shadow: 1px 4px 2px rgba(243,245,246,.9);
+	background: #fff;
 }
 .grey-gradient {
-	background: #e6e3e1; /* Old browsers */
-	background: -moz-linear-gradient(top,  #e6e3e1 1%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e6e3e1), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #e6e3e1 1%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #e6e3e1 1%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #e6e3e1 1%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #e6e3e1 1%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e3e1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: #F1EEEB; /* Old browsers */
+	background: -moz-linear-gradient(top,  #F1EEEB 1%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#F1EEEB), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #F1EEEB 1%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #F1EEEB 1%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #F1EEEB 1%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #F1EEEB 1%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F1EEEB', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .grey-invert-gradient {
 	background: #f0f0f0; /* Old browsers */
@@ -161,6 +165,9 @@ table {
 	background: linear-gradient(to bottom,  #f0f0f0 0%,#d8d8d8 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
 
+}
+.bg-wrapper {
+	background: url(../../images/markup/bg-fon.png) no-repeat;
 }
 /*bootstrap styles fixed*/
 .container-fluid {
@@ -287,7 +294,7 @@ table {
 			font-weight: 900;
 			color: #787878;
 			font-size: 42px;
-			padding: 10px 0 0 36px;
+			padding: 10px 0 0 41px;
 		}
 		li {
 			position: relative;
@@ -353,13 +360,13 @@ table {
 	&__list {
 		margin-top: 10px;
 		&__item {
-			margin: 0 10px 20px 0;
+			margin: 0 10px 10px 0;
 			float: left;
 			width: 141px;
 			height: 86px;
 			background: url(../../images/markup/category-item-bg.png) no-repeat;
 			&:nth-child(5n) {
-				margin: 0 0 20px 0;
+				margin: 0 0 10px 0;
 			}
 			&__link {
 				text-align: center;
@@ -432,7 +439,7 @@ table {
 	}
 }
 .query {
-	margin-top: 26px;
+	margin-top: 6px;
 	width: 324px;
 	height: 73px;
 	background: url(../../images/markup/bg-query-btn.png) no-repeat;
@@ -469,7 +476,7 @@ table {
 		display: inline-block;
 	}
 	&__label {
-		font-size: 12px;
+		font-size: 13px;
 		position: absolute;
 		right: 0;
 		padding-top: 8px;
@@ -487,8 +494,8 @@ table {
 	}
 }
 .how-works {
-	height: 250px;
-	margin: 20px auto;
+	height: 190px;
+	padding-top: 20px;
 	&__list {
 		&__item {
 			padding: 20px 30px 0 123px;
@@ -559,7 +566,14 @@ table {
 			}
 		}
 		&--active {
-			background: #6a96c3;
+			background: #7aa6d3; /* Old browsers */
+			background: -moz-linear-gradient(top,  #7aa6d3 0%, #5984b1 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7aa6d3), color-stop(100%,#5984b1)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #7aa6d3 0%,#5984b1 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #7aa6d3 0%,#5984b1 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #7aa6d3 0%,#5984b1 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #7aa6d3 0%,#5984b1 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7aa6d3', endColorstr='#5984b1',GradientType=0 ); /* IE6-9 */
 			border-radius: 1px;
 			position: relative;
 			&:after {
@@ -585,7 +599,7 @@ table {
 		font-family: 'Roboto Condensed', sans-serif;
 		padding: 0px 28px;
 		font-size: 13px;
-		border-right: 1px solid #fcc;
+		border-right: 1px solid #cacaca;
 		color: #252525;
 		display: block;
 		&:hover {
@@ -619,15 +633,16 @@ table {
 		margin-left: -90px;
 	}
 	&__top-text, &__bottom-text {
-		font-size: 12px;
+		font-size: 13px;
 		text-align: left;
+		line-height: 16px;
 	}
 	&__wrap-ul {
-		width: 850px;
-		padding: 10px 0 0 50px;
+		width: 868px;
+		padding: 10px 0 0 71px;
 		height: 37px;
 		border-radius: 2px;
-		margin: 20px 0 20px -58px;
+		margin: 20px 0 20px -67px;
 		border: 1px solid #dcd4cf;
 	}
 	strong {
@@ -642,10 +657,13 @@ table {
 		float: left;
 		&__item {
 			float: left;
+			&:last-child .tab__block__list__item__link {
+				margin: 8px 0px 10px 10px;
+			}
 			&__link {
 				font-weight: 700;
 				color: #252525;
-				padding: 8px 10px 10px 10px;
+				padding: 8px 12px 10px 12px;
 				margin: 0 10px;
 				background: #f3f0ee;
 				border-radius: 3px;
@@ -695,8 +713,9 @@ table {
 	&__text {
 		padding: 0 20px 0 30px;
 		font-style: italic;
-		font-size: 12px;
+		font-size: 13px;
 		width: 310px;
+		line-height: 17px;
 		margin-top: 10px;
 		background: url(../../images/markup/ico-quotes.png) no-repeat;
 	}
@@ -726,7 +745,7 @@ table {
 			color: #62a206;
 			font-size: 24px;
 			display: block;
-			padding-right: 10px;
+			padding-right: 19px;
 			text-align: center;
 		}
 	}
@@ -778,10 +797,12 @@ table {
 }
 .feedback {
 	margin: 20px auto;
+	.wrap-header-block {
+		padding: 10px 0 30px 0;
+	}
 }
-.projects-table>tbody>tr>td {
-	border: none;
-	border-right: 1px solid #dcdcdc;
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+	border-top: none !important;
 }
 .projects {
 	.wrap-header-block {
@@ -839,11 +860,14 @@ table {
 		}
 		td {
 			border-right: 1px solid #dcdcdc;
+			&:last-child {
+				border-right: none;
+			}
 		}
 	}
 }
 .footer {
-	padding-top: 40px;
+	padding-top: 27px;
 	height: 243px;
 	margin-top: 50px;
 	background: url(../../images/markup/footer-bg.png) no-repeat;
@@ -852,7 +876,11 @@ table {
 		&__list {
 			&__item {
 				float: left;
-				width: 220px;
+				width: 165px;
+				margin-right: 65px;
+				&:last-child {
+					margin-right: 0px;
+				}
 				.footer__menu__second-list__item:first-child {
 					text-transform: uppercase;
 					font-weight: 600;
@@ -860,6 +888,9 @@ table {
 					color: #fff;
 					padding-bottom: 10px;
 					border-bottom: 1px solid #1c1c1c;
+				}
+				.footer__menu__second-list__item:nth-child(2) {
+					border-top: 1px solid #464045;
 				}
 				a {
 					color: #fff;
@@ -874,7 +905,7 @@ table {
 	}
 	&__bottom {
 		height: 65px;
-		padding-top: 23px;
+		padding-top: 35px;
 		&__phones {
 			width: 340px;
 			height: 47px;
@@ -887,7 +918,7 @@ table {
 		}
 		&__mobile-ver {
 			float: left;
-			margin-left: 175px;
+			margin-left: 150px;
 			width: 214px;
 			background: url(../../images/markup/bg-mobile-ver.png) no-repeat;
 			a {
@@ -898,7 +929,7 @@ table {
 				color: #ebeaea;
 				font-size: 14px;
 				padding: 14px 0 0 60px;
-				background: url(../../images/markup/ico-mobile.png) 20px 7px no-repeat;
+				background: url(../../images/markup/ico-mobile.png) 7px 7px no-repeat;
 			}
 		}
 		&__metrics {
@@ -906,6 +937,7 @@ table {
 			width: 188px;
 			height: 47px;
 			padding-top: 8px;
+			margin-left: 25px;
 			a {
 				display: block;
 				width: 88px;
@@ -1226,5 +1258,49 @@ table {
 	}
 	div.fancy-select {
 		margin: 3px 0;
+	}
+}
+/*otziv page styles*/
+.block-otziv {
+	h1 {
+		float: left;
+	}
+	&__num-list {
+		&__item {
+			width: 327px;
+			height: 108px;
+			float: left;
+			margin-right: 58px;
+			background: #fff;
+			border-radius: 4px;
+			border: 1px solid #d0d0d0;
+			padding: 0 24px;
+			&:last-child {
+				margin-right: 0;
+			}
+			strong {
+				color: #6893c0;
+				font-size: 84px;
+				font-weight: 600;
+				width: 125px;
+				display: inline-block;
+				vertical-align: middle;
+				span.percent {
+					color: #6893c0;
+					font-size: 30px;
+					float: none;
+					padding-left: 0px;
+					width: 10px;
+				}
+			}
+			span {
+				display: inline-block;
+				vertical-align: middle;
+				color: #333;
+				font-size: 18px;
+				width: 110px;
+				padding-left: 20px;
+			}
+		}
 	}
 }
