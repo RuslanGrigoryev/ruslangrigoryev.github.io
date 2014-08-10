@@ -68,9 +68,13 @@ a, a:hover {
   height: 452px;
   padding-top: 10px; }
 
-.container-fluid, .row {
+.row {
   margin-left: 0;
   margin-right: 0; }
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto; }
 
 .container {
   width: 1100px;
@@ -729,7 +733,8 @@ table {
   padding-top: 40px;
   height: 243px;
   margin-top: 50px;
-  background: url(../../images/markup/footer-bg.png) no-repeat; }
+  background: url(../../images/markup/footer-bg.png) no-repeat;
+  background-size: 100% 100%; }
 .footer__menu__list__item {
   float: left;
   width: 220px; }
@@ -749,7 +754,7 @@ table {
   padding-top: 23px; }
 .footer__bottom__phones {
   width: 340px;
-  height: 50px;
+  height: 47px;
   float: left;
   margin-left: 70px;
   padding: 15px 0 0 50px;
@@ -773,7 +778,7 @@ table {
 .footer__bottom__metrics {
   float: left;
   width: 188px;
-  height: 50px;
+  height: 47px;
   padding-top: 8px; }
 .footer__bottom__metrics a {
   display: block;
