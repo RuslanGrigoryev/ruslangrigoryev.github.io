@@ -71,6 +71,15 @@ $(function () {
 
     });
 
+    var barLink = $('.sort-bar__link');
+
+    barLink.on('click', function (e) {
+        e.preventDefault();
+
+        barLink.removeClass('sort-bar__link--active');
+        $(this).addClass('sort-bar__link--active');
+    });
+
 });
 
 // slider
@@ -143,6 +152,10 @@ $.fn.htmSlider = function( options ){
        $( this ).data( "htmSlider", new htmSlider()._init( this, options ) );
    });
 };
+
+/*select custom*/
+    
 })(jQuery);
 // end slider
     $('.slide-wrap').htmSlider();
+

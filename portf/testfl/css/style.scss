@@ -946,3 +946,64 @@ table {
 		}
 	}
 }
+/*order-list page*/
+.zakaz-bar {
+	margin-top: 20px;
+	.tab__list {
+		margin-top: 4px;
+	}
+	h1 {
+		color: #5e5851;
+		font-size: 27px;
+		font-weight: 600;
+	}
+	.col-md-2 {
+		width: 17.9999999%;
+	}
+	.col-md-4 {
+		width: 38.999999%;
+	}
+	.col-md-6 {
+		line-height: 30px;
+		height: 29px;
+		width: 42.79999%;
+		padding-left: 120px;
+		background: url(../../images/markup/zakaz-bar-bg.png) -10px 12px no-repeat;
+		span {
+			vertical-align: middle;
+			margin: 0px 10px 0 5px;
+		}
+	}
+}
+.sort-bar {
+	margin-top: 10px;
+	padding-top: 5px;
+	p {
+		float: left;
+		font-size: 11px;
+		font-weight: bold;
+		color: #636363;
+		padding-top: 10px;
+	}
+	&__link {
+		margin: 0 5px;
+		&--active {
+			color: #5991c3;
+			text-decoration: underline;
+		}
+		&--map {
+			float: right;
+			padding: 10px 0 10px 30px;
+			background: url(../../images/markup/ico-link-map.png) 7px 7px no-repeat;
+		}
+	}
+}
+.table-order {
+	border-radius: 1px solid #e5e5e5;
+	border-radius: 4px;
+	background: #fff;
+	tr {
+		border-radius: 1px solid #e5e5e5;
+		padding: 28px 0 18px 20px
+	}
+}
