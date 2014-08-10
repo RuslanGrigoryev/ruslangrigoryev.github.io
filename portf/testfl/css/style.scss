@@ -561,6 +561,17 @@ table {
 		&--active {
 			background: #6a96c3;
 			border-radius: 1px;
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -4px;
+				width: 9px;
+				height: 4px;
+				background: url(../../images/markup/after-active-bg.png) no-repeat;
+				left: 49%;
+				z-index: 999;
+			}
 			.tab__list__link {
 				color: #fff;
 				border:none;
@@ -672,9 +683,8 @@ table {
 	width: 10000000px;
 }
 .slide-item {
-	width: 328px;
+	width: 407px;
 	height: 300px;
-	margin-right: 80px !important;
 	float: left;
 	position: relative;
 	&__name {
@@ -686,6 +696,7 @@ table {
 		padding: 0 20px 0 30px;
 		font-style: italic;
 		font-size: 12px;
+		width: 310px;
 		margin-top: 10px;
 		background: url(../../images/markup/ico-quotes.png) no-repeat;
 	}
