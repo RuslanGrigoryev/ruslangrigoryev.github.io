@@ -1841,7 +1841,7 @@ table {
   .row-top h2 {
     font-size: 17px;
   }
-  .category .col-md-7 {
+  .category .col-sm-8 {
     width: 640px;
   }
   .category__list__item {
@@ -1850,7 +1850,7 @@ table {
   .category__list__item__link {
     font-size: 13px;
   }
-  .category .col-md-7 {
+  .category .col-sm-4 {
     padding: 0 15px;
   }
 }
