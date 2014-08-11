@@ -98,7 +98,7 @@ a, a:hover {
   margin-right: auto; }
 
 .container {
-  width: 1024px;
+  min-width: 1024px;
   margin: 0 auto;
   padding: 0; }
   .container-fluid {
@@ -816,7 +816,9 @@ table {
   border-right: 1px solid #dcdcdc; }
 .projects__table td:last-child {
   border-right: none; }
-
+.footer__menu {
+  min-height: 168px;
+}
 .footer {
   padding-top: 27px;
   height: 243px;
@@ -824,9 +826,7 @@ table {
   background: url(../../images/markup/footer-bg.png) no-repeat;
   background-size: 100% 100%; }
 .footer__menu__list__item {
-  float: left;
-  width: 165px;
-  margin-right: 65px; }
+  float: left; }
 .footer__menu__list__item:last-child {
   margin-right: 0px; }
 .footer__menu__list__item .footer__menu__second-list__item:first-child {
@@ -843,22 +843,22 @@ table {
 .footer__menu__second-list__item {
   padding: 5px 0; }
 .footer__bottom {
-  height: 65px;
-  padding-top: 35px; }
+   }
 .footer__bottom__phones {
   width: 340px;
   height: 47px;
-  float: left;
-  margin-left: 70px;
+  margin-left: 30px;
   padding: 15px 0 0 50px;
   color: #ebeaea;
   font-size: 14px;
   background: url(../../images/markup/ico-phone.png) 1px 7px no-repeat; }
 .footer__bottom__mobile-ver {
-  float: left;
-  margin-left: 150px;
+  margin-left: 10px;
   width: 214px;
   background: url(../../images/markup/bg-mobile-ver.png) no-repeat; }
+.footer__menu__list>.col-sm-2 {
+  width: 19.566667%;
+}
 .footer__bottom__mobile-ver a {
   display: block;
   text-transform: uppercase;
@@ -866,19 +866,17 @@ table {
   text-decoration: underline;
   color: #ebeaea;
   font-size: 14px;
-  padding: 14px 0 0 60px;
-  background: url(../../images/markup/ico-mobile.png) 7px 7px no-repeat; }
+  padding: 14px 0 0 43px;
+  background: url(../../images/markup/ico-mobile.png) 0px 8px no-repeat; }
 .footer__bottom__metrics {
-  float: left;
-  width: 188px;
+  text-align: center;
   height: 47px;
   padding-top: 8px;
-  margin-left: 25px; }
+  margin-left: 3px; }
 .footer__bottom__metrics a {
-  display: block;
+  display: inline-block;
   width: 88px;
-  height: 31px;
-  float: left; }
+  height: 31px; }
 .footer__bottom__metrics__rambler {
   margin-right: 12px;
   background: url(../../images/markup/metrics-sprite.png) no-repeat; }
@@ -886,7 +884,6 @@ table {
   background: url(../../images/markup/metrics-sprite.png) -100px 0px no-repeat; }
 
 .social__list {
-  float: left;
   padding-top: 10px; }
 .social__list__item {
   float: left; }
