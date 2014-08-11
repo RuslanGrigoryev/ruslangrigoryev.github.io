@@ -1376,6 +1376,7 @@ table {
 
 .block-rate {
   margin-top: 30px;
+  height: 93px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e0e0e0; }
 .block-rate__wrap {
@@ -1881,5 +1882,11 @@ table {
   }
   .wrap-header-block__label {
     right: 10px;
+  }
+  .select-cat-raiting-wrap {
+    margin: 0 0px;
+  }
+  .wrap-rate-block .col-sm-6 {
+    padding: 0;
   }
 }
