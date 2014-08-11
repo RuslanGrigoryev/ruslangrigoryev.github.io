@@ -913,9 +913,9 @@ table {
   color: #5e5851;
   font-size: 27px;
   font-weight: 600; }
-.zakaz-bar .col-md-2 {
+.zakaz-bar .col-sm-2 {
   width: 17.9999999%; }
-.zakaz-bar .col-md-4 {
+.zakaz-bar .col-sm-4 {
   width: 38.999999%; }
 .zakaz-bar .col-md-6__mod {
   line-height: 30px;
@@ -1898,7 +1898,16 @@ table {
   .block-otziv__item__content {
     width: 550px;
   }
-  
+  .zakaz-bar h1 {
+    font-size: 21px;
+  }
+  .zakaz-bar .col-md-6__mod {
+    padding-left: 10px;
+    background: none;
+  }
+  .tab__list__link {
+    padding: 0px 16px;
+  }
 
   
 }
