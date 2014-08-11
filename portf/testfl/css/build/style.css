@@ -98,7 +98,7 @@ a, a:hover {
   margin-right: auto; }
 
 .container {
-  min-width: 1024px;
+  min-width: 1000px;
   margin: 0 auto;
   padding: 0; }
 
@@ -222,7 +222,7 @@ table {
 
 /*bootstrap styles fixed*/
 .container-fluid {
-  min-width: 1024px;
+  min-width: 1000px;
   max-width: 1600px; }
 
 /*main styles*/
