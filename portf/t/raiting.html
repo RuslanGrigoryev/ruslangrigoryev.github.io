@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Raiting</title>
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:300,400,600,700,800,500,300italic,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/build/bootstrap.min.css">
+	<link rel="stylesheet" href="css/build/fancySelect.css">
+	<link rel="stylesheet" href="css/build/style.css">
+</head>
+<body>
+	<!--Topheader-->
+	<div class="wrap-header wrap-header--top-bg">
+
+		<div class="container-fluid">
+			
+			<div class="row header-top">
+				
+				<div class="col-md-7">
+					
+					<nav class="top-menu">
+						<ul class="top-menu__list clearfix">
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Заказчикам</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Перевозчикам</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Правила сервиса</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Расширенный поиск</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<div class="col-md-5">
+					
+					<nav class="login-menu">
+						<span class="login-menu__ico"></span>
+						<a href="#" class="login-menu__link login-menu__link--enter">Вход</a>или
+						<a href="#" class="login-menu__link login-menu__link--reg">регистрация</a>
+					</nav>
+
+					<div class="wrap-input">
+						<input type="text" class="input-search grey-gradient" placeholder="Поиск по ID заказа...">
+						<span class="ico-search"></span>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--Logo header + main-menu-->
+	<div class="wrap-header logo-header">
+
+		<div class="container-fluid">
+
+			<div class="row">
+				
+				<div class="col-md-5">
+					
+					<a href="index.html" class="logo__link">
+						<img src="images/markup/logo.png" alt="logo" class="logo__link__image">
+						<span class="logo__link__text">
+							сервис быстрых перевозок
+						</span>
+					</a>
+
+				</div>
+				<div class="col-md-7">
+					
+					<ul class="main-menu clearfix">
+						<li class="main-menu__list main-menu__list--add">
+							<a href="#" class="main-menu__list__link main-menu__list__link--active">Разместить заказ</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Заказы</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Перевозчикам</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Рейтинг</a>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!--raiting part-->
+	<div class="container-fluid wrap-rate-block">
+		<div class="col-md-6">
+			<div class="wrap-header-raiting-block clearfix">
+				<h1>Рейтинг исполнителей</h1>
+			</div>
+		</div>
+		<div class="col-md-6 align-R">
+			<div class="select-cat-raiting-wrap all-cat">
+				<select name="allCat" id="allCat" class="custom-select">
+					<option value="all">Все категории</option>
+					<option value="1">Категория 1</option>
+					<option value="2">Категория 2</option>
+				</select>
+			</div>
+			<div class="select-cat-raiting-wrap all-cat">
+				<select name="allCat" id="allCat" class="custom-select">
+					<option value="all">Все регионы</option>
+					<option value="1">Регион 1</option>
+					<option value="2">Регион 2</option>
+				</select>
+			</div>
+			<div class="select-cat-raiting-wrap all-mix">
+				<select name="allCat" id="allCat" class="custom-select">
+					<option value="all">Перевозчик + Грузчики</option>
+					<option value="1">Регион 1</option>
+					<option value="2">Регион 2</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>1</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>2</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>3</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>4</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>5</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>6</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>7</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>8</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>4</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>5</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>6</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row block-rate">
+			<div class="col-md-6 align-L">
+				<div class="block-rate__wrap">
+					<div class="block-rate__image">
+						<span>7</span><img src="images/img-06.png" alt="rateImage">
+					</div>
+					<div class="block-rate__info">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<p>Беларусь (Минская область)</p>
+						<strong>
+							<span class="icon icon--box"></span>
+							<span class="icon icon--truck"></span>
+							<span class="icon icon--hand"></span>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 align-R">
+				<div class="block-rate__wrap">
+					<div class="block-rate__stars">
+						<span class="block-rate__stars__count">4.2/5</span>
+						<ul class="stars__list clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="block-rate__features">
+						<p>Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;| Выполнено заказов: <span class="block-rate__features__count">405</span> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--footer-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer__menu">
+				
+				<ul class="footer__menu__list clearfix">
+					<li class="footer__menu__list__item">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								О нас
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Как это работает</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">FAQ (Чаво)</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Форум</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Блог</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Контакты
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Контакты</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Заказать звонок</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Предложить идею</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Реклама</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Информация
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Советы заказчикам</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Советы перевозчикам</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Условия использования</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Политика</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Перевозки
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Попутный груз</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">По Москве и области</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">По Санкт-Петербургу</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Перевозчикам
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Работа с Перевези</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Диспетчер</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Работа водителю</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Инструменты</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<div class="row footer__bottom">
+				
+				<ul class="social__list clearfix">
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--vk">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--odn">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--fb">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--tw">
+						</a>
+					</li>
+				</ul>
+
+				<div class="footer__bottom__phones">
+					
+					+345 (42) 45252667  |   +345 (42) 45252667
+
+				</div>
+
+				<div class="footer__bottom__mobile-ver">
+					
+					<a href="#">мобильная версия</a>
+
+				</div>
+
+				<div class="footer__bottom__metrics">
+					<a href="#" class="footer__bottom__metrics__rambler"></a>
+					<a href="#" class="footer__bottom__metrics__ya"></a>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/libs/fancySelect.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$('.custom-select').fancySelect();
+</script>
+</body>
+</html>
