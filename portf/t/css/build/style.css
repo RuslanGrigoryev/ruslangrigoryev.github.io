@@ -288,6 +288,9 @@ table {
   display: block;
   color: #625d5d;
   padding: 10px 30px; }
+  .ml-50 {
+    margin-left: -50px;
+  }
 .main-menu__list__link--active {
   color: #fff;
   background: url(../../images/markup/ico-plus.png) 10px 10px no-repeat; }
@@ -295,11 +298,11 @@ table {
   color: #fff; }
 
 .row-top {
-  padding: 10px 0 0 10px;
+  padding: 10px 34px 0 10px;
   color: #fff;
-  width: 845px;
   height: 85px;
-  background: url(../../images/markup/row-top-bg.png) no-repeat; }
+  background: url(../../images/markup/row-top-bg.png) no-repeat;
+  background-size: 100% 100%; }
 .row-top h1 {
   font-weight: 700;
   font-size: 33px;
@@ -1830,3 +1833,24 @@ table {
   background: url(../../images/markup/send-link-bg.png) repeat-x; }
 .send-link:hover {
   color: #fff; }
+  /*media*/
+@media only screen and (max-width:1024px){
+  .row-top h1 {
+    font-size: 28px;
+  }
+  .row-top h2 {
+    font-size: 17px;
+  }
+  .category .col-md-7 {
+    width: 640px;
+  }
+  .category__list__item {
+    width: 113px;
+  }
+  .category__list__item__link {
+    font-size: 13px;
+  }
+  .category .col-md-7 {
+    padding: 0 15px;
+  }
+}
