@@ -1853,4 +1853,32 @@ table {
   .category .col-sm-4 {
     padding: 0 15px;
   }
+  .how-works__list__item {
+    width: 282px;
+  }
+  .tab__block__wrap {
+    width: 677px;
+  }
+  .tab__block__wrap-ul {
+    width: 764px;
+    padding: 10px 0 0 23px;
+  }
+  .tab__block__list__item__link {
+    margin: 0 3px;
+  }
+  .slide-list {
+    padding: 0 35px;
+  }
+  .slide-item {
+    width: 335px;
+  }
+  .prev-slide {
+    left: 8px;
+  }
+  .next-slide {
+    right: 7px;
+  }
+  .wrap-header-block__label {
+    right: 10px;
+  }
 }
