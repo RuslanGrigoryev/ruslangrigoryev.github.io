@@ -1889,4 +1889,16 @@ table {
   .wrap-rate-block .col-sm-6 {
     padding: 0;
   }
+  .block-otziv__num-list__item {
+    width: 294px;
+  }
+  .block-otziv__num-list__item span {
+    font-size: 15px;
+  }
+  .block-otziv__item__content {
+    width: 579px;
+  }
+  
+
+  
 }
