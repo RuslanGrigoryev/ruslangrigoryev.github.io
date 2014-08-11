@@ -682,6 +682,7 @@ table {
 .slide-item {
   width: 407px;
   height: 300px;
+  padding: 0 40px;
   float: left;
   position: relative; }
 .slide-item__name {
@@ -707,7 +708,7 @@ table {
   width: 95px;
   height: 50px;
   top: 0;
-  left: 0;
+  left: 40px;
   background: url(../../images/markup/title.png) no-repeat; }
 .slide-item__title strong {
   display: block;
