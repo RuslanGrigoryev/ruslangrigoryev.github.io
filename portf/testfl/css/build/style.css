@@ -98,7 +98,7 @@ a, a:hover {
   margin-right: auto; }
 
 .container {
-  min-width: 1000px;
+  width: 1100px;
   margin: 0 auto;
   padding: 0; }
 
@@ -135,7 +135,7 @@ table {
   width: 180px;
   float: right;
   height: 30px;
-  margin-right: 40px; }
+  margin-right: 60px; }
 
 .ico-search {
   position: absolute;
@@ -222,7 +222,7 @@ table {
 
 /*bootstrap styles fixed*/
 .container-fluid {
-  min-width: 1000px;
+  min-width: 1100px;
   max-width: 1600px; }
 
 /*main styles*/
@@ -1832,4 +1832,3 @@ table {
   background: url(../../images/markup/send-link-bg.png) repeat-x; }
 .send-link:hover {
   color: #fff; }
-
