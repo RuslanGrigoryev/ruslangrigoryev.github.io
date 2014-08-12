@@ -70,11 +70,15 @@ a, a:hover {
 .pd-null {
   padding-left: 0;
   padding-right: 0; }
+  .pd-10 {
+    padding-left: 30px;
+  }
 .pos-r {
   position: relative;
 }
 .form-comission {
-  margin: 0 !important; }
+  margin: 0 !important;
+  line-height: 0px !important; }
 .form-comission .pool-label {
   font-size: 12px !important;
   padding-left: 20px !important; }
@@ -124,6 +128,9 @@ table {
   height: 34px; }
 .header-top .col-sm-7 {
   padding-left: 0;
+}
+.w-28 {
+  width: 128px !important;
 }
 
 
@@ -214,8 +221,10 @@ table {
   /* IE6-9 */ }
 
 .bg-wrapper {
-  background: url(../../images/markup/bg-fon.png) no-repeat; }
-
+  background: #fff url(../../images/markup/bg-fon.png) no-repeat; }
+.fff-wrapper .wrap-header-block h1 {
+  background: #fff;
+}
 .empty-block {
   height: 30px; }
 
@@ -1640,6 +1649,10 @@ table {
   color: #545454;
   font-family: 'Ubuntu', sans-serif;
   margin: 5px 0 22px 0; }
+.order-content__text--status-bar {
+ border-bottom: 1px solid #dfdfdf;
+ padding-bottom: 20px;
+}
 .order-content__text:last-child {
   margin: 5px 0 0 0; }
 .order-content__text__name {
@@ -1658,7 +1671,7 @@ table {
 .order-content__text__link--small {
   font-size: 12px; }
 .order-content__text--des {
-  margin: 35px 0; }
+  margin: 23px 0 35px 0; }
 .order-content__text__descr {
   margin-top: 5px;
   display: block;
@@ -1668,11 +1681,12 @@ table {
   display: inline; }
 
 .order-content-dies {
-  margin-top: 50px; }
-.order-content-dies .col-md-2 {
+  margin-top: 50px;
+  position: relative; }
+.order-content-dies .col-sm-2 {
   width: 10.166667%;
   padding: 0; }
-.order-content-dies .col-md-2, .order-content-dies .col-md-10 {
+.order-content-dies .col-sm-2, .order-content-dies .col-sm-10 {
   height: 42px; }
 .order-content-dies__question {
   width: 128px;
@@ -1684,11 +1698,11 @@ table {
   font-weight: 500;
   color: #35597b;
   font-size: 16px; }
-.order-content-dies .col-md-10 {
+.order-content-dies .col-sm-10 {
   width: 89.33333333%;
   background: #e1eefa;
   padding: 9px 0 10px 20px; }
-.order-content-dies .col-md-10 p {
+.order-content-dies .col-sm-10 p {
   font-size: 12px;
   text-align: left;
   font-family: 'Ubuntu', sans-serif; }
@@ -1732,6 +1746,9 @@ table {
 
 .order-pass {
   margin-top: 40px; }
+  .order-pass .col-sm-6:first-child {
+    padding: 0 60px 0 0;
+  }
 .order-pass h1 {
   padding: 0 20px 0 0; }
 .order-pass .table-order__item {
@@ -1777,8 +1794,14 @@ table {
   font-family: 'Ubuntu', sans-serif; }
 .table-lot img, .table-lot .table-lot__td__wrap {
   float: left; }
+  .table-add-lot thead td {
+  padding: 0px 8px !important; }
+  }
+  .table-add-lot .input-simple--date .input-simple {
+    width: 92px;
+  }
 .table-lot tbody td {
-  padding: 12px 0 !important; }
+  padding: 12px 8px !important; }
 .table-lot tbody tr {
   border-bottom: 1px solid #fff; }
 .table-lot thead {
@@ -1792,7 +1815,7 @@ table {
   font-size: 24px;
   vertical-align: middle !important; }
 .table-lot__price span {
-  padding-left: 20px; }
+  padding-left: 15px; }
 .table-lot--active {
   background: #f8f7eb; }
 .table-lot--simple {
@@ -1817,8 +1840,6 @@ table {
   vertical-align: middle !important; }
 .table-lot__service__text {
   font-size: 14px; }
-.table-lot__service p {
-  text-align: center; }
 .table-lot__date {
   font-size: 14px;
   vertical-align: middle !important;
@@ -1845,7 +1866,7 @@ table {
 .ico-lot {
   width: 31px;
   height: 31px;
-  margin: 0 10px;
+  margin: 0 16px;
   display: inline-block;
   vertical-align: middle; }
 
@@ -1858,10 +1879,11 @@ table {
 .table-add-lot td:first-child {
   padding-left: 0; }
 .table-add-lot .input-simple {
-  height: 34px; }
+  height: 34px;
+  width: 90px; }
 .table-add-lot .wrap-input-date img {
   position: absolute;
-  right: 16px;
+  right: 2px;
   top: 8px; }
 .table-add-lot__sum {
   width: 145px; }
@@ -1874,11 +1896,11 @@ table {
   font-size: 20px;
   color: #5e5851;
   font-weight: 600;
-  margin-top: 20px;
+  margin: 20px 0 10px 0;
   font-style: italic; }
 
 .comment-lot {
-  margin-top: 20px; }
+  margin-top: 50px; }
 .comment-lot .wrap-header-block {
   text-align: left;
   margin-bottom: 15px; }
@@ -1913,7 +1935,7 @@ table {
   resize: none;
   margin: 10px 0; }
 .comment-lot .add-lot-header {
-  margin: 40px 0 20px 0; }
+  margin: 70px 0 20px 0; }
 
 .send-link {
   display: inline-block;
@@ -2041,6 +2063,9 @@ table {
   .order-name h1 {
     font-size: 19px;
     margin-bottom: 4px;
+  }
+  .map-route .col-md-4 p {
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 1025px) { 
