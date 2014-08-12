@@ -1540,7 +1540,7 @@ table {
   background: url(../../images/markup/icon-hand.png) no-repeat; }
 
 .wrap-order-bar {
-  margin-top: 20px; }
+  padding-top: 20px; }
 .wrap-order-bar .col-sm-6 {
   padding-left: 2px;
   padding-right: 2px; }
@@ -1561,7 +1561,8 @@ table {
 .order-name__edit {
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 7px; }
+  padding: 7px;
+  background: #fff; }
 .order-name__edit__link, .order-name__edit__link-del {
   font-family: Tahoma, sans-serif;
   font-size: 11px;
@@ -1580,7 +1581,9 @@ table {
 
 .order-options .col-md-4 {
   height: 50px; }
-
+.order-options .bg-line {
+  height: 35px;
+}
 .order-options__list {
   border: 1px solid #ccc;
   border-radius: 5px;
