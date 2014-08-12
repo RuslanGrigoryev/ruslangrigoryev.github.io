@@ -306,7 +306,8 @@ table {
   color: #625d5d;
   padding: 10px 30px; }
   .ml-50 {
-    margin-left: -50px;
+    margin-left: -6px;
+    width: 22%;
   }
 .main-menu__list__link--active {
   color: #fff;
@@ -451,11 +452,13 @@ table {
   color: #4c4c4c; }
 
 .service-block {
-  width: 327px;
-  height: 198px;
-  padding-top: 20px;
-  margin-top: 10px;
-  background: url(../../images/markup/service-text-bg.png) no-repeat; }
+   width: 373px;
+   height: 198px;
+   padding-top: 20px;
+   margin-top: 10px;
+   background: url(../../images/markup/service-text-bg.png) no-repeat;
+   background-size: 100% 100%;
+}
 .service-block__text {
   margin-bottom: 15px;
   color: #4d4d4d;
@@ -464,10 +467,11 @@ table {
 
 .query {
   margin-top: 6px;
-  width: 324px;
+  width: 373px;
   height: 73px;
-  background: url(../../images/markup/bg-query-btn.png) no-repeat;
-  display: block; }
+  background: url(../../images/markup/bg-query-btn.png) repeat-x;
+  display: block; 
+}
 .query strong {
   text-align: center;
   display: block;
@@ -521,7 +525,7 @@ table {
   height: 139px;
   background: url(../../images/markup/how-works-bg.png) no-repeat;
   float: left;
-  margin-right: 67px; }
+  margin-right: 102px;}
 .how-works__list__item--first, .how-works__list__item--second {
   width: 67px;
   height: 139px;
@@ -536,7 +540,6 @@ table {
   background: url(../../images/markup/arrow-after-2.png) 0px 0px no-repeat;
   right: -76px; }
 .how-works__list__item:nth-child(2) {
-  margin-right: 67px;
   background: url(../../images/markup/how-works-bg-2.png) no-repeat; }
 .how-works__list__item:last-child {
   margin-right: 0px;
@@ -631,7 +634,7 @@ table {
   z-index: 999; }
 .tab__block__wrap {
   float: left;
-  width: 800px;
+  width: 879px;
   padding: 20px 0 0 0;
   position: relative;
   z-index: 998; }
@@ -644,7 +647,7 @@ table {
   text-align: left;
   line-height: 16px; }
 .tab__block__wrap-ul {
-  width: 868px;
+  width: 947px;
   padding: 10px 0 0 71px;
   height: 37px;
   border-radius: 2px;
@@ -668,7 +671,7 @@ table {
 .tab__block__list__item__link {
   font-weight: 700;
   color: #252525;
-  padding: 8px 12px 10px 12px;
+  padding: 8px 18px 10px 22px;
   margin: 0 10px;
   background: #f3f0ee;
   border-radius: 3px;
@@ -709,9 +712,9 @@ table {
   width: 10000000px; }
 
 .slide-item {
-  width: 407px;
+  width: 420px;
   height: 300px;
-  padding: 0 40px;
+  padding: 0 40px 0 0;
   float: left;
   position: relative; }
 .slide-item__name {
@@ -737,7 +740,7 @@ table {
   padding-top: 7px;
   height: 50px;
   top: 0;
-  left: 40px;
+  left: 0px;
   background: url(../../images/markup/title.png) no-repeat; }
 .slide-item__title strong {
   display: block;
@@ -756,7 +759,7 @@ table {
   margin-right: 0; }
 .slide-item img {
   height: 113px;
-  width: 100%; }
+  width: 328px; }
 
 .slide-title {
   font: bold 16px monospace;
@@ -865,7 +868,8 @@ table {
   background: url(../../images/markup/footer-bg.png) no-repeat;
   background-size: 100% 100%; }
 .footer__menu__list__item {
-  float: left; }
+  float: left;
+  padding-left: 0px; }
 .footer__menu__list__item:last-child {
   margin-right: 0px; }
 .footer__menu__list__item .footer__menu__second-list__item:first-child {
