@@ -132,6 +132,9 @@ table {
 .w-28 {
   width: 128px !important;
 }
+.w-80 {
+  width: 80px !important;
+}
 
 
 .input-search {
@@ -1433,7 +1436,7 @@ table {
   width: 80px; }
 
 .all-cat-time {
-  text-align: center; }
+  text-align: left; }
 
 .link-publish {
   display: inline-block;
