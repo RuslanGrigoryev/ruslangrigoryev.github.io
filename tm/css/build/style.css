@@ -2070,6 +2070,9 @@ table {
   .map-route .col-md-4 p {
     font-size: 12px;
   }
+  .footer__bottom__phones {
+    margin-left: 0px;
+  }
 }
 @media only screen and (min-width: 1025px) { 
     .wrap-header--bottom .col-sm-9 {
