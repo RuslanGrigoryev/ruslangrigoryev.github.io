@@ -47,7 +47,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 html, body {
-  min-height: 100%; }
+  min-height: 100%;
+  overflow: hidden; }
 
 body {
   line-height: 1;
@@ -103,11 +104,11 @@ a, a:hover {
   margin-right: auto; }
 
 .container {
-  min-width: 1024px;
+  min-width: 980px;
   margin: 0 auto;
   padding: 0; }
   .container-fluid {
-    min-width: 1024px;
+    min-width: 980px;
     max-width: 1600px; }
 
 ol, ul {
@@ -1987,7 +1988,8 @@ table {
     padding: 0 15px;
   }
   .how-works__list__item {
-    width: 282px;
+    width: 268px;
+    margin-right: 81px;
   }
   .tab__block__wrap {
     width: 677px;
