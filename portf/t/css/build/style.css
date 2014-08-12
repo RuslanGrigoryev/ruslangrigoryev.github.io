@@ -70,7 +70,9 @@ a, a:hover {
 .pd-null {
   padding-left: 0;
   padding-right: 0; }
-
+.pos-r {
+  position: relative;
+}
 .form-comission {
   margin: 0 !important; }
 .form-comission .pool-label {
@@ -1562,7 +1564,13 @@ table {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 7px;
-  background: #fff; }
+  width: 100px;
+  background: #fff;
+  position: absolute;
+  right: -55px;
+  top: -1px;
+  z-index: 9999;
+}
 .order-name__edit__link, .order-name__edit__link-del {
   font-family: Tahoma, sans-serif;
   font-size: 11px;
