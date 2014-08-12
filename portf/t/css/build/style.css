@@ -1564,6 +1564,19 @@ table {
   .order-options {
     padding-left: 60px;
   }
+.order-options__links-bar {
+  width: 192px !important;
+  float: right;
+}
+.order-options__list__item {
+  width: 40px;
+}
+.order-options__list__item:first-child {
+  border-radius: 4px 0px 0px 4px;
+}
+.order-options__list__item:last-child {
+  border-radius: 0px 4px 4px 0px;
+}
 .order-name__edit {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1591,8 +1604,9 @@ table {
 .order-name__edit__link-del:hover {
   color: #cb1b00; }
 
-.order-options .col-md-4 {
-  height: 50px; }
+.order-options .col-sm-4 {
+  height: 50px;
+  width: 30.933333%; }
 .order-options .bg-line {
   height: 35px;
 }
@@ -1602,7 +1616,7 @@ table {
   height: 35px; }
 .order-options__list__item {
   float: left;
-  width: 25%;
+  width: 40px;
   height: 31px;
   border-right: 1px solid #ebebeb; }
 .order-options__list__item:last-child {
@@ -1618,7 +1632,7 @@ table {
 .order-options__list__item__link--print {
   background-position: -85px 6px; }
 .order-options__list__item__link--msg {
-  background-position: -130px 6px; }
+  background-position: -133px 6px; }
 
 .order-content {
   margin-top: 20px; }
