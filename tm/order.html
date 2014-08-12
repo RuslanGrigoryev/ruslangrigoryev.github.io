@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Order</title>
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:300,400,600,700,800,500,300italic,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="css/build/bootstrap.min.css">
+	<link rel="stylesheet" href="css/build/fancySelect.css">
+	<link rel="stylesheet" href="css/build/style.css">
+</head>
+<body>
+	<!--Topheader-->
+	<div class="wrap-header wrap-header--top-bg">
+
+		<div class="container-fluid">
+			
+			<div class="row header-top">
+				
+				<div class="col-sm-7">
+					
+					<nav class="top-menu">
+						<ul class="top-menu__list clearfix">
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Заказчикам</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Перевозчикам</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Правила сервиса</a>
+							</li>
+							<li class="top-menu__list__item">
+								<a href="#" class="top-menu__list__item__link">Расширенный поиск</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+				<div class="col-sm-5">
+					
+					<nav class="login-menu">
+						<span class="login-menu__ico"></span>
+						<a href="#" class="login-menu__link login-menu__link--enter">Вход</a>или
+						<a href="#" class="login-menu__link login-menu__link--reg">регистрация</a>
+					</nav>
+
+					<div class="wrap-input">
+						<input type="text" class="input-search grey-gradient" placeholder="Поиск по ID заказа...">
+						<span class="ico-search"></span>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Logo header + main-menu -->
+	<div class="wrap-header logo-header">
+	
+		<div class="container-fluid">
+	
+			<div class="row">
+				
+				<div class="col-sm-4">
+					
+					<a href="index.html" class="logo__link">
+						<img src="images/markup/logo.png" alt="logo" class="logo__link__image">
+						<span class="logo__link__text">
+							сервис быстрых перевозок
+						</span>
+					</a>
+	
+				</div>
+				<div class="col-sm-8">
+					
+					<ul class="main-menu clearfix">
+						<li class="main-menu__list main-menu__list--add">
+							<a href="#" class="main-menu__list__link main-menu__list__link--active">Разместить заказ</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Заказы</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Перевозчикам</a>
+						</li>
+						<li class="main-menu__list">
+							<a href="#" class="main-menu__list__link">Рейтинг</a>
+						</li>
+					</ul>
+	
+				</div>
+	
+			</div>
+	
+		</div>
+	
+	</div>
+	<div class="bg-wrapper fff-wrapper">
+		<!--raiting part-->
+		<div class="container-fluid wrap-order-bar">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="order-name">
+						<div class="row">
+							<h1 class="pos-r">
+								Небольшая коробка с Цезием-137
+								<div class="order-name__edit">
+									<a href="#" class="order-name__edit__link">редактировать</a>
+									<a href="#" class="order-name__edit__link-del">удалить</a>
+								</div>
+							</h1>
+							<p>Сыпучие грузы</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-7 order-options">
+					<div class="row">
+						<div class="col-sm-4 bg-line">
+							
+						</div>
+						<div class="col-sm-4">
+							<div class="select-100">
+								<select name="allCat" id="allCat" class="custom-select">
+									<option value="all">Пожаловаться на заказ</option>
+									<option value="1">Категория 1</option>
+									<option value="2">Категория 2</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-4 order-options__links-bar">
+							<ul class="order-options__list clearfix">
+								<li class="order-options__list__item white-gradient">
+									<a href="#" class="order-options__list__item__link order-options__list__item__link--star">&nbsp;</a>
+								</li>
+								<li class="order-options__list__item white-gradient">
+									<a href="#" class="order-options__list__item__link order-options__list__item__link--new">&nbsp;</a>
+								</li>
+								<li class="order-options__list__item white-gradient">
+									<a href="#" class="order-options__list__item__link order-options__list__item__link--print">&nbsp;</a>
+								</li>
+								<li class="order-options__list__item white-gradient">
+									<a href="#" class="order-options__list__item__link order-options__list__item__link--msg">&nbsp;</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--order-content-->
+		<div class="container-fluid order-content">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="row">
+						<p class="order-content__text">
+							<span class="order-content__text__name">Заказчик:</span>
+							<a href="#" class="order-content__text__link">Елена</a>&nbsp;&nbsp;|&nbsp;&nbsp;Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Прием заявок:</span>
+							29.09.2014 - 03.10.2014
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Прием заявок:</span>
+							Ставки: 27&nbsp;&nbsp;|&nbsp;&nbsp;Просмотры: 298 (24 сегодня)
+						</p>
+						<p class="order-content__text order-content__text--status-bar">
+							<span class="order-content__text__name">Статус:</span>
+							<span class="order-content__text__name__status">Открыт, принимаются заявки</span>
+						</p>
+						<p class="order-content__text order-content__text--des">
+							<span class="order-content__text__name">Описание:</span>
+							<a href="#" class="order-content__text__link--small">Фотография #1</a>
+							<a href="#" class="order-content__text__link--small">Фотография #2</a><br>
+							<span class="order-content__text__descr">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet. Proin gravida dolor sit amet lacus 
+							</span>
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Вес/объем:</span>
+							<span class="table-order__item">
+								<strong>
+									<span class="cub">12м</span>
+									<span class="kg">1200 кг</span>
+								</strong>
+							</span>
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Дата:</span>29 ноября 2014г.
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Макс.цена:</span>800 000 руб
+						</p>
+						<p class="order-content__text">
+							<span class="order-content__text__name">Грузчики:</span>Требуется 2 грузчика
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<div class="row wrap-map">
+						<div id="yamaps"></div>
+						<div class="row map-route">
+							<div class="col-md-4 map-route__departure">
+								<h5>Москва</h5>
+								<p>(Московская обл.)</p>
+							</div>
+							<div class="col-md-4 map-route__distance">
+								<span>232 км</span>
+							</div>
+							<div class="col-md-4 map-route__destination">
+								<h5 class="align-L">Калининград</h5>
+								<p class="align-L">(Калининградская обл.)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--bar-->
+		<div class="container-fluid order-content-dies pd-10">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="order-content-dies__question">
+						<p>Что теперь?</p>
+					</div>
+				</div>
+				<div class="col-sm-10">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet. Proin gravida dolor sit amet lacus </p>
+				</div>
+			</div>
+		</div>
+		<!--passing orders-->
+		<div class="container-fluid order-pass pd-10">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="wrap-header-block clearfix">
+						<h1>Попутные заказы</h1>
+					</div>
+					<div class="table-order__item">
+						<span class="table-order__item__count">1.</span>
+						<h4>#435252 &nbsp;&nbsp;|&nbsp;&nbsp; 29.03 &nbsp;&nbsp;|&nbsp;&nbsp;Зерно пшеницы в полимешках</h4>
+						<strong>
+							<span class="cub">12м</span>
+							<span class="kg">1200 кг</span>
+						</strong>
+						<strong class="table-order__item--route">Москва<span class="arrow-to-right"></span>Омск</strong>
+
+					</div>
+					<div class="table-order__item">
+						<span class="table-order__item__count">2.</span>
+						<h4>#435252 &nbsp;&nbsp;|&nbsp;&nbsp; 29.03 &nbsp;&nbsp;|&nbsp;&nbsp;Зерно пшеницы в полимешках</h4>
+						<strong>
+							<span class="cub">12м</span>
+							<span class="kg">1200 кг</span>
+						</strong>
+						<strong class="table-order__item--route">Москва<span class="arrow-to-right"></span>Омск</strong>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="wrap-header-block clearfix">
+						<h1>Обратные заказы</h1>
+					</div>
+					<div class="table-order__item">
+						<span class="table-order__item__count">1.</span>
+						<h4>#435252&nbsp;&nbsp;|&nbsp;&nbsp;29.03&nbsp;&nbsp;|&nbsp;&nbsp;Зерно пшеницы в полимешках</h4>
+						<strong>
+							<span class="cub">12м</span>
+							<span class="kg">1200 кг</span>
+						</strong>
+						<strong class="table-order__item--route">Москва<span class="arrow-to-right"></span>Омск</strong>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--lot bar-->
+		<div class="container-fluid order-lot-bar pd-null pd-10">
+			<div class="row">
+				<div class="col-sm-4 pd-null">
+					<h5>
+						Ставки<span>&nbsp;(5)&nbsp;</span>
+						<div class="select-cat-raiting-wrap all-mix all-mix-220">
+							<select name="allCat" id="allCat" class="custom-select">
+								<option value="all">Сортировать по рейтингу</option>
+								<option value="1">Рейтинг 1</option>
+								<option value="2">Рейтинг 2</option>
+							</select>
+						</div>
+					</h5>
+				</div>
+				<div class="col-sm-3 empty-block bg-line"></div>
+				<div class="col-sm-5">
+					<p>Все предложения окончательные - без доплат. </p>
+					<p>Если перевозчик потребует больше - свяжитесь со службой поддержки</p>
+				</div>
+			</div>
+		</div>
+		<!--lot table-->
+		<div class="container-fluid pd-10">
+			<div class="row">
+				<table class="table table-lot">
+					<thead>
+						<tr>
+							<td>Ставка</td>
+							<td>Исполнитель</td>
+							<td>Услуги</td>
+							<td class="align-C">Дата перевозки</td>
+							<td>Действия</td>
+							<td class="align-C">Дата публикации</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-lot--active">
+							<td class="table-lot__price">
+								<span>30 000р</span>
+							</td>
+							<td>
+								<img src="images/img-07.png" alt="imageLot">
+								<div class="table-lot__td__wrap">
+									<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+									<ul class="stars__list stars__list--small clearfix">
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link"></a>
+										</li>
+									</ul>
+									<strong>
+										Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;
+									</strong>
+								</div>
+							</td>
+							<td class="table-lot__service">
+								<p><span class="ico-lot icon-truck-s"></span>+<span class="ico-lot icon-hands"></span></p>
+								<p class="table-lot__service__text">Перевозка и грузчики</p>
+							</td>
+							<td class="table-lot__date">
+								29 ноября, 09:30
+							</td>
+							<td class="table-lot__action">
+								<a href="#" class="table-lot__action__accept">Принять заявку</a>
+								<a href="#" class="table-lot__action__delete">X</a>
+							</td>
+							<td class="table-lot__date">сегодня в 09:37</td>
+						</tr>
+						<tr class="table-lot--simple">
+							<td class="table-lot__price">
+								<span>30 000р</span>
+							</td>
+							<td>
+								<img src="images/img-07.png" alt="imageLot">
+								<div class="table-lot__td__wrap">
+									<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+									<ul class="stars__list stars__list--small clearfix">
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link"></a>
+										</li>
+									</ul>
+									<strong>
+										Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;
+									</strong>
+								</div>
+							</td>
+							<td class="table-lot__service">
+								<p><span class="ico-lot icon-truck-s"></span>+<span class="ico-lot icon-hands"></span></p>
+								<p class="table-lot__service__text">Перевозка и грузчики</p>
+							</td>
+							<td class="table-lot__date">
+								29 ноября, 09:30
+							</td>
+							<td class="table-lot__action">
+								<a href="#" class="table-lot__action__accept">Принять заявку</a>
+								<a href="#" class="table-lot__action__delete">X</a>
+							</td>
+							<td class="table-lot__date">сегодня в 09:37</td>
+						</tr>
+						<tr class="table-lot--clicked">
+							<td class="table-lot__price">
+								<span>30 000р</span>
+							</td>
+							<td>
+								<img src="images/img-07.png" alt="imageLot">
+								<div class="table-lot__td__wrap">
+									<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+									<ul class="stars__list stars__list--small clearfix">
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+										</li>
+										<li class="stars__list__item">
+											<a href="#" class="stars__list__item__link"></a>
+										</li>
+									</ul>
+									<strong>
+										Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;
+									</strong>
+								</div>
+							</td>
+							<td class="table-lot__service">
+								<p><span class="ico-lot icon-truck-s"></span>+<span class="ico-lot icon-hands"></span></p>
+								<p class="table-lot__service__text">Перевозка и грузчики</p>
+							</td>
+							<td class="table-lot__date">
+								29 ноября, 09:30
+							</td>
+							<td class="table-lot__action">
+								<a href="#" class="table-lot__action__accept">Принять заявку</a>
+								<a href="#" class="table-lot__action__delete">X</a>
+							</td>
+							<td class="table-lot__date">сегодня в 09:37</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!--add lot table-->
+		<div class="container-fluid pd-10">
+			<div class="row">
+				<h1 class="add-lot-header">Добавить ставку:</h1>
+				<div class="col-sm-10 pd-null">
+					<div class="row">
+						<table class="table table-add-lot">
+							<thead>
+								<tr>
+									<td>Сумма</td>
+									<td>Услуги</td>
+									<td>Дата</td>
+									<td>Время</td>
+									<td>Срок действия заявки</td>
+									<td>&nbsp;</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="table-add-lot__sum">
+										<input type="text" class="small-input">
+									</td>
+									<td>
+										<div class="all-cat all-cat-100">
+											<select name="allCat" id="allCat" class="custom-select">
+												<option value="all">Только перевозка</option>
+												<option value="1">Только перевозка</option>
+												<option value="2">Только перевозка</option>
+											</select>
+										</div>
+									</td>
+									<td class="w-28">
+										<div class="wrap-input-date w-28">
+											<input type="text" class="input-simple w-28 input-simple--date" id="datepicker3">
+										</div>
+									</td>
+									<td class="w-80">
+										<div class="all-cat all-cat-time all-cat-80">
+											<select name="allCat" id="allCat" class="custom-select">
+												<option value="all">09:00</option>
+												<option value="1">10:00</option>
+												<option value="2">11:00</option>
+												<option value="3">12:00</option>
+												<option value="4">13:00</option>
+												<option value="5">14:00</option>
+											</select>
+										</div>
+									</td>
+									<td>
+										<div class="all-cat all-cat-100">
+											<select name="allCat" id="allCat" class="custom-select">
+												<option value="all">7 дней</option>
+												<option value="1">20 дней</option>
+												<option value="2">765 дней</option>
+											</select>
+										</div>
+									</td>
+									<td>
+										<a href="#" class="link-publish">Опубликовать заявку</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="wrap-form form-comission">
+				<input type="checkbox" name="radiog_pool" id="radio4" class="pool-checkbox" />
+				<label for="radio4" class="pool-label">+ комиссия сервиса</label>
+			</div>
+		</div>
+		<!--comment lot-->
+		<div class="container-fluid comment-lot pd-10">
+			<div class="row">
+				<div class="wrap-header-block clearfix">
+					<h1>Комментарии <span>(1)</span></h1>
+				</div>
+				<div class="col-sm-3 pd-null comment-lot__nickname">
+					<img src="images/img-07.png" alt="imageLot">
+					<div class="table-lot__td__wrap">
+						<h5 class="block-rate__info__pro">Алексей Загорный</h5>
+						<ul class="stars__list stars__list--small clearfix">
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+							</li>
+							<li class="stars__list__item">
+								<a href="#" class="stars__list__item__link"></a>
+							</li>
+						</ul>
+						<strong>
+							Отзывы: (<span class="block-rate__features__positive">32 </span>/ <span class="block-rate__features__negative">4</span>)&nbsp;&nbsp;
+						</strong>
+					</div>
+				</div>
+				<div class="col-sm-9 comment-lot__text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet. Proin gravida dolor sit amet lacus </p>
+				</div>
+			</div>
+			<div class="row">
+				<h1 class="add-lot-header">Оставить комментарий:</h1>
+				<div class="row">
+					<textarea class="comment-lot__textarea" name="comment" id="commentText" cols="30" rows="10">
+						
+					</textarea>
+				</div>
+				<div class="row">
+					<a href="#" class="send-link">Отправить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row footer__menu">
+				
+				<ul class="footer__menu__list clearfix">
+					<li class="footer__menu__list__item col-sm-2">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								О нас
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Как это работает</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">FAQ (Чаво)</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Форум</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Блог</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item col-sm-2">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Контакты
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Контакты</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Заказать звонок</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Предложить идею</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Реклама</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item col-sm-2">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Информация
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Советы заказчикам</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Советы перевозчикам</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Условия использования</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Политика</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item col-sm-2">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Перевозки
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Попутный груз</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">По Москве и области</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">По Санкт-Петербургу</a>
+							</li>
+						</ul>
+					</li>
+					<li class="footer__menu__list__item col-sm-2">
+						<ul class="footer__menu__second-list">
+							<li class="footer__menu__second-list__item">
+								Перевозчикам
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Работа с Перевези</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Диспетчер</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Работа водителю</a>
+							</li>
+							<li class="footer__menu__second-list__item">
+								<a href="#" class="footer__menu__second-list__item__link">Инструменты</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+	
+			</div>
+			<div class="row footer__bottom">
+				
+				<ul class="social__list clearfix col-sm-2">
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--vk">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--odn">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--fb">
+						</a>
+					</li>
+					<li class="social__list__item">
+						<a href="#" class="social__list__item__link social__list__item__link--tw">
+						</a>
+					</li>
+				</ul>
+	
+				<div class="footer__bottom__phones col-sm-4">
+					
+					+345 (42) 45252667  |   +345 (42) 45252667
+	
+				</div>
+
+				<div class="footer__bottom__metrics col-sm-3">
+					<a href="#" class="footer__bottom__metrics__rambler"></a>
+					<a href="#" class="footer__bottom__metrics__ya"></a>
+				</div>
+	
+				<div class="footer__bottom__mobile-ver col-sm-3">
+					
+					<a href="#">мобильная версия</a>
+	
+				</div>
+	
+			</div>
+		</div>
+	</footer>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lThISCd-Nt__WRum1q0PIGQeTJ4b8xbP&height=346&id=yamaps"></script>
+<script src="js/libs/fancySelect.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$('.custom-select').fancySelect();
+	$( "#datepicker3" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
+</script>
+</body>
+</html>
