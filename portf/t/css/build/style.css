@@ -1554,12 +1554,16 @@ table {
 .order-name h1 {
   color: #5e5851;
   font-size: 23px;
+  display: inline-block;
   font-weight: 600; }
 .order-name p {
   color: #8b8b8b;
   font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-size: 13px; }
+  .order-options {
+    padding-left: 60px;
+  }
 .order-name__edit {
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1567,7 +1571,7 @@ table {
   width: 100px;
   background: #fff;
   position: absolute;
-  right: -55px;
+  right: -115px;
   top: -1px;
   z-index: 9999;
 }
@@ -2020,7 +2024,10 @@ table {
     background-position: -410px -185px; }
   .category__list__item__link--15 {
     background-position: -569px -185px; }
-  
+  .order-name h1 {
+    font-size: 19px;
+    margin-bottom: 4px;
+  }
 }
 @media only screen and (min-width: 1025px) { 
     .wrap-header--bottom .col-sm-9 {
