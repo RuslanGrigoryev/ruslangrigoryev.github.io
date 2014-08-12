@@ -103,11 +103,11 @@ a, a:hover {
   margin-right: auto; }
 
 .container {
-  min-width: 1024px;
+  min-width: 980px;
   margin: 0 auto;
   padding: 0; }
   .container-fluid {
-    min-width: 1024px;
+    min-width: 980px;
     max-width: 1600px; }
 
 ol, ul {
