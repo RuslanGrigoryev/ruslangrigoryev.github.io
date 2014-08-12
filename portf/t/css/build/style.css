@@ -1351,7 +1351,8 @@ table {
   display: inline-block; }
 
 .wrap-rate-block {
-  margin-top: 20px; }
+  margin-top: 20px;
+  position: relative; }
 
 .select-cat-raiting-wrap {
   display: inline-block;
@@ -1897,6 +1898,16 @@ table {
   background: url(../../images/markup/send-link-bg.png) repeat-x; }
 .send-link:hover {
   color: #fff; }
+  .custom-col-r {
+    width: 100%;
+    padding-right: 600px;
+  }
+  .custom-col-a {
+    width: 602px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   /*media*/
 @media only screen and (max-width:1024px){
   .row-top h1 {
