@@ -928,7 +928,21 @@ table {
   background: url(../../images/markup/social-sprite.png) -84px 0px no-repeat; }
 
 /*order-list page*/
+.zakaz-bar .tab-route-wrap {
+    width: 230px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  .zakaz-bar .col-sm-9 {
+    width: 100%;
+    padding-right: 230px;
+  }
+  .zakaz-bar .wrap-pos-r {
+    position: relative;
+  }
 .zakaz-bar {
+  font-family: 'Ubuntu', sans-serif;
   margin-top: 20px; }
 .zakaz-bar .tab__list {
   margin-top: 4px; }
@@ -960,7 +974,8 @@ table {
   color: #636363;
   padding-top: 10px; }
 .sort-bar__link {
-  margin: 0 5px; }
+  margin: 0 5px;
+  color: #636363; }
 .sort-bar__link--active {
   color: #5991c3;
   text-decoration: underline; }
@@ -1069,8 +1084,11 @@ table {
 .tab-route-wrap {
   padding-top: 15px; }
 .tab-route-wrap .col-md-6 {
-  padding: 20px; }
-
+  padding: 8px; }
+.tab-route .pool-checkbox + .pool-label {
+  font-size: 12px;
+  padding-top: 2px;
+}
 .pool-checkbox {
   display: none; }
 
@@ -1110,15 +1128,17 @@ table {
 .input-simple {
   border-radius: 4px;
   border: 1px solid #d0d0d0;
-  width: 65px;
+  width: 59px;
   height: 23px;
   vertical-align: middle;
-  margin: 0 5px; }
+  margin: 0 0 0 2px;
+}
 .input-simple--date {
-  margin: 0 10px;
-  width: 85px;
+  margin: 0 8px 0 3px;
+  width: 68px;
   padding-right: 20px;
-  font-size: 10px; }
+  font-size: 10px;
+   }
 
 .wrap-input-date {
   display: inline-block;
@@ -1160,7 +1180,7 @@ table {
   border-bottom: none; }
 .tab-route__header {
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: #404040;
   margin: 15px 0; }
 .tab-route div.fancy-select div.trigger {
@@ -1927,6 +1947,7 @@ table {
   .zakaz-bar .col-md-6__mod {
     padding-left: 10px;
     background: none;
+    font-size: 12px;
   }
   .tab__list__link {
     padding: 0px 16px;
