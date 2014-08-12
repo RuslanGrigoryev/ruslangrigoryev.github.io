@@ -1204,8 +1204,24 @@ table {
   background: url(../../images/markup/ico-distance.png) no-repeat; }
 
 .otziv-content {
-  margin-top: 40px; }
-
+  margin-top: 40px;
+  position: relative;
+}
+.otziv-content .col-sm-3 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 225px;
+  z-index: 9999;
+}
+.otziv-content .col-sm-9 {
+  padding: 0;
+  width: 100%;
+  padding-right: 240px;
+}
+.block-otziv .wrap-header-block h1 {
+  background: #fafafa;
+}
 .block-otziv .col-md-9 {
   padding-left: 0;
   padding-right: 0; }
@@ -1214,19 +1230,18 @@ table {
 .block-otziv__num-list__item {
   width: 327px;
   height: 108px;
-  float: left;
+  display: inline-block;
   margin-right: 58px;
   background: #fff;
   border-radius: 4px;
   border: 1px solid #d0d0d0;
-  padding: 0 24px; }
+  padding: 0 31px; }
 .block-otziv__num-list__item:last-child {
   margin-right: 0; }
 .block-otziv__num-list__item strong {
   color: #6893c0;
   font-size: 84px;
   font-weight: 600;
-  width: 125px;
   display: inline-block;
   vertical-align: middle; }
 .block-otziv__num-list__item strong span.percent {
@@ -1235,30 +1250,34 @@ table {
   float: none;
   padding-left: 0px;
   width: 10px; }
+  .block-otziv__num-list .col-sm-4:first-child .block-otziv__num-list__item>span {
+    padding: 20px 0 0 21px;
+  }
 .block-otziv__num-list__item span {
   display: inline-block;
   vertical-align: middle;
   color: #333;
   font-size: 18px;
   width: 110px;
-  padding-left: 20px; }
+  padding: 20px 0 0 10px;
+  text-align: left; }
 .block-otziv__item {
   height: 150px;
   margin-bottom: 60px; }
 .block-otziv__item img {
-  margin-left: 30px; }
+  margin-left: 30px;
+  width: 100%;
+  height: auto; }
 .block-otziv__item__image {
-  width: 176px;
   position: relative;
   float: left; }
 .block-otziv__item__image span {
   color: #464045;
   font-size: 20px;
   position: absolute;
-  left: 10px;
+  left: 0px;
   top: -2px; }
 .block-otziv__item__content {
-  width: 625px;
   margin-left: 10px;
   height: 145px;
   float: left; }
@@ -1931,9 +1950,6 @@ table {
   }
   .wrap-rate-block .col-sm-6 {
     padding: 0;
-  }
-  .block-otziv__num-list__item {
-    width: 294px;
   }
   .block-otziv__num-list__item span {
     font-size: 15px;
