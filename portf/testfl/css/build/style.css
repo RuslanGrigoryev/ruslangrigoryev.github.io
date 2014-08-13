@@ -941,7 +941,7 @@ table {
   }
 .zakaz-bar {
   font-family: 'Ubuntu', sans-serif;
-  margin-top: 20px; }
+  padding-top: 20px; }
 .zakaz-bar .tab__list {
   margin-top: 4px; }
 .zakaz-bar h1 {
