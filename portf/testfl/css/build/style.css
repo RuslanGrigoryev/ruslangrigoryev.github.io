@@ -1416,12 +1416,12 @@ table {
 .link-publish {
   display: inline-block;
   text-align: center;
-  padding: 6px;
+  padding: 10px;
   color: #fff;
   font-size: 15px;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
   width: 180px;
-  height: 34px;
+  height: 38px;
   background: url(../../images/markup/bg-pub-link.png) repeat-x; }
 .link-publish:hover {
   color: #fff; }
@@ -2078,10 +2078,11 @@ table {
   margin-bottom: 10px;
 }
 .wrap-ui .send-link {
-  margin-top: 9px;
+  vertical-align: bottom;
 }
 .wrap-ui .btn-add {
-  margin-top: 12px;
+  vertical-align: bottom;
+  height: 33px;
 }
 .wrap-ui .tab__list {
   margin: 30px 0;
@@ -2184,6 +2185,7 @@ table {
 .btn-msg__warning {
   background: #ffc296;
   border: 1px solid #ff9e40;
+  text-shadow: 1px 1px 1px rgba(255,149, 74,0.75);
 }
 .btn-msg__success {
   background: #ccffc0;
@@ -2342,4 +2344,7 @@ table {
   background: -ms-linear-gradient(top,  #ffffff 1%,#e8e8e8 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #ffffff 1%,#e8e8e8 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+.wrap-line-height {
+  padding-top: 5px;
 }
