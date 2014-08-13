@@ -953,15 +953,14 @@ table {
   text-align:  }
 .zakaz-bar .col-sm-4 {
   width: 38.999999%;
-  padding-left: 0px;
-  background: url(../../images/markup/zakaz-bar-bg.png) -10px 12px repeat-x; }
+  padding-left: 0px; }
 .zakaz-bar .col-md-6__mod {
   line-height: 30px;
   height: 29px;
   text-align: right;
   width: 42.79999%;
   padding-left: 120px;
-}
+  background: url(../../images/markup/zakaz-bar-bg.png) -10px 12px no-repeat; }
 .zakaz-bar .col-md-6__mod span {
   vertical-align: middle;
   margin: 0px 10px 0 5px; }
