@@ -1,0 +1,13 @@
+diff a/portf/testfl/css/build/style.css b/portf/testfl/css/build/style.css	(rejected hunks)
+@@ -951,7 +951,10 @@
+ .zakaz-bar .col-sm-2 {
+   width: 17.9999999%; }
+ .zakaz-bar .col-sm-4 {
+-  width: 38.999999%; }
++  width: 38.999999%;
++  padding-left: 0px;
++  background: url(../../images/markup/zakaz-bar-bg.png) -10px 12px repeat-x; }
++   }
+ .zakaz-bar .col-md-6__mod {
+   line-height: 30px;
+   height: 29px;
