@@ -927,20 +927,20 @@ table {
 
 /*order-list page*/
 .zakaz-bar .tab-route-wrap {
-    width: 230px;
+    width: 260px;
     position: absolute;
     right: 0;
     top: 10px;
   }
   .zakaz-bar .col-sm-9 {
     width: 100%;
-    padding-right: 230px;
+    padding-right: 260px;
   }
   .zakaz-bar .wrap-pos-r {
     position: relative;
   }
 .zakaz-bar {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   padding-top: 20px; }
 .zakaz-bar .tab__list {
   margin-top: 4px; }
@@ -1165,8 +1165,6 @@ table {
   background: #f1ece9;
   font-size: 13px;
   color: #4c4c4c;
-  font-size: 12px;
-  font-weight: bold;
   border-bottom: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
@@ -1183,7 +1181,7 @@ table {
   }
 .tab-route__link--active {
   background: #fff;
-  padding: 11px !important;
+  padding: 12px 11px 9px 11px !important;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
