@@ -2360,3 +2360,15 @@ table {
   width: 20%;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .zakaz-bar .col-sm-4 {
+    background: url(../../images/markup/zakaz-bar-bg.png) -10px 12px repeat-x;
+  }
+  .zakaz-bar .tab__list {
+    padding-right: 15px;
+    background: #f1f1f1;
+  }
+  .zakaz-bar .col-md-6__mod {
+    background: url(../../images/markup/zakaz-bar-bg-2.png) -10px 12px no-repeat;
+  }
+}
