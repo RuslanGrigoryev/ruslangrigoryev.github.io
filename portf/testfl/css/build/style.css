@@ -1984,6 +1984,9 @@ table {
   .tab__block__list__item__link {
     margin: 0 3px;
   }
+  .tab__block__list__item__link {
+    padding: 8px 13px 10px 11px;
+  }
   .slide-list {
     padding: 0 35px;
   }
