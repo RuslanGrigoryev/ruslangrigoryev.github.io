@@ -85,7 +85,9 @@ $(function () {
     tabRouteLink.on('click', function (e) {
 
         e.preventDefault();
-        tabRouteLink.removeClass('tab-route__link--active');
+        tabRouteLink.removeClass('tab-route__link--active tab-route__link--non-active ');
+        tabRouteLink.addClass('tab-route__link--non-active ');
+        $(this).removeClass('tab-route__link--non-active ')
         $(this).addClass('tab-route__link--active');
     });
 

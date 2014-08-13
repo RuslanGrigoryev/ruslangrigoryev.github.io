@@ -1172,8 +1172,18 @@ table {
   border-top: 1px solid #e5e5e5;
   border-left: 1px solid #e5e5e5;
   border-radius: 4px; }
+  .tab-route__link:hover {
+    color: #4c4c4c;
+  }
+  .tab-route-wrap .row:first-child {
+    height: 35px;
+  }
+  .tab-route__link--non-active {
+    margin-top: 5px;
+  }
 .tab-route__link--active {
   background: #fff;
+  padding: 11px !important;
   border-left: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;
   border-top: 1px solid #e5e5e5;
