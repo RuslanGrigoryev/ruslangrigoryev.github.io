@@ -2348,3 +2348,12 @@ table {
 .wrap-line-height {
   padding-top: 5px;
 }
+.wrap-navs-ui {
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap-header--bottom .col-sm-3 {
+  width: 20%;
+  }
+}
