@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024px,initial-scale=0.5;maximum-scale=0.5;minimum-scale=0.5;" />
+	<title>UI</title>
+	<link href='http://fonts.googleapis.com/css?family=Exo+2:300,400,600,700,800,500,300italic,500italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="css/build/bootstrap.min.css">
+	<link rel="stylesheet" href="css/build/fancySelect.css">
+	<link rel="stylesheet" href="css/build/style.css">
+</head>
+<body>
+	
+	<div class="wrap-ui">
+		<a href="#" class="query query-medium">
+			<strong>Разместить запрос</strong>
+			<span>это бесплатно и займет 1 минуту</span>
+		</a>
+		<div class="wrap-other-btn">
+			<a href="#" class="btn-action btn-action--accept">Принять заявку</a>
+			<a href="#" class="btn-action btn-action--delete">X</a>
+			<a href="#" class="btn-label">смотреть все <span>3242</span> активных проекта</a><br>
+			<a href="#" class="send-link">Отправить</a>
+			<div class="btn-add">
+				<a href="#" class="main-menu__list__link main-menu__list__link--active">Разместить заказ</a>
+			</div>
+			<a href="#" class="link-publish">Опубликовать заявку</a>
+		</div>
+		<ul class="tab__list clearfix">
+			<li class="tab__list__item tab__list__item--active grey-invert-gradient">
+				<a href="#" class="tab__list__link" data-link="1">Физ.лица</a>
+			</li>
+			<li class="tab__list__item grey-invert-gradient">
+				<a href="#" class="tab__list__link" data-link="2">Диспетчеры и экспедиторы</a>
+			</li>
+			<li class="tab__list__item grey-invert-gradient">
+				<a href="#" class="tab__list__link" data-link="3">Интернет-магазины</a>
+			</li>
+			<li class="tab__list__item grey-invert-gradient">
+				<a href="#" class="tab__list__link" data-link="4">Малый и средний бизнес</a>
+			</li>
+		</ul>
+		<div class="wrap-stars-ui">
+			<div class="wrap-stars-ui-col">
+				<ul class="stars__list stars__list--small clearfix">
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link"></a>
+					</li>
+				</ul>
+				<h5 class="block-rate__info__pro">&nbsp;</h5>
+				<ul class="stars__list clearfix">
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link stars__list__item__link--clicked"></a>
+					</li>
+					<li class="stars__list__item">
+						<a href="#" class="stars__list__item__link"></a>
+					</li>
+				</ul><br>
+				<div class="wrap-icons">
+					<div class="ico-departure"></div>
+					<div class="ico-destination"></div><br><br>
+					<a href="#" class="control_prev"></a>
+					<a href="#" class="control_next"></a>
+					<div name="prev" class="navy prev-slide"></div>
+					<div name="next" class="navy next-slide"></div>
+				</div>
+			</div>
+			<div class="wrap-stars-ui-col">
+				<div class="btn-msg btn-msg__error">
+					Сообщение о действиях на сайте. Ошибка.
+				</div>
+				<div class="btn-msg btn-msg__warning">
+					Сообщение о действиях. Предупреждение
+				</div>
+				<div class="btn-msg btn-msg__success">
+					Сообщение о действиях. Успешно.
+				</div>
+			</div>
+
+		</div>
+		<div class="wrap-stars-ui">
+			<div class="wrap-stars-ui-col">
+				<input type="text" class="input-text input-text--small">
+				<div class="wrap-input-date">
+					<input type="text" class="input-simple input-simple--date" id="datepicker1">
+				</div>
+				<div class="select-cat-raiting-wrap all-mix">
+					<select name="allCat" id="allCat" class="custom-select">
+						<option value="all">Перевозчик + Грузчики</option>
+						<option value="1">Регион 1</option>
+						<option value="2">Регион 2</option>
+					</select>
+				</div><br><br>
+				<textarea class="comment-lot__textarea" name="comment" id="commentText" cols="30" rows="10">						
+					</textarea>
+			</div>
+			<div class="wrap-stars-ui-col">
+				<div class="wrap-input-select custom-select-input">
+					<select name="status" id="count" class="custom-select">
+						<option value="50">50</option>
+						<option value="100">100</option>
+						<option value="150">150</option>
+					</select>
+				</div>
+				<input type="text" class="input-text input-text--smaller"><br><br>
+				<div class="wrap-input-date">
+					<input type="text" class="input-simple input-simple--date input-simple--date--large" id="datepicker2">
+				</div>-
+				<div class="wrap-input-date">
+					<input type="text" class="input-simple input-simple--date input-simple--date--large" id="datepicker3">
+				</div><br><br>
+				<div class="select-cat-raiting-wrap all-mix">
+					<select name="allCat" id="allCat" class="custom-select">
+						<option value="all">Перевозчик + Грузчики</option>
+						<option value="1">Регион 1</option>
+						<option value="2">Регион 2</option>
+					</select>
+				</div><br><br>
+				<button class="btn-nav btn-back">Button</button>
+				<button class="btn-nav btn-forward">Button</button><br><br>
+			</div>
+		</div>
+		<input type="checkbox" name="radiog_pool" id="radio1" class="pool-checkbox">
+		<label for="radio1" class="pool-label"></label>
+		<input type="checkbox" name="radiog_pool" id="radio2" class="pool-checkbox" checked>
+		<label for="radio2" class="pool-label"></label>
+
+		<input type="radio" name="radiog_pool" id="radio3" class="pool-checkbox">
+		<label for="radio3" class="pool-label pool-label-radio"></label>
+		<input type="radio" name="radiog_pool" id="radio4" class="pool-checkbox" checked>
+		<label for="radio4" class="pool-label pool-label-radio"></label><br><br><br>
+		<ul class="nav-list clearfix">
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link">1</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link nav-list__item__link--active">2</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link">3</a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link">4</a>
+			</li>
+		</ul>
+		<button class="btn-medium-file">Выбрать</button>
+		<ul class="nav-list nav-list__settings clearfix">
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link">
+				<span class="icon-stngs icon-stngs--profile"></span><span>Мой профиль</span></a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link nav-list__item__link--active">
+				<span class="icon-stngs icon-stngs--promise"></span><span>Мои предложения</span></a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link"><span class="icon-stngs icon-stngs--account"></span><span>Личный счет</span></a>
+			</li>
+			<li class="nav-list__item">
+				<a href="#" class="nav-list__item__link"><span class="icon-stngs icon-stngs--adj"></span><span>Настройки</span></a>
+			</li>
+		</ul>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+<script src="js/libs/fancySelect.js"></script>
+<script src="js/script.js"></script>
+<script>
+	$('.custom-select').fancySelect();
+	$( "#datepicker1" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
+	$( "#datepicker2" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
+	$( "#datepicker3" ).datepicker({
+	      showOn: "button",
+	      buttonImage: "images/markup/ico-calendar.png",
+	      buttonImageOnly: true
+	    });
+</script>
+</body>
+</html>

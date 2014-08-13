@@ -89,6 +89,15 @@ $(function () {
         $(this).addClass('tab-route__link--active');
     });
 
+    var navLink = $('.nav-list__item__link');
+
+    navLink.on('click', function (e) {
+
+        e.preventDefault();
+        navLink.removeClass('nav-list__item__link--active');
+        $(this).addClass('nav-list__item__link--active')
+    })
+
 });
 
 // slider
