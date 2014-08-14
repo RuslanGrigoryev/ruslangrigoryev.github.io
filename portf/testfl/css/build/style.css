@@ -1977,6 +1977,10 @@ table {
   }
   .category .col-sm-4 {
     padding: 0 15px;
+    margin-left: -40px;
+  }
+  .wrap-header--bottom .col-sm-3 {
+    margin-left: -36px;
   }
   .how-works__list__item {
     width: 268px;
