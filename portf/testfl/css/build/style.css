@@ -2411,6 +2411,7 @@ table {
 .wrap-header--bottom .col-sm-9 {
   width: 78.4%;
   float: left;
+  padding-left: 0px;
 }
 .container .col-sm-4 {
   width: 33.33333333%;
@@ -2418,10 +2419,14 @@ table {
 }
 .container .col-sm-8 {
   float: left;
+  padding-left: 0px;
 }
 @media only screen and (max-width: 780px) {
   .wrap-header--bottom .col-sm-3 {
     width: 20%;
     float: left;
+  }
+  .category .category__header {
+    padding-left: 0px;
   }
 }
