@@ -2400,3 +2400,28 @@ table {
     background: url(../../images/markup/zakaz-bar-bg-2.png) -10px 12px no-repeat;
   }
 }
+.logo-header .col-sm-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.header-top .col-sm-7 {
+  width: 58.33333333%;
+  float: left;
+}
+.wrap-header--bottom .col-sm-9 {
+  width: 78.4%;
+  float: left;
+}
+.container .col-sm-4 {
+  width: 33.33333333%;
+  float: left;
+}
+.container .col-sm-8 {
+  float: left;
+}
+@media only screen and (max-width: 780px) {
+  .wrap-header--bottom .col-sm-3 {
+    width: 20%;
+    float: left;
+  }
+}
