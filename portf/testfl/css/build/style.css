@@ -1472,7 +1472,7 @@ table {
   font-weight: bold; }
 .block-rate__info {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: -7px;
   height: 72px; }
 .block-rate__info h5 {
   color: #3e3e3e;
@@ -1670,6 +1670,9 @@ table {
   font-size: 12px; }
 .order-content__text--des {
   margin: 23px 0 35px 0; }
+  .order-content__text--des span {
+    vertical-align: top;
+  }
 .order-content__text__descr {
   margin-top: 5px;
   display: block;

@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 	<link rel="stylesheet" href="css/build/bootstrap.min.css">
 	<link rel="stylesheet" href="css/build/fancySelect.css">
+	<link rel="stylesheet" href="css/build/lightbox.css">
+	<link rel="stylesheet" href="css/build/screen.css">
 	<link rel="stylesheet" href="css/build/style.css">
 </head>
 <body>
@@ -176,8 +178,12 @@
 						</p>
 						<p class="order-content__text order-content__text--des">
 							<span class="order-content__text__name">Описание:</span>
-							<a href="#" class="order-content__text__link--small">Фотография #1</a>
-							<a href="#" class="order-content__text__link--small">Фотография #2</a><br>
+							<a href="images/01.jpg" data-lightbox="01" data-title="Подпись к грузу" class="order-content__text__link--small">
+								<img width="150" height="150" src="images/01.jpg" alt="preview">			
+							</a>
+							<a href="images/02.jpg" data-lightbox="02" data-title="Подпись к грузу" class="order-content__text__link--small">
+								<img width="150" height="150" src="images/02.jpg" alt="preview">
+							</a><br>
 							<span class="order-content__text__descr">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin gravida dolor sit amet. Proin gravida dolor sit amet lacus 
 							</span>
@@ -716,6 +722,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lThISCd-Nt__WRum1q0PIGQeTJ4b8xbP&height=346&id=yamaps"></script>
 <script src="js/libs/fancySelect.js"></script>
+<script src="js/libs/lightbox.min.js"></script>
 <script src="js/script.js"></script>
 <script>
 	$('.custom-select').fancySelect();
