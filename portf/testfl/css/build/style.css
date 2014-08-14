@@ -1668,11 +1668,16 @@ table {
   font-family: 'Ubuntu', sans-serif; }
 .order-content__text__link--small {
   font-size: 12px; }
+.order-content__text__link--small img {
+  border: 1px solid rgba(28,28,28,0.5);
+  border-radius: 4px;
+  margin-right: 10px;
+}
 .order-content__text--des {
   margin: 23px 0 35px 0; }
-  .order-content__text--des span {
-    vertical-align: top;
-  }
+.order-content__text--des span {
+  vertical-align: top;
+}
 .order-content__text__descr {
   margin-top: 5px;
   display: block;
