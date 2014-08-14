@@ -31,24 +31,24 @@ time, mark, audio, video {
 
 ::-webkit-input-placeholder {
   /* WebKit browsers */
-  color: #fff;
+  color: #356b9a;
 }
 
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #fff;
+  color: #356b9a;
   opacity: 1;
 }
 
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #fff;
+  color: #356b9a;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10+ */
-  color: #fff;
+  color: #356b9a;
 }
 
 .clearfix:after {
@@ -172,6 +172,7 @@ h1 {
   text-align: center;
   line-height: 10px;
   padding: 2px 0;
+  border-top: 1px solid #1f5079;
 }
 .header__bottom span {
   color: #fff;
@@ -190,10 +191,41 @@ h1 {
   font-size: 16px;
   margin-bottom: 11px;
 }
-
+.wrap-label-btns {
+  text-align: right;
+}
+.btn-msg {
+  margin-left: 0px;
+  background: #3da92f;
+  min-width: 10px;
+  height: 23px;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2px;
+  vertical-align: top;
+  font-size: 13px;
+}
+.btn-msg-say {
+  padding: 0 30px;
+}
+.wrap-chat-btns {
+  text-align: center;
+}
+.msg {
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+  color: #000;
+  line-height: 22px;
+}
+.msg__author {
+  font-weight: bold;
+  color: #3275b4;
+  text-decoration: underline;
+}
 .wrap-label {
   font-family: 'PT Sans', sans-serif;
-  margin-bottom: 9px;
+  margin: 9px 0;
 }
 .wrap-label label {
   width: 88px;
@@ -442,4 +474,115 @@ h1 {
     color: #fff;
     padding-left: 30px;
     background: url(../../images/markup/ico-square.png) 0px 0px no-repeat;
+}
+.header__bottom--cust {
+  padding: 2px 10px;
+  text-align: left;
+  line-height: 11px;
+  background: #aaa;
+}
+.ico-span {
+  background: url(../../images/markup/sprite-header-span.png) no-repeat;
+  padding-left: 18px;
+}
+.span-nick {
+    margin-left: 70px;
+}
+.span-percent {
+  background-position: 6px 2px;
+}
+.span-health {
+  background-position: 5px -13px;
+}
+.span-blue {
+  background-position: 5px -27px;
+}
+.span-lighter {
+  background-position: 5px -42px;
+}
+.span-crown {
+  background-position: 6px -62px;
+}
+.msg-write {
+  color: #010101;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+.msg-input {
+    border: 1px solid #356b9a;
+    border-radius: 4px;
+    color: #356b9a;
+    width: 100%;
+    font-style: italic;
+    font-family: 'PT Sans', sans-serif;
+}
+.task-hint {
+    vertical-align: top;
+    width: 338px;
+    height: 37px;
+    padding: 11px 0 10px 27px;
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #1f89ca;
+    background: url(../../images/markup/task-bg.png) no-repeat;
+}
+.time-tasks {
+  color: #a5a5a5;
+  font-size: 13px;
+}
+h5 {
+  height: 25px;
+  color: #fff;
+  text-align: center;
+  margin: 17px 0 10px 0;
+  padding: 3px;
+}
+.header-blue {
+  background: #1f89ca;
+}
+.header-green {
+  background: #3aa63f;
+}
+.wrap-task {
+  margin-bottom: 30px;
+}
+.events-list--tasks .events-list__item{
+    padding: 5px 0 5px 34px;
+    border-width: 7px;
+    line-height: 17px;
+    font-family: 'PT Sans', sans-serif;
+}
+.events-list--tasks strong {
+  display: block;
+}
+.empty-block {
+  width: 180px;
+  height: 10px;
+  border: 1px solid #1f89ca;
+  display: inline-block;
+}
+.task-award {
+  font-weight: bold;
+  color: #343434;
+  font-size: 13px;
+}
+.bold-red {
+  font-weight: bold;
+  color: #b71111;
+}
+.task__header {
+  padding: 10px 0;
+}
+.wrap-task-btns {
+  text-align: center;
+  padding: 6px 0;
+}
+.btn-msg-details {
+  margin-left: 20px;
+  background: #959fa6;
+}
+.footer-index {
+  padding: 20px 0 0 0;
 }
