@@ -1669,7 +1669,7 @@ table {
 .order-content__text__link--small {
   font-size: 12px; }
 .order-content__text__link--small img {
-  border: 1px solid rgba(28,28,28,0.5);
+  border: 2px solid rgba(28,28,28,0.2);
   border-radius: 4px;
   margin-right: 10px;
 }
