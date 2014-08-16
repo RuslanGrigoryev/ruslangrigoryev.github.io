@@ -123,7 +123,7 @@ header {
 
 .banner {
   height: 495px;
-  /* background: url(../../images/img-01.jpg) center center no-repeat;  */
+  background: url(../../images/img-01.jpg) center center no-repeat;
 }
 .banner__wrap {
   width: 672px;
@@ -280,3 +280,15 @@ header {
   text-align: left;
   font-size: 12px;
   padding-bottom: 10px; }
+footer {
+  padding-left: 10px;
+}
+@media only screen and (max-width: 980px) {
+  .wrapper {
+    width: 980px;
+  }
+  .header__info__list {
+    margin: 0 12px 0 41px;
+    width: 228px;
+  }
+}
