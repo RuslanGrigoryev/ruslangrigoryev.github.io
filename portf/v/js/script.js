@@ -10,7 +10,7 @@ $(function () {
 	    	console.log($bannerHeight);
 
 	    	$('html, body').animate({
-	    	        scrollTop: $("#banner").offset().top + $bannerHeight
+	    	        scrollTop: $("#banner").offset().top + $bannerHeight + 23
 	    	}, 1000);
 	    })
 });
