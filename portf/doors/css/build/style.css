@@ -247,7 +247,9 @@ header {
   color: #38b2ff;
   text-decoration: underline;
   margin-bottom: 20px; }
-
+footer {
+  padding-left: 10px;
+}
 .footer-top {
   height: 30px; 
   margin-bottom: 13px;
