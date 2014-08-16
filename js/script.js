@@ -1,5 +1,6 @@
 ﻿$(function(){
   
+  /*Появление блоков со скилами*/
   if ($('.skill_header').length) {
 	  var h = $('.skill_header');
 
@@ -21,3 +22,5 @@
 
 
 });
+  /*Блоки с портфолио появление viewport*/
+  window.scrollReveal = new scrollReveal();
