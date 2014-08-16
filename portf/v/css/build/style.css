@@ -105,7 +105,7 @@ header {
   float: left;
   padding-left: 50px;
   margin: 0 12px 0 50px;
-  width: 237px; }
+  width: 227px; }
 .header__info__list--phone {
   background: url(../../images/markup/sprite.png) 0px 6px no-repeat; }
 .header__info__list--delivery {
@@ -123,7 +123,7 @@ header {
 
 .banner {
   height: 495px;
-  background: url(../../images/img-01.jpg) center center no-repeat;
+  background: none;
 }
 .banner__wrap {
   width: 672px;
@@ -290,5 +290,11 @@ footer {
   .header__info__list {
     margin: 0 12px 0 41px;
     width: 228px;
+  }
+  .w {
+    background: none;
+  }
+  .banner {
+    background: url(../../images/img-01.jpg) center center no-repeat;
   }
 }
