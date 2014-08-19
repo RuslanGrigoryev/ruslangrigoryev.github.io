@@ -47,6 +47,7 @@ body {
 	width: 1024px;
 	margin: 0 auto;
 	position: relative;
+	height: 100%;
 }
 .block {
 	position: absolute;
@@ -121,8 +122,8 @@ table {
 }
 /*main styles*/
 .block-1 {
-	top: 30px;
-	left: 30px;
+	top: 100px;
+	left: -90px;
 	width: 347px;
 	height: 203px;
 }
@@ -133,4 +134,44 @@ table {
 .block-1 .hover {
 	top: 91px;
 	left: -40px;
+}
+
+.block-2 {
+	top: 362px;
+	left: 50px;
+	width: 347px;
+	height: 203px;
+}
+.block-2 .block__link {
+	bottom: 80px;
+	left: -40px;
+}
+.block-2 .hover {
+	top: 91px;
+	left: -40px;
+}
+
+.block-3 {
+	top: 180px;
+	left: 280px;
+	width: 347px;
+	height: 203px;
+}
+.block-3 .block__link {
+	bottom: -150px;
+	left: 140px;
+	width: 50px;
+}
+.block-3 .no-hover {
+	
+}
+.block-3 .hover {
+	top: 271px;
+	left: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+	.content {
+		width: 100%;
+	}
 }
