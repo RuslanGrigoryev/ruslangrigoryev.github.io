@@ -42,6 +42,7 @@ body {
 .grid {
 	background: url(../../images/markup/grid.png) no-repeat;
 	width: 100%;
+	/* position: relative; */
 }
 .content {
 	width: 1024px;
@@ -128,27 +129,27 @@ table {
 	height: 203px;
 }
 .block-1 .block__link {
-	bottom: -60px;
-	left: 20px;
+	bottom: 13px;
+	left: 6px;
 }
 .block-1 .hover {
-	top: 91px;
-	left: -40px;
+	top: 57px;
+	left: -36px;
 }
 
 .block-2 {
 	top: 362px;
-	left: 50px;
+	left: 69px;
 	width: 347px;
 	height: 203px;
 }
 .block-2 .block__link {
-	bottom: 80px;
-	left: -40px;
+	bottom: 102px;
+	left: -72px;
 }
 .block-2 .hover {
-	top: 91px;
-	left: -40px;
+	top: 59px;
+	left: -41px;
 }
 
 .block-3 {
@@ -158,16 +159,35 @@ table {
 	height: 203px;
 }
 .block-3 .block__link {
-	bottom: -150px;
-	left: 140px;
+	bottom: -20px;
+	left: 130px;
 	width: 50px;
 }
 .block-3 .no-hover {
 	
 }
 .block-3 .hover {
-	top: 271px;
+	top: 171px;
 	left: 90px;
+}
+
+.block-4 {
+	bottom: 0px;
+	left: 280px;
+	width: 347px;
+	height: 103px;
+}
+.block-4 .block__link {
+	bottom: 30px;
+	left: 70px;
+	width: 50px;
+}
+.block-4 .no-hover {
+	
+}
+.block-4 .hover {
+	top: 14px;
+	left: 10px;
 }
 
 @media screen and (max-width: 1024px) {
