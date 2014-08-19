@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	height: 100%;
+}
+html, .grid, .content {
+	min-height: 100%;
+}
+body {
+	line-height: 1;
+	background: url(../../images/markup/bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.grid {
+	background: url(../../images/markup/grid.png) no-repeat;
+	width: 100%;
+}
+.content {
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
+}
+.block {
+	position: absolute;
+	z-index: 70;
+}
+.block img {
+	/* Переход */
+	-webkit-transition: all 0.5s ease-out 0.5s;
+	-moz-transition: all 0.5s ease-out 0.5s;
+	-o-transition: all 0.5s ease-out 0.5s;
+	transition: all 0.5s ease-out 0.5s;
+}
+.block:hover {
+	cursor: pointer;
+}
+.block:hover .hover {
+	cursor: pointer;
+	opacity: 1;
+	/* Переход */
+	-webkit-transition: all 0.5s ease-out 0.5s;
+	-moz-transition: all 0.5s ease-out 0.5s;
+	-o-transition: all 0.5s ease-out 0.5s;
+	transition: all 0.5s ease-out 0.5s;
+}
+.block__link {
+	text-align: center;
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	width: 230px;
+	position: absolute;
+	z-index: 60;
+}
+.hover {
+	position: absolute;
+	z-index: 59;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/* Переход */
+	-webkit-transition: all 0.5s ease-out 0.5s;
+	-moz-transition: all 0.5s ease-out 0.5s;
+	-o-transition: all 0.5s ease-out 0.5s;
+	transition: all 0.5s ease-out 0.5s;
+}
+.no-hover {
+	position: absolute;
+	z-index: 60;
+	top: 0;
+	left: 0;
+	/* Переход */
+	-webkit-transition: all 0.5s ease-out 0.5s;
+	-moz-transition: all 0.5s ease-out 0.5s;
+	-o-transition: all 0.5s ease-out 0.5s;
+	transition: all 0.5s ease-out 0.5s;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*main styles*/
+.block-1 {
+	top: 30px;
+	left: 30px;
+	width: 347px;
+	height: 203px;
+}
+.block-1 .block__link {
+	bottom: -60px;
+	left: 20px;
+}
+.block-1 .hover {
+	top: 91px;
+	left: -40px;
+}
