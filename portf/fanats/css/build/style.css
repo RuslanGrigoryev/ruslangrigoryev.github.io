@@ -675,3 +675,71 @@ h5 {
     border: 2px solid #a7a7a7;
     padding: 0;
 }
+.wrapper-fight {
+    padding: 30px 10px;
+}
+.wrap-cach strong {
+    background: url(../../images/markup/ico-cach.png) 0px 0px no-repeat;
+  
+}
+.wrap-search strong {
+    background: url(../../images/markup/ico-kastet.png) 0px 0px no-repeat;
+}
+.fight_list {
+    margin: 20px 0 10px 0;
+}
+.fight_list strong {
+    color: #20598a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.fight_list li {
+  border-bottom: 1px solid #215a8a;
+  padding: 10px 0 20px 0;
+}
+.fight_list .wrap-text {
+  width: 340px;
+}
+.power-amount {
+    font-size: 14px;
+    color: #20598a;
+    margin-right: 10px;
+}
+.power {
+    padding-left: 17px;
+    background: url(../../images/markup/ico-power.png) left center no-repeat;
+}
+.agility-amount {
+    color: #20598a;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.agility {
+    padding-left: 15px;
+    background: url(../../images/markup/ico-agility.png) left center no-repeat;
+}
+.life {
+    padding-left: 15px;  
+    background: url(../../images/markup/ico-heart.png) left center no-repeat;
+}
+.fight_list .wrap-image {
+    border: 1px solid #20598a;
+}
+.wrap-fight-btns {
+  text-align: center;
+  margin-top: 25px;
+  display: block;
+}
+.link-btn-right {
+  margin-right: 10px;
+  background: url(../../images/markup/link-f-left.png);
+}
+.link-btn-left {
+    background: url(../../images/markup/link-f-right.png);
+}
+.wrap-fight-btns a {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+}
