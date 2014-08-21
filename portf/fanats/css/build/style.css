@@ -571,6 +571,7 @@ h5 {
 .bold-red {
   font-weight: bold;
   color: #b71111;
+  font-size: 16px !important;
 }
 .task__header {
   padding: 10px 0;
