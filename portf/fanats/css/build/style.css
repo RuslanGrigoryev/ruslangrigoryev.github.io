@@ -635,3 +635,26 @@ h5 {
 .btn-msg-buy {
   background: #1f89ca;
 }
+.wrapper-roulette {
+  background: url(../../images/markup/bg-roulette.png);
+  min-height: 460px;
+}
+.wrapper-roulette .task__header {
+  color: #fff;
+}
+.wrapper-roulette .shop-list {
+  background: #fff;
+  padding: 10px;
+  position: relative;
+  top: 60px;
+}
+.wrapper-roulette .shop-list li {
+  border-bottom: none;
+}
+.shop-list h2 {
+    color: #1c4161;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
