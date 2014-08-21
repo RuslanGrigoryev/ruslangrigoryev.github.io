@@ -60,7 +60,7 @@ time, mark, audio, video {
 input, textarea, input:focus, textarea:focus {
   outline: none;
   padding: 5px;
-  color: #fff;
+  color: #000;
 }
 
 article, aside, details, figcaption, figure,
@@ -743,7 +743,7 @@ h5 {
     display: inline-block;
     vertical-align: bottom;
 }
-.wrapper-rules {
+.wrapper-rules, .wrapper-super {
     padding: 10px;
 }
 .wrapper-rules p {
@@ -754,4 +754,56 @@ h5 {
 .wrapper-rules span {
     font-weight: bold;
     margin-right: 5px;
+}
+.super-list {
+    margin-top: 10px;
+}
+.super-list li {}
+.super-list-header {
+    padding: 11px;
+    background: rgba(31,137,202,.35);
+}
+.super-list-header strong {
+    color: #1c4161;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.level-amount {
+    padding: 0 3px;
+}
+.super-list p {
+    color: #1c4161;
+    line-height: 20px;
+    margin: 2px 0 10px 0;
+    font-size: 16px;
+}
+.super-empty {
+    border: 1px solid #1f89ca;
+    height: 35px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.wrap-super-btns {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.super-list .decrease {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: -2px;
+    background: url(../../images/markup/ico-decrease.png);
+}
+.super-list .increase {
+    width: 13px;  height: 13px;  display: inline-block;  
+    vertical-align: -2px;
+    background: url(../../images/markup/ico-increase.png);
+}
+.super-date {
+    font-size: 13px;
+}
+.super-list .wrap-super-btns {
+    text-align: center;
+    margin-top: 10px;
 }
