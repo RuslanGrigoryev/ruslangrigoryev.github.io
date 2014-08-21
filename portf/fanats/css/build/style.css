@@ -609,3 +609,29 @@ h5 {
 .events-list--workshop .wrap-task-btns {
   padding: 6px 0 6px 20px;
 }
+.shop-list {}
+.shop-list li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #1f89ca;
+}
+.shop-list strong {
+    color: #1c4161;
+    font-weight: bold;
+}
+.shop-list p {
+    font-size: 15px;
+    color: #252627;
+    line-height: 17px;
+}
+.shop-list p span {
+    font-weight: bold;
+    color: #252627;
+}
+.shop-list .wrap-task-btns {
+    text-align: left;
+    margin-top: 6px;
+}
+.btn-msg-buy {
+  background: #1f89ca;
+}
