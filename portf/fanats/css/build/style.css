@@ -197,7 +197,7 @@ h1 {
 .btn-msg {
   margin-left: 0px;
   background: #3da92f;
-  min-width: 10px;
+  min-width: 125px;
   height: 23px;
   padding: 0 15px;
   color: #fff;
@@ -585,4 +585,16 @@ h5 {
 }
 .footer-index {
   padding: 20px 0 0 0;
+}
+.wrap-help strong {
+  background: none;
+}
+.events-list--help {
+
+}
+.events-list--help strong {
+    font-size: 13px;
+}
+.events-list--help strong span {
+    font-weight: bold;
 }
