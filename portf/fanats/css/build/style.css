@@ -570,7 +570,7 @@ h5 {
 }
 .bold-red {
   font-weight: bold;
-  color: #b71111;
+  color: #b71111 !important;
   font-size: 16px !important;
 }
 .task__header {
@@ -578,7 +578,7 @@ h5 {
 }
 .wrap-task-btns {
   text-align: center;
-  padding: 6px 0;
+  /* padding: 6px 0 6px 20px; */
 }
 .btn-msg-details {
   margin-left: 20px;
@@ -595,7 +595,17 @@ h5 {
 }
 .events-list--help strong {
     font-size: 13px;
+    color: #1b1b1b;
 }
 .events-list--help strong span {
     font-weight: bold;
+}
+.wrap-image,.wrap-text {
+  float: left;
+}
+.wrap-image {
+  margin-right: 10px;
+}
+.events-list--workshop .wrap-task-btns {
+  padding: 6px 0 6px 20px;
 }
