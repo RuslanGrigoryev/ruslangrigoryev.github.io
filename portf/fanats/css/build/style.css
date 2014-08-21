@@ -658,3 +658,20 @@ h5 {
     text-align: center;
     margin-bottom: 10px;
 }
+.shop-list__tile {
+    background: rgba(33,90,138,.3);
+    padding: 5px 0;
+    margin: 20px 0 10px 0;
+}
+.table_close {
+    margin: 10px auto;
+    border-collapse: separate;      
+    border-spacing: 5px;      *border-collapse: expression('separate', cellSpacing = '10px');
+}
+.table_close tr {}
+.table_close td {
+    width: 86px;
+    height: 96px;
+    border: 2px solid #a7a7a7;
+    padding: 0;
+}
