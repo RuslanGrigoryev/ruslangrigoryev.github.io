@@ -4,5 +4,5 @@
 		$(this).height($(this).height()/1.3);
 	});
 
-	$('.content').height($(window).height() );
 });*/
+	$('.content').height($(window).height() );
