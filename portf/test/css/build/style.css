@@ -76,7 +76,9 @@ footer, header, hgroup, menu, nav, section {
 html, body {
   min-height: 100%;
 }
-
+.flash {
+  float: left;
+}
 body {
   line-height: 1;
   font-size: 14px;
@@ -267,9 +269,9 @@ table {
   background: url(../../images/markup/light-status.png) 0px -70px repeat-x;
 }
 .w-status__link {
-  display: block;
+  float: left;
   color: #630;
-  padding: 25px 0 25px 85px;
+  padding: 25px 0 25px 15px;
   font-size: 18px;
 }
 
