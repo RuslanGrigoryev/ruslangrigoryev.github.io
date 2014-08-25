@@ -85,7 +85,7 @@ body {
   font-family: Verdana, sans-serif;
   color: #333;
   font-size: 11px;
-  background: #eaddce url(../../images/markup/pw.png) top center no-repeat;
+  background: #eaddce url(../../images/markup/pw.png) 48% 0% no-repeat;
 }
 .wrap {
   width: 1130px;
@@ -94,7 +94,7 @@ body {
   margin: 0 auto;
 }
 header embed {
-  margin: -15px 0 0 38px
+  margin: -16px 0 0 38px
 }
 a, a:hover {
   text-decoration: none;
