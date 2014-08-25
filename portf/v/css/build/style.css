@@ -159,7 +159,7 @@ header {
   vertical-align: top;
   padding-top: 61px; }
 .content__item__define {
-  width: 530px;
+  width: 555px;
   vertical-align: top;
   display: inline-block; 
   padding: 3px 0 0 10px;
@@ -296,5 +296,8 @@ footer {
   }
   .banner {
     background: url(../../images/img-01.jpg) center center no-repeat;
+  }
+  .item__define__features {
+    font-size: 12px;
   }
 }
