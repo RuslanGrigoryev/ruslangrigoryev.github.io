@@ -303,4 +303,7 @@ footer {
   .banner {
     background: url(../../images/img-01.jpg) center center no-repeat;
   }
+  .banner__wrap {
+    padding-left: 50px;
+  }
 }
