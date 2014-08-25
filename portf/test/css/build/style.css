@@ -286,7 +286,7 @@ table {
 .w-forum__item:last-child {
   border: none;
 }
-.w-forum__item strong {
+.w-forum__item>a {
   display: block;
   font-size: 18px;
   color: #630;
