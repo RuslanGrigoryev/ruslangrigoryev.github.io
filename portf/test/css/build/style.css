@@ -276,9 +276,12 @@ table {
 }
 
 .w-forum__item {
-  padding: 0 0 5px 15px;
-  margin: 10px 0;
+  padding: 10px 0 15px 15px;
   border-bottom: 2px solid #cabead;
+  background: url(../../images/markup/light-status.png) repeat-x;
+}
+.w-forum__item:hover {
+  background: url(../../images/markup/light-status.png) 0px -70px repeat-x;
 }
 .w-forum__item:last-child {
   border: none;
@@ -381,12 +384,15 @@ table {
   margin-bottom: 20px;
 }
 .top__item {
-  padding: 0 5px;
+  padding: 5px 5px 5px 0;
   text-align: right;
   font-size: 18px;
-  margin: 5px 0 10px 0;
   color: #333;
   border-bottom: 1px solid #877e74;
+  background: url(../../images/markup/light-status.png) repeat-x;
+}
+.top__item:hover {
+  background: url(../../images/markup/light-status.png) 0px -70px repeat-x;
 }
 .top__count {
   float: left;
