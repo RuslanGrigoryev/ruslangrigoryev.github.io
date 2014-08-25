@@ -318,6 +318,7 @@ table {
   color: #630;
   text-align: center;
   margin: 5px 0 15px 0;
+  padding-right: 25px;
 }
 .content__post__more {
   width: 185px;
