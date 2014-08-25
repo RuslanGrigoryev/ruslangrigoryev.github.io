@@ -125,7 +125,7 @@ header {
 
 .banner {
   height: 495px;
-  background: url(../../images/img-01.jpg) center center no-repeat; }
+  background: url(../../images/img-01.jpg) center center no-repeat;background-size: 100% 100%; }
 .banner__wrap {
   width: 672px;
   height: 495px;
@@ -296,6 +296,7 @@ header {
   }
   .banner {
     background: url(../../images/img-01.jpg) center center no-repeat;
+    background-size: 100% 100%;
   }
   .banner__wrap {
     padding-left: 50px;
