@@ -416,3 +416,8 @@ footer .copyright {
   width: 88px;
   height: 31px;
 }
+@media screen and (min-width: 1365px) {
+  body {
+    background: #eaddce url(../../images/markup/pw.png) 49.8% 0% no-repeat;
+  }
+}
