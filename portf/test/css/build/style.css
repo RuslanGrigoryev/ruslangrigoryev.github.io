@@ -228,7 +228,14 @@ table {
   font-family: 'PTSansNarrowRegular';
   margin-bottom: 40px;
 }
-
+.main__link__header {
+  position: absolute;
+  z-index: 9999;
+  width: 232px;
+  height: 43px;
+  top: 270px;
+  left: 370px;
+}
 .widget__header {
   background: url(../../images/markup/widget-header-bg.png) top center no-repeat;
   text-align: center;
