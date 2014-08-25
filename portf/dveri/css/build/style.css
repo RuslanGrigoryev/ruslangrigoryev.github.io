@@ -277,3 +277,27 @@ header {
   text-align: left;
   font-size: 12px;
   padding-bottom: 10px; }
+@media only screen and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+  }
+  .header__info__list {
+    margin: 0 12px 0 33px;
+    width: 224px;
+  }
+  .content__item__define {
+    width: 507px;
+  }
+  .blocks__item {
+    width: 306px;
+  }
+  .w {
+    background: none;
+  }
+  .banner {
+    background: url(../../images/img-01.jpg) center center no-repeat;
+  }
+  .banner__wrap {
+    padding-left: 50px;
+  }
+}
