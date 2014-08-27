@@ -286,4 +286,7 @@ background-size: 100% 100%;
   .banner {
     height: 415px;
   }
+  .banner__wrap {
+    width: 622px;
+  }
 }
