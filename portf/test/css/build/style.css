@@ -85,7 +85,7 @@ body {
   font-family: Verdana, sans-serif;
   color: #333;
   font-size: 11px;
-  background: #eaddce url(../../images/markup/pw.png) 48% 0% no-repeat;
+  background: #eaddce url(../../images/markup/pw.png) 49.8% 0% no-repeat;
 }
 .wrap {
   width: 1130px;
@@ -430,8 +430,8 @@ footer .copyright {
   width: 88px;
   height: 31px;
 }
-@media screen and (min-width: 1365px) {
+@media screen and (min-width: 1280px) {
   body {
-    background: #eaddce url(../../images/markup/pw.png) 49.8% 0% no-repeat;
+    background: #eaddce url(../../images/markup/pw.png) 49.8% 10% no-repeat;
   }
 }
