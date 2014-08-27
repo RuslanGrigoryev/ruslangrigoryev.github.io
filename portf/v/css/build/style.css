@@ -124,13 +124,12 @@ header {
 }
 
 .banner {
+  width: 100%;
   height: 495px;
   background: url(../../images/img-01.jpg) center center no-repeat;
 background-size: 100% 100%;
    }
-   .banner .wrapper {
-    width: 960px;
-   }
+   .banner .wrapper {}
 .banner__wrap {
   width: 672px;
   height: 495px;
