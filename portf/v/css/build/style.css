@@ -161,6 +161,7 @@ background-size: 100% 100%;
   /* padding: 0 0 0 10px; */
 }
 .content__item__image {
+  width: 420px;
   display: inline-block;
   vertical-align: top;
   padding-top: 61px; }
@@ -225,7 +226,7 @@ background-size: 100% 100%;
   /* margin-top: 13px; */
 }
 .blocks__item {
-  width: 320px;
+ width: 312px;
   float: left; }
 .blocks__item--last {
   margin-left: 19px;
