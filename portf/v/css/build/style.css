@@ -283,27 +283,3 @@ header {
 footer {
   padding-left: 10px;
 }
-@media only screen and (max-width: 960px) {
-  .wrapper {
-    width: 960px;
-  }
-  .header__info__list {
-    margin: 0 12px 0 37px;
-    width: 224px;
-  }
-  .content__item__define {
-    width: 520px;
-  }
-  .blocks__item {
-    width: 312px;
-  }
-  .w {
-    background: none;
-  }
-  .banner {
-    background: url(../../images/img-01.jpg) center center no-repeat;
-  }
-  .banner__wrap {
-    padding-left: 50px;
-  }
-}
