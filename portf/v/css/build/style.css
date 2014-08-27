@@ -109,9 +109,9 @@ header {
 .header__info__list--phone {
   background: url(../../images/markup/sprite.png) 0px 6px no-repeat; }
 .header__info__list--delivery {
-  background: url(../../images/markup/sprite.png) -1px -39px no-repeat; }
+  background: url(../../images/markup/sprite.png) 0px -109px no-repeat; }
 .header__info__list--online {
-  background: url(../../images/markup/sprite.png) -5px -84px no-repeat; }
+  background: url(../../images/markup/sprite.png) 0px -235px no-repeat; }
 .header__info__list__head {
   font-size: 18px;
   font-weight: bold;
