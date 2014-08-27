@@ -54,8 +54,7 @@ body {
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
   font-size: 14px;
   color: #000;
-  line-height: 1;
-  overflow-x: hidden; }
+  line-height: 1; }
 
 .wrap {
   width: 1440px;
@@ -128,6 +127,9 @@ header {
   height: 495px;
   background: url(../../images/img-01.jpg) center center no-repeat;
 background-size: 100% 100%;
+   }
+   .banner .wrapper {
+    width: 960px;
    }
 .banner__wrap {
   width: 672px;
