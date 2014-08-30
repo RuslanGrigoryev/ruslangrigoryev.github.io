@@ -46,3 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#map {
+	margin: 100px auto;
+	width: 900px;
+}
