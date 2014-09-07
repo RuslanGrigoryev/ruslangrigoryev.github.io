@@ -467,3 +467,12 @@ a.slide-item__active {
 .section-simple-text_indent {
     text-indent: 50px;
 }
+.counter {
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    bottom: 10px;
+    width: 31px;
+    height: 31px;
+    background: url(http://counter.yadro.ru/logo?44.11);
+}
