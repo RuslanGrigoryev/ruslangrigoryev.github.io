@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>EverAD - рекламная сеть</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="./css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs/jquery-ui.css">
+</head>
+
+<body>
+	<div class="popup_overlay"></div>
+<!-- Попап-окно формы заявки -->
+	<div id="form_popup">
+		<div class="form_popup_top">Войти в аккаунт
+			<a href="#" class="close_btn">&times;</a>
+		</div>
+		<form name="order_form" class="order_form">
+			<input type="text" placeholder="Email" name="email">
+			<input type="password" placeholder="Пароль" name="password">
+			<input type="checkbox" id="checkbox" class="styled"><label for="checkbox">Запомнить меня</label>
+			<a href="#">Забыли пароль?</a><br>
+			<input type="submit" class="enter_btn" value="Войти">
+			<input type="button" class="cancel_button" value="Отмена">
+		</form>
+		<div class="not_account">
+			<p>Нет аккаунта?</p>
+			<a href="./registration.html" class="reg_btn">Зарегистрироваться</a>
+		</div>
+	</div><!-- конец попап-окна формы заявки -->
+<div class="wrapper">
+
+	<header class="header">
+			<div class="h_l logo-block">
+				<a href="index.html" class="logo-wrap">
+					<img src="img/logo.png" alt="logo">
+				</a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="#">Вебмастеру</a></li>
+					<li><a href="#">Рекламодателю</a></li>
+					<li><a href="./about.html">О системе</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="h_r button_enter clearfix">
+				<a href="javascript:void(0);" class="enter_button">Вход и регистрация</a>
+			</div>
+			<div class="h_r button_mobile">
+				<a href="javascript:void(0);"></a>
+			</div>
+			<div class="menu_mobile boxsizing"></div>
+		</header><!-- .header-->
+
+	<main class="content content_vacancy">
+		<div class="static">
+			<div class="container">
+				<div class="middle">
+					<span class="article_title">Вакансии</span>
+					<p class="vacancy__text">
+						С первого дня работы в компании ты ощущаешь бесценную поддержку и помощь 
+						каждого сотрудника — тебя легко адаптируют в бизнес-процессы, и ты понимаешь 
+						какую роль ты играешь в достижении стратегических целей всей компании.
+
+						Мы умеем стимулировать к лучшему результату, мы работаем над мотивацией каждого 
+						сотрудника. Ты всегда можешь быть услышанным.
+
+						В нашей компании царит такая атмосфера, которая доставляет истинное удовольствие, 
+						нет ощущения, что ты на работе, и правда, мы — клуб единомышленников, у которых 
+						схожие задачи и цели, а всех нас объединяет наше любимое хобби — широкие 
+						просторы интернета и безграничные возможности информационных технологий!
+					</p>
+
+					<div class="vacancy__tab">
+						<a href="#" class="vacancy__tab__item vacancy__tab__item_active" data-link="1">
+							<span class="vacancy__tab__item__icon vacancy__tab__item__icon_competence"></span>
+							<div class="vacancy__tab__item__wrap">
+								<strong class="vacancy__tab__item__header">Поиск по компетенции</strong>
+								<p>Найдите вакансию в соответствии с вашей специализацией</p>
+							</div>
+						</a>
+						<a href="#" class="vacancy__tab__item" data-link="2">
+							<span class="vacancy__tab__item__icon vacancy__tab__item__icon_region"></span>
+							<div class="vacancy__tab__item__wrap">
+								<strong class="vacancy__tab__item__header">Поиск по региону</strong>
+								<p>Также вы можете посмотреть вакансию в вашем городе</p>
+							</div>
+						</a>
+					</div>
+					<div class="vacancy__list vacancy__list_active" data-block="1">
+						<a href="#" class="vacancy__list__link">Отдел Маркетинга и Рекламы</a>
+						<div class="vacancy__list__content clearfix">
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Трафик-менеджер (online игры)</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Account manager (banking segment)</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Account manager (e-commerce)</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+						</div>
+						<a href="#" class="vacancy__list__link">Отдел разработки</a>
+						<div class="vacancy__list__content clearfix">
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Разработчик Java / Senior Java Developer</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Руководитель проектов / Project Manager</a>
+								<span class="vacancy__list__text">Киев</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Ведущий PHP разработчик / Senior PHP Developer</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Специалист технической интеграции</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Разработчик веб-интерфейсов / Front-End Developer</a>
+								<span class="vacancy__list__text">Москва</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Менеджер продукта / Product manager</a>
+								<span class="vacancy__list__text">Киев</span>
+							</div>
+						</div>
+						<a href="#" class="vacancy__list__link vacancy__list__link_active">Административный персонал</a>
+						<a href="#" class="vacancy__list__link vacancy__list__link_active">Отдел продаж</a>
+					</div>
+					<div class="vacancy__list" data-block="2">
+						<a href="#" class="vacancy__list__link">Москва</a>
+						<div class="vacancy__list__content clearfix">
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Трафик-менеджер (online игры)</a>
+								<span class="vacancy__list__text">Отдел Маркетинга и Рекламы</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Account manager (banking segment)</a>
+								<span class="vacancy__list__text">Отдел Маркетинга и Рекламы</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Account manager (e-commerce)</a>
+								<span class="vacancy__list__text">Отдел Маркетинга и Рекламы</span>
+							</div>
+						</div>
+						<a href="#" class="vacancy__list__link">Киев</a>
+						<div class="vacancy__list__content clearfix">
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Разработчик Java / Senior Java Developer</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Разработчик Java / Senior Java Developer</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Ведущий PHP разработчик / Senior PHP Developer</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Специалист технической интеграции</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Разработчик веб-интерфейсов / Front-End Developer</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+							<div class="vacancy__list__content__block">
+								<a href="#" class="vacancy__list__link-position">Менеджер продукта / Product manager</a>
+								<span class="vacancy__list__text">Отдел разработки</span>
+							</div>
+						</div>
+						<a href="#" class="vacancy__list__link vacancy__list__link_active">Санкт-Петербург</a>
+						<a href="#" class="vacancy__list__link vacancy__list__link_active">Донецк</a>
+					</div>
+
+				</div><!-- .middle -->
+			</div><!-- .container-->
+
+			<aside class="right-sidebar right-sidebar_vacancy">
+				<div class="b_box b_box_connection">
+					<div class="l_title">Свяжитесь с нами</div>
+					<form action="#" name="form_connection" class="form_connection">
+						<select name="lettertheme" id="target" placeholder="Тема письма">
+							<option value="theme1">theme1</option>
+							<option value="theme2">theme2</option>
+							<option value="theme3">theme3</option>
+							<option value="theme4">theme4</option>
+						</select>
+						<input type="text" placeholder="Имя и фамилия">
+						<input type="text" placeholder="Email">
+						<textarea name="message" id="MessageTheme" class="textarea_simple" cols="30" rows="10" placeholder="Напишите ваше сообщение"></textarea>
+						<label class="button_upload">
+						    <div class="button_upload-text" >Прикрепить файл</div>
+						    <div class='input'>Выберите файл</div>
+						    <input type="file" onchange="this.previousSibling.previousSibling.innerHTML = this.value"/>
+						</label>
+						<span class="file_caption">Не более 5 Мб</span>
+						<input type="submit" class="button_blue" value="Отправить">
+					</form>
+				</div>
+			</aside><!-- .right-sidebar -->
+		</div>
+	</main><!-- .content-->
+</div><!-- .wrapper -->
+
+	<footer class="footer">
+		<div class="footer_wrap clearfix boxsizing">
+			<div class="footer__item"> 
+				<p>Для вебмастеров</p>
+				<ul>
+					<!-- <li><a href="#">Каталог офферов</a></li> -->
+					<li><a href="rules.html">Правила</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul> 
+			</div>
+			<div class="footer__item">
+				<p>Рекламодателям</p>
+				<ul>
+					<li><a href="about.html">Наши преимущества</a></li>
+					<li><a href="registration.html">Разместить проект</a></li>
+				</ul>
+			</div>
+			<div class="footer__item">
+				<p>Компания</p>
+				<ul>
+					<!-- <li><a href="about.html">О нас</a></li> -->
+					<li><a href="vacancy.html">Наши вакансии</a></li>
+					<li><a href="./contacts.html">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__item footer__item_addr">
+				<p>Почтовый адрес</p>
+				<div class="footer__item__address">
+					<p>Cariovision Trade Ltd. Geneva Place</p>
+					<p>Waterfront Drive, P.O. Box 3469, Road</p>
+					<p>Town, Tortola. BVI</p>
+				</div>
+			</div>
+		</div>
+	</footer><!-- .footer -->
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="./js/lodash.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="./js/masonry.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.accordion.2.0.min.js"></script>
+	<script type="text/javascript" src="./js/scripts.js"></script>
+</body>
+</html>
