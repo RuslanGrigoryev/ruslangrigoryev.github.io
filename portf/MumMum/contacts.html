@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<header class="header wrapper">
+		
+		<div class="header__top clearfix">
+			<div class="header__logo">
+				<a href="index.html">
+					<img src="img/logo.png" alt="logo">
+				</a>
+			</div>
+			<ul class="header__menu">
+				<li class="header__menu__item">
+					<a href="#">Home</a>
+				</li>
+				<li class="header__menu__item">
+					<a href="#">About</a>
+				</li>
+				<li class="header__menu__item">
+					<a href="#">Order</a>
+				</li>
+				<li class="header__menu__item">
+					<a href="#">Fun</a>
+				</li>
+				<li class="header__menu__item header__menu__item_active">
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+
+			<div class="header__menu_mobile">
+				<a href="#" class="header__menu_mobile__main-link">Select Page</a>
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Home</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">About</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Order</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Fun</a>
+					</li>
+					<li class="mobile-menu__item">
+						<a href="" class="mobile-menu__link">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Contact us</h2>
+
+		<div class="header__overlay"></div>
+	</header>
+		
+	<section class="content wrapper">
+		
+		<h4 class="phone">Phone Number <span>202-555-0185 </span></h4>
+		<div class="contacts">
+			<div id="map" class="map"></div>
+			<div class="contacts__info">
+				<strong>MumMum</strong>
+				<strong>501 Marshall Street #500</strong>
+				<strong>Jackson, MS(Mississippi) 39202</strong>
+				<strong>United States </strong>
+				<a href="https://www.google.com.ua/maps/place/501+Marshall+St,+Paterson,+NJ+07503,+%D0%A1%D0%A8%D0%90/@40.8942115,-74.1641545,15z/data=!4m2!3m1!1s0x89c2fe811b673b01:0x420bc2f36e8c0d45?hl=ru" class="contacts__info__link">(Open in Google Maps)</a>
+				<strong>
+					<span class="contacts__info__label">Careers</span>
+					<a href="mailto:johndoe@gmail.com?Subject=Hello" target="_top" class="contacts__info__mail">johndoe@gmail.com</a>
+				</strong>
+				<strong>
+					<span class="contacts__info__label">Enquiry</span>
+					<a href="mailto:johndoe@gmail.com?Subject=Hello" target="_top" class="contacts__info__mail">johndoe@gmail.com</a>
+				</strong>
+				<strong>
+					<span class="contacts__info__label">Feedback</span>
+					<a href="mailto:johndoe@gmail.com?Subject=Hello" target="_top" class="contacts__info__mail">johndoe@gmail.com</a>
+				</strong>
+			</div>
+		</div>
+
+	</section>
+		
+	<footer class="footer">
+		
+		<div class="footer__block footer__block_logo">
+			<a href="#" class="footer__logo">
+				<img src="img/logo.png" alt="logo">
+				<img src="img/logo_footer.png" alt="logo_footer" class="logo_footer-image">
+				<span class="footer__copyright">Copyright 2014</span>
+			</a>
+		</div>
+		<div class="footer__block footer__block_quick">
+			<h3>Quick Links</h3>
+
+			<ul class="footer__menu">
+				<li><a href="#">Career</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="footer__block footer__block_connect">
+			<h3>Connect</h3>
+
+			<ul class="footer__menu_social clearfix">
+				<li><a href="#" class="footer__menu_social__link footer__menu_social__link_tw"></a></li>
+				<li><a href="#" class="footer__menu_social__link footer__menu_social__link_fb"></a></li>
+				<li><a href="#" class="footer__menu_social__link footer__menu_social__link_in"></a></li>
+			</ul>
+		</div>
+		<div class="footer__block footer__block_address">
+			<h3>Location</h3>
+			<p class="footer__adress">501 Marshall Street #500 </p>
+			<p class="footer__adress">Jackson, MS(Mississippi) 39202</p>
+			<p class="footer__adress">United States </p>
+		</div>
+
+	</footer>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="js/script.js"></script>
+	<script>
+		var map;
+		function initialize() {
+		  var mapOptions = {
+		    zoom: 8,
+		    center: new google.maps.LatLng(40.897537, -74.167502)
+		  };
+		  map = new google.maps.Map(document.getElementById('map'),
+		      mapOptions);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+</body>
+</html>
