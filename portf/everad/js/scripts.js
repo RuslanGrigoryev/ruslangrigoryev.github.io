@@ -417,7 +417,7 @@ $(document).ready(function(){
     if ( $('.owl-slider').length) {
         $(".owl-slider").owlCarousel({
             items   : 4,
-            /*autoPlay: true,*/
+            autoPlay: true,
             stopOnHover: true,
             navigation: true,
             navigationText : false,
