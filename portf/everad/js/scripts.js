@@ -291,13 +291,11 @@ $(document).ready(function(){
 
         if (isMacLike) {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom');
 
         }
         else {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom fixed');
         }
    /* $('.banner_l').on('mouseenter', function () {
@@ -332,13 +330,11 @@ $(document).ready(function(){
 
         if (isMacLike) {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom');
 
         }
         else {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom fixed');
         }
         $regButton.removeClass('active_button');
@@ -361,13 +357,11 @@ $(document).ready(function(){
         $sec4b.css('display','none');
         if (isMacLike) {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom');
 
         }
         else {
             $section5.css('background','url(./img/sec5_bg.jpg) no-repeat center bottom fixed');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom fixed');
         }
         $regButton.removeClass('active_button');
@@ -390,13 +384,11 @@ $(document).ready(function(){
         $sec4b.css('display','block');
         if (isMacLike) {
             $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom');
 
         }
         else {
             $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom fixed');
         }
         $regButton.addClass('active_button');
@@ -419,13 +411,11 @@ $(document).ready(function(){
         $sec4b.css('display','block');
         if (isMacLike) {
             $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom');
 
         }
         else {
             $section5.css('background','url(./img/sec5b_bg.jpg) no-repeat center bottom fixed');
-            $('#section2').css('background','url(./img/sec2_bg.jpg) no-repeat center bottom fixed');
             $('#section3').css('background','url(./img/sec3_bg.jpg) no-repeat center bottom fixed');
         }
         $regButton.addClass('active_button');
