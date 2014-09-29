@@ -3269,7 +3269,7 @@ b {
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
 		width: 296px;
-		height: 450px;
+		height: 410px;
 	}
 	#form_popup .order_form, #form_popup .not_account {
 		float: none;
@@ -3279,6 +3279,9 @@ b {
 		-webkit-box-sizing: border-box;
 		box-sizing:        border-box;
 		margin: 0;
+	}
+	#form_popup .not_account {
+		padding: 0 28px;
 	}
 	#form_popup .order_form input[type="text"], #form_popup .order_form input[type="password"] {
 		-moz-box-sizing:    border-box;
