@@ -33,4 +33,5 @@
 		$('.photo-block__inner__layer').mouseleave(function () {
 			$(this).slideUp(400);
 		})
+
 });
