@@ -298,6 +298,19 @@ $(document).ready(function(){
         }
         $(window).resize(posLeft);
 
+   /* $('.banner_l').on('mouseenter', function () {
+        $bannerLeft.addClass('banner_active');
+        $bannerLeft.removeClass('banner_l_inactive');
+        $bannerRight.removeClass('banner_active');
+        $bannerRight.addClass('banner_r_inactive');
+    })
+
+    $('.banner_r').on('mouseenter', function () {
+         $bannerLeft.removeClass('banner_active');
+         $bannerLeft.addClass('banner_l_inactive');
+         $bannerRight.addClass('banner_active');
+         $bannerRight.removeClass('banner_r_inactive');   
+    })*/
 
     $masterButton.on('click',function(){
         $enterButton.removeClass('active_enter_button');

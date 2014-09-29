@@ -125,6 +125,9 @@ body {
 	min-height: 100%;
 	min-width: 320px;
 }
+.wrapper_main {
+	min-width: 300px;
+}
 .static {
 	margin: 0 auto;
 	max-width: 960px;
