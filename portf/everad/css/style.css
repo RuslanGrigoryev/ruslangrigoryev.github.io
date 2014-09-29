@@ -3246,6 +3246,9 @@ b {
 		width: 145px;
 		padding: 7px;
 	}
+	.registration .reg_box .registration_form .cancel_button {
+		margin: 24px 72px 0 3px;
+	}
 }
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
