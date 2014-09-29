@@ -3248,6 +3248,7 @@ b {
 	}
 	.registration .reg_box .registration_form .cancel_button {
 		margin: 24px 72px 0 3px;
+		width: 60px;
 	}
 }
 @media all and (max-width: 600px) {
