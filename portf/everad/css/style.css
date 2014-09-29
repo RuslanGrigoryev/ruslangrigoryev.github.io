@@ -1648,6 +1648,7 @@ b {
 	float: left;
 	display: block;
 	-webkit-appearance: none;
+	border-radius: 0px;
 }
 .wrap-input {
 	display: inline-block;
@@ -1670,6 +1671,8 @@ b {
 	width: 80px;
 	float: left;
 	display: block;
+	border-radius: 0px;
+	-webkit-appearance: none;
 }
 .registration .reg_box .registration_form .cancel_button:hover {
 	background: #efefef;
