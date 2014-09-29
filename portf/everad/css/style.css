@@ -1559,6 +1559,7 @@ b {
 	-moz-box-sizing:    border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing:        border-box;
+	border-radius: 0px;
 }
 .registration .reg_box .registration_form input:focus,.registration .reg_box .registration_form textarea:focus {
 	background: #fff;
