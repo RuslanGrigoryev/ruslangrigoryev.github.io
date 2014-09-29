@@ -3250,6 +3250,12 @@ b {
 		margin: 24px 72px 0 3px;
 		width: 60px;
 	}
+	.map {
+		margin: 0 6px;
+	}
+	.map iframe {
+		height: 300px;
+	}
 }
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
