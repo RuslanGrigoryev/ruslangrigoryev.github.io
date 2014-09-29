@@ -3268,6 +3268,12 @@ b {
 	.map iframe {
 		height: 200px;
 	}
+	.owl-slider .owl-prev {
+		left: 10px;
+	}
+	.owl-slider .owl-next {
+		right: 10px;
+	}
 }
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
