@@ -436,8 +436,39 @@ a {
 /*Fun page styles*/
 
 .isotope {
-  max-width: 1186px;
+  width: 1425px;
   margin: 100px auto;
+}
+@media all and (max-width: 1700px) {
+  .isotope {
+    width: 1190px;
+    margin: 100px auto;
+  }
+}
+@media all and (max-width: 1495px) {
+  .isotope {
+    width: 960px;
+    margin: 100px auto;
+  }
+}
+@media all and (max-width: 1190px) {
+  .isotope {
+    width: 710px;
+    margin: 100px auto;
+  }
+}
+@media all and (max-width: 1000px) {
+  .isotope {
+    width: 474px;
+    margin: 100px auto;
+  }
+  .fun_video {
+      width: 464px !important;
+      height: 330px !important;
+  }
+  .content_fun {
+    padding: 0 105px;
+  }
 }
 .isotope img {
   width: 100%;
@@ -824,10 +855,5 @@ a {
   .photo-block__item {
     display: block;
     width: 100%;
-  }
-}
-@media all and (min-width: 1255px) and (max-width: 1920px) {
-  .item_cell:last-child {
-    display: none;
   }
 }
