@@ -2100,6 +2100,7 @@ b {
 	margin: 12px 0 17px;
 	padding: 9px 12px 6px;
 	width: 227px;
+	border-radius: 0px;
 }
 .right-sidebar .form_subscribe input,.right-sidebar .search_input_white {
 	background: #fff;
@@ -2566,6 +2567,7 @@ b {
 	width: 137px;
 	color: #fff;
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 .right-sidebar .button_blue:hover {
 	background: #2684c3;
@@ -2598,16 +2600,16 @@ b {
 .vacancy__list {
 	width: 100%;
 	display: none;
-	min-height: 500px;
 	margin-top: 50px;
 	background: #fdfdfd;
 	-moz-box-sizing:    border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing:        border-box;
-	border: 1px solid #e6e6e6;
 }
 .vacancy__list__content  {
 	padding: 20px 10px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
 }
 .vacancy__list_active {
 	display: block;
@@ -2667,7 +2669,7 @@ b {
 	font-family: 'SegoeUISemibold';
 	display: block;
 	padding: 20px 40px;
-	border-bottom: 1px solid #e6e6e6;
+	border: 1px solid #e6e6e6;
 	text-decoration: none;
 	background: #fdfdfd url(../img/ico-arrow-down-blue.png) no-repeat;
 	background-position: 18px center;
