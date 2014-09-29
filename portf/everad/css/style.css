@@ -1226,6 +1226,7 @@ b {
 	outline: none;
 	padding: 15px 20px;
 	width: 305px;
+	border-radius: 0px;
 }
 .contacts_wrap .feedback_form textarea {
 	background: #fafafa;
@@ -1242,6 +1243,7 @@ b {
 	padding: 15px 20px;
 	resize: none;
 	width: 535px;
+	border-radius: 0px;
 }
 .contacts_wrap .feedback_form input[type="text"]:focus,.contacts_wrap .feedback_form textarea:focus {
 	background: #fff;
@@ -1258,6 +1260,7 @@ b {
 	padding: 10px 110px 14px;
 	transition: all 500ms ease 0s;
 	-webkit-appearance: none;
+	border-radius: 0px;
 }
 .contacts_wrap .feedback_form .send_button:hover {
 	background: #3598db;
