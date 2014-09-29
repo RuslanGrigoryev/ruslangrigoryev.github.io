@@ -1647,6 +1647,7 @@ b {
 	width: 170px;
 	float: left;
 	display: block;
+	-webkit-appearance: none;
 }
 .wrap-input {
 	display: inline-block;
