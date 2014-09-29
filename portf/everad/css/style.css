@@ -3241,6 +3241,12 @@ b {
 		max-width: 600px;
 	}
 }
+@media all and (max-width: 639px) {
+	.registration .reg_box .registration_form .send_button {
+		width: 145px;
+		padding: 7px;
+	}
+}
 @media all and (max-width: 600px) {
 	#form_popup.activePopup {
 		width: 296px;
