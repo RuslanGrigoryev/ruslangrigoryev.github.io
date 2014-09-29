@@ -2276,6 +2276,7 @@ b {
 	margin: 2px 0 19px;
 	padding: 10px 11px 9px;
 	width: 241px;
+	border-radius: 0px;
 }
 .checkbox {
 	background: url(../img/ico.png)no-repeat -184px -30px;
@@ -2306,6 +2307,8 @@ b {
 #form_popup .order_form .enter_btn, #form_popup .not_account .reg_btn {
 	background: #3598db;
 	box-shadow: 0 2px 0 #2278b3;
+	-webkit-appearance: none;
+	border-radius: 0px;
 }
 #form_popup .order_form .enter_btn {
 	border: none;
