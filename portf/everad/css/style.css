@@ -1,7 +1,7 @@
 @import url(libs/common.css);
 @import url(libs/animation.css);
 @import url(libs/jquery.bxslider.css);
-@import url(libs/owl.carousel.css);
+@import url(libs/owl.carousel.test.css);
 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
 	border: 0;
@@ -596,6 +596,7 @@ b {
 	margin: -19px 0 0 -18px;
 	position: absolute;
 	width: 67px;
+	z-index: 200;
 }
 #section2-a {
 }
@@ -781,22 +782,19 @@ b {
 	border: 1px solid #e6e6e6;
 	border-top: none;
 	margin: 0 10px 53px 10px;
-	min-height: 100px;
 	-moz-box-sizing:    border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing:        border-box;
-	min-height: 140px;
 	position: relative;
 }
 .cols {
 	line-height: 20px;
 	max-width: 1200px;
-	position: absolute;
 	padding: 30px 40px 18px 40px;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	display: none;
+}
+.cols.current_active {
+	display: block;
 }
 .cols h5 {
 	color: #191919;
@@ -1451,27 +1449,28 @@ b {
 	display: table-cell;
 	width: 50%;
 	position: relative;
+	background: #f8f8f8;
 }
 .registration .tabs2 li a {
-	background: #f8f8f8;
 	color: #3c3c3b;
 	display: inline-block;
 	font-family: 'SegoeUISemibold',sans-serif;
 	font-size: 18px;
-	margin: 0 -3px;
 	padding: 28px 0px 18px 0px;
 	text-align: center;
 	text-decoration: none;
 	width: 100%;
-	border: 1px solid #e7e7e7;
 }
-.registration .tabs2 li a:hover,.registration .tabs2 li a.current,.registration .tabs2 li a.current:hover {
+.registration .tabs2 li:hover,.registration .tabs2 li.current,.registration .tabs2 li.current,.registration .tabs2 li:hover a {
 	background: #6cbbe9;
 	color: #fff;
 	font-family: 'SegoeUISemibold',sans-serif;
 	font-size: 18px;
 }
-.registration .tabs2 li .current:after {
+.registration .tabs2 li.current a {
+	color: #fff;
+}
+.registration .tabs2 li.current:after {
 	border-left: 13px solid transparent;
 	border-right: 13px solid transparent;
 	border-top: 11px solid #6cbbe9;
@@ -1479,7 +1478,6 @@ b {
 	display: block;
 	height: 0px;
 	line-height: 0;
-	margin-top: 15px;
 	left: 50%;
 	margin-left: -6px;
 	position: absolute;
@@ -1494,7 +1492,7 @@ b {
 	vertical-align: top;
 	width: 36px;
 }
-.registration .tabs2 li .current .ico1,.registration .tabs2 li a:hover .ico1 {
+.registration .tabs2 li.current .ico1,.registration .tabs2 li:hover .ico1 {
 	background-position: 0 0;
 }
 .registration .tabs2 li a .ico2 {
@@ -1505,7 +1503,7 @@ b {
 	vertical-align: top;
 	width: 41px;
 }
-.registration .tabs2 li .current .ico2,.registration .tabs2 li a:hover .ico2 {
+.registration .tabs2 li.current .ico2,.registration .tabs2 li a:hover .ico2 {
 	background-position: -48px -42px;
 }
 .registration .panes2 {
@@ -2915,6 +2913,10 @@ b {
 	font-size: 20px;
 	color: #bdbdbd;
 }
+.owl-carousel {
+	max-width: 850px;
+	margin: 30px auto;
+}
 /*Media styles*/
 
 @media (min-width: 1109px) and (max-width: 1208px) {
@@ -3013,9 +3015,6 @@ b {
 	}
 	.tabs li a {
 		padding: 3px;
-	}
-	.panes {
-		min-height: 260px;
 	}
 	.banner_r .button_main_master, .banner_l .button_main_adv {
 		display: block;
@@ -3214,7 +3213,7 @@ b {
 		right: 50%;
 		margin-right: -150px;
 	}
-	.registration .tabs2 li .current:after, .vacancy__tab__item_active:after {
+	.registration .tabs2 li.current:after, .vacancy__tab__item_active:after {
 		display: none;
 	}
 	.registration .reg_box .registration_form .chk label {
@@ -3270,10 +3269,10 @@ b {
 	.map iframe {
 		height: 200px;
 	}
-	.owl-slider .owl-prev {
+	.owl-carousel .owl-prev {
 		left: 10px;
 	}
-	.owl-slider .owl-next {
+	.owl-carousel .owl-next {
 		right: 10px;
 	}
 }

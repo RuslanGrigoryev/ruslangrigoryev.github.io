@@ -59,11 +59,11 @@
 	<main class="content">
 		<div class="static registration">
 			<ul class="tabs2">
-                <li><a href="#" class="current"><span class="ico ico1"></span>Вебмастер</a></li>
-                <li><a href="#"><span class="ico ico2"></span>Рекламодатель</a></li>
+                <li class="tabs__item current" data-link="1"><a href="#"><span class="ico ico1"></span>Вебмастер</a></li>
+                <li class="tabs__item" data-link="2"><a href="#"><span class="ico ico2"></span>Рекламодатель</a></li>
             </ul>
             <div class="panes2">
-                <div class="cols">
+                <div class="cols current_active" data-block="1">
                     <h4>Регистрация вебмастера</h4>
 					<div class="line"></div>
 					<div class="reg_box">
@@ -90,7 +90,7 @@
 					</div>
 					
                 </div>
-                <div class="cols">
+                <div class="cols" data-block="2">
                     <h4>Регистрация рекламодателя</h4>
 					<div class="line"></div>
 					<div class="reg_box">
@@ -197,7 +197,6 @@
 
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.js"></script>
-	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
 	<script type="text/javascript" src="./js/lodash.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>

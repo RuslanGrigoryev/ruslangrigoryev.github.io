@@ -196,6 +196,7 @@ $(document).ready(function(){
         $( "#target" ).selectmenu({width: 100});
     }
     tabsSwitch($('.vacancy__tab__item'), $('.vacancy__list'), 'vacancy__list_active', 'vacancy__tab__item_active');
+    tabsSwitch($('.tabs__item'), $('.cols'), 'current_active', 'current');
     popup();
     cloneAdvButton();
     initPageHeader();
@@ -421,34 +422,39 @@ $(document).ready(function(){
         $regButton.addClass('active_button');
     });
 
-    $('input.styled').checkbox(); 
     
-    if ( $('.owl-slider').length) {
-        $(".owl-slider").owlCarousel({
-            items   : 4,
-            autoPlay: true,
-            stopOnHover: true,
-            navigation: true,
-            navigationText : false,
-            itemsDesktopSmall : [850,3],
-            itemsMobile     : [600,1]
-        });
+    if ( $('.owl-carousel').length) {
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText : false,
+            touchDrag: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    }
+    if ($('input.styled').length) {
+        $('input.styled').checkbox(); 
     }
     
+
 
     $('.bxslider2').bxSlider({
       mode:'fade',
       controls:false
     });
-
-    $("ul.tabs").tabs("div.panes > div",{
-        effect:"fade",
-        fadeOutSpeed: "slow"
-    });
     
-    $("ul.tabs2").tabs("div.panes2 > div",{
-        fadeOutSpeed: "slow"
-    });
+   
 
     var dispHeight=window.innerHeight;
     if(dispHeight >850){

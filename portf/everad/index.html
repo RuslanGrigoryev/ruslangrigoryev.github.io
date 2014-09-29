@@ -20,7 +20,7 @@
 		<form name="order_form" class="order_form">
 			<input type="text" placeholder="Email" name="email">
 			<input type="password" placeholder="Пароль" name="password">
-			<input type="checkbox" id="checkbox" class="styled"><label for="checkbox">Запомнить меня</label>
+			<input type="checkbox" id="checkbox"><label for="checkbox">Запомнить меня</label>
 			<a href="#">Забыли пароль?</a><br>
 			<input type="submit" class="enter_btn" value="Войти">
 			<input type="button" class="cancel_button" value="Отмена">
@@ -124,7 +124,7 @@
 				<div id="section2-a">
 					<h2>Эксклюзивные офферы</h2>
 					<span class="desc">В нашей CPA сети есть эксклюзивные партнерские программы, которые есть только у нас.<br>Чтобы посмотреть все предложения вам необходимо зарегестрироваться</span>
-					<ul class="bxslider owl-slider clearfix">
+					<ul class="bxslider owl-carousel clearfix">
 					  	<li class="animation2">
 						  	<a href="#">
 							  	<div class="offer_box exclusive">
@@ -313,30 +313,30 @@
 					<h2>Каналы траффика</h2>
 					<span class="desc">Виды траффика которые будут использоватся для ваших офферов, тут не все,<br>а самое важное. Важное приважное</span>
 					<ul class="tabs">
-	                   	<li class="current"><a href="#"><span class="ico ico1"></span><em>SMM</em></a></li>
-	                    <li><a href="#"><span class="ico ico2"></span><em>Emails</em></a></li>
-	                    <li><a href="#"><span class="ico ico3"></span><em>Mobile</em></a></li>
-	                    <li><a href="#"><span class="ico ico4"></span><em>RTB</em></a></li>
-	                    <li><a href="#"><span class="ico ico5"></span><em>Affiliate</em></a></li>
+	                   	<li class="tabs__item current" data-link="1"><a href="#"><span class="ico ico1"></span><em>SMM</em></a></li>
+	                    <li class="tabs__item" data-link="2"><a href="#"><span class="ico ico2"></span><em>Emails</em></a></li>
+	                    <li class="tabs__item" data-link="3"><a href="#"><span class="ico ico3"></span><em>Mobile</em></a></li>
+	                    <li class="tabs__item" data-link="4"><a href="#"><span class="ico ico4"></span><em>RTB</em></a></li>
+	                    <li class="tabs__item" data-link="5"><a href="#"><span class="ico ico5"></span><em>Affiliate</em></a></li>
 	                </ul>
 	                <div class="panes">
-	                    <div class="cols">
+	                    <div class="cols current_active" data-block="1">
 	                        <h5>Клиентам SMM</h5>
 	                        <p>За многие годы активной работы в SMM мы создали множество групп и сообществ различной тематики, а также огромный опыт в рекламе, позволяют нам получать только высококачественные лиды</p>
 	                    </div>
-	                    <div class="cols">
+	                    <div class="cols" data-block="2">
 	                    	<h5>Клиентам SMM</h5>
 	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tempore repudiandae praesentium cumque, vel exercitationem excepturi dignissimos eaque laboriosam, ullam voluptatum! Nesciunt earum, suscipit eveniet dolorem et aspernatur ex sit.</p>
 	                    </div>
-	                    <div class="cols">							
+	                    <div class="cols" data-block="3">							
 	                    	<h5>Клиентам SMM</h5>
 	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eos, vel facere fuga sint deleniti? Facere rerum officiis nisi fugiat dolores, quidem, non voluptatum laboriosam dolore modi vitae et officia.</p>
 	                    </div>
-	                    <div class="cols">
+	                    <div class="cols" data-block="4">
 	                    	<h5>Клиентам SMM</h5>
 	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati tempore repudiandae praesentium cumque, vel exercitationem excepturi dignissimos eaque laboriosam, ullam voluptatum! Nesciunt earum, suscipit eveniet dolorem et aspernatur ex sit.</p>
 	                    </div>
-	                    <div class="cols">							
+	                    <div class="cols" data-block="5">							
 	                    	<h5>Клиентам SMM</h5>
 	                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore eos, vel facere fuga sint deleniti? Facere rerum officiis nisi fugiat dolores, quidem, non voluptatum laboriosam dolore modi vitae et officia.</p>
 	                    </div>
@@ -486,13 +486,11 @@
 	</footer><!-- .footer -->
 
 	
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.test.js"></script>
 	<script type="text/javascript" src="./js/lodash.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="./js/jquery.checkbox.js"></script>
 	<script type="text/javascript" src="./js/masonry.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.accordion.2.0.min.js"></script>
 	<script type="text/javascript" src="./js/scripts.js"></script>

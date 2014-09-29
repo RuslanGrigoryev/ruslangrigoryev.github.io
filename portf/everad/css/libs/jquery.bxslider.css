@@ -113,12 +113,12 @@
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
-.owl-slider .owl-prev {
+.owl-carousel .owl-prev {
 	left: -20px;
 	background: url(../../img/ico.png) no-repeat -98px 0;
 }
 
-.owl-slider .owl-next {
+.owl-carousel .owl-next {
 	right: -20px;
 	background: url(../../img/ico.png) no-repeat -127px 0;
 }
