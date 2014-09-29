@@ -3255,7 +3255,7 @@ b {
 		margin: 0 6px;
 	}
 	.map iframe {
-		height: 300px;
+		height: 200px;
 	}
 }
 @media all and (max-width: 600px) {
