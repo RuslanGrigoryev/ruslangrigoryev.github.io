@@ -1646,6 +1646,7 @@ b {
 	transition: all 500ms ease 0s;
 	width: 170px;
 	float: left;
+	display: block;
 }
 .wrap-input {
 	display: inline-block;
@@ -1667,6 +1668,7 @@ b {
 	vertical-align: top;
 	width: 80px;
 	float: left;
+	display: block;
 }
 .registration .reg_box .registration_form .cancel_button:hover {
 	background: #efefef;
