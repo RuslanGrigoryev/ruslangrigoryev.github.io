@@ -2337,6 +2337,8 @@ b {
 	padding: 9px 20px 7px;
 	transition: all 500ms ease 0s;
 	vertical-align: top;
+	-webkit-appearance: none;
+	border-radius: 0px;
 }
 #form_popup .order_form .cancel_button:hover {
 	background: #FFFCFC;
