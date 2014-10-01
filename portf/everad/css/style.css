@@ -937,6 +937,8 @@ b {
 #section4-b .colums .itema.i1 {
 	width: 15%;
 	vertical-align: bottom;
+	position: relative;
+	right: -40px;
 }
 #section4-b .colums .itema.i2 {
 	width: 60%;
@@ -944,6 +946,8 @@ b {
 #section4-b .colums .itema.i3 {
 	width: 15%;
 	vertical-align: bottom;
+	position: relative;
+    left: -40px;
 }
 #section4-b .colums .feedback {
 	padding-top: 181px;
@@ -1226,7 +1230,10 @@ b {
 	margin: 2px 0 24px;
 	outline: none;
 	padding: 15px 20px;
-	width: 305px;
+	width: 100%;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:        border-box;
 	border-radius: 0px;
 }
 .contacts_wrap .feedback_form textarea {
@@ -1246,8 +1253,11 @@ b {
 	width: 535px;
 	border-radius: 0px;
 }
-.contacts_wrap .feedback_form input[type="text"]:focus,.contacts_wrap .feedback_form textarea:focus {
-	background: #fff;
+.wrap-buttons {
+	float: left;
+}
+input[type="text"]:focus, textarea:focus {
+	background: #fff !important;
 }
 .contacts_wrap .feedback_form .send_button {
 	background: #6cbbe9;
@@ -1262,6 +1272,10 @@ b {
 	transition: all 500ms ease 0s;
 	-webkit-appearance: none;
 	border-radius: 0px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .contacts_wrap .feedback_form .send_button:hover {
 	background: #3598db;
@@ -2956,6 +2970,10 @@ b {
 		min-width: 155px;
 		margin-left: 20px;
 	}
+	#section4-b .colums .itema.i1, #section4-b .colums .itema.i3  {
+		left: 0px;
+		right: 0px;
+	}
 }
 @media only screen and (min-width: 1000px) { 
 	.menu_mobile {
@@ -3092,6 +3110,9 @@ b {
 		box-sizing:        border-box;
 		width: 99%;
 		float: none;
+	}
+	.wrap-buttons {
+		width: 100%;
 	}
 	.contacts_wrap .feedback_form input[type="text"] {
 		width: 99%;

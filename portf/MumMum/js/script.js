@@ -24,21 +24,14 @@
 			  });
 		}
 
-		/*Slide photo layer*/
-
-		$('.photo-block__inner').find('.cell').mouseover(function () {
-			$(this).find('.photo-block__inner__layer').slideDown(400);
-		});
-
-		$('.photo-block__inner__layer').mouseleave(function () {
-			$(this).slideUp(400);
-		})
-
 		hideFunImage();
 
 		$(window).resize(function () {
 			hideFunImage();
 		});
+
+		/*lIGHTBOX*/
+    $("a[rel^='prettyPhoto']").prettyPhoto();
 });
 
 /*Hide item cell on fun page*/
@@ -48,8 +41,6 @@ function hideFunImage () {
 	var wWidth = $(window).width()+17,
 	    item   = $('.item_cell');
 
-	    console.log(wWidth);
-
 	if (wWidth < 1920 && wWidth > 1700 && item.length) {
 		item.removeClass('selected-nb');
 		item.removeClass('selected-exsm');
@@ -58,6 +49,7 @@ function hideFunImage () {
 			item.each(function (i) {
 				if (i > 5) {
 					$(this).addClass('selected-hd');
+					$(this).show();
 				}
 			});
 			if ( $('.selected-hd').length ) {	
@@ -78,6 +70,7 @@ function hideFunImage () {
 			item.each(function (i) {
 				if (i > 3) {
 					$(this).addClass('selected-nb');
+					$(this).show();
 				}
 			});
 			if ($('.selected-nb').length) {
@@ -85,8 +78,6 @@ function hideFunImage () {
 					itemNbSelectedLength = itemNbSelected.length;
 				if (itemNbSelectedLength%5 != 0) {
 					var restNbSelected = itemNbSelectedLength%5;
-					console.log(restNbSelected);
-					console.log(itemNbSelectedLength);
 					itemNbSelected.slice(-restNbSelected).hide();
 				}
 
@@ -94,7 +85,7 @@ function hideFunImage () {
 		}
 
 	}
-	if (wWidth < 1594 && wWidth > 1195 && item.length ) {
+	if (wWidth < 1495 && wWidth > 1195 && item.length ) {
 		item.removeClass('selected-hd');
 		item.removeClass('selected-nb');
 		item.removeClass('selected-exsm');
@@ -102,6 +93,7 @@ function hideFunImage () {
 			item.each(function (i) {
 				if (i > 1) {
 					$(this).addClass('selected-sm');
+					$(this).show();
 				}
 			});
 			if ($('.selected-sm').length) {
@@ -109,8 +101,6 @@ function hideFunImage () {
 					itemSmSelectedLength = itemSmSelected.length;
 				if (itemSmSelectedLength%4 != 0) {
 					var restSmSelected = itemSmSelectedLength%4;
-					console.log(restSmSelected);
-					console.log(itemSmSelectedLength);
 					itemSmSelected.slice(-restSmSelected).hide();
 				}
 
@@ -124,14 +114,13 @@ function hideFunImage () {
 		item.removeClass('selected-sm');
 		item.each(function (i) {
 				$(this).addClass('selected-exsm');
+					$(this).show();
 		});
 		if ($('.selected-exsm').length) {
 			var itemExsmSelected = $('.selected-exsm'),
 				itemExsmSelectedLength = itemExsmSelected.length;
 			if (itemExsmSelectedLength%3 != 0) {
 				var restExsmSelected = itemExsmSelectedLength%3;
-				console.log(restExsmSelected);
-				console.log(itemExsmSelectedLength);
 				itemExsmSelected.slice(-restExsmSelected).hide();
 			}
 		} 
