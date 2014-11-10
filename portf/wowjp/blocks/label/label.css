@@ -1,0 +1,14 @@
+﻿.label {
+	display: inline-block;
+	background: #ff4d3b;
+	font-size: 12px;
+	font-weight: normal;
+	height: 17px;
+	line-height: 17px;
+	padding: 0 5px;
+	margin-right: 10px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+}

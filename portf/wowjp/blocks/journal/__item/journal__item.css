@@ -1,0 +1,40 @@
+@import url('_rounded/journal__item_rounded.css');
+@import url('_rounded-bottom/journal__item_rounded-bottom.css');
+@import url('_width50/journal__item_width50.css');
+@import url('_brown/journal__item_brown.css');
+@import url('__title/journal__item__title.css');
+@import url('__info/journal__item__info.css');
+@import url('__desc/journal__item__desc.css');
+@import url('_media/journal__item_media.css');
+@import url('_image/journal__item_image.css');
+@import url('_category/journal__item_category.css');
+@import url('_switcher/journal__item_switcher.css');
+@import url('_fullwidth/journal__item_fullwidth.css');
+@import url('_banner/journal__item_banner.css');
+@import url('_group/journal__item_group.css');
+
+
+.journal__item {
+	background: #48433f;	
+	color: #fff;
+	margin-bottom: 24px;
+	position: relative;
+	width: 242px;
+}
+.journal__item_forum {
+	background: #625241;
+}
+.journal__item__imgbox{
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+}
+.journal__item__imgbox img{
+	width: 100%;
+}
+.journal__item_padding {
+	padding: 20px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

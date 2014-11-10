@@ -1,0 +1,7 @@
+.journal__item_rounded {
+	overflow: hidden;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-khtml-border-radius:6px;
+}

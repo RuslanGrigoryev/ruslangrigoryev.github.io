@@ -1,0 +1,602 @@
+﻿<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Страница пользователя</title>
+	<!-- <link rel="stylesheet" href="css-built/main.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/forum.css">	
+	<script src="js/libs/jquery/jquery-1.10.2.js"></script>	
+	<script type="text/javascript" src="js/libs/isotope/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/libs/isotope/isotope.stick.ext.js"></script>
+	<script type="text/javascript" src="js/libs/jscrollpane/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/libs/formstyler/jquery.formstyler.min.js"></script>
+	<script>
+		$(window).load(function() {
+			$('.list').isotopeStick();
+		});
+		$(function(){
+			$('.scroll-pane').jScrollPane(); 
+			$('.chat__users__list').jScrollPane(); 
+			$('.chat__messages_inner').jScrollPane(); 	
+			$('.chat__smiles__box__inner').jScrollPane(); 				
+			
+		});
+		(function($) {  
+			$(function() {  
+			  
+			  $('select').styler();  
+			  $('input').styler();  
+			  
+			})  
+		})(jQuery)  
+	</script>
+	<script data-main="js/app" src="js/libs/require/require.js"></script>
+	<script>
+		document.addEventListener("regirested", function() {
+			App.MainModule.start();
+		}, false);
+	</script>
+</head>
+<body>
+	<!-- .Header -->
+	<div id="header" class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo"></a>
+			<ul class="header__menu menu">
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Форум</a>
+					<div class="header__menu__submenu header__menu__submenu_forum">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="3">
+									<a href="">Программы / Боты</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Общие вопросы</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Флудилка</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Торговый раздел</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Баги / Читы WoW</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Пиратские сервера</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Управление серверами</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">MaNGOS</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">TrinityCore</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Warcaraft 3</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Дизайнерская</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu__item"><a href="">Классы</a></li>
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Рейды</a>
+					<div class="header__menu__submenu header__menu__submenu_article">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="1">
+									<a href="">Осада Орнриммара</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="2">
+									<a href="">Престол Гроз</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="1">
+									<a href="">Сердце Страха</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="400">
+									<a href="">Подземелья Могушан</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Терраса Вечной Весны</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Видеотактики</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>					
+							<div class="clr"></div>
+						</div>				
+					</div>	
+				</li>
+				<li class="header__menu__item"><a href="">Статьи</a></li>
+				<li class="header__menu__item"><a href="">Аддоны</a></li>
+				<li class="header__menu__item"><a href="">Видео</a></li>
+				<li class="header__menu__item"><a href="">Картинки</a></li>
+				<li class="header__menu__item">
+					<a href="">Полезное</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Патчи WoW</a></li>
+						<li><a href="">Скачать WoW</a></li>
+						<li><a href="">Магазин чести</a></li>
+						<li><a href="">Wish</a></li>
+						<li><a href="">Raidbuilder</a></li>
+						<li><a href="">Калькуляторы талантов</a></li>
+						<li><a href="">Форум о работе сайта</a></li>
+						<li><a href="">Команда WoWJP</a></li>
+						<li><a href="">Футболки / Сувениры</a></li>
+						<li><a href="">Реклама / Услуги</a></li>
+					</ul>
+				</li>
+				<li class="header__menu__item header__menu__item_more">
+					<a href="">Еще</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Форум</a></li>
+						<li><a href="">Классы</a></li>
+						<li><a href="">Рейды</a></li>
+						<li><a href="">Статьи</a></li>
+						<li><a href="">Аддоны</a></li>
+						<li><a href="">Видео</a></li>
+						<li><a href="">Картинки</a></li>
+					</ul>
+				</li>
+			</ul>	
+			<div class="header__search">		
+				<div class="header__search__icon"></div>		
+				<div class="header__search__inner">
+					<div class="search">
+						<input type="text" class="search__input" placeholder="Поиск" >
+						<input type="submit" class="search__submit" value="">
+					</div>	
+					<div class="header__search__advanced">
+						<div class="header__search__tags">
+							<div class="tag" data-value="article">
+								<span>Новости и статьи</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="article">
+								<span>Форум</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="photo">
+								<span>Изображения</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+					<div class="clr"></div>	
+				</div>
+			</div>
+			<div class="header__right">					
+				<div class="header__item_chat header__item">
+					<div class="header__icon_chat header__icon"></div>
+				</div>
+				<div class="header__item_notifications header__item">
+					<div class="header__icon_notice header__icon">
+						<span class="circle circle_reminder">2</span>
+					</div>
+					<div class="header__item_notifications__menu header__item__content loader loader_center">
+						<div>
+							<div class="header__item_notifications__content">
+							</div>	
+						</div>
+					</div>	
+				</div>	
+				<div class="header__item_avatar header__item">
+					<div class="header__icon_avatar header__icon">
+						<img src="img/avatar.png" alt="">
+					</div>	
+					<ul class="header__item_avatar__menu header__item__content">
+						<li class="header__item_avatar__menu_profil"><a href="">Ваш профиль</a></li>
+						<li class="header__item_avatar__menu_message">
+							<a href="">Сообщения</a>
+							<span class="circle circle_msg">9</span>
+						</li>
+						<li class="header__item_avatar__menu_money"><a href="">Монеты</a></li>
+						<li class="header__item_avatar__menu_sign-out"><a href="">Выход</a></li>
+					</ul>				
+				</div>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+	<!-- ./ Header -->
+	<!-- .Slideshow -->
+	<div id="slideshow" class="slideshow slideshow_fullwidth">
+		<div class="slideshow__controls">
+			<div class="slideshow__controls__buttons">
+				<div class="slideshow__controls__buttons__left"></div>
+				<div class="slideshow__controls__buttons__right"></div>
+			</div>
+		</div>
+
+		<a class="slideshow__center slideshow__link" href="/markup">
+			<span class="slideshow__center__title">Чопперы Азерота</span><br />
+			<span class="slideshow__center__readmore">Прочитать</span>
+		</a>
+
+		<div class="slideshow__overlay slideshow__link"></div>
+		<ul class="slideshow__list">
+			<li class="slideshow__list_item" data-target="_blank" data-src="img/slideshow/slide5.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 5"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide4.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 4"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide3.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 3"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru" data-button="GoGo!"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide1.jpg" data-href="/markup" data-button="Прочитать" data-title="Чопперы Азерота">
+				<img src="img/slideshow/slide1.jpg" />
+			</li>
+		</ul>
+	</div>
+	<!-- ./ Slideshow -->
+	<!-- .Content -->
+	<div class="content">
+		<div class="container container_padding">			
+			<div class="content__left">
+				<div class="content__left__inner">
+					<div class="section section_registration">
+						<div class="section__title section__title_underline">
+							<span>Регистрация</span>
+						</div>
+						<div class="section_registration__content">
+							<form action="#" class="section_registration__content__form">
+								<div class="custom__field">
+									<label for="">Логин:</label>
+									<input type="text" class="custom__input" placeholder=" ">
+								</div>
+								<div class="custom__field">
+									<label for="">Пароль:</label>
+									<input type="text" class="custom__input" placeholder=" ">
+								</div>
+								<div class="custom__field">
+									<label for="">Пароль (повторить):</label>
+									<input type="text" class="custom__input" placeholder=" ">
+								</div>
+								<div class="custom__field">
+									<label for="">Email:</label>
+									<input type="text" class="custom__input" placeholder=" ">
+								</div>
+								<div class="custom__field clearfix">
+									<img src="img/captcha.png" alt="captcha" class="section_registration__content__form__captcha">
+									<button class="button button_red button_custom button_large">Регистрация</button>
+								</div>
+							</form>
+							<p>Пользовательское соглашение использования WoWJP.NET </p>
+							<h2>1. Общие положения</h2>
+							<p>1.1. Интернет - ресурс (сайт) WOWJP.NET (в дальнейшем - Ресурс) предлагает пользователю сети Интернет (далее – Пользователь) - использовать свои сервисы и информацию на условиях, изложенных в настоящем Пользовательском соглашении (далее — «Соглашение», «ПС»). Соглашение вступает в силу с момента выражения Пользователем согласия с его условиями в порядке, предусмотренном п. 1.4 Соглашения. </p>
+							<p>1.2. Ресурс является интернет-сайтом, позволяющим пользователям обмениваться друг с другом информацией на игровую тематику, поддерживать связь с вашими знакомыми. Ориентирован на игру World of Wacraft. </p>
+							<p>1.3. Соглашение может быть изменено Ресурсом без какого-либо специального уведомления, новая редакция Соглашения вступает в силу с момента ее размещения в сети Интернет по указанному в настоящем абзаце адресу, если иное не предусмотрено новой редакцией Соглашения. </p>
+							<p>1.4. Начиная использовать информацию расположенную на Ресурсе/его отдельные функции, либо пройдя процедуру регистрации, Пользователь считается принявшим условия Соглашения в полном объеме, без всяких оговорок и исключений. В случае несогласия Пользователя с какими-либо из положений Соглашения, Пользователь не в праве использовать сервисы Ресурса. В случае если в Ресурс были внесены какие-либо изменения в Соглашение в порядке, предусмотренном пунктом 1.3 Соглашения, с которыми Пользователь не согласен, он обязан прекратить использование Ресурса. </p>
+							<h2>2. Общие положения об использовании Ресурса </h2>
+							<p>2.1. Ресурса имеет право в любое время и на любых основаниях без предварительного уведомления Пользователей осуществлять следующие действия, но не возлагает на себя обязательства по их осуществлению: </p>
+							<p>2.1.1. Ограничивать Пользователей в доступе, приостанавливать или прекращать доступ ко всем или отдельным Услугам, предоставляемым Пользователям посредством Ресурса. </p>
+							<p>2.1.2. Изменять, приостанавливать или прекращать все или отдельные Услуги, предоставляемые Пользователям посредством Ресурса; </p>
+							<p>2.1.3. На любых основаниях отказывать Пользователям в размещении, перемещении или удалении любых материалов на Ресурсе; </p>
+							<p>2.1.4. Блокировать или удалять аккаунты (учетные записи) Пользователей, а также изменять или удалять любую информацию, содержащуюся в файлах учетных записей Пользователей. </p>
+							<h2>3. Реклама</h2>
+							<p>3.1. Услуги Ресурса могут включать в себя услуги по размещению рекламы. Пользователь понимает и соглашается с тем, что все Услуги или любая их часть может сопровождаться рекламой, и что такая реклама необходима Ресурсу для предоставления Услуг. </p>
+							<p>3.2. Пользователь обязуется не ограничивать показ такой рекламы или объявлений посредством внесения изменений в HTML/CSS либо другими средствами. </p>
+							<p>3.3. Используя Услуги, Пользователь признает право Ресурсу размещать подобную рекламу без предварительного уведомления и без какой-либо компенсации Пользователю или другим пользователям. </p>
+							<p>3.4. Характер размещения и количество рекламы, отображаемой на Ресурсе, определяются и изменяются по усмотрению Ресурса. </p>
+							<p>3.5. Переписка и деловые отношения с рекламодателями или участие в рекламных акциях, проводимых рекламодателями, осуществляемых при помощи Услуг, включая оплату, доставку, в том числе условия, гарантии и презентации соответствующих услуг или товаров, упомянутых в или найденных вследствие таковых отношений, порождают права и обязательства исключительно между Пользователем и рекламодателем. </p>
+							<p>3.6. Пользователь соглашается с тем, что Ресурс не несет какой-либо ответственности или каких-либо обязанностей за причинение каких-либо потерь или убытков, понесенных в результате взаимодействия с рекламодателями и (или) наличия рекламы в Услугах. </p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="sidebar_right">
+				<div class="sidebar_right__banner banner_width25">
+					<img src="img/banner_240_400.jpg" alt="">
+				</div>
+				<!-- ./ Sidebar_right__banner -->
+				<div class="sidebar_right__section">						
+					<h3>Категории</h3>
+					<ul class="list_category">
+						<li>
+							<div class="list__block-image">
+								<img src="img/list__li.png" alt="">
+							</div>
+							<a class="list_category__link" href="">Warlords of Draenor</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a class="list_category__link" href="">Классы Mists of Pandaria</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a class="list_category__link" href="">Mists of Pandaria</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a class="list_category__link" href="">Аддоны</a>
+						</li>								
+						<li class="list_category__more">Еще 10 категорий</li>
+					</ul>
+					<ul class="list_category list_pull-down" style="display: none;">
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Игровые события</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Макросы</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Достижения</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Заработок в WoW</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Новичкам</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Трансмогрификация</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Новичкам</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Макросы</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Достижения</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Заработок в WoW</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Новичкам</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Трансмогрификация</a>
+						</li>
+						<li class="list_category__turn">Свернуть категорий</li> 
+					</ul>
+				</div>
+				<div class="sidebar_right__section section_news">						
+					<h3>Горячие новости</h3>
+					<ul class="list_category">
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Comment&Life: Неделя #4. Победители</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">WoD: Во что будем одеваться? </a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Безумные хакеры или же DDoS провайдеров</a>
+						</li>
+						<li>
+							<div class="list__block-image">
+								<div class="list_category__image"></div>
+							</div>
+							<a href="">Фильм WarCraft - осталось 3 недели </a>
+						</li>						
+					</ul>	
+					<div class="content__item_image__add-img">
+						<div class="button__image_add-img">
+							Добавить новость
+						</div>
+					</div>					
+				</div>
+				<div class="sidebar_right__banner banner_width25">
+					<img src="img/banner_240_400.jpg" alt="">
+				</div>
+				<!-- ./ Sidebar_right__banner -->
+				<div class="sidebar_right__section">												
+					<h3>Изображения</h3>
+					<div class="button__image__controls">
+						<div class="button__image_left"></div>
+						<div class="button__image_right"></div>
+					</div>							
+					<div class="content__item_image__img">
+						<img src="img/journal__item_image.jpg" alt="">
+					</div>	
+					<div class="content__item_image__desc">
+						Безумные хакеры или же DDoS провайдеров
+					</div>	
+					<div class="content__item_image__add-img">
+						<div class="button__image_add-img">
+							Добавить изображение
+						</div>
+					</div>
+				</div>
+				<div class="sidebar_right__section">
+					<h3>Что на форуме ?</h3>
+					<ul class="list_forum">
+						<li>
+							<div class="list_forum__userpic">
+								<img src="img/namenot.png" alt="">
+							</div>								
+							<a href=""><span class="list_forum__usernik">NameNot</span>#Mizzle.ru - все игровые товары рунета</a>
+							<div class="list_forum__date">Вчера</div>
+						</li>
+						<li>
+							<div class="list_forum__userpic">
+								<img src="img/member1.png" alt="">
+							</div>	
+							<a href=""><span class="list_forum__usernik">member</span>#Добровольная проверка продавцов</a>
+							<div class="list_forum__date">На этой неделе</div>
+						</li>
+						<li>
+							<div class="list_forum__userpic">
+								<img src="img/alisa.png" alt="">
+							</div>	
+							<a href=""><span class="list_forum__usernik">Alisa</span>#Nsb-money.ru - Золото Персонажи</a>
+							<div class="list_forum__date">На этой неделе</div>
+						</li>
+						<li>
+							<div class="list_forum__userpic">
+								<img src="img/launcer.png" alt="">
+							</div>	
+							<a href=""><span class="list_forum__usernik">Launcher</span>#World of Warcraft Game Launcher</a>
+							<div class="list_forum__date">Вчера</div>
+						</li>						
+					</ul>
+				</div>
+				<!-- ./ sidebar_right__section -->				
+			</div>		
+			<div class="clr"></div>
+		</div>
+	</div>
+	<!-- ./ Content -->
+	<div class="footer">
+		<ul class="footer__menu">
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Команда WoWJP</a></li>
+			<li><a href="">Соглашение использования</a></li>
+			<li><a href="">Правила</a></li>
+			<li><a href="">Реклама</a></li>
+			<li><a href="">PDA</a></li>
+			<li><a href="">Есть идеи?</a></li>
+		</ul>
+		<div class="footer__design">
+			<span>Дизайн – </span><a href="">kusnizza</a>
+		</div>
+	</div>
+	<script>
+	 $(document).ready(function(){
+		$('.button_like').click(function() {
+			alert('Like it?');
+		});
+		$('.header__icon__avatar').click(function(){
+			   $(this).toggleClass("header__icon_active");
+               $('.header__avatar__menu').slideToggle(250);
+               return false;
+             });	
+     	
+        $('.list_category__more').click(function() {
+			$('.list_pull-down').css({"display":"block"});	
+			$('.list_category__more').css({"display":"none"});		
+			
+		});
+		$('.list_category__turn').click(function() {
+			$('.list_pull-down').css({"display":"none"});	
+			$('.list_category__more').css({"display":"block"});		
+			
+		});
+		$('.header__search__input').click(function(){
+			$('.header__search').addClass("header__search_active header__search__fullwidth");  
+		});
+		$('.header__icon__chat').click(function(){
+			$(this).toggleClass("header__icon_active");  
+			$('.chat').toggleClass("chat_visible"); 
+		});
+		$('.button__chat_smile').click(function(){
+			$(this).toggleClass("button__chat_smile_active");
+			$('.chat__smiles__box').toggleClass("chat__smiles__box_visible");
+			
+		});
+		$('.header__icon__notice').click(function(){
+			$(this).toggleClass("header__icon_active");  
+			$('.header__notice__menu').toggleClass("notice_visible"); 
+		});
+		
+		
+
+ 	});
+
+	</script>
+	<div class="modal_notice modal_bottom-left" style="display: none;">
+		<div class="modal_notice__close"></div>
+		<span class="modal_notice__title">Member.</span>
+		<span class="modal_notice__desc">С возвращением на наш портал!</span>		 
+	</div>
+	<div class="modal_notice modal_bottom-right" style="display: none;">
+		<div class="modal_notice__close"></div>
+		<span class="modal_notice__title">Member.</span>
+		<span class="modal_notice__desc">С возвращением на наш портал!</span>		 
+	</div>	
+	<div class="modal_notice modal_top-left" style="display: none;">
+		<div class="modal_notice__close"></div>
+		<span class="modal_notice__title">Member.</span>
+		<span class="modal_notice__desc">С возвращением на наш портал!</span>		 
+	</div>
+	<div class="modal_notice modal_top-center" style="display: none;">
+		<div class="modal_notice__close"></div>
+		<span class="modal_notice__title">Member.</span>
+		<span class="modal_notice__desc">С возвращением на наш портал!</span>		 
+	</div>
+	<div class="modal_notice modal_top-right" style="display: none;"> 
+		<div class="modal_notice__close"></div>
+		<span class="modal_notice__title">Member.</span>
+		<span class="modal_notice__desc">С возвращением на наш портал!</span>		 
+	</div>
+</body>
+</html>

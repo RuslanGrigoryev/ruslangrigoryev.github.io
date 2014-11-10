@@ -1,0 +1,24 @@
+@import url('__item/notifications__item.css');
+
+.notifications {
+	margin: 0px;
+	padding: 0px;
+	width: 300px;
+}
+.notifications li {
+	color: #fff;
+	font-size: 15px;
+	list-style: none;
+	position: relative;
+	padding: 12px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	min-height: 36px;
+
+}
+.notifications li:first-child {
+	padding-top: 15px;
+}
+.notifications li:last-child {
+	border-bottom: none;
+	padding-bottom: 15px;
+}

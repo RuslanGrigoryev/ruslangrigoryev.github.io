@@ -1,0 +1,38 @@
+﻿@import url(_award/tooltip_award.css);
+@import url(__triangle/tooltip__triangle.css);
+@import url(_bubble/tooltip_bubble.css);
+
+.tooltip {
+	background: #5f574e;
+	box-shadow: -6px 14px 40px 8px rgba(0,0,0,.55);
+	position: absolute;
+	z-index: 60;
+	display: block;
+	border: 4px solid #5f574e;
+	border-radius: 5px;
+	padding: 8px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.tooltip__header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.tooltip__text {
+	font-size: 13px;
+	padding-top: 8px;
+	color: rgba(255,255,255,.5);
+	margin: 0;
+}
+.tooltip__header {
+	font-size: 16px;
+	color: #fff;
+}
+.tooltip__header h2 {
+	float: left;
+	margin: 0;
+	font-weight: normal;
+	font-size: 17px;
+	padding-top: 7px;
+}

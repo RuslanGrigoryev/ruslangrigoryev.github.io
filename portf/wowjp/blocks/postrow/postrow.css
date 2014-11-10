@@ -1,0 +1,19 @@
+﻿@import url(_activity/postrow_activity.css);
+@import url(_tags/postrow_tags.css);
+@import url(_added/postrow_added.css);
+@import url(_controls/postrow_controls.css);
+@import url(_nospace/postrow_nospace.css);
+
+.postrow {
+	margin-top: 25px;
+	padding-bottom: 28px;
+	padding-top: 28px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.postrow .button:first-child {
+	margin-left: 0;
+}
+.postrow .button {
+	margin-left: 18px;
+}

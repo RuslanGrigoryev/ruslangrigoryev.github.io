@@ -1,0 +1,10 @@
+.button_red {
+	background: #ff4d3b;
+	padding: 10px 20px;
+	line-height: 13px;
+	color: #fff;
+	text-align: center;
+	font-size: 13px;
+	font-weight: normal;
+	border: none;
+}

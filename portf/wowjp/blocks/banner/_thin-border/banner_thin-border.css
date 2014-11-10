@@ -1,0 +1,9 @@
+.banner_thin-border {
+	background: #48433E;
+	padding: 14px 15px;
+	width: 212px!important;
+	height: 105px;
+}
+.banner_thin-border img {
+	width: 100%;
+}

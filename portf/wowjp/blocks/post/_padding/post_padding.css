@@ -1,0 +1,16 @@
+﻿.section_nopadding .section__title {
+	padding: 0 24px 24px;
+}
+.section_nopadding p {
+	padding: 0 24px;
+}
+.section_nopadding .postrow_activity {
+	padding: 27px 24px;
+}
+.section_nopadding .postrow_tags {
+	padding: 27px 24px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.section_nopadding .postrow_added {
+	padding: 20px 24px 20px 0;
+}

@@ -1,0 +1,12 @@
+﻿.tooltip_award {
+	width: 306px;
+	height: 147px;
+	top: -181px;
+	left: -139px;
+}
+.tooltip_award__coins {
+	float: right;
+	color: #bfb4a8;
+	font-size: 13px;
+	padding-top: 8px;
+}

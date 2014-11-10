@@ -1,0 +1,13 @@
+.header__icon_notice {
+	background: url(img/header__notice__icon.png) 23px center no-repeat;
+	width: 27px;
+	height: 55px;
+	position: relative;
+	cursor: pointer;
+	padding: 0 16px;
+}
+.header__icon_notice_number {	
+	position: absolute;
+	top: 7px;
+	left: 15px;
+}

@@ -1,0 +1,5 @@
+﻿@import url(__features/profile__info__features.css);
+
+.profile__info {
+	border-bottom: 1px solid rgba(255,255,255,.12);
+}

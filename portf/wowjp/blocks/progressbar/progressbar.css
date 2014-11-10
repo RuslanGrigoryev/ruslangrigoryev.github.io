@@ -1,0 +1,36 @@
+﻿.progressbar {
+	padding: 23px 0;
+}
+.progressbar__text {
+	width: 126px;
+	float: left;
+	color: #fff;
+	font-size: 13px;
+	line-height: 0px;
+}
+.progressbar-wrap {
+	float: left;
+	padding-left: 126px;
+	width: 100%;
+	margin: -2px 0 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.progressbar__line {
+	height: 6px;
+	width: 100%;
+	background: rgba(255,255,255,.3);
+	border-radius: 6px;
+	position: relative;
+}
+.progressbar__line_inner {
+	position: absolute;
+	z-index: 60;
+	top: 0;
+	left: 0;
+	border-radius: 6px;
+	height: 6px;
+	right: 70%;
+	background: #ffc600;
+}

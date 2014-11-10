@@ -1,0 +1,38 @@
+@import url('__logo/header__logo.css');
+@import url('__menu/header__menu.css');
+@import url('__search/header__search.css');
+@import url('__icon/header__icon.css');
+@import url('__item/header__item.css');
+@import url('../notifications/notifications.css'); 
+
+
+.header {
+	background: #1b1917;	
+	height: 55px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 150;
+	min-width: 570px;
+}
+.header__container {
+	padding: 0 25px;
+}
+.header__right {
+	position: absolute;
+	right: 25px;
+}
+
+.header__item_avatar img{
+	width: 100%
+}
+
+@media all and (max-width: 560px) {
+	.header__right {
+		position: relative;
+		float: right;
+	}
+	.header__search {
+		right: 231px;
+	}
+}

@@ -1,0 +1,159 @@
+@import url('__icon/section__icon.css');
+@import url('__title/section__title.css');
+
+@import url('_edit/section_edit.css');
+@import url('_admin/section_admin.css');
+@import url('_open/section_open.css');
+@import url('_nopadding/section_nopadding.css');
+@import url('_profile-for-guest/section_profile-for-guest.css');
+@import url('_registration/section_registration.css');
+@import url('_new-topic/section_new-topic.css');
+@import url('_thin/section_thin.css');
+@import url('_forum-topic/section_forum-topic.css');
+
+.section {
+	background: #48433e;
+	border-radius:5px;
+	padding: 25px 24px;
+	margin-bottom: 25px;
+	position: relative;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+}
+.section_news .list_category li:last-child {
+	margin-bottom: 0px;
+}
+.section__expand {
+	background: url(img/section__expand.png) no-repeat center -35px;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 24px;
+	top: 25px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.section__expand_open {
+	background-position: center -3px;
+}
+.section__number-event {
+	background: #ff4d3b;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: -5px;
+	left: 0px;
+	width: 17px;
+	height: 17px;
+	line-height: 17px;
+	padding: 2px;
+	border-radius:17px;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+	-khtml-border-radius:17px;
+}
+.section__number-event_ellipse {
+	padding:1px 5px;
+}
+.section__delimiter{
+	background: rgba(255, 255, 255, 0.06);
+	height: 1px;
+	width: 100%;
+	margin: 31px 0;
+}
+.section__item__info {
+	background: url(img/section__item__info.png) no-repeat 10px top;
+	padding-left: 30px;
+	color: #d5d5d5;
+	font-size: 12px;
+	margin-top: 9px;
+
+}
+.section__item_catalog {
+	float: left;
+	width: 325px;
+	margin: 18px 0;
+}
+.section__item_catalog__img,
+.content__all-active__img {
+	float: left;
+	margin-right: 18px;
+	height: 40px;
+}
+.section__item_catalog__img img {
+	height: 100%;
+}
+.section__item_catalog__title,
+.content__all-active__title {
+	font-size: 15px;
+	color: #fff;
+	height: 40px;
+	float: left;
+	width: 190px;
+}
+.content__all-active__title {
+	width: auto;
+}
+.section__item_catalog__title a,
+.section__item_catalog__title span,
+.content__all-active__title a,
+.content__all-active__title span {
+	display: table-cell;
+	height: 40px;
+	vertical-align: middle;
+}
+.section_related .section__title {
+	margin-bottom: 20px;
+}
+.section_404 {
+	padding: 0 25px;
+	text-align: center;
+	color: #fff;
+}
+.section_404 .container{
+	padding-bottom: 55px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.section_404__error{
+	font-size: 260px;
+	font-weight: bold;
+	line-height: 260px;
+	display: block;
+}
+.section_404__info {
+	font-size: 32px;
+}
+
+
+
+/* WHF???? */
+.post_option {
+	margin: 0px;
+	padding: 0px;
+}
+.post_option li {
+	float: left;
+	list-style: none;
+	margin-left: 28px;
+	color: rgba(255, 255, 255, 0.3);
+}
+.post_option li a {
+	color: rgba(255, 255, 255, 0.3);
+}
+.post_option li.post_option_active a {
+	color: #fff;
+}
+.post_option li:first-child {
+	margin-left: 0; 
+}
+@media (min-width: 1354px){
+	.section__item_catalog{
+		/*width: 25%;	*/	
+	}
+}

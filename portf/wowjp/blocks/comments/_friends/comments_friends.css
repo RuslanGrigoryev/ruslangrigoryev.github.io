@@ -1,0 +1,16 @@
+﻿.comments_friends {
+	padding: 9px 24px 0 24px;
+}
+.comments_friends .comments__field {
+	margin-bottom: 0px;
+}
+.comments_friends .comments__item__center {
+	position: relative;
+}
+.comments_friends .comments__item__center .button {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	z-index: 60;
+	right: 120px;
+}

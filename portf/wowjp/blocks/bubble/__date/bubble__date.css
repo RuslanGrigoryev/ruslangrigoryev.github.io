@@ -1,0 +1,6 @@
+.bubble__date {
+	background: url(img/delimiter_point.png) no-repeat left center;
+	padding-left: 11px;
+	margin-left: 6px;
+	color: #d5d5d5;
+}

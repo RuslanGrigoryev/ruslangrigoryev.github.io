@@ -1,0 +1,8 @@
+﻿.header__icon_login {
+	width: 27px;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 16px 0;
+	background: url(img/header__icon_login.png) center center no-repeat;
+}

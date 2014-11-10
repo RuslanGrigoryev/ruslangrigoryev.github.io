@@ -1,0 +1,99 @@
+﻿.postrow_activity__social.pluso {
+	margin-top: 0;
+	background: url(img/topic__social.png) no-repeat left center !important;
+	padding-left: 24px !important;
+	margin-left: 18px;
+	height: 27px;
+	float: left;
+}
+
+.postrow_activity__social.pluso a.pluso-more,
+.postrow_activity__social.pluso .pluso-counter {
+	display: none !important;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div > a,
+.postrow_activity__social.pluso .pluso-wrap > div {
+	height: 27px;
+	margin-top: 0;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div {
+	width: 42px;
+	text-align: center;
+	margin-right: 52px;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div:nth-child(1) {
+	background: #5b84bb !important;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div:nth-child(2) {
+	background: #5b76bb !important;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div:nth-child(3) {
+	background: #5ab8d7 !important;
+}
+
+.postrow_activity__social.pluso .pluso-wrap > div:nth-child(4) {
+	background: #ffffff !important;
+}
+
+.postrow_activity__social.pluso .pluso-vkontakte {
+	background: url(img/button__social_vk.png) no-repeat;
+	background-position: -4px -1px !important;
+}
+
+.postrow_activity__social.pluso .pluso-facebook {
+	background: url(img/button__social_fb.png) no-repeat;
+	background-position: -6px -1px !important;
+}
+
+.postrow_activity__social.pluso .pluso-twitter {
+	background: url(img/button__social_tw.png) no-repeat;
+	background-position: -5px -1px !important;
+}
+
+.postrow_activity__social.pluso .pluso-google {
+	background: url(img/button__social_gplus.png) no-repeat;
+	background-position: -6px -1px !important;
+}
+
+.postrow_activity__social.pluso .pluso-wrap div b {
+	background: rgba(27, 25, 23, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 13px;
+	color: #FFF;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	padding: 7px 10px;
+	margin-left: 10px;
+	/*float: left;*/
+	position: absolute;
+}
+
+.postrow_activity__social.pluso .pluso-wrap div b::before {
+	content: "";
+	background: url(img/button__social__counter_arrow.png) no-repeat;
+	width: 5px;
+	height: 26px;
+	position: absolute;
+	top: 0px;
+	left: -4px;
+}
+
+@media all and (max-width: 622px) {
+	.postrow_activity__social.pluso {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 16px !important;
+	}
+
+	.postrow_activity .button_share_active {
+		margin-right: 42px;
+	}
+}

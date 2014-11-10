@@ -1,0 +1,26 @@
+﻿.section_edit__adjust .section_edit__block {
+	padding: 0 19px;
+}
+.section_edit__adjust .section_edit__block ul li:last-child {
+	border-bottom: none;
+}
+.section_edit__adjust .custom__field label {
+	line-height: 36px;
+}
+.section_edit__adjust .custom__field label span {
+	/*font-size: 15px;*/
+}
+.section_edit__adjust_btn {
+	padding: 20px 0;
+	border-top: 1px solid rgba(255,255,255,.18);
+	float: left;
+	width: 100%;
+}
+.section_edit__adjust .custom__field {
+	padding: 0;
+}
+.section_edit__adjust .custom__field span {
+	margin-left: 5px;
+	/*position: relative;
+	top: 1px;*/
+}

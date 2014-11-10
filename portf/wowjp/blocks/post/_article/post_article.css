@@ -1,0 +1,30 @@
+﻿@import url(__video/post_article__video.css);
+
+.post_article {
+	position: relative;
+}
+.post_article .topic__activity_moderator {
+	display: block;
+}
+.post_article .topic__item__desc {
+	padding-left: 0;
+	margin-bottom: 27px;
+}
+.post_article p, .post_article li {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.post_article h2 {
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.post_article .topic__item__desc__text {
+	padding: 20px 0;
+}
+.post_article .topic__item__desc p {
+	margin: 0 0 0 0;
+}
+.post_article .topic__controls li {
+	font-size: 13px;
+	color: rgba(255,255,255, .99);
+}

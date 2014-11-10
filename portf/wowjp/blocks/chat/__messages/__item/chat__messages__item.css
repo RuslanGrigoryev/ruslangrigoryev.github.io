@@ -1,0 +1,71 @@
+.chat__messages__item {
+	min-height: 36px;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.chat__messages__item__userpic {
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 16px;
+}
+.chat__messages__item__userpic img {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+.chat__messages__item__info {	
+	padding: 0 10px 10px 0;
+	position: relative;
+	top: -4px;
+}
+.chat__messages__item__usernik {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 16px;
+}
+.chat__messages__item__user-rang,
+.chat__messages__item__time {
+	font-size: 11px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 7px;
+	line-height: 16px;
+}
+.chat__messages__item__message {
+	font-size: 13px;
+	line-height: 16px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 4px;
+	overflow: hidden;
+}
+.chat__messages__item__message img {
+	max-height: 14px;
+}
+
+.chat__messages__item__message > span {
+	float: left;
+}
+
+.chat__messages__item__controls {
+	display: inline;
+	font-size: 11px;
+	color: #fff;
+	padding-left: 0;
+}
+
+.chat__messages__item__controls li {
+	display: inline-block;
+	margin-left: 7px;
+}
+
+.chat__messages__item__delete {
+	display: inline-block;
+	background: url(img/chat__messages__item__delete.png);
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	position: relative;
+	top: 1px;
+}

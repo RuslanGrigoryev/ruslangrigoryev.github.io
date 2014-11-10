@@ -1,0 +1,30 @@
+﻿.section_edit__header {
+	text-align: center;
+	display: block;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 15px;
+	position: relative;
+}
+.section_edit__header span {
+	position: absolute;
+	z-index: 59;
+	right: 20px;
+	top: 17px;
+	width: 28px;
+	height: 28px;
+	display: block;
+	background: url(img/section_edit__header_na.png) 0px 0px no-repeat;
+
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+.section_edit_active .section_edit__header span {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}

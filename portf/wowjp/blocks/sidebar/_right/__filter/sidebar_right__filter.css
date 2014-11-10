@@ -1,0 +1,23 @@
+﻿.sidebar_right__filter {
+
+}
+.sidebar_right__filter .custom__field label {
+	margin-bottom: 10px;
+	display: block;
+	color: #fff;
+}
+.sidebar_right__filter .custom__field {
+	border-top: 1px solid rgba(255, 255, 255, 0.06);	
+	border-bottom: none;
+	padding: 10px 0;
+}
+.sidebar_right__filter .custom__field .search {
+	position: relative;
+}
+.sidebar_right__filter .custom__field .search__submit {
+	right: 8px;
+	top: 8px;
+}
+.sidebar_right__filter .tag {
+	margin-right: 6px;
+}

@@ -1,0 +1,29 @@
+.comments__field_answer {
+	min-height: 30px;
+}
+
+.comments__field_answer__explain {
+	display: block;
+	color: rgba(255,255,255, .3);
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+
+.comments__field_answer textarea {
+	height: 60px;
+	resize: none;
+}
+
+/*.comments__field_answer.loader .comments__item__left,
+.comments__field_answer.loader .comments__item__center,
+.comments__field_answer.loader .comments__item__right {
+	display: none;
+}*/
+
+
+.comments__field_answer .button_smile {
+	position: absolute;
+	right: 119px;
+	top: 10px;
+}

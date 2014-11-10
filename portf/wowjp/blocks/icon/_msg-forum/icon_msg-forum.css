@@ -1,0 +1,8 @@
+﻿.icon_msg-forum {
+	background: url(img/section__icon_msg.png) center left no-repeat;
+	width: 15px;
+	height: 15px;
+	padding-left: 20px;
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.5);
+}

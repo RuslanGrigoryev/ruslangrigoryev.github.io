@@ -1,0 +1,16 @@
+﻿@import url(_blizzard/quote_blizzard.css);
+.quote {
+	padding: 26px;
+	color: #fff;
+	font-size: 13px;
+	border: 1px solid #696561;
+	margin: 54px 0 34px 0;
+}
+.quote__header {
+	margin: 0 0 10px 0;
+	font-weight: 600;
+}
+.quote__text {
+	font-weight: normal;
+	line-height: 22px;
+}

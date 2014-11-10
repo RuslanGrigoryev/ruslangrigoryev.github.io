@@ -1,0 +1,13 @@
+@import url('__readmore/slideshow__center__readmore.css');
+@import url('__title/slideshow__center__title.css');
+
+.slideshow__center {
+	z-index: 10;
+	position: absolute;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 90px;
+	min-width: 460px;
+}

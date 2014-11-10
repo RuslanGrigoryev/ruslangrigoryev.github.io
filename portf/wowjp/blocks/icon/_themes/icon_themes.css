@@ -1,0 +1,9 @@
+﻿.icon_themes {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 0.5);
+	background: url(img/section__icon_themes.png) no-repeat;
+	width: 13px;
+	height: 15px;
+	padding-left: 18px;
+	margin: 0 11px 0 0;
+}

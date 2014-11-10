@@ -1,0 +1,27 @@
+.section__title {
+	font-size: 25px;
+	color: #fff;	
+	margin: 0px;
+	font-weight: normal;
+	padding-bottom: 24px;
+}
+.section__title_nopadding {
+	padding: 0;
+}
+.section__title_underline{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	margin: 0px 0px 17px 0px;
+}
+.section__title__explanation {
+	font-size: 0.7em;
+	display: inline;
+	margin-left: 1em;
+}
+.section__title_forum span {
+	position: relative;
+}
+.section__title_forum .remark {
+	top: 3px;
+	right: -140px;
+	left: initial;
+}

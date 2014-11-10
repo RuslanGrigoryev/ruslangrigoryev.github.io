@@ -1,0 +1,78 @@
+﻿.dialogue__list {
+	margin: 0;
+	padding: 0;
+}
+.dialogue__list li {
+	min-height: 56px;
+	list-style-type: none;
+	padding: 10px 2px 8px 2px;
+	position: relative;
+	border-bottom: 1px solid rgba(255,255,255,.06);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.dialogue__list li:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.dialogue__list li:last-child {
+	border-bottom: none;
+}
+.dialogue__list__userpic, .dialogue__list__info, .dialogue__list__text {
+	float: left;
+}
+.dialogue__list__userpic img {
+	width: 35px;
+	height: 35px;
+}
+.dialogue__list__info {
+	margin-left: 17px;
+	min-width: 153px;
+}
+.dialogue__list__info__nickname {
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	line-height: 13px;
+	font-weight: 600;
+}
+.dialogue__list__info time {
+	color: rgba(255,255,255,.5);
+	font-size: 11px;
+}
+.dialogue__list__text p {
+	margin: 0;
+	color: rgba(255,255,255,.8);
+	line-height: 16px;
+}
+.dialogue__list__item_active {
+	background: rgba(255,255,255,.06);
+}
+.dialogue__list__item__rate {
+	position: absolute;
+	z-index: 60;
+	right: 6px;
+	top: 21px;
+	font-size: 11px;
+	line-height: 19px;
+	display: block;
+	width: 29px;
+	height: 20px;
+	text-align: center;
+	color: #fff;
+	background: #6b655f;
+}
+.dialogue__list__item .online {
+	height: 22px;
+	display: inline-block;
+	margin-left: 2px;
+	float: none;
+}
+
+@media all and (max-width: 610px) {
+	.dialogue__list__text {
+		max-width: 238px;
+	}
+}

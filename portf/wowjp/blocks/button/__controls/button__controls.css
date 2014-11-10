@@ -1,0 +1,43 @@
+.button__controls {
+	width: 23px;
+	height: 23px;
+	border-radius: 23px;
+	border: 1px solid rgba(255,255,255,.5);
+	float: left;
+	position: relative;
+	background: none;
+}
+.button__controls:hover {
+	border: 1px solid rgba(255,255,255,.8);
+}
+
+.button__controls_minus:after,
+.button__controls_plus:after {
+	content: "";
+	position: absolute;
+	z-index: 59;
+	width: 9px;
+	height: 1px;
+	top: 50%;
+	right: 6px;
+	background: rgba(255,255,255,.5);
+}
+.button__controls_plus {
+	margin-left: 3px;
+}
+.button__controls_plus:before {
+	content: "";
+	position: absolute;
+	z-index: 59;
+	width: 1px;
+	height: 9px;
+	background: rgba(255,255,255,.5);
+	top: 6px;
+	right: 10px;
+}
+
+.button__controls_minus:after,
+.button__controls_plus:after,
+.button__controls_plus:before {
+	background: rgba(255,255,255,.7);
+}

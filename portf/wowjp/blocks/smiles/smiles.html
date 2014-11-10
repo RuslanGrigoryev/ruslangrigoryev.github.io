@@ -1,0 +1,7 @@
+<div class="smiles__inner">
+	<% _.each(smiles, function(smile) { %>
+	<a href="javascript://" class="smiles__item" data-command="<%= smile.command %>">
+		<img src="<%= smile.image %>">
+	</a>
+	<% }); %>
+</div>

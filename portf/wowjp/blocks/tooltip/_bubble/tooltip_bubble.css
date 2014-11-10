@@ -1,0 +1,19 @@
+﻿.tooltip.tooltip_bubble {
+	top: 30px;
+	padding: 0;
+	border-radius: 0px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border: none;
+}
+.tooltip_bubble .tooltip__text {
+	color: #fff;
+	padding: 8px 15px;
+}
+.tooltip_bubble img {
+	max-height: 150px;
+	width: 100%;
+}
+.tooltip_bubble .tooltip__triangle {
+	bottom: -15px;
+}

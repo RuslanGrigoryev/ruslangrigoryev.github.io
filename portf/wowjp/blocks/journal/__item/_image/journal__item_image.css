@@ -1,0 +1,19 @@
+.journal__item_image .journal__item__img {
+	overflow: hidden;
+	margin-top: 7px;
+
+}
+.journal__item__img img {
+	width: 100%;
+}
+.journal__item_image .journal__item__desc {
+	font-size: 14px;
+	color: #fff;
+	padding: 17px 0;
+	margin-bottom: 22px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.journal__item_image .journal__item__add-img {
+	padding-top: 21px;
+	
+}

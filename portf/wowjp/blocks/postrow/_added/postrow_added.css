@@ -1,0 +1,20 @@
+﻿.postrow.postrow_added {
+	padding: 20px 0 10px;
+	margin-top: -1px;
+}
+.postrow_added_by {
+	float: left;
+	margin: 0;
+	font-size: 13px;
+	color: rgba(255,255,255, .5);
+}
+.postrow_added time {
+	color: rgba(255,255,255, .5);
+	float: right;
+}
+
+.postrow_added__by__name {
+	margin-left: 10px;
+	font-weight: 600;
+	color: #fff;
+}

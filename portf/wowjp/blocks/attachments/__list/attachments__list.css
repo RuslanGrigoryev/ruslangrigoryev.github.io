@@ -1,0 +1,39 @@
+﻿@import url(__item/attachments__list__item.css);
+
+.attachments__list {
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+.attachments__list li {
+	border-bottom: 1px solid rgba(255,255,255,.08);
+	min-height: 85px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 48%;
+	margin: 0 4% 0 0;
+	float: left;
+	list-style-type: none;
+	position: relative;
+	padding: 12px 12px 0 0;
+}
+.attachments__list li:nth-child(2n) {
+	margin: 0;
+}
+.attachments__list li:nth-child(3), .attachments__list li:nth-child(4) {
+	border: none;
+}
+.attachments__list li:hover .attachments__list__close-item {
+	display: block;
+}
+.attachments__list__close-item {
+	display: none;
+	position: absolute;
+	z-index: 59;
+	right: 1px;
+	top: 40px;
+	width: 11px;
+	height: 11px;
+	background: url(img/attachments__close-item.png) no-repeat;
+}

@@ -1,0 +1,63 @@
+.section.section_admin {
+	padding: 25px 24px 0 24px;
+}
+.section_admin__item {
+	float: left;
+	width: 100%;
+	margin-bottom: -1px;
+	padding-bottom: 30px;
+	min-height: 104px;
+	padding-top: 19px;
+	padding-right: 5px;
+	border-top: 1px solid #696663;
+	border-bottom: 1px solid #696663;
+}
+.section_admin__item:first-child {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+.section_admin__item__img {
+	float: left;
+	width: 47px;
+	text-align: right;
+	position: relative;
+}
+.section_admin__item__desc {
+	padding: 0px 0px 0 57px;
+}
+.section_admin__item__desc h2 {
+	font-size: 15px;
+	font-weight: normal;
+	margin: 0px 11px 6px 0;
+	display: inline-block;
+	float: left;
+}
+
+/*.section_admin__forum-msg {
+	background: url(img/forum-msg.png) no-repeat;
+	width: 263px;
+	height: 33px;
+	margin-top: 5px;
+	padding: 16px 12px 10px;
+}*/
+
+@media (min-width: 1066px) and (max-width: 1500px ){
+	.section_admin__item {
+		width: 48.7%;
+	}
+}
+@media (min-width: 1501px) and (max-width: 1940px ){
+	.section_admin__item {
+		width: 32%;
+	}
+}
+@media (min-width: 1941px) and (max-width: 2310px ){
+	.section_admin__item {
+		width: 24%;
+	}
+}
+@media (min-width: 2311px){
+	.section_admin__item {
+		width: 19%;
+	}
+}

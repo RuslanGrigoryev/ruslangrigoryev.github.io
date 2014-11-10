@@ -1,0 +1,9 @@
+﻿@import url(__comments/showing__comments.css);
+@import url(__views/showing__views.css);
+
+.showing {
+	float: right;
+	font-size: 13px;
+	color: #fff;
+	padding-top: 3px;
+}

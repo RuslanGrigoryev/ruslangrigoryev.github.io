@@ -1,0 +1,42 @@
+﻿.rank {
+	width: 41px;
+	height: 41px;
+	margin: 0 10px;
+	float: left;
+}
+.rank_1 {
+	background: url(img/1.png);
+}
+.rank_2 {
+	background: url(img/2.png);
+}
+.rank_3 {
+	background: url(img/3.png);
+}
+.rank_4 {
+	background: url(img/4.png);
+}
+.rank_5 {
+	background: url(img/5.png);
+}
+.rank_6 {
+	background: url(img/6.png);
+}
+.rank_7 {
+	background: url(img/7.png);
+}
+.rank_8 {
+	background: url(img/8.png);
+}
+.rank_9 {
+	background: url(img/9.png);
+}
+.rank_10 {
+	background: url(img/10.png);
+}
+.rank_11 {
+	background: url(img/11.png);
+}
+.rank_12 {
+	background: url(img/12.png);
+}

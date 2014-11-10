@@ -1,0 +1,44 @@
+.header__menu__submenu_forum__item__theme__title {
+	font-size: 15px;
+	color: #fff;
+	font-weight: 600;
+	margin: 0px;
+}
+.header__menu__submenu_forum__item__theme__info {
+	font-size: 12px;
+	margin-top: 7px;
+}
+.header__menu__submenu_forum__item__theme__info__authorlabel {
+	color: #d5d5d5;
+	float: left;
+}
+.header__menu__submenu_forum__item__theme__info__authorname {
+	color: #fff;
+	float: left;
+	margin-left: 4px;
+}
+.header__menu__submenu_forum__item__theme__info__reads {
+	background: url(img/views.png) no-repeat left center;
+	padding-left: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.header__menu__submenu_forum__item__theme__info__posts {
+	background: url(img/posts.png) no-repeat left center ;
+	padding-left: 21px;
+	color: rgba(255, 255, 255, 0.5);
+	margin-left: 12px;
+}
+.header__menu__submenu_forum__item__theme {
+	width: 280px;
+}
+.header__menu__submenu_forum__item__point {
+	background: url(img/point.png) no-repeat center center;
+	width: 3px;
+	float: left;
+	height: 17px;
+	margin: 0 8px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+}

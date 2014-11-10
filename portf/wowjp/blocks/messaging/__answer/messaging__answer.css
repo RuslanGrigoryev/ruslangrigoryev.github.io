@@ -1,0 +1,74 @@
+.messaging__answer {
+	min-height: 20px;
+	position: relative;
+	margin-bottom: 20px;
+	clear: both;
+	margin: 20px 35px 0 25px;
+}
+
+.messaging__answer textarea {
+	width: 100%;
+	color: #1b1917;
+	font-size: 13px;
+	border-radius: 3px;
+	padding: 10px 30px 10px 10px;
+	height: 60px;
+	border: none;
+	resize: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.messaging__answer__left {
+	position: absolute;
+	z-index: 59;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}
+
+.messaging__answer__center {
+	padding: 0 110px 0 50px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.messaging__answer__right {
+	position: absolute;
+	z-index: 59;
+	right: 0;
+	top: 0;
+}
+
+.messaging .button_smile {
+	position: absolute;
+	right: 119px;
+	top: 10px;
+}
+
+.messaging__answer__left {
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin-right: 16px;
+}
+
+.messaging__answer__left img {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+
+.messaging__answer__commenthow {
+	display: block;
+	color: rgba(255,255,255, .3);
+	font-size: 12px;
+	margin-top: 5px;
+}

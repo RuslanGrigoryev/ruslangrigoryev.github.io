@@ -1,0 +1,57 @@
+.modal_reputation_view__list__item {
+	color: rgba(255,255,255,.8);
+	min-height: 54px;
+	font-size: 13px;
+	padding-top: 15px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.modal_reputation_view__list__item:hover .modal_reputation_view__list__item__controls {
+	display: block;
+}
+.modal_reputation_view__list__item__info {
+	float: left;
+	min-width: 215px;
+	margin: -4px 0 0 13px;
+}
+.modal_reputation_view__list__item__date {
+	float: right;
+	color: rgba(255,255,255,.3);
+	margin: -4px 0 0 0;
+}
+.modal_reputation_view__list__item__info span {
+	display: block;
+}
+.modal_reputation_view__list__item__info__user {
+	font-weight: 600;
+	color: #fff;
+}
+.modal_reputation_view__list__item__controls {
+	margin: -4px 0 0 0;
+	padding: 0;
+	float: left;
+	display: none;
+}
+.modal_reputation_view__list__item__controls li {
+	position: relative;
+	float: left;
+	color: #fff;
+	padding: 0;
+	min-height: 10px;
+	margin-right: 16px;
+	border-bottom: none;
+}
+.modal_reputation_view__list__item__controls li:after {
+	content: "";
+	position: absolute;
+	right: -9px;
+	top: 8px;
+	width: 3px;
+	height: 3px;
+	border-radius: 3px;
+	background: rgba(255,255,255,.6);
+}

@@ -1,0 +1,38 @@
+.tag {	
+	margin-right: 13px;
+	color: rgba(255, 255, 255, 0.5);
+	height: 25px;
+	padding-right: 18px;
+	float: left;
+	position: relative;
+	margin-bottom: 8px;
+	cursor: pointer;
+}
+.tag span {
+	background: url(img/tag.png) no-repeat left top;
+	background-size: 100% 51px;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 9px;
+}
+.tag__arrow {
+	background: url(img/tag__arrow.png) no-repeat left top;
+	width: 18px;
+	height: 25px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+a.tag:hover .tag__arrow,
+a.tag:hover span,
+.tag_active .tag__arrow,
+.tag_active span {
+	background-position: left bottom;
+	color: #fff;
+}
+
+a.tag {
+	display: block;
+}

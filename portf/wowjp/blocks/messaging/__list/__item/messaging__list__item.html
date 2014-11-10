@@ -1,0 +1,13 @@
+<div class="messaging__list__item__left messaging__list__item__userpic">
+	<img src="<%= getSender(sender_id).getAvatar() %>" alt="">
+</div>
+<div class="messaging__list__item__right">
+	<div class="messaging__list__item__info">
+		<span class="messaging__list__item__info__name"><%= getSender(sender_id).get('nickname') %></span>
+		<span class="messaging__list__item__info__time"><%= templateDate(onCreated) %></span>
+	</div>
+	<div class="messaging__list__item__content">
+		<span><%= replaceSmiles(message) %></span>
+	</div>
+</div>
+<div class="clr"></div>

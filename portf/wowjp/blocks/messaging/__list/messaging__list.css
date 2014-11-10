@@ -1,0 +1,8 @@
+﻿@import url(__item/messaging__list__item.css);
+
+.messaging__list {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	max-height: 530px;
+	overflow: hidden;
+}

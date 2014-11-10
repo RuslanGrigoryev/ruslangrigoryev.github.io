@@ -1,0 +1,50 @@
+.topic_new {
+
+}
+.editor {
+	background: #fff;
+	width: 100%;
+	min-height: 465px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}
+.editor__tools {
+	height: 32px;
+	border-bottom: 
+}
+.topic_new__checkboxes {
+	padding: 30px 0 26px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+}
+.topic_new__checkbox {
+	margin-left: 27px;
+
+}
+.topic_new__checkbox:first-child {
+	margin-left: 0;
+}
+.topic_new__checkboxes label {
+	font-size: 15px;
+	line-height: 15px;
+	color: #fff;
+	margin-left: 13px;
+}
+.topic_new__tools {
+	padding-top: 26px;
+}
+.topic_new__tools__buttons {
+	float: left;
+	width: 227px;
+	min-height: 50px;
+}
+.topic_new__tools__buttons button:first-child {
+	margin-bottom: 27px;
+}
+.topic_new__tools__captcha {
+	float: left;
+	margin-left: 25px;
+	width: 467px;
+}

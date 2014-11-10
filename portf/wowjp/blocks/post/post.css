@@ -1,0 +1,177 @@
+@import url('_article/post_article.css');
+@import url('_padding/post_padding.css');
+.post__fields {
+	margin-bottom: 25px;
+
+}
+.post__fields:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.post__fields_img {
+	margin-top: 23px;
+}
+.post__fields label.post__fields__title {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 25px;
+	display: block;
+
+}
+.post__fields input,
+.post__fields textarea  {
+	background: none repeat scroll 0 0 #fff;
+	border: medium none;
+	border-radius: 3px;
+	box-sizing: border-box;
+	color: #1b1917;
+	font-size: 15px;
+	padding: 12px;
+	width: 100%;
+}
+.post__fields textarea {
+	resize: none;
+	min-height: 100px;
+}
+.post__img__info {
+	color:  rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 15px;
+}
+.post__img,
+.post__tags,
+.post__actions {
+	padding: 25px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.post__actions_picture {
+	padding: 25px 0 0;
+}
+.post__img__cloud {
+	background: url(img/post__img__cloud.png) no-repeat center 35px;
+	border: 2px dashed rgba(255, 255, 255, 0.3);
+	width: 100%;
+	height: 164px;
+	font-size: 13px;
+	color:  rgba(255, 255, 255, 0.5);
+	text-align: center;
+	margin-top: 25px;
+}
+.post__img__cloud span {
+	margin-top: 100px;
+	display: block;
+}
+.post__recaptcha {
+	overflow: hidden;
+	width: 467px;
+	height: 126px;
+	float: left;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}
+.post__buttons {
+	float: left;
+	margin-left: 25px;
+}
+.post__buttons button {
+	font-weight: 600;
+	width: 100%;
+	padding: 19px 0;
+	text-align: center;
+}
+.post__buttons_picture {
+	float: right;
+	margin: 0;
+}
+.post__buttons_picture button {
+	font-weight: 600;
+	font-size: 15px;
+}
+.post__buttons_picture button:first-child {
+	margin-right: 25px;
+}
+.post__buttons button:first-child {
+	margin-bottom: 25px;
+}
+.post__tags__comments {
+	line-height: 20px;
+}
+.post__fields label{
+	cursor: pointer;
+	font-size: 13px;
+	margin-bottom: 10px;
+	color: rgba(255, 255, 255, 0.8);
+	display: block;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.post__fields span {
+	padding-left: 12px;
+}
+.post__category {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	padding-bottom: 20px;
+}
+.post__img__post {
+	overflow: hidden;
+	cursor: move;
+}
+.post__img_video {
+	width: 505px;
+	overflow: hidden;
+}
+.post__img_video img {
+	width: 100%;
+}
+.post__img_video_loading {
+	width: 100%;
+	height: 318px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.post__img > label {
+	color: rgba(255, 255, 255, 0.5);
+}
+.post__img__post img {
+	width: 100%;
+}
+.img__post_preview {
+	float: left;
+	width: 241px;
+	position: relative;
+}
+.img__post_preview img {
+	width: 100%;
+}
+.img__post_preview_big {
+	padding-left: 265px;
+
+}
+.img__post_preview_big img {
+	width: 100%;
+}
+.post__fields_sticker {
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+	padding-top: 23px;
+}
+.img__post_preview__sticker {
+	background: url(img/img__post_preview__sticker.png) no-repeat;
+	height: 30px;
+	position: absolute;
+	box-sizing: border-box;
+	left: 0px;
+	line-height: 30px;
+	top: 15px;
+	color: #FFF;
+	padding-left: 15px;
+	width: 100%;
+}

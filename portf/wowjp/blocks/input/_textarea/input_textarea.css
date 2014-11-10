@@ -1,0 +1,18 @@
+.input_textarea {
+	background: #fff;
+	width: 100%;
+	min-height: 88px;
+	/*padding: 15px 5px;
+	color: rgba(0, 0, 0, 0.5);*/
+	padding: 5px;
+	font-size: 13px;
+	resize: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}

@@ -1,0 +1,21 @@
+﻿.table_article {
+	width: 100%;
+	color: rgba(255,255,255, .8);
+	font-size: 13px;
+	margin: 30px 0;
+}
+.table_article thead {
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+.table_article thead td {
+	padding: 20px 0;
+}
+.table_article tbody td {
+	padding: 20px 25px;
+	text-align: left;
+}
+.table_article td {
+	border: 1px solid rgba(255,255,255, .18);
+}

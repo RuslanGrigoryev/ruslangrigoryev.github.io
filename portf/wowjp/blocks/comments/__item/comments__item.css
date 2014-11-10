@@ -1,0 +1,118 @@
+﻿@import url('__edit/comments__item__edit.css');
+
+.comments__item {
+	border-top: 1px solid rgba(255,255,255,.08);
+	position: relative;
+	color: #d5d5d5;
+	font-size: 13px;
+	font-weight: normal;
+}
+.comments__item .comments__item__left, .comments__item .comments__item__right {
+	top: 15px;
+}
+.comments__item__normal .comments__item__center {
+	padding: 15px 70px 15px 50px;
+	/*cursor: pointer;*/
+}
+.comments__item .comments__item__center .button__controls {
+	margin-left: 5px;
+}
+.comments__item p {
+	margin: 0;
+}
+.comments__item__nickname {
+	font-weight: bold;
+	color: #fff;
+	margin-right: 10px;
+}
+.comments__item__time {
+	color: rgba(255,255,255, .3);
+	font-size: 13px;
+	font-weight: normal;
+	margin-right: 20px;
+}
+.comments__item__rate {
+	color: #ffc600;
+	font-size: 12px;
+}
+.comments__item__rate_negative {
+	color: rgba(255,255,255, .3);
+}
+.comments__item .topic__item__user__controls {
+	right: 18px;
+	top: 13px;
+	display: none;
+}
+.comments__item .comments__item__center:hover .topic__item__user__controls {
+	display: block;
+}
+.comments__item .comments__item__center:hover .comments__item__control__list {
+	display: inline-block;
+	margin-left: 10px;
+}
+.comments__item__control__list {
+	display: inline-block;
+	vertical-align: bottom;
+	display: none;
+}
+.comments__item .comments__item__controls__item {
+	float: left;
+	padding-right: 28px;
+	list-style-type: disc;
+	color: #fff;
+}
+.comments__item__text__content {
+	display: inline;
+}
+
+.comments__item textarea {
+	height: 60px;
+	resize: none;
+}
+
+.comments__item__avatar {
+	max-height: 35px;
+	-webkit-border-radius: 35px;
+	-moz-border-radius: 35px;
+	border-radius: 35px;
+}
+
+.comments__item .comments__field_answer {
+	display: none;
+	margin: 0 55px;
+}
+
+.comments__item .comments__field_answer .comments__item__avatar {
+	max-height: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.comments__item .comments__field_answer .comments__item__center {
+	padding: 15px 110px 15px 50px;	
+}
+
+.comments__item__left.loader img {
+	display: none;
+}
+
+.comments__item__edit textarea {
+	margin-top: 15px;
+}
+
+.comments__item__edit .button {
+	padding: 6px 12px;
+}
+
+.comments__item__right li {
+	margin-bottom: 8px;
+}
+.comments__item__right__btn-caption {
+	display: block;
+	margin-top: 2px;
+	color: #fff;
+}
+.comments__item .comments__field_answer .button_smile {
+	top: 23px;
+}

@@ -1,0 +1,23 @@
+.button_news {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #a59484;
+	text-align: center;
+	width: 98px;
+	height: 30px;
+	line-height: 24px;
+	font-size: 13px;
+	margin-bottom: 17px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}
+.button_news_active {
+	background: #4f4133;
+	color: #fff;
+
+}
+.button_news_first{
+	margin-right: 12px;
+}

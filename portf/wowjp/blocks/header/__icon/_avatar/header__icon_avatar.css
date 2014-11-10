@@ -1,0 +1,7 @@
+.header__icon_avatar {
+	width: 27px;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+	padding: 10px 16px 0;
+}

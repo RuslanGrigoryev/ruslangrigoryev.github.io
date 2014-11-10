@@ -1,0 +1,36 @@
+@import url('_fullwidth/slideshow_fullwidth.css');
+@import url('__controls/slideshow__controls.css');
+@import url('__center/slideshow__center.css');
+
+.slideshow {
+	display: block;
+	position: relative;
+	margin-top: 55px;
+	overflow: hidden;
+}
+.slideshow__list {
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	height: 250px;
+
+}
+.slideshow__list_item {
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.slideshow__overlay {
+	background: url(img/slideshow__overlay.png) no-repeat center bottom;
+	width: 100%;
+	height: 250px;
+	background-size: 100% 50%;
+	position: absolute;
+	bottom: -1px;
+	z-index: 3;
+}

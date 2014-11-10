@@ -1,0 +1,25 @@
+@import url('__menu/footer__menu.css');
+
+.footer{
+	background: #48433e;
+	padding: 0 25px;
+	color: #fff;
+	line-height: 40px;
+	margin-top: 50px;
+	min-width: 560px;
+}
+.footer:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer__design {
+	font-size: 13px;
+	float: right;
+	color: rgba(255, 255, 255, 0.5);
+}
+.footer__design a {
+	color: #fff;
+	text-decoration: none;
+}

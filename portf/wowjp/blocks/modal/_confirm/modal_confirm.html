@@ -1,0 +1,9 @@
+﻿<% if("undefined" !== typeof message) { %>
+	<div class="modal__field clearfix">
+		<%= message %>
+	</div>
+<% } %>
+<div class="modal__field modal__field_nospace modal_confirm__buttons clearfix">
+	<button class="button button_dark" type="cancel"><%= cancelText %></button>
+	<button class="button button_red" type="confirm"><%= confirmText %></button>
+</div>

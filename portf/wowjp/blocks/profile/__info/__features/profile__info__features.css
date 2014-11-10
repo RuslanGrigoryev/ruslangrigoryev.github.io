@@ -1,0 +1,52 @@
+﻿.profile__info__features {
+	min-height: 325px;
+	float: left;
+	width: 100%;
+	padding-left: 153px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.profile__info__features ul {
+	width: 48%;
+	float: left;
+	margin: 0 1%;
+	padding: 0;
+}
+.profile__info__features li {
+	/*font-size: 14px;*/
+	font-weight: normal;
+	color: #fff;
+	list-style-type: none;
+	padding: 19px 0;
+	border-bottom: 1px solid rgba(255,255,255,.18);
+}
+.profile__info__features li .button {
+	float: right;
+	margin-top: -6px;
+}
+.profile__info__features li:last-child {
+	border-bottom: none;
+}
+.profile__info__features__title {
+	color: #d5d5d5;
+	margin-right: 5px;
+}
+.profile__info__features__current {
+	color: #ffc600;
+}
+.profile__info__features__link-repute {
+	position: relative;
+	padding-right: 30px;
+}
+.profile__info__features__link-repute .topic__item__user__controls {
+	position: absolute;
+	right: -24px;
+	top: -1px;
+	z-index: 59;
+	display: none;
+}
+.profile__info__features__link-repute:hover .topic__item__user__controls {
+	display: block;
+}

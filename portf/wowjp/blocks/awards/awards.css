@@ -1,0 +1,29 @@
+﻿.awards {
+	padding: 0;
+}
+.awards .award {
+	float: left;
+	margin: 0 12px 12px 0;
+}
+.award {
+	position: relative;
+}
+.awards a {
+	display: block;
+}
+.awards img {
+	border-radius: 40px;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	width: 40px;
+	height: 40px;
+}
+.awards__link-show-all {
+	width: 40px;
+	height: 40px;
+	background: url(img/list_awards__all-bg.png) no-repeat;
+	padding: 10px 11px 10px 9px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

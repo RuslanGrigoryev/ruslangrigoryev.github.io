@@ -1,0 +1,9 @@
+﻿@import url(__list/attachments__list.css);
+
+.attachments {
+	
+}
+.attachments .button_custom {
+	float: left;
+	margin-top: 20px;
+}

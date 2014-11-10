@@ -1,0 +1,7 @@
+.journal__item_brown{
+	background: #625242 !important;
+}
+.journal__item_brown .journal__item__title {	
+	padding: 0;
+	margin: 0;
+}

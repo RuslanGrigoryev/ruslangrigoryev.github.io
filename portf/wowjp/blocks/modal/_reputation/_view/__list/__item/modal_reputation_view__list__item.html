@@ -1,0 +1,17 @@
+<% if(value > 0) { %>
+	<span class="button_reputation button_reputation_increase"></span>
+<% } %>
+<% if(value < 0) { %>
+	<span class="button_reputation button_reputation_decrease"></span>
+<% } %>
+<% if(value == 0) { %>
+	<span class="button_reputation button_reputation_neutral"></span>
+<% } %>
+<div class="modal_reputation_view__list__item__info">
+	<span class="modal_reputation_view__list__item__info__user"><%= creatorNickname %></span>
+	<span><%= comment %></span>
+</div>
+<ul class="modal_reputation_view__list__item__controls clearfix">
+	<li><a href="javascript://" data-type="delete">У</a></li>
+</ul>
+<span class="modal_reputation_view__list__item__date"><%= templateDate(onCreated) %></span>

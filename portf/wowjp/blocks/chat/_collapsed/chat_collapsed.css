@@ -1,0 +1,28 @@
+.chat_collapsed .chat__users {
+/*	border-left: none;*/
+	width: 17px;
+}
+.chat_collapsed .chat__users__online,
+.chat_collapsed .chat__users__list {
+	display: none;
+}
+.chat.chat_collapsed .button_collapse {
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+.chat.chat_collapsed .smiles {
+	right: 81px;
+}
+
+@media (max-width: 700px) {
+	.chat:not(.chat_collapsed) .chat__users {
+		width: 100%;
+		border-left-width: 0;
+	}
+
+	.chat:not(.chat_collapsed) .chat__messages {
+		display: none;
+	}
+}

@@ -1,0 +1,27 @@
+.button_share {
+	color: rgba(255, 255, 255, 0.5);
+	background-image: url(img/share-white-opacity.png);
+	background-color: #3f3b36;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-repeat: no-repeat;
+	background-position: 11px 50%;
+	background-size: 13px 13px;
+	height: 25px;
+	min-width: 27px;
+	padding-left: 34px;
+	line-height: 25px;
+	cursor: pointer;
+	float: left;
+	position: relative;
+}
+.button_share.button_share_active {
+	background-image: url(img/share-white.png);
+	background-position: 11px 50%;
+	background-size: 13px 13px;
+	border: 1px solid #ff4d3b;
+	background-color: #ff4d3b;
+	color: rgba(255, 255, 255, 1);
+}
+.button_share.button_noborder {
+	border: 1px solid #ff4d3b;
+}

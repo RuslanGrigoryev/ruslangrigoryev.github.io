@@ -1,0 +1,53 @@
+@import url('_category/list_category.css');
+@import url('_forum/list_forum.css');
+@import url('_custom/list_custom.css');
+@import url('_inline/list_inline.css'); 
+@import url('_image-action/list_image-action.css');
+@import url('_friends/list_friends.css');
+@import url('_social/list_social.css');
+@import url('_other/list_other.css');
+
+.list_category,
+.list_forum {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-size: 13px;
+}
+.list_category a,
+.list_forum a{
+	color: #fff;
+	text-decoration: none;
+	height: 25px;
+	display: table-cell;
+	vertical-align: middle;
+}
+/*.list_pull-down {
+	height: 595px;
+}*/
+.list_pull-down {
+	position: absolute;
+	background: #625242;
+	z-index: 70;
+	left: 0px;
+	overflow: hidden;
+	border-radius: 0 0 6px 6px;
+	padding-left: 17px!important;
+	padding-bottom: 20px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  	box-sizing: border-box;
+	webkit-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+}
+
+.list.loader {
+	height: 50px;
+}
+
+.list.loader .journal__item_group {
+	display: inline-block;
+	opacity: 0;
+}

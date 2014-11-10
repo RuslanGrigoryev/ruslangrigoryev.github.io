@@ -1,0 +1,31 @@
+@import url('_below/loader_below.css');
+
+.loader {
+	background-repeat: no-repeat;
+	background-size: 30px;
+	min-height: 30px;
+	min-width: 30px;
+}
+.loader,
+.loader.loader_1b1917 {
+	background-image: url(img/circle-1B1917.gif);
+}
+.loader.loader_5f574e {
+	background-image: url(img/circle-5f574e.gif);
+}
+.loader.loader_48433e {
+	background-image: url(img/circle-48433e.gif);
+}
+.loader.loader_625241 {
+	background-image: url(img/circle-625241.gif);
+}
+
+.loader_top {
+	background-position: center top;
+}
+.loader_center {
+	background-position: center center;
+}
+.loader_bottom {
+	background-position: center bottom;
+}

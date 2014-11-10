@@ -1,0 +1,18 @@
+.button_active {
+	background-repeat: no-repeat;
+	background-color: #ff4d3b;
+	color: #fff;
+	border: 1px solid transparent !important;
+}
+.button_like.button_active{
+	background-image: url(img/like-white.png);
+	background-color: #ff4d3b;
+	background-repeat: no-repeat;
+	background-position: 11px 50%;
+}
+.button_share.button_active{
+	background-image: url(img/share-white.png);
+	background-color: #ff4d3b;
+	background-repeat: no-repeat;
+	background-size: 13px 13px;
+}

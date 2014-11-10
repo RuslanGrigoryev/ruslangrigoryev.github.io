@@ -1,0 +1,26 @@
+@import url('__item/header__menu__submenu_forum__item.css');
+
+.header__menu__submenu_forum {
+	width: 100%;
+	display: none;
+}
+.header__menu__item_forum:hover .header__menu__submenu_forum {
+	display: block;
+}
+.header__menu__submenu_forum .header__menu__submenu__content{
+	margin: 0px;
+	padding: 0px;
+}
+.header__menu__submenu_forum .header__menu__submenu__content li {
+	background: url(__item/img/icon.png) no-repeat left center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 23px 0 23px 60px;
+	position: relative;
+}
+.header__menu__submenu_forum .header__menu__submenu__content li:first-child {
+	padding-top: 0;
+	background-position: 0% 0%;
+}
+.header__menu__submenu_forum .header__menu__submenu__content li:first-child .bubble {
+	margin-top: 0;
+}

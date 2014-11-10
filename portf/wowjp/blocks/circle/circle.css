@@ -1,0 +1,20 @@
+﻿@import url(_reminder/circle_reminder.css);
+@import url(_msg/circle_msg.css);
+@import url(_event/circle_event.css);
+@import url(_shout/circle_shout.css);
+
+.circle {
+	background: #FF6839;
+	min-width: 16px;
+	height: 17px;
+	padding: 1px 2px;
+	color: #FFF;
+	font-size: 11px;
+	position: absolute;
+	text-align: center;
+	line-height: 17px;
+	border-radius: 17px;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-khtml-border-radius: 17px;
+}

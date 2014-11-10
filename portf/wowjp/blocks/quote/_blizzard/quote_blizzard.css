@@ -1,0 +1,10 @@
+﻿.quote.quote_blizzard {
+	color: #a8dfff;
+}
+.quote_blizzard .quote__header {
+	padding-left: 60px;
+	background: url(img/quote_blizzard.png) left center no-repeat;
+}
+.quote_blizzard .quote__text {
+	color: #a8dfff;
+}

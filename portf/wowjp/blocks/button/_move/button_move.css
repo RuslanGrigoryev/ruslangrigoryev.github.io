@@ -1,0 +1,10 @@
+.button_move {
+	background: url(img/button_move.png) no-repeat;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	position: absolute;
+	left: 12px;
+	top: 12px;
+	border: none;
+}

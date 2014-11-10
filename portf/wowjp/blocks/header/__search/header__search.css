@@ -1,0 +1,103 @@
+@import url('__tags/header__search__tags.css');
+@import url('../../search/search.css');
+
+.header__search {
+	width: 25%;
+	max-width: 400px;
+	/*max-width: 254px;*/
+	position: absolute;
+	z-index: 99;
+    right: 203px;
+
+	-webkit-transition: all 0.1s ease-out;
+	-moz-transition: all 0.1s ease-out;
+	-ms-transition: all 0.1s ease-out; /* IE10 is actually unprefixed */
+	-o-transition: all 0.1s ease-out;
+	transition: all 0.1s ease-out;
+}
+.header__search_active {
+	background: #5f574e;
+	height: auto;
+	-webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.75);
+}
+.header__search__inner {
+	padding: 12px 13px 12px;
+	position: relative;
+	z-index: 9;
+	overflow: hidden;
+}
+.header__search__advanced {
+	display: none;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.header__search_active .header__search__inner,
+.header__search_active .header__search__advanced {
+	display: block;
+}
+.header__search__cat-title{
+	float: left;
+	height: 34px;
+	line-height: 34px;
+	margin-top: 10px;
+	padding-right: 16px;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.header__search__select {	
+    box-sizing: border-box;
+    left: 0;
+    margin-top: 10px;
+    padding-left: 80px;
+    position: absolute;
+    width: 100%;
+
+}
+.header__search__select select {
+	width: 100%;
+	display: block;
+}
+#header__search__select-styler {
+	display: block!important;
+}
+.header__search__icon {
+    background: url("img/header__search__icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 24px;
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    width: 22px;
+    z-index: 5;
+    display: none;
+}
+
+@media(max-width: 1300px) {
+	.header__search__inner {
+		display: none;
+	}
+	.header__search__inner_visible {
+		display: block;
+	}
+	.header__search__icon {
+		display: block;
+	}
+}
+
+@media(max-width: 770px) {
+	.header__search__advanced,
+	.header__search_active {
+		width: 240px;	
+	}
+}
+
+
+@media (min-width: 770px){
+	.header__search__advanced,
+	.header__search_active {
+		width: 448px;	
+	}
+}

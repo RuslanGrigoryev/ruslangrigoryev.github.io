@@ -1,0 +1,8 @@
+﻿.journal__item.journal__item_banner {
+	background: none;
+}
+@media all and (max-width: 800px) {
+	.journal__item_banner {
+		text-align: center;
+	}
+}

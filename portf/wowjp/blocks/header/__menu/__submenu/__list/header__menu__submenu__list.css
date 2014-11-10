@@ -1,0 +1,35 @@
+.header__menu__submenu__list {
+	float: left;
+	width: 213px;
+	margin: 0px;
+	padding: 0px;
+}
+.header__menu__submenu__list li{
+	list-style: none;
+	font-size: 13px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header__menu__submenu__list li:last-child {
+	border-bottom: none;
+}
+.header__menu__submenu__list li a{
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	padding: 13px 0;	
+	display: block;
+}
+.header__menu__submenu__list li:hover a,
+.header__menu__submenu__list li.header__menu__submenu_active a {
+	text-decoration: underline;
+	color: #fff;
+}
+.header__menu__submenu__list > li:hover,
+.header__menu__submenu__list > li.header__menu__submenu_active {
+	background: url(img/rarrow.png) no-repeat right center;
+}
+.header__menu__submenu__list li.header__menu__submenu_active .header__menu__submenu__content {
+	display: block;
+}
+.header__menu__submenu__list li:hover > .header__menu__submenu__content {
+	display: block;
+}

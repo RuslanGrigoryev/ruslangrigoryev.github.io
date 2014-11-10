@@ -1,0 +1,39 @@
+@import url('__item/journal__item.css');
+
+
+.journal__all-active {
+	background: #433f3a;
+	padding: 25px 20px;
+	min-height: 100px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+}
+.journal__all-active h3{
+	padding-bottom: 15px;
+	margin: 0px 0px 17px 0px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: normal;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.journal__all-active h3 a {
+	font-size: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 3px;
+
+}
+.journal__all-active h3 a:hover {
+	text-decoration: none;
+}
+.journal__all-active__cont {
+	font-size: 19px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.journal__all-active__item {
+	float: left;
+	/*width: 314px;*/
+	width: 25%;
+	margin: 15px 0;
+}

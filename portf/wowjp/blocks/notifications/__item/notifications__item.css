@@ -1,0 +1,39 @@
+.notifications__item__img {
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+.notifications__item__img img {
+	height: 100%;
+	width: 100%;
+
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px;
+}
+
+.notifications__item__desc {
+	padding-left: 57px;
+	font-size: 13px;
+}
+.notifications__item__desc__name {	
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 5px;
+}
+.notifications__item__desc__activity {
+	color: #cabfb5;
+	font-weight: normal;
+}
+.notifications__item__desc__title {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+.notifications__item__desc a:hover {
+	text-decoration: underline;
+}
+.notifications__item__desc_full {
+	padding: 0;
+}

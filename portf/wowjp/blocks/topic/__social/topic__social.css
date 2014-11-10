@@ -1,0 +1,35 @@
+.topic__social {
+	background: url(img/topic__social.png) no-repeat left center;
+	padding-left: 24px;
+	margin-left: 18px;
+	height: 27px;
+	float: left;
+
+}
+
+.topic__social_vk {
+	background: url(img/topic__social_vk.png) no-repeat;
+	
+}
+.topic__social_fb {
+	background: url(img/topic__social_fb.png) no-repeat;
+}
+.topic__social_tw {
+	background: url(img/topic__social_tw.png) no-repeat;
+}
+.topic__social_gplus {
+	background: url(img/topic__social_gplus.png) no-repeat;
+}
+
+@media all and (max-width: 815px) {
+	.postrow_activity .topic__social, .topic__footer .topic__social {
+		background: none;
+		margin: 18px 0 0 0;
+		padding: 0;
+		min-width: 600px;
+	}
+	.postrow_activity .showing, .topic__footer .showing {
+		float: left;
+		margin-top: 18px;
+	}
+}

@@ -1,0 +1,7 @@
+.header__menu__item_full {
+	position: inherit !important;
+}
+
+.header__menu__item_full:hover .header__menu__submenu {
+	display: block;
+}

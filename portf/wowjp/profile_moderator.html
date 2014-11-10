@@ -1,0 +1,825 @@
+﻿<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Страница профиля</title>
+	<!-- <link rel="stylesheet" href="css-built/main.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<script data-main="js/app" src="js/libs/require/require.js"></script>
+	<script>
+		document.addEventListener("regirested", function() {
+			App.ProfileModule.start({
+				user_id: 1,
+				reputationCount: 522
+			});
+		});
+	</script>
+</head>
+<body>
+	<!-- ./ Banner -->
+	<!-- .Header -->
+	<div id="header" class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo"></a>
+			<ul class="header__menu menu">
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Форум</a>
+					<div class="header__menu__submenu header__menu__submenu_forum">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="3">
+									<a href="">Программы / Боты</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Общие вопросы</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Флудилка</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Торговый раздел</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Баги / Читы WoW</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Пиратские сервера</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Управление серверами</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">MaNGOS</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">TrinityCore</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Warcaraft 3</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Дизайнерская</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu__item"><a href="">Классы</a></li>
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Рейды</a>
+					<div class="header__menu__submenu header__menu__submenu_article">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="1">
+									<a href="">Осада Орнриммара</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="2">
+									<a href="">Престол Гроз</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="1">
+									<a href="">Сердце Страха</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="400">
+									<a href="">Подземелья Могушан</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Терраса Вечной Весны</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Видеотактики</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>					
+							<div class="clr"></div>
+						</div>				
+					</div>	
+				</li>
+				<li class="header__menu__item"><a href="">Статьи</a></li>
+				<li class="header__menu__item"><a href="">Аддоны</a></li>
+				<li class="header__menu__item"><a href="">Видео</a></li>
+				<li class="header__menu__item"><a href="">Картинки</a></li>
+				<li class="header__menu__item">
+					<a href="">Полезное</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Патчи WoW</a></li>
+						<li><a href="">Скачать WoW</a></li>
+						<li><a href="">Магазин чести</a></li>
+						<li><a href="">Wish</a></li>
+						<li><a href="">Raidbuilder</a></li>
+						<li><a href="">Калькуляторы талантов</a></li>
+						<li><a href="">Форум о работе сайта</a></li>
+						<li><a href="">Команда WoWJP</a></li>
+						<li><a href="">Футболки / Сувениры</a></li>
+						<li><a href="">Реклама / Услуги</a></li>
+					</ul>
+				</li>
+				<li class="header__menu__item header__menu__item_more">
+					<a href="">Еще</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Форум</a></li>
+						<li><a href="">Классы</a></li>
+						<li><a href="">Рейды</a></li>
+						<li><a href="">Статьи</a></li>
+						<li><a href="">Аддоны</a></li>
+						<li><a href="">Видео</a></li>
+						<li><a href="">Картинки</a></li>
+					</ul>
+				</li>
+			</ul>	
+			<div class="header__search">		
+				<div class="header__search__icon"></div>		
+				<div class="header__search__inner">
+					<div class="search">
+						<input type="text" class="search__input" placeholder="Поиск" >
+						<input type="submit" class="search__submit" value="">
+					</div>	
+					<div class="header__search__advanced">
+						<div class="header__search__tags">
+							<div class="tag" data-value="article">
+								<span>Новости и статьи</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="article">
+								<span>Форум</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="photo">
+								<span>Изображения</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+					<div class="clr"></div>	
+				</div>
+			</div>
+			<div class="header__right">					
+				<div class="header__item_chat header__item">
+					<div class="header__icon_chat header__icon"></div>
+				</div>
+				<div class="header__item_notifications header__item">
+					<div class="header__icon_notice header__icon">
+						<span class="circle circle_reminder">2</span>
+					</div>
+					<div class="header__item_notifications__menu header__item__content loader loader_center">
+						<div>
+							<div class="header__item_notifications__content">
+							</div>	
+						</div>
+					</div>	
+				</div>	
+				<div class="header__item_avatar header__item">
+					<div class="header__icon_avatar header__icon">
+						<img src="img/avatar.png" alt="">
+					</div>	
+					<ul class="header__item_avatar__menu header__item__content">
+						<li class="header__item_avatar__menu_profil"><a href="">Ваш профиль</a></li>
+						<li class="header__item_avatar__menu_message">
+							<a href="">Сообщения</a>
+							<span class="circle circle_msg">9</span>
+						</li>
+						<li class="header__item_avatar__menu_money"><a href="">Монеты</a></li>
+						<li class="header__item_avatar__menu_sign-out"><a href="">Выход</a></li>
+					</ul>				
+				</div>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+	<!-- ./ Header -->
+	<!-- .Slideshow -->
+	<div id="slideshow" class="slideshow slideshow_fullwidth">
+		<div class="slideshow__controls">
+			<div class="slideshow__controls__buttons">
+				<div class="slideshow__controls__buttons__left"></div>
+				<div class="slideshow__controls__buttons__right"></div>
+			</div>
+		</div>
+
+		<a class="slideshow__center slideshow__link" href="/markup">
+			<span class="slideshow__center__title">Чопперы Азерота</span><br />
+			<span class="slideshow__center__readmore">Прочитать</span>
+		</a>
+
+		<div class="slideshow__overlay slideshow__link"></div>
+		<ul class="slideshow__list">
+			<li class="slideshow__list_item" data-target="_blank" data-src="img/slideshow/slide5.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 5"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide4.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 4"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide3.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 3"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru" data-button="GoGo!"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide1.jpg" data-href="/markup" data-button="Прочитать" data-title="Чопперы Азерота">
+				<img src="img/slideshow/slide1.jpg" />
+			</li>
+		</ul>
+	</div>
+	<!-- ./ Slideshow -->
+	<!-- .Content -->
+	<div class="content">
+		<div class="container container_padding">			
+			<div class="content__left">
+				<div class="content__left__inner">
+					<div class="section profile profile_violet">
+						<div class="profile__info clearfix">
+							<div class="user">
+								<div class="user__imgbox">
+									<div class="user__imgbox__rank rank_1"></div>
+									<img src="img/userpics/member56_bigicon.png" alt="">
+								</div>
+								<div class="user__username">Member 56</div>
+								<div class="online"></div>
+								<div class="clr"></div>					
+								<div class="user__mail"></div>
+							</div>
+							<div class="profile__info__features">
+								<ul>
+									<li>Admin</li>
+									<li>
+										<span class="profile__info__features__title">Группа:</span>Модераторы D
+									</li>
+									<li>
+										<span class="profile__info__features__title">Ранг:</span>Лучший из лучших
+									</li>
+									<li>
+										<span class="profile__info__features__title">Класс:</span>Рыцарь
+									</li>
+									<li>
+										<span class="profile__info__features__title">Сервер игры:</span>Страж смерти
+									</li>
+									<li>
+										<span class="profile__info__features__title">Фракция:</span>Альянс
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<span class="profile__info__features__title">Уровень:</span>
+										<span class="profile__info__features__current">250</span>
+									</li>
+									<li>
+										<span class="profile__info__features__title">Замечания:</span>
+										<span class="profile__info__features__current">0%</span>
+									</li>
+									<li class="profile__reputation">
+										<span class="profile__info__features__link-repute">
+											<span class="profile__info__features__title">Репутация:</span>
+											<a href="javascript://" class="profile__info__features__current">2564</a>
+											<div class="topic__item__user__controls">
+												<button class="button__controls button__controls_minus"></button>
+												<button class="button__controls button__controls_plus"></button>
+											</div>
+										</span>
+									</li>
+									<li>
+										<span class="profile__info__features__title">Сообщений:</span>
+										<span class="profile__info__features__current">25</span>
+									</li>
+									<li>
+										<span class="profile__info__features__title">Титул:</span>
+										<span class="profile__info__features__current">Паладин</span>
+									</li>
+									<li>
+										<span class="profile__info__features__title">Монеты:</span>
+										<span class="profile__info__features__current">25</span>
+										<button class="button button_dark">Пополнить</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="progressbar clearfix">
+							<div class="progressbar__text">Награды (25/134)</div>
+							<div class="progressbar-wrap">
+								<div class="progressbar__line">
+									<div class="progressbar__line_inner"></div>
+								</div>
+							</div>
+						</div>
+						<div class="awards clearfix">
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award">
+								<a href="/"><img src="img/award-empty.png" alt="award"></a>
+								<div class="tooltip tooltip_award">
+									<div class="tooltip__header">
+										<h2>Фотограф</h2>
+										<span class="tooltip_award__coins">
+											Монет: <span class="icon_coins">999</span>
+										</span>
+										<div class="clr"></div>	
+									</div>
+									<p class="tooltip__text">
+										Осталось не так много времени до завершения съёмок фильма WarCraft, но само "изготовление" займёт гораздо больший срок.
+									</p>
+									<div class="tooltip__triangle"></div>
+								</div>
+							</div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/"><img src="img/award-empty.png" alt="award"></a></div>
+							<div class="award"><a href="/" class="awards__link-show-all">Все</a></div>
+						</div>
+						<div class="postrow postrow_controls">
+							<ul class="topic__controls">
+								<li><a href="/">Вернуться на главную</a></li>
+								<li><a href="/">Редактировать</a></li>
+								<li><a href="/">Скрыть</a></li>
+								<li><a href="/">Удалить</a></li>
+							</ul>
+							<span class="postrow_controls__time">2564 дня после регистрации</span>
+							<div class="clr"></div>
+						</div>
+					</div>
+					<div class="section section_profile-for-guest">
+						<div class="section_profile-for-guest__wrap clearfix">
+							<ul>
+								<li><span class="section_profile-for-guest__title">Логин:</span>Member56</li>
+								<li><span class="section_profile-for-guest__title">Email:</span>kusnizza@gmail.com</li>
+							</ul>
+							<ul>
+								<li><span class="section_profile-for-guest__title">ICQ:</span>23423452345</li>
+								<li><span class="section_profile-for-guest__title">Skype:</span>wladius56</li>
+							</ul>
+						</div>
+						<ul>
+							<li><span class="section_profile-for-guest__title">Подпись:</span>Мне кажется все вокруг нереально</li>
+						</ul>
+					</div>
+					<div class="section section_edit">
+						<div class="section_edit__profile section_edit_active clearfix">
+							<a href="javascript://" class="section_edit__header">
+								Редактировать общие данные
+								<span class="section_edit__header__toggler"></span>
+							</a>
+							<div class="section_edit__block clearfix">
+								<ul class="clearfix">
+									<li>
+										<label for="" class="custom__label">Логин:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="Member56">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">По
+										лное имя:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="Владислав">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">ICQ:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Телефон:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Ваш пол:</label>
+										<div class="custom__field">
+											<select name="" id="" class="custom__select">
+												<option value="">Мужской</option>
+												<option value="">Женский</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Город:</label>
+										<div class="custom__field">
+											<select name="" id="" class="custom__select">
+												<option value="">Екатеринбург</option>
+												<option value="">Москва</option>
+												<option value="">Нижний Новгород</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+								<ul class="clearfix">
+									<li>
+										<label for="" class="custom__label">Пароль:</label>
+										<div class="custom__field">
+											<input type="password" class="input_input" placeholder="**********">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Email:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="kusnizza@gmail.com">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Skype:</label>
+										<div class="custom__field">
+											<input type="text" class="input_input" placeholder="wladius69">
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Дата рождения:</label>
+										<div class="custom__field">
+											<select class="input_select" name="" id="">
+												<option value="">1</option>
+												<option value="">2</option>
+												<option value="">3</option>
+												<option value="">4</option>
+												<option value="">5</option>
+												<option value="">6</option>
+												<option value="">7</option>
+												<option value="">8</option>			
+											</select>	
+											<select class="input_select" name="" id="">
+												<option value="">Январь</option>		
+												<option value="">Февраль</option>		
+												<option value="">Март</option>		
+												<option value="">Апрель</option>		
+												<option value="">Май</option>		
+												<option value="">Июнь</option>		
+												<option value="">Июль</option>		
+												<option value="">Август</option>		
+												<option value="">Сентябрь</option>		
+												<option value="">Октябрь</option>		
+												<option value="">Ноябрь</option>		
+												<option value="">Декабрь</option>
+											</select>
+											<select class="input_select" name="" id="">
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+												<option value="">1990</option>
+											</select>
+										</div>
+									</li>
+									<li>
+										<label for="" class="custom__label">Страна:</label>
+										<div class="custom__field">
+											<select name="" id="" class="input_select">
+												<option value="">Россия</option>
+												<option value="">Украина</option>
+												<option value="">Беларусь</option>
+											</select>
+										</div>
+									</li>
+								</ul>
+								<div class="clearfix"></div>
+								<div class="section_edit__block__line clearfix">
+									<label for="" class="custom__label">Подпись:</label>
+									<div class="custom__field">
+										<textarea class="input_textarea"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section_edit__adjust section_edit_active">
+							<a href="javascript://" class="section_edit__header">
+								Настройка приватности
+								<span class="section_edit__header__toggler"></span>
+							</a>
+							<div class="section_edit__block clearfix">
+								<ul>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Скрывать e-mail адрес</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Принимать письма от других пользователей сайта</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Отключить показ подписей в сообщениях форума</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Отключить прием уведомлений о получении наград</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox" checked>
+												<span>Принимать личные сообщения только от групп</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Все группы</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Инсайдеры</span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Скрывать телефон</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Отключить показ аватаров в сообщениях форума</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Отключить прием уведомлений об изменении репутации</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Получать почтовые извещения о личных сообщениях</span>
+											</label>
+										</div>
+									</li>
+									<li>
+
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Пользователи</span>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="custom__field">
+											<label for="">
+												<input class="topic_new__checkbox" type="checkbox">
+												<span>Модераторы В</span>
+											</label>
+										</div>
+									</li>
+								</ul>
+								<div class="section_edit__adjust_btn">
+									<button class="button button_fullwidth">Сохранить</button>
+								</div>		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="content__right">
+				<div class="sidebar_right__section sidebar_right__section_notes">					
+					<h3>Перейти к записям</h3> 
+					<ul class="sidebar_right__list">
+						<li class="sidebar_right__list__themes">
+							<a href="">Новости</a>
+							<span class="sidebar_right__list__number">345</span>
+						</li>
+						<li class="sidebar_right__list__images">
+							<a href="">Изображения</a>
+							<span class="sidebar_right__list__number">4</span>
+						</li>
+						<li class="sidebar_right__list__comm">
+							<a href="">Комментарии</a>
+							<span class="sidebar_right__list__number">45</span>
+						</li>
+					</ul>					
+				</div>
+				<!-- ./ Sidebar_right__banner -->
+				<div class="sidebar_right__section">						
+					<h3>
+						Подписчики
+						<span class="sidebar_right__list__number">1456</span>
+					</h3>
+					<ul class="list_category">
+						<li>
+							<div class="list__block-image">
+								<img src="img/list__li.png" alt="">
+							</div>
+							<a href="">Nemec</a></li>
+						<li>
+							<div class="list__block-image">
+								<img src="img/list__li.png" alt="">
+							</div>
+							<a href="">Arsen</a></li>
+						<li>
+							<div class="list__block-image">
+								<img src="img/list__li.png" alt="">
+							</div>
+							<a href="">Pavel445</a></li>
+						<li class="list_category__more">Все подписчики</li>
+					</ul>
+				</div>			
+			</div>		
+			<div class="clr"></div>
+		</div>
+	</div>
+	<!-- ./ Content -->
+	<div class="footer">
+		<ul class="footer__menu">
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Команда WoWJP</a></li>
+			<li><a href="">Соглашение использования</a></li>
+			<li><a href="">Правила</a></li>
+			<li><a href="">Реклама</a></li>
+			<li><a href="">PDA</a></li>
+			<li><a href="">Есть идеи?</a></li>
+		</ul>
+		<div class="footer__design">
+			<span>Дизайн – </span><a href="">kusnizza</a>
+		</div>
+	</div>
+<!-- 	<div class="modal_custom modal_shadow modal_reputation">
+		<div class="modal__close"></div>
+		<span class="modal__title">История репутации</span>
+		<div class="scroll-pane">
+			<div class="modal__content">
+				<ul class="modal_reputation__list">
+					<li>
+						Репутация WJP: <span class="modal_reputation__list__reputation-amount">857</span>
+						<div class="modal_reputation__list__btns">
+							<a href="/" class="button button_pen"></a>
+							<a href="/" class="button button_off"></a>
+							<a href="/" class="button button_trash"></a>
+						</div>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">d28troyan</span>
+							<span>Я согласен</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">Вчера</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">Тамина</span>
+							<span>+</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">20 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_decrease"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">АляБот</span>
+							<span>Дейстивтельно</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">18 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">d28troyan</span>
+							<span>Дейстивтельно</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">18 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">Тамина</span>
+							<span>+</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">20 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">d28troyan</span>
+							<span>Я согласен</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">Вчера</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_increase"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">Тамина</span>
+							<span>+</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">20 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_decrease"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">АляБот</span>
+							<span>Дейстивтельно</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">18 мая</span>
+					</li>
+					<li>
+						<a href="/" class="button_reputation button_reputation_decrease"></a>
+						<div class="modal_reputation__list__info">
+							<span class="modal_reputation__list__info__user">d28troyan</span>
+							<span>Дейстивтельно</span>
+						</div>
+						<ul class="modal_reputation__list__controls clearfix">
+							<li><a href="/">Редактировать</a></li>
+							<li><a href="/">Удалить</a></li>
+						</ul>
+						<span class="modal_reputation__list__date">18 мая</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="overlay"></div> -->
+</body>
+</html>

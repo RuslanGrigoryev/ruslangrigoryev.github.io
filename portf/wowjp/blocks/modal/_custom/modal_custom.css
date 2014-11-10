@@ -1,0 +1,114 @@
+.modal_custom {
+	background-color: #5f574e;
+	position: absolute;
+	z-index: 999;
+	left: 50%;
+	margin-left: -185px;
+	top: 70px;
+	width: 370px;	
+	padding-bottom: 15px;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-khtml-border-radius:6px;
+	color: #fff;
+}
+.modal__content {
+	padding: 18px 25px 18px 15px;
+}
+/*.scroll-pane {
+	height: 800px;
+}*/
+/*.modal_custom .jspPane {
+	position: absolute;
+	width: 100%!important;
+}*/
+.modal_custom .scroll-pane,
+.modal_custom .jspContainer {
+	height: 702px;
+}
+.modal_custom .input_select {
+	margin-left: 11px;
+}
+.modal_custom .input_select:first-child {
+	margin-left: 0px;	
+}
+
+.modal_custor .modal__row-separator {
+	padding-bottom: 14px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal_custom .modal__field {
+	padding: 0 0 14px;
+	font-size: 13px;
+	line-height: 18px;
+	color: rgba(255, 255, 255, 0.8);
+}
+.modal_custom .modal__field_nospace {
+	padding-top: 0;
+}
+.modal_custom .modal__field:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+.modal_custom .modal__field:after {
+	content: "";
+	height: 0;
+	clear: both;
+	display: block;
+}
+.modal_custom .modal__field__subtitle {
+	font-size: 13px;
+	font-weight: 600;
+	color: #fff;
+}
+.modal_custom .modal__field p {
+	margin-bottom: 4px;
+}
+.modal_custom .modal__field__mintext {
+	float: right;
+	font-size: 12px;
+	color: #fff;
+}
+.modal_custom .modal__field .jq-selectbox__select {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(27, 25, 23, 0.2);
+	font-size: 13px;
+	color: #fff;
+
+}
+/*.jq-selectbox.focused .jq-selectbox__select {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}*/
+.modal_custom .modal__field .jq-selectbox__dropdown {
+	background-color: #514b43;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modal_custom .modal__field ol.list_bulleted,
+.modal_custom .modal__field ul.list_number {
+	margin: 0px;
+	padding-left: 18px;
+	float: left;
+	line-height: 22px;
+	font-size: 13px;
+}
+.modal_custom .modal__field ul.list_number {
+	margin-left: 60px;
+}
+.modal_custom .modal__field label{
+	margin-bottom: 20px;
+	display: block;
+	line-height: 22px;
+}
+.modal_custom .modal__field label:last-child {
+	margin-bottom: 0;
+}
+.modal_custom .modal__field label span {
+	margin-left: 16px;
+}
+.modal__field textarea {
+	margin-bottom: 14px;
+}

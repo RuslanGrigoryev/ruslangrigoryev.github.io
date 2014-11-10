@@ -1,0 +1,7 @@
+﻿.icon_mail {
+	background: url(img/topic__item__user-data__mail.png) no-repeat;
+	float: right;
+	width: 29px;
+	height: 29px;
+	cursor: pointer;
+}

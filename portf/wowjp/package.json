@@ -1,0 +1,10 @@
+{
+	"name": "wowjp-markup",
+	"version": "0.0.1",
+	"dependencies": {
+		"borschik": "*",
+		"requirejs": "*",
+		"uglifycss": "*",
+		"node-watch": "*"
+	}
+}

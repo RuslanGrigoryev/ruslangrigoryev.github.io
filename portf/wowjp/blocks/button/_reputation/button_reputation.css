@@ -1,0 +1,10 @@
+﻿@import url(_increase/button_reputation_increase.css);
+@import url(_decrease/button_reputation_decrease.css);
+@import url(_neutral/button_reputation_neutral.css);
+
+.button_reputation {
+	width: 13px;
+	height: 13px;
+	background: url(img/button_reputation.png) no-repeat;
+	background-position: 0px 0px;
+}

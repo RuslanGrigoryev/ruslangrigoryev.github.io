@@ -1,0 +1,66 @@
+@import url(__filter/sidebar_right__filter.css);
+
+.sidebar_right__section h3 span {
+	font-size: 13px;
+	padding-bottom: 17px;
+	margin: 0px;
+	right: 15px;
+	top: 23px;
+}
+.sidebar_right__section {
+	padding: 20px 15px;
+	background: #625242;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+.sidebar_right__section h3 {
+	line-height: 15px;
+	margin: -1px 0 0 0;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	padding: 0 0 16px 0;
+	margin: 0px;
+	font-weight: 600;
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.sidebar_right__banner {
+	margin-bottom: 25px;
+}
+.sidebar_right ul{
+    margin: 0px;
+    padding: 0px;    
+}
+.sidebar_right__list li {
+    list-style: none; 
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 22px 0 22px 43px;
+}
+.sidebar_right__list li:last-child {
+    border-bottom: none;
+    margin-bottom: -22px;
+}
+.sidebar_right__list__themes {
+    background: url(img/sidebar_right__list__themes.png) no-repeat left center;
+}
+.sidebar_right__list__images {
+    background: url(img/sidebar_right__list__images.png) no-repeat left center;
+}
+.sidebar_right__list__comm {
+    background: url(img/sidebar_right__list__comm.png) no-repeat left center;
+}
+.sidebar_right__list__number {
+    position: absolute;
+    right: 0px;
+    top: 23px;
+    color: #fff;
+}

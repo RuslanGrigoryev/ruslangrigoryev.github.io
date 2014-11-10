@@ -1,0 +1,21 @@
+﻿.sidebar_friends {
+
+}
+.sidebar_friends .sidebar_right__section .sidebar_friends__title {
+	font-size: 12px;
+	padding-bottom: 17px;
+	margin: 0px;
+	right: 15px;
+	top: 23px;
+	position: absolute;
+}
+.sidebar_friends .search {
+	position: relative;
+}
+.sidebar_friends .search__submit {
+	right: 6px;
+	top: 8px;
+}
+.sidebar_friends .list_friends {
+	padding-top: 20px;
+}

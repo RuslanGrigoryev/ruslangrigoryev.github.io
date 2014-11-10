@@ -1,0 +1,11 @@
+﻿@import url(__info/profile__info.css);
+@import url(_violet/profile_violet.css);
+@import url(_grey/profile_grey.css);
+@import url(_brown/profile_brown.css);
+@import url(_green/profile_green.css);
+@import url(_blue/profile_blue.css);
+
+.section.profile {
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+}

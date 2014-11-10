@@ -1,0 +1,59 @@
+.button__image__controls {
+	position: absolute;
+	right: 15px;
+	top: 14px;
+}
+
+.button__image_left {
+	background: url(img/button__image_left.png) no-repeat center top;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	float: left;
+	margin-right: 8px;
+}
+
+.button__image_right {
+	background: url(img/button__image_right.png) no-repeat center top;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	float: right;
+
+}
+
+.button__image_left:hover,
+.button__image_right:hover {
+	background-position: center -28px; 
+}
+.content__item_image__add-img {
+	
+	margin-top: 17px;
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.content__item_image__add-img:before {
+	content: "";
+	padding-bottom: 22px;
+	display: block;
+}
+.button__image_add-img {
+    background: url(img/button__image_add-img.png) no-repeat scroll left top rgba(0, 0, 0, 0);
+    color: #ece2d7;
+    cursor: pointer;
+    font-size: 14px;
+    height: 24px;
+    overflow: hidden;
+    padding-left: 43px;
+    padding-top: 4px;
+}
+.content__item_image__desc {
+	color: #fff;
+}
+.button__image_add-img:before {
+	content: "";
+	margin-top: 22px;
+
+}
+.button__image_add-img:hover {
+	background-position: left -28px;
+}

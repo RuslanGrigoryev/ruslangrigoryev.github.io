@@ -1,0 +1,20 @@
+.comments__list.loader {
+	min-height: 50px;
+}
+.comments__list li {
+	list-style-type: none;
+}
+.comments .comments__list__inner {
+	padding: 0 55px;
+}
+.comments__list__inner .comments__item__center {
+	padding: 15px 110px 15px 40px;
+}
+.comments__list__inner .comments__item:first-child .comments__item__left {
+	top: 17px;
+}
+.comments__list__inner .comments__item__left {
+	width: 25px;
+	height: 25px;
+	top: 20px;
+}

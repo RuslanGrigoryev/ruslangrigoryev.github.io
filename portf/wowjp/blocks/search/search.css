@@ -1,0 +1,27 @@
+.search {
+	background: #FFF;
+	padding: 7px 32px 6px 10px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+	position: relative;
+}
+.search__input {	
+	border: 0px;
+	margin: 0px;
+	font-size: 13px;
+	height: 16px;
+	color: #1b1917;		
+	width: 100%;
+}
+.search__submit {
+	background: url(img/search_submit.png) no-repeat;
+	background-size: 100%;
+	width: 15px;
+	height: 16px;
+	right: 7px;
+	top: 7px;
+	border: none;
+	position: absolute;
+}

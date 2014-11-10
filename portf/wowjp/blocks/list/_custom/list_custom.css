@@ -1,0 +1,14 @@
+.list_custom {
+	margin: 0px;
+	padding: 0px;
+}
+.list_custom li {
+	background: url(img/list__li.png) no-repeat left 0px;
+	padding: 0 0 0 40px;	
+	list-style: none;
+	min-height: 26px;
+	margin-bottom: 13px;
+}
+.list_custom li:last-child {
+	margin-bottom: 0px;
+}

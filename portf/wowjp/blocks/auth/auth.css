@@ -1,0 +1,59 @@
+.auth {
+	
+}
+.auth_underline {
+	padding-bottom: 24px;
+	margin-bottom: 26px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.auth_underline:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+}
+.auth__buttons {
+	float: left;
+}
+.auth button {
+	font-size: 15px;
+	padding: 14px 30px;
+}
+.auth button:first-child {
+	margin-right: 20px;
+}
+.auth__social {
+	background: url(img/auth__social.png) no-repeat left center;
+	padding-left: 24px;
+	margin-left: 18px;
+	float: left;
+}
+.auth__social:after {
+	content: "";
+	clear: both;
+	height: 0;
+	display: block;
+}
+.auth__social__button {
+	width: 40px;
+	height: 40px;
+	display: block;
+	float: left;
+	margin-right: 25px;
+
+}
+.vk {
+	background: url(img/vk.png);
+}
+.fb {
+	background: url(img/fb.png);
+}
+.tw {
+	background: url(img/tw.png);
+}
+.ok {
+	background: url(img/ok.png);
+}
+.gl {
+	background: url(img/gl.png);
+}

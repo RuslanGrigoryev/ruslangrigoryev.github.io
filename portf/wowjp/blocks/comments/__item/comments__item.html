@@ -1,0 +1,75 @@
+<div class="comments__item__normal">
+	<div class="comments__item__center">
+		<div class="comments__item__text">
+			<span class="comments__item__nickname"><%= author.nickname %></span>
+			<div class="comments__item__text__content">
+				<%= replaceSmiles(message) %>
+			</div>
+		</div>
+
+		<% if(App.currentUser.get('id') != author.id && !isRated) { %>
+		<div class="topic__item__user__controls">
+			<button class="button__controls button__controls_minus"></button>
+			<button class="button__controls button__controls_plus"></button>
+		</div>
+		<% } %>
+		
+		<span class="comments__item__time"><%= templateDate(onCreated) %></span>
+		<ul class="comments__item__control__list clearfix">
+			<% if((App.currentUser.get('id') == author.id && App.currentUser.check('isCanEditOwnComments'))
+					|| App.currentUser.check('isCanEditAllComments')
+				) { %>
+				<li class="comments__item__controls__item">
+					<a data-type="edit" href="javascript://">Редактировать</a>
+				</li>
+			<% } %>
+
+			<% if((App.currentUser.get('id') == author.id && App.currentUser.check('isCanDeleteOwnComments'))
+					|| App.currentUser.check('isCanDeleteAllComments')
+				) { %>
+				<li class="comments__item__controls__item">
+					<a data-type="delete" href="javascript://">Удалить</a>
+				</li>
+			<% } %>
+
+			<% if(true) { %>
+				<li class="comments__item__controls__item">
+					<a data-type="answer" href="javascript://">Ответить</a>
+				</li>
+			<% } %>
+
+			<% if(App.currentUser.get('id') != author.id) { %>
+				<li class="comments__item__controls__item">
+					<a data-type="complaint" href="javascript://">Пожаловаться</a>
+				</li>
+			<% } %>
+		</ul>
+	</div>
+	<div class="comments__item__left">
+		<img class="comments__item__avatar" src="<%= author.avatar %>">
+	</div>
+	<div class="comments__item__right">
+		<% if(rateCount < 1) { %>
+			<span class="comments__item__rate comments__item__rate_negative"><%= rateCount %></span>
+		<% } else { %>
+			<span class="comments__item__rate"><%= rateCount %></span>
+		<% } %>
+	</div>
+</div>
+<div class="comments__item__edit">
+	<div class="comments__item__left loader_center loader_48433e">
+		<img class="comments__item__avatar" src="<%= author.avatar %>">
+	</div>
+	<div class="comments__item__center">
+		<textarea pattern="[A-Za-z0-9]{3,}$" name="comment" id="" cols="30" rows="10" placeholder="Введите комментарий"><%= message %></textarea>
+		<a href="javascript://" class="button button_smile"></a>
+	</div>
+	<ul class="comments__item__right">
+		<li><button class="button button_red" type="submit">Изменить</button></li>
+		<li><button class="button button_dark" type="cancel">Отменить</button></li>
+	</ul>
+</div>
+
+<div class="comments__field_answer comments__item"></div>
+<ul class="comments__list__inner">
+</ul>

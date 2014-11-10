@@ -1,0 +1,13 @@
+﻿.warning {
+	padding: 0 0 25px 68px;
+	background: url(img/warning-bg.png) left top no-repeat;
+}
+.warning p {
+	font-size: 15px;
+	color: rgba(255,255,255,.8);
+	margin: 0;
+}
+.warning__link {
+	color: rgba(255,255,255,.8);
+	border-bottom: 1px solid rgba(255,255,255,.3);
+}

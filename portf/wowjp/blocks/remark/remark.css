@@ -1,0 +1,13 @@
+﻿.remark {
+	background: url(img/journal__item__remark.png) no-repeat;
+	height: 30px;
+	width: 100px;
+	padding-left: 15px;
+	line-height: 30px;
+	font-size: 13px;
+	color: #fff;
+	text-align: left;
+	position: absolute;
+	top: 15px;
+	left: 0px;
+}

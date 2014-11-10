@@ -1,0 +1,21 @@
+﻿.modal_reputation_change__form__type {
+	padding: 0 !important;
+}
+
+.modal_reputation_change textarea {
+	width: 320px;
+	margin: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #1b1917;
+	padding: 10px;
+}
+
+.modal.modal_reputation_change .modal__field_linelist > * span {
+	margin: 0 25px 0 5px;
+}
+
+.modal_reputation_change__form__type > *:last-child span {
+	margin: 0 0px 0 5px !important;
+}

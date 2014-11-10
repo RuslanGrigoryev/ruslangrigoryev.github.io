@@ -1,0 +1,7 @@
+.button_management {
+	display: none;
+}
+.content_moderator .button_management,
+.content_moderator_global .button_management {
+	display: block;
+}

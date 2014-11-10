@@ -1,0 +1,15 @@
+@import url('_chat/header__icon_chat.css');
+@import url('_avatar/header__icon_avatar.css');
+@import url('_notice/header__icon_notice.css');
+@import url('_active/header__icon_active.css');
+@import url('_number/header__icon_number.css');
+@import url('_login/header__icon_login.css');
+
+.header__icon {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}

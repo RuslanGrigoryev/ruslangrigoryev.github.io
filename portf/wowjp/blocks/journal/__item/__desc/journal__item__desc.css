@@ -1,0 +1,7 @@
+.journal__item__desc {
+	padding: 13px;
+	color: rgba(255, 255, 255, 0.5);
+}
+.journal__item__desc p {
+	margin: 0px;
+}

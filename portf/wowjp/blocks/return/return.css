@@ -1,0 +1,13 @@
+﻿.return {
+	position: absolute;
+	z-index: 59;
+	top: -30px;
+	left: 0;
+	padding: 0;
+	line-height: 18px;
+}
+.return a {
+	padding-left: 20px;
+	color: rgba(255,255,255,.8);
+	background: url(img/return-img.png) left center no-repeat;
+}

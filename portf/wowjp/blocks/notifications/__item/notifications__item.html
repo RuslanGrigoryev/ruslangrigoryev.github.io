@@ -1,0 +1,13 @@
+<% if("undefined" !== typeof sender) { %>
+<div class="notifications__item__img">
+	<img src="<%= sender.avatarImageUrl %>" alt="">
+</div>
+<div class="notifications__item__desc">
+	<span class="notifications__item__desc__name"><%= sender.nickname %></span>
+	<span class="notifications__item__desc__activity"><%= message %></span>
+</div>
+<% } else { %>
+<div class="notifications__item__desc notifications__item__desc_full">
+	<span class="notifications__item__desc__activity"><%= message %></span>
+</div>
+<% } %>

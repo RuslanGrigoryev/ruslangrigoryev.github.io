@@ -1,0 +1,5 @@
+﻿@import url(__form/modal_reputation_change__form.css);
+
+.modal.modal_reputation_change .modal__title {
+	padding-right: 15px;
+}

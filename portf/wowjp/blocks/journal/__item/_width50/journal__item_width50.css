@@ -1,0 +1,51 @@
+.journal__item_width50 {
+	width: 507px !important;
+}
+
+.journal__item_width50 .journal__item__info {
+	width: 100%;
+	position: absolute;
+	top: 30px;
+}
+.journal__item_width50 .journal__item__info > div{
+	height: 20px;
+	line-height: 20px;
+	margin-left: 2px;
+}
+.journal__item_width50 .button_like {
+	padding: 2px 0 3px;
+}
+.journal__item_width50 .journal__item__info__date {
+	position: absolute;
+	margin-top: -8px;
+	border: 0;
+	right: 190px;
+}
+.journal__item_width50 .journal__item__info__comments {
+	float: right;
+	margin-right: 15px;
+}
+.journal__item_width50 .journal__item__info__views {
+	float: right;
+	margin-right: 44px;
+}
+.journal__item_width50 .journal__item_video__inner {
+	height: 272px !important;
+}
+
+.journal__item_width50.journal__item_video {
+	height: 302px;
+}
+
+.journal__item_width50 .journal__item__imgbox {
+	width: 100%;
+	overflow: hidden;
+	height: 303px;
+}
+
+.journal__item_width50 .journal__item__imgbox .item-inner {
+	padding: 17px 15px;
+	position: absolute;
+	width: 477px;
+	height: 268px;
+}

@@ -1,0 +1,24 @@
+<div class="header__menu__submenu_forum__item__theme">
+	<h3 class="header__menu__submenu_forum__item__theme__title"><%= name %></h3>
+	<div class="header__menu__submenu_forum__item__theme__info">
+		<span class="header__menu__submenu_forum__item__theme__info__authorlabel">Автор:</span>
+		<span class="header__menu__submenu_forum__item__theme__info__authorname"><%= authorNickname %></span>
+		<div class="header__menu__submenu_forum__item__point"></div>
+		<span class="header__menu__submenu_forum__item__theme__info__reads"><%= readsCount %></span>
+		<span class="header__menu__submenu_forum__item__theme__info__posts"><%= postsCount %></span>
+	</div>
+</div>
+<div class="bubble bubble_menu">
+	<div class="bubble__userpic">
+		<img src="<%= lastPostUserAvatar %>" alt="">
+	</div>
+	<span class="bubble__usernick">
+		<%= lastPostUserNickname %>
+	</span>	
+	<span class="bubble__desc">
+		<%= lastPostBrief %>
+	</span>
+	<span class="bubble__date">
+		<%= postDate(onLastPost) %>
+	</span>													
+</div>

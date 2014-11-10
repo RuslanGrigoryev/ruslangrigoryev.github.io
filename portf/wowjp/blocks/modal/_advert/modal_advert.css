@@ -1,0 +1,9 @@
+﻿.modal_advert {
+	background: none;
+	padding: 0;
+	text-align: center;
+	position: fixed;
+}
+.modal_advert .modal__title:after {
+	border-bottom: none;
+}

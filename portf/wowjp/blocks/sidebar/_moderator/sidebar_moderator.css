@@ -1,0 +1,29 @@
+.sidebar_moderator {	
+	position: fixed;
+	z-index: 991;
+	bottom: 0px;
+	width: 100%;
+	display: none;
+}
+.sidebar_moderator__inner {	
+	width: 100%;
+	height: 50px;
+	float: left;
+	padding: 0 25px;
+	box-sizing: border-box;
+	
+}
+.sidebar_moderator__content {
+	background: #5F574E;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 25px;
+	position: relative;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-khtml-border-radius: 5px 5px 0px 0px;
+}
+.content_moderator_global .sidebar_moderator {
+	display: block;
+}

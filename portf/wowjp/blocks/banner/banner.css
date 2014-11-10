@@ -1,0 +1,14 @@
+@import url('_fullwidth/banner_fullwidth.css');
+@import url('_rounded/banner_rounded.css');
+@import url('_thin-border/banner_thin-border.css');
+@import url('_thick-border/banner_thick-border.css');
+@import url('_width25/banner_width25.css');
+@import url('_article/banner_article.css');
+@import url('_top/banner_top.css');
+@import url('_topic/banner_topic.css');
+@import url('_in-modal/banner_in-modal.css');
+
+
+.banner{
+	background: #48433e;
+}

@@ -1,0 +1,30 @@
+.button_moderator {
+	background: url(img/button_moderator.png) no-repeat;
+	width: 22px;
+	height: 15px;
+	position: absolute;
+	z-index: 12;
+	top: 10px;
+	right: 12px;
+	display: none;
+}
+.content_moderator .button_moderator{
+	display: block;
+}
+.content_moderator_global {
+
+}
+.content_moderator_global .button_moderator {
+	right: 44px;
+}
+.button_check {
+	display: none!important;
+}
+.content_moderator_global .button_check {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute!important;
+	z-index: 20;
+	right: 12px;
+	top: 10px;
+	display: block!important;
+}

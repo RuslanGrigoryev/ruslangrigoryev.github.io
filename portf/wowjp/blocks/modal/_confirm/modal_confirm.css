@@ -1,0 +1,17 @@
+﻿.modal_confirm {
+	padding-bottom: 0px;
+	/*width: 390px;*/
+	position: fixed;
+}
+/*.modal_confirm .button_custom {
+	margin: 0px 0 4px;
+}*/
+.modal_confirm .custom__field {
+	padding: 0;
+}
+.modal_confirm .modal__content {
+	padding: 18px 14px 18px 14px;
+}
+.modal_confirm__buttons {
+	text-align: right;
+}

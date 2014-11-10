@@ -1,0 +1,35 @@
+﻿.section_new-topic {
+
+}
+.section_new-topic .custom__field {
+	border-top: 1px solid rgba(255,255,255,.08);
+	border-bottom: 1px solid rgba(255,255,255,.08);
+	padding: 14px 0;
+}
+.section_new-topic .custom__field:last-child {
+	border: none;
+}
+.section_new-topic .custom__field label {
+	margin: 5px 0;
+	display: block;
+	color: rgba(255,255,255,.8);
+}
+.section_new-topic .custom__field .custom__input {
+	margin-bottom: 15px;
+	color: #1b1917;
+}
+.section_new-topic .custom__field label.custom__label_checkbox {
+	margin-top: 20px;
+}
+.section_new-topic .custom__textarea {
+	padding: 15px;
+	margin-bottom: 20px;
+}
+.section_new-topic .custom__field__right {
+	float: right;
+	width: 226px;
+}
+.section_new-topic .custom__field__right .button {
+	float: none;
+	margin: 0 0 33px 0;
+}

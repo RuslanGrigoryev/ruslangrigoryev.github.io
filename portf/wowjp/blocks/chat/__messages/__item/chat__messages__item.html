@@ -1,0 +1,16 @@
+<div class="chat__messages__item__userpic">
+	<img src="<%= getSender(sender_id).getAvatar() %>" alt="">
+</div>
+<div class="chat__messages__item__info">
+	<span class="chat__messages__item__usernik"><%= senderNickname %></span>
+	<span class="chat__messages__item__time"><%= timeConverter(onCreated) %></span>							
+	<ul class="chat__messages__item__controls">
+		<% if((App.currentUser.check('isCanDeleteOwnChatMessages') && sender_id == App.currentUser.get('id')) || App.currentUser.check('isCanDeleteAllChatMessages')) { %>
+			<li><span class="chat__messages__item__delete"></span></li>
+		<% } %>
+	</ul>
+	<div class="chat__messages__item__message">
+		<span><%= replaceSmiles(message) %></span>
+		<div class="clr"></div>							
+	</div>	
+</div>

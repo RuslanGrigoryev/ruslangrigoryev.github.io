@@ -1,0 +1,9 @@
+.comments__more {
+	display: none;
+	background: #4e4945;
+	text-align: center;
+	color: #fff;
+	padding: 17px 0;
+	border: 0px solid #595450;
+	border-top-width: 1px;
+}

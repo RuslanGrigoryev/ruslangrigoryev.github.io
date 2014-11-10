@@ -1,0 +1,55 @@
+/*@import url('__liked/button__liked.css');*/
+@import url('__number/button__number.css');
+@import url('__image/button__image.css');
+@import url('__controls/button__controls.css');
+
+@import url('_like/button_like.css');
+@import url('_share/button_share.css');
+@import url('_social/button_social.css');
+@import url('_big/button_big.css');
+@import url('_add-news/button_add-news.css');
+@import url('_news/button_news.css');
+@import url('_sort/button_sort.css');
+@import url('_close/button_close.css');
+@import url('_close-small/button_close-small.css');
+@import url('_load-more/button_load-more.css');
+@import url('_moderator/button_moderator.css');
+@import url('_mark-read/button_mark-read.css');
+@import url('_submit/button_submit.css');
+@import url('_transparent/button_transparent.css');
+@import url('_red/button_red.css');
+@import url('_dark/button_dark.css');
+@import url('_move/button_move.css');
+@import url('_guest/button_guest.css');
+@import url('_pen/button_pen.css');
+@import url('_off/button_off.css');
+@import url('_trash/button_trash.css');
+@import url('_reputation/button_reputation.css');
+@import url('_smile/button_smile.css');
+@import url('_add-photo/button_add-photo.css');
+@import url('_large/button_large.css');
+@import url('_topic/button_topic.css');
+@import url('_fullwidth/button_fullwidth.css');
+@import url('_management/button_management.css');
+@import url('_noborder/button_noborder.css');
+@import url('_active/button_active.css');
+@import url('_collapse/button_collapse.css');
+@import url('_collapsed/button_collapsed.css');
+@import url('_update/button_update.css');
+
+.button {	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.button_select-img {
+	padding: 13px 24px;
+	font-size: 15px;
+	float: left;
+}

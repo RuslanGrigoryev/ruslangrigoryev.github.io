@@ -1,0 +1,47 @@
+.list_other {
+	margin: 0px;
+	padding: 0px;	
+}
+.list_other li {
+	list-style: none; 
+	position: relative;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 22px 0 22px 43px;
+}
+.list_other li:last-child {
+	border-bottom: none;
+	margin-bottom: -22px;
+}
+.list_other__msg {
+	background: url(img/list_other__msg.png) no-repeat left center;
+}
+.list_other__games {
+	background: url(img/list_other__games.png) no-repeat left center;
+}
+.list_other__rules {
+	background: url(img/list_other__rules.png) no-repeat left center;
+}
+.list_other__rss {
+	background: url(img/list_other__rss.png) no-repeat left center;
+}
+
+.list_other__themes {
+	background: url(img/list_other__themes.png) no-repeat left center;
+}
+.list_other__images {
+	background: url(img/list_other__images.png) no-repeat left center;
+}
+.list_other__answers {
+	background: url(img/list_other__answers.png) no-repeat left center;
+}
+.list_other__comm {
+	background: url(img/list_other__comm.png) no-repeat left center;
+}
+.list_other__users {
+	background: url(img/list_other__users.png) no-repeat left center;
+}
+.list_other__number {
+	position: absolute;
+	right: 0px;
+	top: 23px;
+}

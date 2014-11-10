@@ -1,0 +1,27 @@
+﻿@import url(__profile/section_edit__profile.css);
+@import url(__adjust/section_edit__adjust.css);
+@import url(__header/section_edit__header.css);
+@import url(__block/section_edit__block.css);
+
+.section.section_edit {
+	padding: 0;
+}
+
+.section_edit_active {
+	height: 500px !important;
+}
+
+.section_edit_active .section_edit__header {
+	background: rgba(255,255,255,.06);
+}
+
+.section_edit__profile,
+.section_edit__adjust {
+	height: 60px;
+	overflow: hidden;
+
+    -webkit-transition: height 100ms ease;
+    -moz-transition: height 100ms ease;
+    -o-transition: height 100ms ease;
+    transition: height 100ms ease;
+}

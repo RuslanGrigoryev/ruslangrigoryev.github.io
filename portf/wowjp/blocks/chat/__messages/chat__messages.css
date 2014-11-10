@@ -1,0 +1,98 @@
+@import url('__item/chat__messages__item.css');
+
+.chat__messages {
+	height: 195px;
+	padding: 10px 0 0;
+	position: relative;
+}
+.chat__messages__inner {
+	height: 130px;
+	width: auto !important; 
+	overflow-y: hidden;
+}
+
+
+.chat__messages__create {
+	/*margin-top: 20px;*/
+	margin-top: 10px;
+	position: relative;
+	/*margin-right: 282px;*/
+}
+.chat__messages__create_full {
+	margin-right: 0px;
+}
+.chat__messages__create_full .chat__messages__create__input {
+	padding-right: 135px;
+}
+.chat__messages__create_full .button__chat_submit {
+	margin-right: 0px;
+}
+.chat__messages__create__input {
+	border-radius: 5px;
+	padding-right: 120px;
+	overflow: hidden;
+}
+.chat__messages__create__inner {
+	padding: 8px 30px 10px 8px;
+	background: #FFF;
+	border-radius: 5px;
+	height: 17px;
+	line-height: 15px;
+	position: relative;
+}
+.chat__messages__create__input input {
+	width: 100%;
+	height: 17px;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.5);
+	resize: none;
+}
+.chat__messages .button_smile {
+	position: absolute;
+	right: 11px;
+	top: 8px;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.chat__messages .button_submit {
+	float: right;
+	margin-right: 5px;
+	margin-top: -35px;
+	width: 98px;
+	height: 35px;
+	line-height: 30px;
+	font-weight: normal;
+	font-size: 13px;
+	cursor: pointer;
+/*	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;*/
+}
+
+.chat__messages__gradient {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: -15px;
+	left: -300px;
+	background: -moz-linear-gradient(top,  rgba(95,87,78,0) 0%, rgba(95,87,78,1) 99%, rgba(95,87,78,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(95,87,78,0)), color-stop(99%,rgba(95,87,78,1)), color-stop(100%,rgba(95,87,78,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(95,87,78,0) 0%,rgba(95,87,78,1) 99%,rgba(95,87,78,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(95,87,78,0) 0%,rgba(95,87,78,1) 99%,rgba(95,87,78,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(95,87,78,0) 0%,rgba(95,87,78,1) 99%,rgba(95,87,78,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(95,87,78,0) 0%,rgba(95,87,78,1) 99%,rgba(95,87,78,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005f574e', endColorstr='#5f574e',GradientType=0 ); /* IE6-9 */
+}
+
+.chat_collapsed .chat__messages__gradient {
+	left: -50px;
+}

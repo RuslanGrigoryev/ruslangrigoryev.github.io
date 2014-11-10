@@ -1,0 +1,160 @@
+@import url('__head/topic__head.css');
+@import url('__pagination/topic__pagination.css');
+@import url('__item/topic__item.css');
+@import url('__footer/topic__footer.css');
+@import url('__social/topic__social.css');
+@import url('_new/topic_new.css');
+@import url('../voting/voting.css');
+
+.topic__like-row {	
+	margin-top: 25px;
+	padding-bottom: 28px;
+	padding-top: 28px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.topic__like-row .button {
+	margin-left: 18px;
+}
+.topic__like-row .button:first-child {
+	margin-left: 0;
+}
+.topic__users_liked {
+	min-width: 870px;
+}
+.topic__users_liked h3 {
+	font-size: 15px;
+	color: #fff;
+	font-weight: 600;
+	margin: 23px 0 28px;
+}
+.topic__users_liked ul {
+	margin: 0px;
+	padding: 0px;
+}
+.topic__users_liked ul li {
+	float: left;
+	list-style: none;
+	color: #fff;
+	text-align: center;
+	margin: 0 17px;
+	font-size: 13px;
+	line-height: 13px;
+}
+.topic__users_liked ul li:first-child {
+	margin: 0 17px 0 0;
+}
+.topic__users_liked__userpic {
+	margin-bottom: 12px;
+}
+.topic__users_liked_more {
+	background: url(img/topic__users_liked_more.png) no-repeat top center;
+	width: 44px;
+	height: 54px;
+	
+}
+.topic__users_liked_more a {
+	padding-top: 54px;
+	display: block;
+}
+.topic__users_liked_more span {
+	color: rgba(255, 255, 255, 0.5);
+}
+.topic__activity_moderator {
+	display: none;
+}
+.topic__activity_tags {
+	margin-top: -1px;
+	padding: 27px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+@media all and (max-width: 2000px) {
+	.topic__users_liked ul li:nth-child(23) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1917px) {
+	.topic__users_liked ul li:nth-child(22) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1846px) {
+	.topic__users_liked ul li:nth-child(21) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1766px) {
+	.topic__users_liked ul li:nth-child(20) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1661px) {
+	.topic__users_liked ul li:nth-child(19) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1586px) {
+	.topic__users_liked ul li:nth-child(18) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1504px) {
+	.topic__users_liked ul li:nth-child(17) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1430px) {
+	.topic__users_liked ul li:nth-child(16) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1354px) {
+	.topic__users_liked ul li:nth-child(15) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1280px) {
+	.topic__users_liked ul li:nth-child(14) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1202px) {
+	.topic__users_liked ul li:nth-child(13) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1127px) {
+	.topic__users_liked ul li:nth-child(12) {
+		display: none;
+	}	
+}
+@media all and (max-width: 1042px) {
+	.topic__users_liked ul li:nth-child(11) {
+		display: none;
+	}	
+}
+@media all and (max-width: 940px) {
+	.topic__users_liked ul li:nth-child(10) {
+		display: none;
+	}	
+}
+@media all and (max-width: 824px) {
+	.topic__users_liked ul li:nth-child(9) {
+		display: none;
+	}	
+}
+@media all and (max-width: 753px) {
+	.topic__users_liked ul li:nth-child(8) {
+		display: none;
+	}	
+}
+@media all and (max-width: 670px) {
+	.topic__users_liked ul li:nth-child(7) {
+		display: none;
+	}	
+}
+@media all and (max-width: 595px) {
+	.topic__users_liked ul li:nth-child(6) {
+		display: none;
+	}	
+}

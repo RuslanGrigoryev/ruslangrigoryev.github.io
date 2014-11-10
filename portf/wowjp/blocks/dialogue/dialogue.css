@@ -1,0 +1,17 @@
+﻿@import url(list/dialogue__list.css);
+.dialogue {
+	padding: 25px 24px 8px 24px;
+}
+.dialogue__header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255,255,255,.06);
+}
+.dialogue__header__count {
+	color: #fff;
+	padding-right: 3px;
+}
+.dialogue__header__link {
+	color: #b3b2b0;
+	padding-left: 5px;
+	border-left: 1px solid #b3b2b0;
+}

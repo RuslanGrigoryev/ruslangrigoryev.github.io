@@ -1,0 +1,16 @@
+# IDE
+.idea/*
+
+#build
+js/generated/*
+
+# Node
+node_modules/*
+npm-debug.log
+
+# Archives in root
+*.rar
+*.zip
+
+# Autodeploy
+deploy.sh

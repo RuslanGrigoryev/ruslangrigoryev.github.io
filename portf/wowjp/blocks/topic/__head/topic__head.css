@@ -1,0 +1,34 @@
+.topic__head,
+.topic__item,
+.topic__footer,
+.topic_new{
+	background: #48433e;
+	padding: 25px 20px;
+	margin-bottom: 26px;
+	position: relative;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+.topic__head__title {
+	font-size: 25px;
+	color: #fff;
+	margin: 0px;
+	padding-bottom: 20px;
+	float: left;
+}
+.topic__head__buttons {
+	float: right;
+	padding-bottom: 20px;
+	min-width: 470px;
+}
+.topic__head__buttons button:last-child {
+	margin-left: 19px;
+}
+
+@media screen and (max-width: 900px) {
+	.topic__head__buttons {
+		float: left;
+	}
+}

@@ -1,0 +1,32 @@
+.list_image-action {
+	margin: 0px;
+	position: absolute;
+	padding: 0px;
+	z-index: 15;
+	bottom: 14px;
+	left: 15px;
+	display: none;
+}
+.list_image-action li {
+	background: url(img/list_image-action.png) no-repeat left center;
+	list-style: none;
+	float: left;
+	margin: 0;
+	font-size: 11px;
+	line-height: 12px;
+	color: #FFF;
+	padding-left: 9px;
+	margin-right: 7px;
+}
+
+.list_image-action li:first-child {
+	padding-left: 0px;
+}
+
+.list_image-action li a{
+	color: #fff;
+}
+.content_moderator .list_image-action,
+.content_moderator_global .list_image-action{
+	display: block;
+}

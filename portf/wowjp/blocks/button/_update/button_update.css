@@ -1,0 +1,25 @@
+.button_update {
+	background: url(img/button_update.png);
+	width: 17px;
+	height: 16px;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.button_update.loader {
+    -webkit-animation: rotating 0.5s linear infinite;
+
+	background: url(img/button_update.png) !important;
+	width: 17px !important;
+	height: 16px !important;
+	min-width: 17px !important;
+	min-height: 16px !important;
+    background-size: 100% !important;
+}

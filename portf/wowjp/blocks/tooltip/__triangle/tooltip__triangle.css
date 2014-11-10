@@ -1,0 +1,10 @@
+﻿.tooltip__triangle {
+	position: absolute;
+	bottom: -17px;
+	left: 47%;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #5f574e;
+}

@@ -1,0 +1,9 @@
+.modal .modal__field_linelist > * {
+	display: inline-block !important;
+}
+
+.modal .modal__field_linelist > * span {
+	margin: 0 17px 0 5px;
+	position: relative;
+	top: 2px;
+}

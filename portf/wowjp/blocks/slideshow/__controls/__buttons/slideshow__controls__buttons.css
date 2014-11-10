@@ -1,0 +1,26 @@
+.slideshow__controls__buttons__left {
+		background: url(img/slideshow__controls__buttons__left.png);
+		width: 44px;
+		height: 44px;
+		cursor: pointer;
+		float: left;
+		margin-top: 90px;
+		margin-left: 2%;
+}
+.slideshow__controls__buttons__right {
+		background: url(img/slideshow__controls__buttons__right.png);
+		width: 44px;
+		height: 44px;
+		cursor: pointer;
+		float: right;
+		margin-top: 90px;
+		margin-right: 2%;
+}
+
+.slideshow__controls__buttons__left,
+.slideshow__controls__buttons__right {
+	-webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+	-moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+	-o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+	transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
+}

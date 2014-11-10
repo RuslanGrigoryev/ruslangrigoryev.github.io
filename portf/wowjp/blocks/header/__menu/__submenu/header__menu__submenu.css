@@ -1,0 +1,20 @@
+@import url('_forum/header__menu__submenu_forum.css');
+@import url('_article/header__menu__submenu_article.css');
+@import url('__content/header__menu__submenu__content.css');
+@import url('__list/header__menu__submenu__list.css');
+
+.header__menu__submenu {
+	display: none;
+	width: 100%;
+	background: #5f574e;
+	webkit-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	position: absolute;
+	top: 55px;
+	left: 0px;
+	z-index: 60;
+}
+.header__menu__submenu__inner {
+	padding: 30px 24px 30px 38px;
+}

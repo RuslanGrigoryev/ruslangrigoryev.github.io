@@ -1,0 +1,38 @@
+.button_like {
+	color: rgba(255, 255, 255, 0.5);
+	background-image: url(img/like-white-opacity.png);
+	background-color: #3f3b36;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background-repeat: no-repeat;
+	background-position: 11px 50%;
+	background-size: 13px 13px;
+	height: 25px;
+	min-width: 27px;
+	padding-left: 34px;
+	line-height: 25px;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+	-moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+	-o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+	transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+.button_like.button_like_active {
+	background-image: url(img/like-white.png);
+	background-position: 11px 50%;
+	background-size: 13px 13px;
+	border: 1px solid #ff4d3b;
+	background-color: #ff4d3b;
+	color: rgba(255, 255, 255, 1);
+}
+.button_like.button_noborder {
+	border: 1px solid #3f3b36;
+}

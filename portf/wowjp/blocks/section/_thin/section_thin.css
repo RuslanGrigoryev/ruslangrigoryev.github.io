@@ -1,0 +1,13 @@
+.section.section_thin {
+	padding: 15px 0px 15px;
+}
+
+.section_thin .section__title {
+	padding: 0 0 15px 25px;
+	margin: 0;
+}
+
+.section_thin .section__title h1 {
+	font-size: 1em;
+	display: inline;
+}

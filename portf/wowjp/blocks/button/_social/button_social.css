@@ -1,0 +1,46 @@
+.button__social{
+	float: left;
+	
+}
+.button__social__counter {
+	background: rgba(27, 25, 23, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 13px;
+	color: #FFF;
+	height: 12px;
+	line-height: 12px;
+	text-align: center;
+	padding: 7px 10px;
+	margin-left: 10px;
+	float: left;
+	position: relative;
+}
+.button__social__counter__arrow {
+	background: url(img/button__social__counter_arrow.png) no-repeat;
+	width: 5px;
+	height: 26px;
+	position: absolute;
+	top: 0px;
+	left: -4px;
+}
+.button__social__icon {
+	height: 28px;
+	width: 42px; 
+	float: left; 
+	cursor: pointer;
+
+ }
+.button__social_vk {
+	background: url(img/button__social_vk.png) no-repeat;	
+}
+.button__social_fb {
+	background: url(img/button__social_fb.png) no-repeat;
+}
+.button__social_tw {
+	background: url(img/button__social_tw.png) no-repeat;
+}
+.button__social_gplus {
+	background: url(img/button__social_gplus.png) no-repeat;
+}

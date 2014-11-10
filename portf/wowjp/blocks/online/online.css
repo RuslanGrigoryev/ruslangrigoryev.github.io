@@ -1,0 +1,9 @@
+﻿@import url(_user/online_user.css);
+
+.online {
+	background: url(img/topic__item__user-data__online.png) no-repeat center 14px;
+	width: 6px;
+	height: 29px;
+	float: left;
+	margin-left: 7px;
+}

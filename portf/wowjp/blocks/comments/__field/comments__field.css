@@ -1,0 +1,31 @@
+﻿@import url('_answer/comments__field_answer.css');
+
+.comments__field {
+	min-height: 20px;
+	position: relative;
+	margin-bottom: 20px;
+}
+.comments__field .chat__smiles__box {
+	right: 0px;
+}
+.comments .comments__item__left {
+	position: absolute;
+	z-index: 59;
+	left: 0;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}
+.comments .comments__item__center {
+	padding: 0 110px 0 50px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.comments .comments__item__right {
+	position: absolute;
+	z-index: 59;
+	right: 0;
+	top: 0;
+}

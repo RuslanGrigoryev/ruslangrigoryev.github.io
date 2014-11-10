@@ -1,0 +1,14 @@
+﻿/*.button_smile {
+	top: 6px;
+	background: url(img/button_smile-bg.png);
+}*/
+
+.button_smile {
+	background: url(img/button_smile.png) no-repeat center top;
+	width: 19px;
+	height: 19px;
+}
+.button_smile:hover,
+.button_smile_active {
+	background-position: center bottom;
+}

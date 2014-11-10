@@ -1,0 +1,14 @@
+.header__icon_number {
+	background: #FF6839;
+	width: 16px;
+	height: 17px;
+	padding: 1px 2px;
+	color: #FFF;
+	font-size: 11px;
+	text-align: center;
+	line-height: 17px;
+	border-radius: 17px;
+	-moz-border-radius: 17px;
+	-webkit-border-radius: 17px;
+	-khtml-border-radius: 17px;
+}

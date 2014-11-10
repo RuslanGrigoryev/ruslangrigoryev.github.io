@@ -1,0 +1,25 @@
+﻿.list_social {
+	position: relative;
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 12px;
+}
+.list_social:before {
+	content: "";
+	position: absolute;
+	z-index: 59;
+	left: 0px;
+	top: 20px;
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	background: rgba(255,255,255,.5);
+}
+.list_social__item {
+	float: left;
+	margin: 0 7px;
+	list-style-type: none;
+}
+.list_social__item .button_guest {
+	display: block;
+}

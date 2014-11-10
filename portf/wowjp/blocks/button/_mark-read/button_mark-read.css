@@ -1,0 +1,12 @@
+.button_mark-read {
+	background: transparent;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	padding: 10px 15px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-khtml-border-radius:4px;
+}

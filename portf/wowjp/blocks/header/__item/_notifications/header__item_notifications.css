@@ -1,0 +1,27 @@
+.header__item_notifications_cd {
+	padding: 15px 5px 15px 18px;
+}
+.header__item_notifications__menu {
+	display: none;
+	background-color: #5f574e;
+	position: absolute;
+	z-index: 5;
+	top: 55px;
+	right: 0px;
+	width: 325px;
+	-webkit-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 20px 23px rgba(0, 0, 0, 0.75);
+	padding: 0 0 0 18px;
+}
+
+.header__item_notifications__content {
+	overflow: hidden;
+}
+
+.header__item_notifications__menu .header__item_notifications__content {
+	max-height: 380px;
+}
+.header__item_notifications__menu.loader .header__item_notifications__content {
+	height: 40px;
+}

@@ -1,0 +1,30 @@
+﻿.poll {
+	width: 50%;
+	padding: 10px 25px 15px 0;
+}
+.poll .custom__field {
+	border: none;
+	padding: 0;
+	position: relative;
+	margin-bottom: 20px;
+}
+.poll .custom__field .custom__input {
+	margin-right: 20px;
+}
+.poll .custom__field:hover .poll__close-item {
+	display: block;
+}
+.poll .button_custom {
+	float: left;
+	margin: 10px 0 0 0;
+}
+.poll__close-item {
+	display: none;
+	position: absolute;
+	z-index: 59;
+	right: -22px;
+	top: 40px;
+	width: 11px;
+	height: 11px;
+	background: url(img/poll__close-item.png) no-repeat;
+}

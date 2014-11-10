@@ -1,0 +1,44 @@
+﻿.user {
+	min-height: 325px;
+	position: absolute;
+	left: 24px;
+	top: 25px;
+	z-index: 60;
+	height: 345px;
+	padding-right: 26px;
+}
+.user__imgbox {
+	position: relative;
+	margin-bottom: 10px;
+	width: 126px;
+}
+.user__imgbox__rank {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 41px;
+	height: 41px;
+}
+.user__imgbox img {
+	overflow: hidden;
+	width: 126px;
+	border-radius: 126px;
+	-moz-border-radius: 126px;
+	-webkit-border-radius: 126px;
+	-khtml-border-radius: 126px;
+}
+.user__username {
+	font-size: 20px;
+	font-weight: 600;
+	float: left;
+	color: #fff;
+	line-height: 29px;
+}
+.user__mail {
+	background: url(img/topic__item__user-data__mail.png) no-repeat;
+	width: 29px;
+	height: 29px;
+	cursor: pointer;
+	margin: 10px 0 0 45px;
+	float: none;
+}

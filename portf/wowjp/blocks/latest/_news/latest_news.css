@@ -1,0 +1,42 @@
+﻿.latest_news, .latest_news__list {
+	margin: 0;
+	padding: 0;
+}
+.latest_news h2 {
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 20px;
+	margin: 0px;
+	color: #fff;
+}
+.latest_news .button__image__controls {
+	right: 24px;
+	top: 25px;
+}
+.latest_news__list__item {
+	list-style-type: none;
+	float: left;
+	width: 23.4%;
+	text-align: center;
+	margin-right: 2%
+}
+.latest_news__list__item:nth-child(4n+4) {
+	margin-right: 0;
+}
+.latest_news__list__item a {
+	display: block;
+}
+.latest_news__list__item img {
+	display: block;
+	width: 100%;
+	height: auto
+}
+.latest_news__list__item strong {
+	display: block;
+	text-align: left;
+	font-weight: 600;
+	font-size: 16px;
+	margin-top: 10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}  

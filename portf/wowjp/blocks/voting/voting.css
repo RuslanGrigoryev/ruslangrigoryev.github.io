@@ -1,0 +1,26 @@
+.voting__items {
+	margin-bottom: 25px;
+}
+.voting__item {
+	margin: 22px 0;
+}
+.voting__item input {
+	margin-right: 14px;	
+}
+.voting__item label {
+	font-size: 13px;
+	color: #FFF;
+	height: 23px;
+	line-height: 20px;
+	display: block;
+	cursor: pointer;
+}
+.voting__item label span {
+	padding-left: 14px;
+	line-height: 20px;
+	top: 2px;
+	position: relative;
+}
+.voting__button_vote {
+	margin-right: 22px;
+}

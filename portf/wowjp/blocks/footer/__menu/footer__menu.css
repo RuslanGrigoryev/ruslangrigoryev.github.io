@@ -1,0 +1,17 @@
+.footer__menu{
+	margin: 0px;
+	padding: 0px;
+}
+.footer__menu li{
+	list-style: none;
+	float: left;
+	font-size: 13px;
+	margin: 0 28px 0 0;
+}
+.footer__menu li:first-child {
+	margin-left: 0px;
+}
+.footer__menu li a{
+	color: #fff;
+	text-decoration: none;
+}

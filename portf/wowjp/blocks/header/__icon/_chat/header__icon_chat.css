@@ -1,0 +1,7 @@
+.header__icon_chat {
+	background: url(img/header__chat__icon.png) center center no-repeat transparent;
+	width: 25px;
+	height: 55px;
+	cursor: pointer;
+	padding: 0 16px;
+}

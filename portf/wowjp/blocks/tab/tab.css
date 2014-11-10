@@ -1,0 +1,27 @@
+﻿.tab__item {
+	font-size: 13px;
+	position: relative;
+	border-radius: 6px;
+	border: 1px solid rgba(255,255,255,.2);
+	background: rgba(0,0,0,.2);
+	margin-right: 18px;
+	padding: 10px 33px 10px 13px;
+	display: inline-block;
+}
+.tab__item_active {
+	border: 1px solid #fff;
+}
+.tab__item .circle.circle_event {
+	left: -8px;
+	top: -8px;
+}
+.tab__item__close {
+	position: absolute;
+	z-index: 60;
+	right: 13px;
+	top: 14px;
+	width: 11px;
+	height: 11px;
+	display: block;
+	background: url(img/modal__close.png);
+}

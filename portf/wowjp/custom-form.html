@@ -1,0 +1,978 @@
+﻿<!DOCTYPE HTML PUBLIC  "-//W3C//DTD HTML 4.01//EN" "www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<!-- <link rel="stylesheet" href="css-built/main.css"> -->
+	<link rel="stylesheet" href="css/main.css">	
+	<script src="js/libs/jquery/jquery-1.10.2.js"></script>	
+	<script type="text/javascript" src="js/libs/isotope/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/libs/isotope/isotope.stick.ext.js"></script>
+	<script type="text/javascript" src="js/libs/jscrollpane/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/libs/jscrollpane/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/libs/formstyler/jquery.formstyler.min.js"></script>
+	<script>
+		$(window).load(function() {
+			$('.list').isotopeStick({
+					//selector for the elements with double width
+					doubleWidthSelector: '.content__item_width50',
+					//list container will have width, can be user for alignment
+					isSetParentWidth: true
+				});
+		});
+		$(function(){
+			$('.scroll-pane').jScrollPane({
+				verticalGutter: 50
+			}); 
+			$('.chat__users__list').jScrollPane(); 
+			$('.chat__messages_inner').jScrollPane(); 	
+			$('.chat__smiles__box__inner').jScrollPane(); 	
+
+			
+		});
+		(function($) {  
+			$(function() {  
+			  
+			  $('select').styler();  
+			  $('input').styler();  
+			  
+			})  
+		})(jQuery)  
+	</script>
+</head>
+<body>
+	<!-- .Banner -->
+	<div class="banner banner_top banner_fullwidth" style="display:none;">
+		<img src="img/banner_fullwidth.jpg" alt="">
+	</div>
+	<!-- ./ Banner -->
+	<!-- .Banner -->
+	<div class="banner banner_top" style="display:none;">
+		<img src="img/banner_728-90.jpg" alt="">
+	</div>
+	<!-- ./ Banner -->
+	<!-- .Header -->
+	<div id="header" class="header">
+		<div class="header__container">
+			<a href="/" class="header__logo"></a>
+			<ul class="header__menu menu">
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Форум</a>
+					<div class="header__menu__submenu header__menu__submenu_forum">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="3">
+									<a href="">Программы / Боты</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Общие вопросы</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Флудилка</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Торговый раздел</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Баги / Читы WoW</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Пиратские сервера</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Управление серверами</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">MaNGOS</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">TrinityCore</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Warcaraft 3</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="3">
+									<a href="">Дизайнерская</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>
+							<div class="clr"></div>
+						</div>
+					</div>
+				</li>
+				<li class="header__menu__item"><a href="">Классы</a></li>
+				<li class="header__menu__item header__menu__item_full">
+					<a href="">Рейды</a>
+					<div class="header__menu__submenu header__menu__submenu_article">
+						<div class="header__menu__submenu__inner">
+							<ul class="header__menu__submenu__list">
+								<li data-id="1">
+									<a href="">Осада Орнриммара</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="2">
+									<a href="">Престол Гроз</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="1">
+									<a href="">Сердце Страха</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li data-id="400">
+									<a href="">Подземелья Могушан</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Терраса Вечной Весны</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+								<li>
+									<a href="">Видеотактики</a>
+									<ul class="header__menu__submenu__content loader loader_5f574e"></ul>
+								</li>
+							</ul>					
+							<div class="clr"></div>
+						</div>				
+					</div>	
+				</li>
+				<li class="header__menu__item"><a href="">Статьи</a></li>
+				<li class="header__menu__item"><a href="">Аддоны</a></li>
+				<li class="header__menu__item"><a href="">Видео</a></li>
+				<li class="header__menu__item"><a href="">Картинки</a></li>
+				<li class="header__menu__item">
+					<a href="">Полезное</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Патчи WoW</a></li>
+						<li><a href="">Скачать WoW</a></li>
+						<li><a href="">Магазин чести</a></li>
+						<li><a href="">Wish</a></li>
+						<li><a href="">Raidbuilder</a></li>
+						<li><a href="">Калькуляторы талантов</a></li>
+						<li><a href="">Форум о работе сайта</a></li>
+						<li><a href="">Команда WoWJP</a></li>
+						<li><a href="">Футболки / Сувениры</a></li>
+						<li><a href="">Реклама / Услуги</a></li>
+					</ul>
+				</li>
+				<li class="header__menu__item header__menu__item_more">
+					<a href="">Еще</a>
+					<ul class="header__menu_level2">
+						<li><a href="">Форум</a></li>
+						<li><a href="">Классы</a></li>
+						<li><a href="">Рейды</a></li>
+						<li><a href="">Статьи</a></li>
+						<li><a href="">Аддоны</a></li>
+						<li><a href="">Видео</a></li>
+						<li><a href="">Картинки</a></li>
+					</ul>
+				</li>
+			</ul>	
+			<div class="header__search">		
+				<div class="header__search__icon"></div>		
+				<div class="header__search__inner">
+					<div class="search">
+						<input type="text" class="search__input" placeholder="Поиск" >
+						<input type="submit" class="search__submit" value="">
+					</div>	
+					<div class="header__search__advanced">
+						<div class="header__search__tags">
+							<div class="tag" data-value="article">
+								<span>Новости и статьи</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="article">
+								<span>Форум</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="tag" data-value="photo">
+								<span>Изображения</span>
+								<div class="tag__arrow"></div>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>
+					<div class="clr"></div>	
+				</div>
+			</div>
+			<div class="header__right">					
+				<div class="header__item_chat header__item">
+					<div class="header__icon_chat header__icon"></div>
+				</div>
+				<div class="header__item_notifications header__item">
+					<div class="header__icon_notice header__icon">
+						<span class="circle circle_reminder">2</span>
+					</div>
+					<div class="header__item_notifications__menu header__item__content loader loader_center">
+						<div>
+							<div class="header__item_notifications__content">
+							</div>	
+						</div>
+					</div>	
+				</div>	
+				<div class="header__item_avatar header__item">
+					<div class="header__icon_avatar header__icon">
+						<img src="img/avatar.png" alt="">
+					</div>	
+					<ul class="header__item_avatar__menu header__item__content">
+						<li class="header__item_avatar__menu_profil"><a href="">Ваш профиль</a></li>
+						<li class="header__item_avatar__menu_message">
+							<a href="">Сообщения</a>
+							<span class="circle circle_msg">9</span>
+						</li>
+						<li class="header__item_avatar__menu_money"><a href="">Монеты</a></li>
+						<li class="header__item_avatar__menu_sign-out"><a href="">Выход</a></li>
+					</ul>				
+				</div>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+	<!-- ./ Header -->
+	<!-- .Slideshow -->
+	<div id="slideshow" class="slideshow slideshow_fullwidth">
+		<div class="slideshow__controls">
+			<div class="slideshow__controls__buttons">
+				<div class="slideshow__controls__buttons__left"></div>
+				<div class="slideshow__controls__buttons__right"></div>
+			</div>
+		</div>
+		<a class="slideshow__center slideshow__link" href="/markup">
+			<span class="slideshow__center__title">Чопперы Азерота</span><br />
+			<span class="slideshow__center__readmore">Прочитать</span>
+		</a>
+		<div class="slideshow__overlay slideshow__link"></div>
+		<ul class="slideshow__list">
+			<li class="slideshow__list_item" data-target="_blank" data-src="img/slideshow/slide5.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 5"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide4.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 4"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide3.jpg" data-href="http://google.ru" data-button="GoGo!" data-title="Google поможет 3"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide2.jpg" data-href="http://google.ru" data-button="GoGo!"></li>
+			<li class="slideshow__list_item" data-src="img/slideshow/slide1.jpg" data-href="/markup" data-button="Прочитать" data-title="Чопперы Азерота">
+				<img src="img/slideshow/slide1.jpg" />
+			</li>
+		</ul>
+	</div>
+	<!-- ./ Slideshow -->
+	<!-- .Content -->
+	<div id="content" class="content">
+		<div class="container">
+			<div class="list">
+				<div class="item system" data-align="left-top">
+					<div class="journal__item journal__item_category journal__item_brown journal__item_rounded journal__item_padding">					
+						<div class="journal__item__title">
+							<h3>Категории</h3>
+						</div>
+						<ul class="list_category">
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Warlords of Draenor</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Классы Mists of Pandaria</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Mists of Pandaria</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Аддоны</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Игровые события</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Макросы</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Достижения</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Заработок в WoW</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Новичкам</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Трансмогрификация</a></li>
+							<li class="list_category__more">Еще 10 категорий</li>
+						</ul>
+						<ul class="list_category list_pull-down" style="display: none;">
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Новичкам</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Макросы</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Достижения</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Заработок в WoW</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Новичкам</a></li>
+							<li>
+							<div class="list__block-image">
+								<a href="">
+									<img src="img/list__li.png" alt="">
+								</a>
+							</div>
+							<a href="">Трансмогрификация</a></li>
+							<li class="list_category__turn">Свернуть категорий</li> 
+						</ul>
+					</div>
+					<div class="journal__item banner_thin-border journal__item_rounded">
+						<img src="img/banner_210_105.jpg" alt="">
+					</div>
+					<!-- /.content__item -->
+					<div class="journal__item journal__item_brown journal__item_rounded journal__item_padding">
+						<div class="journal__item__title">
+							<h3>Что на форуме?</h3>
+						</div>
+						<ul class="list_forum">
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/namenot.png" alt="">
+								</div>								
+								<a href=""><span class="list_forum__usernik">NameNot</span>#Mizzle.ru - все игровые товары рунета
+								<div class="list_forum__date">Вчера</div>
+								</a>
+								
+							</li>
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/member1.png" alt="">
+								</div>	
+								<a href=""><span class="list_forum__usernik">member</span>#Добровольная проверка продавцов
+									<div class="list_forum__date">На этой неделе</div>
+								</a>
+								
+							</li>
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/alisa.png" alt="">
+								</div>	
+								<a href=""><span class="list_forum__usernik">Alisa</span>#Nsb-money.ru - Золото Персонажи
+									<div class="list_forum__date">На этой неделе</div>
+								</a>
+								
+							</li>
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/launcer.png" alt="">
+								</div>	
+								<a href=""><span class="list_forum__usernik">Launcher</span>#World of Warcraft Game Launcher
+									<div class="list_forum__date">Вчера</div>
+								</a>
+								
+							</li>
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/a56.png" alt="">
+								</div>	
+								<a href=""><span class="list_forum__usernik">A56</span>#Улучшение графов в World of Warcraft
+									<div class="list_forum__date">На этой неделе</div>
+								</a>
+								
+							</li>
+							<li>
+								<div class="list_forum__userpic">
+									<img src="img/member2.png" alt="">
+								</div>	
+								<a href=""><span class="list_forum__usernik">Member</span>#Программа для быстрой смены
+									<div class="list_forum__date">Вчера</div>
+								</a>
+								
+							</li>
+						</ul>
+					</div>	
+					<!-- /.content__item -->
+				</div>
+				<!-- /.item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">
+					<div class="button_moderator"></div>
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/wow.jpg" alt=""></a>
+						<span class="journal__item__title_rate">6.*</span>	
+					</div>
+					<div class="journal__item__title">
+						<h3><span class="label">Новинка</span><a href="#">Безумные хакеры или же DDoS провайдеров</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>Возможно Вам удалось заметить некие проблемы с подключением к серверам Blizzard</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">2 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">34</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">
+					<div class="button_moderator"></div>
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/img_width25.jpg" alt=""></a>
+						<span class="journal__item__title_rate">6.2</span>			
+					</div>
+					<div class="journal__item__title">
+						<h3><span class="label">Новинка</span><a href="#">За чашкой кофе с разработчиками: рейды Азерота (часть 3 - WoD)</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>В заключительной статье цикла, посвященного рейдам, ведущий разработчик боев Ион «Watcher» Гацикостас расскажет о нашем подходе к созданию рейдового контента для Warlords of Draenor.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">2 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">34</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">
+					<div class="button_moderator"></div>
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/img2_width25.jpg" alt=""></a>
+						<span class="journal__item__title_rate">5.*</span>
+					</div>
+					<div class="journal__item__title">
+						<h3><span class="label">Новинка</span><a href="#">Чопперы Азерота</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>На сегодняшний день для просмотра доступны 3 серии "Чопперов Азерота" на нашем сайте.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_media journal__item_rounded item">
+					<div class="journal__item__inner">
+						<div class="journal__item__title">Фильм WarCraft - осталось 3 недели</div>
+						<div class="journal__item__date">2 апреля 2014</div>
+						<div class="journal__item__info">
+							<div class="button button_like button_like_active">
+								<span class="button__number">34</span>
+							</div>
+						</div>
+					</div>
+					<div class="journal__item__play"></div>
+					<div class="journal__item__overlay"></div>
+					<div class="journal__item__imgbox">
+						<img src="img/img-video.jpg" alt="">
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">
+					<div class="remark">Новость дня!</div>
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/wow2.jpg" alt=""></a>
+						<span class="journal__item__title_rate">6.1</span>
+					</div>
+					<div class="journal__item__title">
+						<h3><a href="#">Безумные хакеры или же DDoS провайдеров</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>Возможно Вам удалось заметить некие проблемы с подключением к серверам Blizzard, о которых они и сами сообщали, ссылаясь на DDoS-атаки европейских провайдеров. И, к сожалению, подобные проблемы все еще наблюдаются.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">					
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/worgen.jpg" alt=""></a>
+						<span class="journal__item__title_rate">6.*</span>
+					</div>
+					<div class="journal__item__title">
+						<h3><a href="#">Безумные хакеры или же DDoS провайдеров</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>Возможно Вам удалось заметить некие проблемы с подключением к серверам Blizzard, о которых они и сами сообщали, ссылаясь на DDoS-атаки европейских провайдеров. И, к сожалению, подобные проблемы все еще наблюдаются.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like button_like_active">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->
+				<div class="journal__item banner_thick-border journal__item_rounded item">
+					<img src="img/banner_160_600.jpg" alt="">
+				</div>
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">					
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/copper.jpg" alt=""></a>
+					</div>
+					<div class="journal__item__title">
+						<h3><a href="#">Чопперы Азерота</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>На сегодняшний день для просмотра доступны 3 серии "Чопперов Азерота" на нашем сайте.</p>			
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>				
+				<!-- /.content__item -->
+				<div data-id="1" class="journal__item journal__item_rounded item">					
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/wow3.jpg" alt=""></a>
+					</div>
+					<div class="journal__item__title">
+						<h3><a href="#">Новая видео анимация моделей от WowHead</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>Как известно, в новом дополнении Warlords of Draenor изменения подверглось всё,включая анимацию персонажей.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>
+				<!-- /.content__item -->	
+				<div data-id="1" class="journal__item journal__item_media journal__item_rounded item">
+					<div class="journal__item__inner">
+						<div class="journal__item__title">Фильм WarCraft - осталось 3 недели</div>
+						<div class="journal__item__date">2 апреля 2014</div>
+						<div class="journal__item__info">
+							<div class="button button_like">
+								<span class="button__number">34</span>
+							</div>
+						</div>
+					</div>
+					<div class="journal__item__play"></div>
+					<div class="journal__item__overlay"></div>
+					<div class="journal__item__imgbox">
+						<img src="img/world-of-warcraft.jpg" alt="">
+					</div>
+				</div>
+				<!-- /.content__item -->				
+				<div class="journal__item banner_width25 item">
+					<img src="img/banner_240_400.jpg" alt="">
+				</div>
+				<!-- /.content__item -->	
+				<div data-id="1" class="journal__item journal__item_rounded item">					
+					<div class="journal__item__imgbox">
+						<a href="#"><img src="img/djaina.jpg" alt=""></a>
+					</div>
+					<div class="journal__item__title">
+						<h3><a href="#">Знай свой ЛОР: История Джайны Праудмур</a></h3>
+					</div>
+					<div class="journal__item__desc">
+						<p>Что вы сделаете, если потеряете все – друзей, семью, дом, даже мечту, ради которой вы вообще жили? Джайна Праудмур пережила все это в дополнении «Туманы Пандарии», и, как следствие, она действительно изменилась. Сегодня мы обратимся к ЛОРу и попробуем восстановить ее историю.</p>
+					</div>
+					<div class="journal__item__info">
+						<div class="journal__item__info__date">1 апреля 2014</div>
+						<div class="button button_like">
+							<span class="button__number">25</span>
+						</div>
+						<div class="showing">
+							<div class="showing__comments">245</div>
+							<div class="showing__views">587</div>
+						</div>
+						<div class="clr"></div>							
+					</div>
+				</div>				
+				<!-- /.content__item -->
+				<div class="item system" data-align="right-top">
+					<button class="journal__item button button_fullwidth journal__item_rounded">
+						Добавить новость
+					</button>
+					<div class="journal__item journal__item_brown journal__item_rounded journal__item_switcher journal__item_padding">						
+						<div class="journal__item__title">
+							<h3>Горячие новости</h3>
+						</div>
+						<button class="button_news button_news_first button_news_active journal__item_switcher__b1">За неделю</button>
+						<button class="button_news journal__item_switcher__b2">За месяц</button>
+						<div class="clr"></div>
+						<ul class="list_category journal__item_switcher__s1">
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">Comment&Life: Неделя #4. Победители</a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">WoD: Во что будем одеваться? </a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">Безумные хакеры или же DDoS провайдеров</a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">Фильм WarCraft - осталось 3 недели </a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">Чопперы Азерота</a>
+							</li>
+						</ul>
+						<ul class="list_category journal__item_switcher__s2">
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">2Comment&Life: Неделя #4. Победители</a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">2WoD: Во что будем одеваться? </a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">2Безумные хакеры или же DDoS провайдеров</a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">2Фильм WarCraft - осталось 3 недели </a>
+							</li>
+							<li>
+								<div class="list__block-image">
+									<a href="">
+										<img src="img/list__li.png" alt="">
+									</a>
+								</div>
+								<a href="">2Чопперы Азерота</a>
+							</li>
+						</ul>						
+					</div>
+					<!-- /.content__item -->
+					<div class="journal__item journal__item_brown journal__item_rounded journal__item_padding">
+						<div class="journal__item__title">
+							<h3>Мы в социальных сетях</h3>
+						</div>
+						<!-- <button class="button_news button_news_first button_news_active">Вконтакте</button>
+						<button class="button_news">Youtube</button> -->
+						<div class="journal__item__socialgroup">
+							<!-- VK Widget -->
+							<div id="vk_groups"></div>
+						</div>
+					</div>
+					<!-- /.content__item -->
+					<div class="journal__item banner_width25">
+						<img src="img/banner_240_400.jpg" alt="">
+					</div>
+					<!-- /.content__item -->
+					<div class="journal__item journal__item_image journal__item_brown journal__item_rounded journal__item_padding">							
+						<div class="journal__item__title">
+							<h3>Изображения</h3>
+						</div>
+						<div class="button__image__controls">
+							<a href="/photo/1" class="photo-popup-link button__image_left"></a>
+							<a href="/photo/3" class="photo-popup-link button__image_right"></a>
+						</div>
+						<a href="/photo/2" class="photo-popup-link">					
+							<div class="journal__item__img">
+								<img src="img/journal__item_image.jpg" alt="">
+							</div>	
+							<div class="journal__item__desc">
+								Безумные хакеры или же DDoS провайдеров
+							</div>
+						</a>	
+						<a href="#" class="journal__item__add-img">
+							<div class="button__image_add-img">
+								Добавить изображение
+							</div>
+						</a>
+					</div>
+					<!-- /.content__item -->
+				</div>
+				<!-- /.item -->		
+				<div class="clr"></div>		
+			</div>
+			<div class="loadcontent loadcontent loader loader_bottom">
+				<button class="button button_load-more">Загрузить еще</button>				
+				
+			</div>
+		</div>
+	</div>
+	<!-- ./ Content -->
+	<div id="footer" class="footer">
+		<ul class="footer__menu">
+			<li><a href="">Контакты</a></li>
+			<li><a href="">Команда WoWJP</a></li>
+			<li><a href="">Соглашение использования</a></li>
+			<li><a href="">Правила</a></li>
+			<li><a href="">Реклама</a></li>
+			<li><a href="">PDA</a></li>
+			<li><a href="">Есть идеи?</a></li>
+		</ul>
+		<div class="footer__design">
+			<span>Дизайн – </span><a href="">kusnizza</a><span class="minage">12+</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://vk.com/js/api/openapi.js?115"></script>
+	<script type="text/javascript">
+	VK.Widgets.Group("vk_groups", {mode: 0, width: "210", height: "150", color1: '625242', color2: 'ffffff', color3: '4f4133'}, 6535582);
+	</script>	
+<div class="modal_custom">
+	<div class="modal__close"></div>
+	<span class="modal__title">Кастомный заголовок</span>
+	<div class="scroll-pane">
+		<div class="modal__content">
+			<div class="modal__field">
+				<ul class="list_custom">
+					<li>Как известно, в новом дополнении Warlords of Draenor изменения подверглось всё,включая анимацию персонажей. </li>
+				</ul>
+			</div>
+			<div class="modal__field">
+				<ul class="list_inline">
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+				</ul>
+			</div>
+			<div class="modal__field">
+				<span class="modal__field__subtitle">Подзаголовок</span>
+				<span class="modal__field__mintext">Маленький текст</span>
+				<p>Как известно, в новом дополнении Warlords of Draenor изменения подверглось всё,включая анимацию персонажей. </p>
+			</div>
+			<div class="modal__field">		
+				<ul class="list_inline list_inline_right">
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+					<li><img src="img/list__li.png" alt=""></li>
+				</ul>
+				<span>Что-то в одну строчку</span>
+			</div>
+			<div class="modal__field">
+				<ul class="list_custom">
+					<li>Строчка 1</li>
+					<li>Строчка 2</li>
+					<li>Строчка 3</li>
+				</ul>
+			</div>
+			<div class="modal__field">
+				<textarea class="input_textarea" name="" id="" placeholder="Кастомное поле"></textarea>
+				<button class="button button_red button_custom">Кастомная кнопка</button>
+			</div>
+			<div class="modal__field">
+				<input type="text" class="input_input" placeholder="Небольшое поле">
+			</div>
+			<div class="modal__field">
+				<label for="">
+					<input class="topic_new__checkbox" type="checkbox">
+					<span>Чекбокс</span>
+				</label>
+			</div>
+			<div class="modal__field">
+				<label><input type="radio"><span>Да</span></label>
+				<label><input type="radio"><span>Нет</span></label>
+			</div>
+			<div class="modal__field">
+				<select class="input_select" name="" id="">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+					<option value="">6</option>
+					<option value="">7</option>
+					<option value="">8</option>			
+				</select>	
+				<select class="input_select" name="" id="">
+					<option value="">Январь</option>		
+					<option value="">Февраль</option>		
+					<option value="">Март</option>		
+					<option value="">Апрель</option>		
+					<option value="">Май</option>		
+					<option value="">Июнь</option>		
+					<option value="">Июль</option>		
+					<option value="">Август</option>		
+					<option value="">Сентябрь</option>		
+					<option value="">Октябрь</option>		
+					<option value="">Ноябрь</option>		
+					<option value="">Декабрь</option>
+				</select>
+				<select class="input_select" name="" id="">
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+					<option value="">1990</option>
+				</select>
+			</div>
+			<div class="modal__field">
+				<ol class="list_bulleted">
+					<li>Первый пункт</li>
+					<li>Второй пункт</li>
+					<li>Третий пункт</li>
+				</ol>
+				<ul class="list_number">
+					<li>Первый пункт</li>
+					<li>Второй пункт</li>
+					<li>Третий пункт</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>	
+<div class="overlay"></div>
+</body>
+</html>

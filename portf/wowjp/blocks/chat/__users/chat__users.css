@@ -1,0 +1,42 @@
+@import url('__item/chat__users__item.css');
+
+.chat__users {	
+	width: 267px;
+	height: 195px;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	float: right;
+	position: relative;
+	z-index: 15;
+	color: #fff;
+	padding: 10px 0 0px 15px;
+
+    -webkit-transition: width 300ms;
+    -moz-transition: width 300ms;
+    -o-transition: width 300ms;
+    transition: width 300ms;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.chat__users__list{
+	margin: 10px 0 0;
+	padding: 0px;
+	height: 150px;
+	outline: none;
+	overflow-y: hidden;
+}
+.chat__users__online {
+	font-size: 14px;
+	font-weight: 600;
+	/*margin-bottom: 5px;*/
+	display: block;
+	white-space: nowrap
+}
+
+.chat__users .jspVerticalBar {
+	right: 26px;
+}

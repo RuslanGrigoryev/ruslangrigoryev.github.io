@@ -1,0 +1,9 @@
+.button_close {
+	background: url(img/button_close.png) no-repeat;
+	width: 15px;
+	height: 15px;
+/*	cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 20px;*/
+}

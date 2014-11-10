@@ -1,0 +1,20 @@
+.journal__item__info {
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.6);
+	padding: 0 13px 13px;
+	margin-top: -13px;
+}
+.journal__item__info__date {
+	padding: 8px 0;
+	line-height: 15px;
+	margin-bottom: 13px;
+	height: 20px;
+	line-height: 20px;
+	border-bottom:1px solid rgba(255, 255, 255, 0.06);
+} 
+.journal__item__info .showing__comments {
+	margin-left: 16px;
+}
+.journal__item__info .showing__views {
+	margin-left: 11px;
+}
