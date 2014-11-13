@@ -136,5 +136,15 @@ h2 {
 }
 
 .b-screen_first {
+  min-height: 1000px;
   background: url(../images/markup/bg-screen-1.png) no-repeat;
+}
+.b-screen_first__benefits {
+  margin-top: 20px;
+  height: 652px;
+  background: url(../images/markup/bg-benefits.png) no-repeat;
+}
+.b-screen_first__benefits li {
+  padding: 15px;
+  height: 150px;
 }
