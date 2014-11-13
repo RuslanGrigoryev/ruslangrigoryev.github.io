@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'CenturyGothicBold';
+    src: url('../fonts/946379.eot');
+    src: url('../fonts/946379.eot') format('embedded-opentype'),
+         url('../fonts/946379.woff2') format('woff2'),
+         url('../fonts/946379.woff') format('woff'),
+         url('../fonts/946379.ttf') format('truetype'),
+         url('../fonts/946379.svg#CenturyGothicBold') format('svg');
+}
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain) 
@@ -86,13 +97,26 @@ table {
 .b-logo {
 	text-align: center;
 	background: rgba(212, 213, 243, .75);
-	height: 116px;
-	a {
-		line-height: 116px;
-		display: block;
-	}
-	img {
-		display: inline-block;
-		vertical-align: middle;
-	}
+	padding: 26px 0;
+}
+h1 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	font-family: 'CenturyGothicBold';
+	font-size: 45px;
+	padding-top: 20px;
+	font-weight: bold;
+}
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	color: #000;
+	font-family: 'CenturyGothicBold';
+	font-size: 36px;
+	padding-top: 20px;
+	font-weight: bold;
+}
+.b-screen_first {
+	background: url(../images/markup/bg-screen-1.png) no-repeat;
 }
