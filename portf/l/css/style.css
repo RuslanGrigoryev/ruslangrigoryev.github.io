@@ -121,8 +121,8 @@ h1 {
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
   font-size: 45px;
   padding-top: 20px;
-  font-weight: bold;
   word-break: break-word;
+  font-weight: bold;
 }
 
 h2 {
@@ -132,8 +132,8 @@ h2 {
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
   font-size: 36px;
   padding-top: 20px;
-  word-break: break-word;
   font-weight: bold;
+  word-break: break-word;
 }
 
 .b-screen_first {
@@ -141,12 +141,22 @@ h2 {
   background: url(../images/markup/bg-screen-1.png) no-repeat;
 }
 .b-screen_first__benefits {
-  margin-top: 30px;
-  background-size: 100% 100%;
+  margin-top: 20px;
   height: 652px;
   background: url(../images/markup/bg-benefits.png) no-repeat;
+  background-size: 100% 100%;
 }
 .b-screen_first__benefits li {
-  padding: 15px;
+  padding: 25px 40px;
   height: 150px;
+}
+.b-screen_first__benefits img {
+  float: left;
+  margin-right: 25px;
+  padding-top: 10px;
+}
+.b-screen_first__benefits p {
+  font-size: 28px;
+  color: #393939;
+  line-height: 35px;
 }
