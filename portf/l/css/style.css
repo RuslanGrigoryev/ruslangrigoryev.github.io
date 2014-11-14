@@ -119,9 +119,10 @@ h1 {
   text-align: center;
   color: #000;
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
-  font-size: 37px;
+  font-size: 45px;
   padding-top: 20px;
   font-weight: bold;
+  word-break: break-word;
 }
 
 h2 {
@@ -131,6 +132,7 @@ h2 {
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
   font-size: 36px;
   padding-top: 20px;
+  word-break: break-word;
   font-weight: bold;
 }
 
