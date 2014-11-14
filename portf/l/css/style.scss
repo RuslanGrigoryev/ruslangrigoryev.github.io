@@ -92,7 +92,6 @@ table {
 .b-wrapper {
 	min-width: 240px;
 	max-width: 480px;
-	overflow: hidden;
 	margin: 0 auto;
 }
 .b-logo {
@@ -107,6 +106,7 @@ h1 {
 	font-family: 'CenturyGothicBold', 'Arial', sans-serif;
 	font-size: 45px;
 	padding-top: 20px;
+	word-break: break-word;
 	font-weight: bold;
 }
 h2 {
@@ -117,6 +117,7 @@ h2 {
 	font-size: 36px;
 	padding-top: 20px;
 	font-weight: bold;
+	word-break: break-word;
 }
 .b-screen_first {
 	min-height: 1000px;
@@ -125,9 +126,42 @@ h2 {
 		margin-top: 20px;
 		height: 652px;
 		background: url(../images/markup/bg-benefits.png) no-repeat;
+		background-size: 100% 100%;
 		li {
-			padding: 15px;
+			padding: 25px 40px;
 			height: 150px;
 		}
+		img {
+			float: left;
+			margin-right: 25px;
+			padding-top: 10px;
+		}
+		p {
+			font-size: 28px;
+			color: #393939;
+			line-height: 35px;
+		}
+	}
+	strong {
+		padding-left: 20px;
+		color: #6c5f2a;
+		font-family: "Arial";
+		font-size: 23px;
+		font-weight: bold;
+	}
+	&__text {
+		color: #000;
+	}
+	&__image {
+		height: auto;
+		width: 100%;
+	}
+}
+.b-coupon {
+	h3 {
+		color: #ddf793;
+	}
+	&__action-text {
+		color: #ddf793;		
 	}
 }

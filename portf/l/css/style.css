@@ -160,3 +160,24 @@ h2 {
   color: #393939;
   line-height: 35px;
 }
+.b-screen_first strong {
+  padding-left: 20px;
+  color: #6c5f2a;
+  font-family: "Arial";
+  font-size: 23px;
+  font-weight: bold;
+}
+.b-screen_first__text {
+  color: #000;
+}
+.b-screen_first__image {
+  height: auto;
+  width: 100%;
+}
+
+.b-coupon h3 {
+  color: #ddf793;
+}
+.b-coupon__action-text {
+  color: #ddf793;
+}
