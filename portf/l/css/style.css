@@ -105,7 +105,6 @@ table {
 .b-wrapper {
   min-width: 240px;
   max-width: 480px;
-  overflow: hidden;
   margin: 0 auto;
 }
 
