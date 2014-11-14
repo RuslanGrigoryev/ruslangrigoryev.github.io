@@ -333,3 +333,51 @@ h2 {
   padding: 15px;
   background: #fff;
 }
+
+.b-screen_third {
+  background: #fff;
+  padding: 0 10px;
+  margin-top: 200px;
+  text-align: center;
+}
+.b-screen_third h4 {
+  font-size: 25px;
+  color: #6769b5;
+  margin: 10px auto 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.b-screen_third p {
+  color: #000;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding: 0 50px;
+  line-height: 28px;
+}
+.b-screen_third li {
+  padding: 20px;
+}
+.b-screen_third li:nth-child(2n+1) {
+  background: #f3f3ff;
+}
+.b-screen_third .b-sprite {
+  width: 245px;
+  height: 245px;
+  margin: 10px auto 10px;
+}
+.b-screen_third .b-sprite_1 {
+  background-position: 0px -797px;
+}
+.b-screen_third .b-sprite_2 {
+  background-position: -249px -797px;
+}
+.b-screen_third .b-sprite_3 {
+  background-position: -494px -797px;
+}
+.b-screen_third .b-sprite_4 {
+  background-position: -740px -797px;
+}
+.b-screen_third .b-sprite_5 {
+  background-position: 0px -1045px;
+}
