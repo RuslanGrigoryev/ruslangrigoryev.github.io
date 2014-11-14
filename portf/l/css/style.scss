@@ -302,7 +302,7 @@ h2 {
 			display: block;
 		}
 		p {
-			margin-bottom: 20px;
+			margin-bottom: 5px;
 		}
 		strong {
 			font-size: 40px;
@@ -315,7 +315,6 @@ h2 {
 }
 .b-screen_third {
 	background: #fff;
-	padding: 0 10px;
 	margin-top: 200px;
 	text-align: center;
 	h4 {
@@ -326,7 +325,7 @@ h2 {
 		text-transform: uppercase;
 		padding-bottom: 10px;
 	}
-	p {
+	>p {
 		color: #000;
 		font-size: 20px;
 		padding-bottom: 10px;
@@ -358,5 +357,131 @@ h2 {
 	}
 	.b-sprite_5 {
 		background-position: 0px -1045px;
+	}
+}
+.b-screen_fourth {
+	padding: 16px;
+	.b-coupon__benefits {
+		margin: 0px auto;
+		color: #fff;
+		height: 213px;
+		background-position: -258px -1066px;
+	}
+	min-height: 4000px;
+	background: url(../images/bg-screen-2.jpg) no-repeat;
+	&__header {
+		position: relative;
+		height: 552px;	
+		background-position: 0px -1300px;
+		margin-top: 60px;
+		text-align: center;
+		padding: 100px 40px 0 40px;
+		&__sign {
+			position: absolute;
+			z-index: 10;
+			top: -50px;
+			left: 50%;
+			margin-left: -59px;
+			width: 121px;
+			height: 120px;
+			background-position: -708px -1066px;
+		}
+		p, strong {
+			color: #000;
+			font-size: 30px;
+		}
+		strong {
+			font-weight: bold;
+			display: block;
+			margin-bottom: 30px;
+		}
+	}
+	&__test {
+		background-position: -562px -1300px;
+		height: 393px;
+	}
+	h4,h5 {
+		padding-right: 150px;
+		font-style: italic;
+	}
+	h4 {
+		color: #7e1b8d;
+		font-size: 20px;
+		margin: 15px 0 5px 0;
+	}
+	h5 {
+		font-size: 16px;
+		color: #575757;
+	}
+	&__list {
+		margin-top: 100px;
+		li {
+			margin-bottom: 100px;
+			position: relative;
+			&:last-child {
+				margin-bottom: 10px;
+			}
+		}
+		&__num {
+			position: absolute;
+			z-index: 10;
+			width: 143px;
+			height: 169px;
+			top: -70px;
+			left: 20px;
+			&_1 {
+				background-position: 0px -1850px;
+			}
+			&_2 {
+				background-position: -145px -1850px;
+			}
+			&_3 {
+				background-position: -288px -1850px;
+			}
+			&_4 {
+				background-position: -434px -1850px;
+			}
+		}
+		&__image {
+			height: 361px;
+			margin-bottom: 5px;
+			&_1 {
+				background-position: 0px -2020px;
+			}
+			&_2 {
+				background-position: -455px -2020px;
+			}
+			&_3 {
+				background-position: 0px -2411px;
+			}
+			&_4 {
+				background-position: -455px -2411px;
+			}
+		}
+		h6 {
+			padding: 10px;
+			color: #fff;
+			background: #f11c82;
+			text-align: center;
+			font-size: 25px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		p {
+			color: #575757;
+			background: #fff;
+			min-height: 210px;
+			padding: 29px;
+			font-size: 29px;
+		}
+		&__arrow {
+			position: absolute;
+			z-index: 10;
+			bottom: -70px;
+			right: 10px;
+			width: 41px;
+			height: 106px;
+			background-position: -825px -1065px;
+		}
 	}
 }
