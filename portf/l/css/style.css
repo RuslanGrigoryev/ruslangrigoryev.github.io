@@ -511,6 +511,7 @@ h2 {
 }
 
 .b-slider {
+  margin: 0 auto;
   width: 460px;
   margin-top: 270px;
   background: #f6f6fc;
@@ -635,4 +636,50 @@ h2 {
   padding: 15px 0;
   line-height: 25px;
   text-align: center;
+}
+
+.b-screen_fifth {
+  min-height: 1000px;
+  padding: 16px;
+  background: url(../images/bg-screen-3.jpg) no-repeat;
+}
+.b-screen_fifth .b-coupon__benefits {
+  margin: 0px auto;
+  color: #fff;
+  height: 213px;
+  background-position: -258px -1066px;
+}
+.b-screen_fifth__list-img {
+  margin: 0 auto;
+  width: 381px;
+  height: 315px;
+}
+.b-screen_fifth__list-img_1 {
+  background-position: 0px -2776px;
+}
+.b-screen_fifth__list-img_2 {
+  background-position: -381px -2776px;
+}
+.b-screen_fifth__list-img_3 {
+  background-position: 0px -3107px;
+}
+.b-screen_fifth ul {
+  margin-top: 25px;
+}
+.b-screen_fifth li {
+  margin-bottom: 45px;
+}
+.b-screen_fifth p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  padding: 0 50px;
+  margin-top: 15px;
+}
+.b-screen_fifth strong {
+  font-weight: bold;
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+  font-size: 30px;
 }

@@ -486,6 +486,7 @@ h2 {
 	}
 }
 .b-slider {
+	margin: 0 auto;
 	width: 460px;
 	margin-top: 270px;
 	background: #f6f6fc;
@@ -608,4 +609,49 @@ h2 {
 	padding: 15px 0;
 	line-height: 25px;
 	text-align: center;
+} 
+.b-screen_fifth {
+	min-height: 1000px;
+	padding: 16px;
+	background: url(../images/bg-screen-3.jpg) no-repeat;
+	.b-coupon__benefits {
+		margin: 0px auto;
+		color: #fff;
+		height: 213px;
+		background-position: -258px -1066px;
+	}
+	&__list-img {
+		margin: 0 auto;
+		width: 381px;
+		height: 315px;
+		&_1 {
+			background-position: 0px -2776px;
+		}
+		&_2 {
+			background-position: -381px -2776px;
+		}
+		&_3 {
+			background-position: 0px -3107px;
+		}
+	}
+	ul {
+		margin-top: 25px;
+	}
+	li {
+		margin-bottom: 45px;
+	}
+	p {
+		text-align: center;
+		line-height: 25px;
+		font-size: 20px;
+		padding: 0 50px;
+		margin-top: 15px;
+	}
+	strong {
+		font-weight: bold;
+		margin-top: 50px;
+		display: block;
+		text-align: center;
+		font-size: 30px;
+	}
 }
