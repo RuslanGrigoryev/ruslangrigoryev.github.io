@@ -80,11 +80,11 @@
 				<div class="b-coupon__price b-sprite">
 					<div class="b-coupon__price_old">
 						<strong>Старая цена</strong>
-						<span>2980 руб.</span>
+						<span>2980<span>руб.</span></span>
 					</div>
 					<div class="b-coupon__price_new">
 						<strong>Новая цена</strong>
-						<span>1490 руб.</span>
+						<span>1490<span>руб.</span></span>
 					</div>
 				</div>
 				<div class="b-coupon__total">
@@ -264,11 +264,11 @@
 			<div class="b-coupon__price b-sprite">
 				<div class="b-coupon__price_old">
 					<strong>Старая цена</strong>
-					<span>2980 руб.</span>
+					<span>2980<span>руб.</span></span>
 				</div>
 				<div class="b-coupon__price_new">
 					<strong>Новая цена</strong>
-					<span>1490 руб.</span>
+					<span>1490<span>руб.</span></span>
 				</div>
 			</div>
 			<div class="b-coupon__total">
@@ -299,7 +299,7 @@
 		<!-- begin b-slider  -->
 		<div class="b-slider">
 			<ul class="clearfix">
-				<li class="b-slider__item b-slider__item_active">
+				<li class="b-slider__item b-slider__item_active" data-slide="1">
 					<div class="b-slider__item__person">
 						<div class="b-slider__item__image b-sprite"></div>
 						<div class="b-slider__item__eval">
@@ -313,7 +313,7 @@
 						У меня жутко ломкие и тонкие ногти. Несмотря на то, что я их постоянно "подлечиваю", любое неосторжное обращение с ногтями чревато муками! А последняя процедура наращивания просто "убила" мои ноготки - они взялись трещинами и начали расслаиваться по краям. Взяла эту масочку без надежды на чудо, использовала по инструкции, а когда сняла, то глазам не поверила. Ногти были идельно чистые, гладкие и блестящие. Кое-где трещинки конечно остались, но конечно не сравнить с тем, в каком состоянии были мои ногти до этого. Сама удивлена, но вот уже 2 недели как ногти не ломаются! Визуально ногтевые пластинки стали явно тверже! Вывод: ноготкам такие маски только на пользу, а то, что делает Golden Cat - однозначно заслуживает внимания, тем более, если учитывать смешную стоимость маски!
 					</div>
 				</li>
-				<li class="b-slider__item">
+				<li class="b-slider__item" data-slide="2">
 					<div class="b-slider__item__person">
 						<div class="b-slider__item__image b-sprite"></div>
 						<div class="b-slider__item__eval">
@@ -327,7 +327,7 @@
 						У меня жутко ломкие и тонкие ногти. Несмотря на то, что я их постоянно "подлечиваю", любое неосторжное обращение с ногтями чревато муками! А последняя процедура наращивания просто "убила" мои ноготки - они взялись трещинами и начали расслаиваться по краям. Взяла эту масочку без надежды на чудо, использовала по инструкции, а когда сняла, то глазам не поверила. Ногти были идельно чистые, гладкие и блестящие. Кое-где трещинки конечно остались, но конечно не сравнить с тем, в каком состоянии были мои ногти до этого. Сама удивлена, но вот уже 2 недели как ногти не ломаются! Визуально ногтевые пластинки стали явно тверже! Вывод: ноготкам такие маски только на пользу, а то, что делает Golden Cat - однозначно заслуживает внимания, тем более, если учитывать смешную стоимость маски!
 					</div>
 				</li>
-				<li class="b-slider__item">
+				<li class="b-slider__item" data-slide="3">
 					<div class="b-slider__item__person">
 						<div class="b-slider__item__image b-sprite"></div>
 						<div class="b-slider__item__eval">
@@ -391,6 +391,13 @@
 				</li>
 			</ul>
 			<div class="b-screen_fifth__medal b-sprite">
+			<h3>Остерегайтесь подделок</h3>
+			<h4>
+				Оригинальные маски для
+				ногтей Golden Cat 
+				можно заказать только
+				на этом сайте
+			</h4>
 				<div class="b-screen_fifth__medal__image b-sprite">
 					
 				</div>
@@ -410,11 +417,11 @@
 			<div class="b-coupon__price b-sprite">
 				<div class="b-coupon__price_old">
 					<strong>Старая цена</strong>
-					<span>2980 руб.</span>
+					<span>2980<span>руб.</span></span>
 				</div>
 				<div class="b-coupon__price_new">
 					<strong>Новая цена</strong>
-					<span>1490 руб.</span>
+					<span>1490<span>руб.</span></span>
 				</div>
 			</div>
 			<div class="b-coupon__total">
@@ -446,5 +453,25 @@
 	<!-- end b-wrapper -->
 
 	<script src="js/vendor/jquery-1.9.1.min.js"></script>
+	<script>
+	$('.b-slider__controls').find('a').on('click', function (e) {
+		e.preventDefault();
+
+		var slide = $('.b-slider__item');
+		var slideLength = $('.b-slider__item').length;
+		var currentSlideData = $('.b-slider__item_active').data('slide');
+
+		if (currentSlideData != slideLength) {
+			currentSlideData++;
+			slide.removeClass('b-slider__item_active');
+			slide.eq(currentSlideData).addClass('b-slider__item_active');
+		}
+		else {
+			currentSlideData = 0;
+			slide.removeClass('b-slider__item_active');
+			slide.eq(currentSlideData).addClass('b-slider__item_active');
+		}
+	});
+	</script>
 </body>
 </html>

@@ -233,6 +233,17 @@ h2 {
 			}
 			span {
 				color: #ddf793;
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					z-index: 10px;
+					left: -10px;
+					right: -10px;
+					height: 3px;
+					top: 45%;
+					background: #ddf793;
+				}
 			}
 		}
 		&_new {

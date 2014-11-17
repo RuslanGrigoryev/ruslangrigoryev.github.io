@@ -3,23 +3,22 @@
   src: url("../fonts/946379.eot");
   src: url("../fonts/946379.eot") format("embedded-opentype"), url("../fonts/946379.woff2") format("woff2"), url("../fonts/946379.woff") format("woff"), url("../fonts/946379.ttf") format("truetype"), url("../fonts/946379.svg#CenturyGothicBold") format("svg");
 }
+@font-face {
+    font-family: 'a_futuraroundbold';
+    src: url('../fonts/a_futuraround_bold-webfont.eot');
+    src: url('../fonts/a_futuraround_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/a_futuraround_bold-webfont.woff2') format('woff2'),
+         url('../fonts/a_futuraround_bold-webfont.woff') format('woff'),
+         url('../fonts/a_futuraround_bold-webfont.ttf') format('truetype'),
+         url('../fonts/a_futuraround_bold-webfont.svg#a_futuraroundbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain) 
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,7 +66,7 @@ input, textarea, input:focus, textarea:focus {
   outline: none;
   padding: 5px;
   color: #727272;
-  font-size: 20px;
+  font-size: 26px;
   font-style: italic;
   text-align: center;
 }
@@ -76,7 +75,7 @@ input {
   width: 95%;
   margin: 0 auto;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
   height: 76px;
@@ -144,7 +143,7 @@ h1 {
   text-align: center;
   color: #000;
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
-  font-size: 45px;
+  font-size: 46px;
   padding-top: 20px;
   word-break: break-word;
   font-weight: bold;
@@ -156,7 +155,8 @@ h2 {
   color: #000;
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
   font-size: 36px;
-  padding-top: 20px;
+  padding-top: 21px;
+  line-height: 45px;
   font-weight: bold;
   word-break: break-word;
 }
@@ -166,36 +166,39 @@ h2 {
   background: url(../images/bg-screen-1.jpg) no-repeat;
 }
 .b-screen_first__benefits {
-  margin-top: 20px;
-  height: 652px;
+  margin-top: 22px;
+  height: 637px;
   background-position: -506px 0px;
   background-size: 100% 100%;
 }
 .b-screen_first__benefits li {
-  padding: 25px 40px;
-  height: 150px;
+  padding: 25px 40px 30px 38px;
+  height: 153px;
 }
 .b-screen_first__benefits .b-sprite {
   float: left;
   width: 70px;
   height: 82px;
   background-position: 0px -61px;
-  margin: 10px 25px 0 0;
+  margin: 16px 25px 0 0;
 }
 .b-screen_first__benefits p {
   font-size: 28px;
   color: #393939;
-  line-height: 35px;
+  line-height: 37px;
 }
 .b-screen_first strong {
-  padding-left: 20px;
+  padding-left: 33px;
   color: #6c5f2a;
   font-family: "Arial";
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
 }
 .b-screen_first__text {
   color: #000;
+  padding-left: 30px;
+  font-size: 28px;
+  margin-top: 9px;
 }
 .b-screen_first__image {
   height: 390px;
@@ -204,9 +207,9 @@ h2 {
 
 .b-coupon {
   max-width: 446px;
-  margin: 20px auto;
+  margin: 27px auto;
   height: 964px;
-  padding-top: 25px;
+  padding-top: 31px;
   border: 1px solid rgba(110, 34, 119, 0.3);
   background-color: #fff;
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.21);
@@ -216,16 +219,25 @@ h2 {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#a935bb), to(#9329a3));
   background-image: linear-gradient(bottom, #a935bb 0%, #9329a3 100%);
 }
+.b-coupon .b-coupon__benefits{
+    margin-top: 85px;
+
+    padding: 9px 10px 10px 10px;
+}
 .b-coupon h3 {
   color: #ddf793;
   text-align: center;
   margin-bottom: 15px;
+  font-size: 44px;
+  font-weight: bold;
+  font-family: 'a_futuraroundbold', sans-serif;
 }
 .b-coupon__action-text {
   color: #ddf793;
-  margin-bottom: 15px;
+  margin-bottom: 26px;
   text-align: center;
   display: block;
+  font-size: 30px;
 }
 .b-coupon__price {
   position: relative;
@@ -235,14 +247,18 @@ h2 {
 .b-coupon__price strong {
   display: block;
   text-align: left;
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 27px;
+  margin-bottom: 11px;
 }
 .b-coupon__price span {
+  font-size: 56px;
+}
+.b-coupon__price span span {
   font-size: 30px;
+  padding-left: 10px;
 }
 .b-coupon__price_old {
-  padding: 20px 10px;
+  padding: 38px 0 38px 21px;
   position: absolute;
   display: block;
   z-index: 10;
@@ -256,15 +272,26 @@ h2 {
 }
 .b-coupon__price_old span {
   color: #ddf793;
+  position: relative;
+}
+.b-coupon__price_old>span:after {
+  content: "";
+  position: absolute;
+  z-index: 10px;
+  left: -10px;
+  right: -10px;
+  height: 3px;
+  top: 45%;
+  background: #ddf793;
 }
 .b-coupon__price_new {
-  padding: 20px 10px;
+  padding: 38px 0 38px 21px;
   position: absolute;
   display: block;
   z-index: 10;
   top: 3px;
   bottom: 0;
-  left: 50%;
+  left: 51%;
   right: -1px;
   background: #fff;
 }
@@ -277,8 +304,8 @@ h2 {
 .b-coupon__total {
   text-align: center;
   color: #fff;
-  padding: 20px 0;
-  font-size: 28px;
+  padding: 17px 0 15px 0;
+  font-size: 25px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 .b-coupon__total p {
@@ -292,37 +319,39 @@ h2 {
   color: #fff;
   display: block;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 .b-coupon__form a {
   height: 165px;
   display: block;
   background-position: 0px -622px;
-  padding: 28px 40px 0 40px;
+  padding: 34px 40px 0 40px;
   font-size: 50px;
   text-transform: uppercase;
   color: #2c2c2c;
   text-decoration: none;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  margin-top: -10px;
 }
 .b-coupon__form p {
   color: #fff;
   padding: 0 20px;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 31px;
 }
 .b-coupon__benefits {
   height: 160px;
   background-position: -435px -630px;
-  margin-top: 130px;
+  margin-top: 42px;
   text-align: center;
   padding: 30px;
 }
 .b-coupon__benefits strong, .b-coupon__benefits p {
-  font-size: 30px;
+  font-size: 38px;
   color: #fff;
   display: block;
+  font-family: 'a_futuraroundbold';
 }
 .b-coupon__benefits p {
   margin-bottom: 5px;
@@ -338,26 +367,35 @@ h2 {
 
 .b-screen_third {
   background: #fff;
-  margin-top: 200px;
+  margin-top: 175px;
   text-align: center;
+  margin-bottom: -33px;
 }
 .b-screen_third h4 {
-  font-size: 25px;
+  font-size: 27px;
   color: #6769b5;
-  margin: 10px auto 10px;
+  margin: 10px auto 14px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 21px;
+  font-family: 'a_futuraroundbold';
+  font-weight: bold;
 }
-.b-screen_third > p {
+.b-screen_third ul li p {
+  margin-bottom: 1;
   color: #000;
-  font-size: 20px;
-  padding-bottom: 10px;
-  padding: 0 50px;
-  line-height: 28px;
+  font-size: 27px;
+  margin-bottom: 10px;
+  padding: 0 19px;
+  line-height: 33px;
+  font-family: 'a_futuraroundbold';
+}
+.b-screen_third ul li p strong {
+  font-weight: bold;
 }
 .b-screen_third li {
-  padding: 20px;
+  padding: 20px 20px 27px 20px;
+  margin-bottom: 11px;
 }
 .b-screen_third li:nth-child(2n+1) {
   background: #f3f3ff;
@@ -365,7 +403,7 @@ h2 {
 .b-screen_third .b-sprite {
   width: 245px;
   height: 245px;
-  margin: 10px auto 10px;
+  margin: 10px auto 37px;
 }
 .b-screen_third .b-sprite_1 {
   background-position: 0px -797px;
@@ -398,9 +436,9 @@ h2 {
   position: relative;
   height: 552px;
   background-position: 0px -1300px;
-  margin-top: 60px;
+  margin-top: 75px;
   text-align: center;
-  padding: 100px 40px 0 40px;
+  padding: 91px 25px 0 25px;
 }
 .b-screen_fourth__header__sign {
   position: absolute;
@@ -414,35 +452,39 @@ h2 {
 }
 .b-screen_fourth__header p, .b-screen_fourth__header strong {
   color: #000;
-  font-size: 30px;
+  font-size: 35px;
 }
 .b-screen_fourth__header strong {
   font-weight: bold;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 }
 .b-screen_fourth__test {
   background-position: -562px -1300px;
   height: 393px;
+  margin-top: -40px;
 }
 .b-screen_fourth h4, .b-screen_fourth h5 {
-  padding-right: 150px;
+  padding-right: 80px;
   font-style: italic;
 }
 .b-screen_fourth h4 {
   color: #7e1b8d;
-  font-size: 20px;
+  font-size: 28px;
+  padding-left: 20px;
   margin: 15px 0 5px 0;
 }
 .b-screen_fourth h5 {
-  font-size: 16px;
+  font-size: 24px;
+  padding-left: 20px;
   color: #575757;
+  margin-top: 12px;
 }
 .b-screen_fourth__list {
   margin-top: 100px;
 }
 .b-screen_fourth__list li {
-  margin-bottom: 100px;
+  margin-bottom: 92px;
   position: relative;
 }
 .b-screen_fourth__list li:last-child {
@@ -470,7 +512,7 @@ h2 {
 }
 .b-screen_fourth__list__image {
   height: 361px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .b-screen_fourth__list__image_1 {
   background-position: 0px -2020px;
@@ -485,11 +527,11 @@ h2 {
   background-position: -455px -2411px;
 }
 .b-screen_fourth__list h6 {
-  padding: 10px;
+  padding: 18px 26px;
   color: #fff;
   background: #f11c82;
-  text-align: center;
-  font-size: 25px;
+  text-align: left;
+  font-size: 41px;
   -webkit-border-top-left-radius: 5px;
           border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
@@ -499,14 +541,16 @@ h2 {
   color: #575757;
   background: #fff;
   min-height: 210px;
-  padding: 29px;
-  font-size: 29px;
+  padding: 25px 4px 25px 18px;
+  line-height: 38px;
+  text-indent: 25px;
+  font-size: 33px;
 }
 .b-screen_fourth__list__arrow {
   position: absolute;
   z-index: 10;
-  bottom: -70px;
-  right: 10px;
+  bottom: -59px;
+  right: 18px;
   width: 41px;
   height: 106px;
   background-position: -825px -1065px;
@@ -515,7 +559,7 @@ h2 {
 .b-slider {
   margin: 0 auto;
   width: 460px;
-  margin-top: 270px;
+  margin-top: 360px;
   background: #f6f6fc;
   padding-bottom: 30px;
 }
@@ -531,10 +575,10 @@ h2 {
 .b-slider__item__person p {
   position: absolute;
   z-index: 10;
-  bottom: 30px;
+  bottom: 31px;
   right: 30px;
   width: 140px;
-  font-size: 21px;
+  font-size: 27px;
   text-align: center;
   color: #df1063;
 }
@@ -544,8 +588,8 @@ h2 {
   -webkit-border-radius: 97px;
           border-radius: 97px;
   position: absolute;
-  right: 50px;
-  top: 50px;
+  right: 54px;
+  top: 36px;
   z-index: 10;
   background: #df1063;
   padding: 20px;
@@ -569,28 +613,28 @@ h2 {
 .b-slider__item__wrapper {
   font-size: 28px;
   color: #575757;
-  line-height: 30px;
+  line-height: 33px;
   text-align: center;
   background: #fff;
   margin: 0 10px;
-  padding: 20px;
+  padding: 19px 14px;
 }
 .b-slider__item__wrapper h5 {
   text-align: center;
-  margin-bottom: 10px;
-  padding-top: 30px;
-  font-size: 28px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  font-size: 35px;
 }
 .b-slider__item__wrapper h6 {
   text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 27px;
+  margin-bottom: 32px;
   color: #6464a7;
 }
 .b-slider__controls {
   position: relative;
   min-height: 100px;
-  margin: 20px;
+  margin: 52px 33px;
 }
 .b-slider__controls__left {
   position: absolute;
@@ -612,10 +656,10 @@ h2 {
   text-decoration: underline;
   float: left;
   font-style: italic;
-  font-size: 20px;
+  font-size: 27px;
   width: 160px;
   text-align: left;
-  margin-top: 90px;
+  margin-top: 102px;
   line-height: 25px;
   color: #000;
 }
@@ -623,10 +667,10 @@ h2 {
   text-decoration: underline;
   float: right;
   font-style: italic;
-  font-size: 20px;
+  font-size: 27px;
   width: 160px;
   text-align: right;
-  margin-top: 90px;
+  margin-top: 102px;
   line-height: 25px;
   color: #000;
 }
@@ -634,15 +678,15 @@ h2 {
 .b-copyright {
   margin: 0 auto;
   color: #6f6f6f;
-  font-size: 22px;
-  padding: 15px 0 100px 0;
-  line-height: 25px;
+  font-size: 23px;
+  padding: 17px 0 100px 0;
+  line-height: 29px;
   text-align: center;
 }
 
 .b-screen_fifth {
   min-height: 1000px;
-  padding: 16px;
+  padding: 58px 16px 16px 16px;
   background: url(../images/bg-screen-3.jpg) no-repeat;
 }
 .b-screen_fifth .b-coupon__benefits {
@@ -650,6 +694,20 @@ h2 {
   color: #fff;
   height: 213px;
   background-position: -258px -1066px;
+  padding: 25px 10px 10px 10px;
+}
+.b-screen_fifth .b-coupon__benefits p {
+    font-size: 38px;
+    padding: 0;
+    margin-top: 18px;
+    line-height: 20px;
+}
+.b-screen_fifth .b-coupon__benefits strong {
+    margin-top: 10px;
+
+    font-size: 43px;
+    font-weight: bold;
+    padding-top: 10px;
 }
 .b-screen_fifth__list-img {
   margin: 0 auto;
@@ -666,31 +724,48 @@ h2 {
   background-position: 0px -3107px;
 }
 .b-screen_fifth ul {
-  margin-top: 25px;
+  margin-top: 72px;
 }
 .b-screen_fifth li {
-  margin-bottom: 45px;
+  margin-bottom: 62px;
 }
 .b-screen_fifth p {
   text-align: center;
-  line-height: 25px;
-  font-size: 20px;
-  padding: 0 50px;
-  margin-top: 15px;
+  line-height: 36px;
+  font-size: 27px;
+  padding: 0 17px;
+  margin-top: 24px;
 }
 .b-screen_fifth strong {
   font-weight: bold;
-  margin-top: 50px;
+  padding-top: 52px;
   display: block;
   text-align: center;
-  font-size: 30px;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 .b-screen_fifth__medal {
   width: 460px;
   margin: 0 auto;
-  padding: 20px 0 10px 0;
+  padding: 55px 0 10px 0;
   min-height: 1000px;
   background-position: -11px -3428px;
+}
+.b-screen_fifth__medal h3 {
+    text-align: center;
+    font-weight: bold;
+    color: #df0f63;
+    font-size: 50px;
+}
+.b-screen_fifth__medal h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: 31px;
+    margin-top: 30px;
+    padding: 0 18px;
+    line-height: 43px;
+    margin-bottom: 35px;
+    font-weight: normal;
 }
 .b-screen_fifth__medal__image {
   background-position: -381px -3107px;
@@ -703,7 +778,8 @@ h2 {
   display: block;
   margin-bottom: 20px;
   text-align: center;
-  padding: 0 50px;
+  padding: 17px 50px 0 50px;
+  padding-top: 1px !important;
 }
 .b-screen_fifth__medal__text {
   font-size: 20px;
@@ -713,22 +789,46 @@ h2 {
   margin: 0 auto;
   background-position: -515px -3428px;
   min-height: 326px;
-  margin-top: 170px;
+  margin-top: 83px;
 }
 
 .b-success {
   margin: 10px;
   background: #9e30af;
   color: #fff;
-  padding: 90px 0;
+  padding: 99px 0 110px 0;
+  border-radius: 2px;
+}
+.b-instruction input {
+  border: 1px solid #727272;
+  margin: 20px auto 25px;
+  width: 90%;
+  height: 90px;
 }
 .b-success__last {
-  padding: 30px 0;
+  padding: 46px 0 34px 0;
+}
+.b-success__last strong {
+    margin-bottom: 15px !important;
+}
+.b-success.b-success__last h2 {
+    font-size: 31px;
+    line-height: 36px;
+    margin-bottom: 12px;
+}
+.b-success.b-success__last h3 {
+    font-size: 35px;
+
+    margin-top: 33px;
+}
+.b-success.b-success__last p {
+    padding: 0 40px;
+    /* font-size: 30px; */
 }
 .b-success strong {
   display: block;
   text-align: center;
-  font-size: 31px;
+  font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: bold;
@@ -736,7 +836,8 @@ h2 {
 .b-success p {
   text-align: center;
   padding: 0 60px;
-  font-size: 26px;
+  font-size: 29px;
+  line-height: 39px;
 }
 .b-success__strong {
   font-size: 36px;
@@ -760,19 +861,20 @@ h2 {
 .b-success__phone {
   text-align: center;
   color: #fff;
-  font-size: 22px;
+  font-size: 41px !important;
 }
 .b-success__name {
   color: #fff;
-  font-size: 22px;
+  font-size: 43px !important;
   text-align: center;
   margin-top: 20px;
 }
 
 .b-instruction {
-  margin: 0 10px 10px 10px;
+  margin: 0 10px 23px 10px;
   padding-bottom: 15px;
   border-bottom: 2px solid #d3c1d5;
+  padding-top: 28px;
   -webkit-box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.25);
           box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.25);
 }
@@ -782,23 +884,24 @@ h2 {
   text-align: center;
   line-height: 40px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .b-instruction p {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 0 85px;
+  font-size: 28px;
+  line-height: 38px;
+  padding: 0 66px;
   text-align: center;
-  margin: 30px 0;
+  margin: 18px 0 42px 0;
 }
 .b-instruction span {
   font-weight: bold;
   display: block;
   text-align: center;
-  font-size: 19px;
-  line-height: 31px;
+  font-size: 31px;
+  line-height: 39px;
   margin-bottom: 10px;
   color: #9e30af;
-  padding: 0 50px;
+  padding: 0 0px;
 }
 .b-instruction a {
   width: 434px;
