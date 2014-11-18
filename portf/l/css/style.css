@@ -94,6 +94,7 @@ html, body {
 body {
   line-height: 1;
   font-family: 'Arial', sans-serif;
+  font-size: 25px;
 }
 
 ol, ul {
@@ -143,7 +144,7 @@ h1 {
   text-align: center;
   color: #000;
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
-  font-size: 46px;
+  font-size: 1.8em;
   padding-top: 20px;
   word-break: break-word;
   font-weight: bold;
@@ -183,21 +184,21 @@ h2 {
   margin: 16px 25px 0 0;
 }
 .b-screen_first__benefits p {
-  font-size: 28px;
+  font-size: 1.1em;
   color: #393939;
-  line-height: 37px;
+  line-height: 1.4em;
 }
 .b-screen_first strong {
   padding-left: 33px;
   color: #6c5f2a;
   font-family: "Arial";
-  font-size: 30px;
+  font-size: 1.2em;
   font-weight: bold;
 }
 .b-screen_first__text {
   color: #000;
   padding-left: 30px;
-  font-size: 28px;
+  font-size: 1.2em;
   margin-top: 9px;
 }
 .b-screen_first__image {
@@ -220,7 +221,7 @@ h2 {
   background-image: linear-gradient(bottom, #a935bb 0%, #9329a3 100%);
 }
 .b-coupon .b-coupon__benefits{
-    margin-top: 85px;
+    margin-top: 45px;
 
     padding: 9px 10px 10px 10px;
 }
@@ -228,7 +229,7 @@ h2 {
   color: #ddf793;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 44px;
+  font-size: 1.7em;
   font-weight: bold;
   font-family: 'a_futuraroundbold', sans-serif;
 }
@@ -237,7 +238,7 @@ h2 {
   margin-bottom: 26px;
   text-align: center;
   display: block;
-  font-size: 30px;
+  font-size: 1.2em;
 }
 .b-coupon__price {
   position: relative;
@@ -247,11 +248,11 @@ h2 {
 .b-coupon__price strong {
   display: block;
   text-align: left;
-  font-size: 27px;
+  font-size: 1.1em;
   margin-bottom: 11px;
 }
 .b-coupon__price span {
-  font-size: 56px;
+  font-size: 2.2em;
 }
 .b-coupon__price span span {
   font-size: 30px;
@@ -305,7 +306,7 @@ h2 {
   text-align: center;
   color: #fff;
   padding: 17px 0 15px 0;
-  font-size: 25px;
+  font-size: 1em;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 .b-coupon__total p {
@@ -319,14 +320,14 @@ h2 {
   color: #fff;
   display: block;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 1em;
 }
 .b-coupon__form a {
   height: 165px;
   display: block;
   background-position: 0px -622px;
   padding: 34px 40px 0 40px;
-  font-size: 50px;
+  font-size: 2em;
   text-transform: uppercase;
   color: #2c2c2c;
   text-decoration: none;
@@ -337,7 +338,7 @@ h2 {
 .b-coupon__form p {
   color: #fff;
   padding: 0 20px;
-  font-size: 26px;
+  font-size: 1em;
   line-height: 31px;
 }
 .b-coupon__benefits {
@@ -348,7 +349,7 @@ h2 {
   padding: 30px;
 }
 .b-coupon__benefits strong, .b-coupon__benefits p {
-  font-size: 38px;
+  font-size: 1.7em;
   color: #fff;
   display: block;
   font-family: 'a_futuraroundbold';
@@ -357,7 +358,7 @@ h2 {
   margin-bottom: 5px;
 }
 .b-coupon__benefits strong {
-  font-size: 40px;
+  font-size: 1.7em;
 }
 
 .b-screen_second {
@@ -372,7 +373,7 @@ h2 {
   margin-bottom: -33px;
 }
 .b-screen_third h4 {
-  font-size: 27px;
+  font-size: 1em;
   color: #6769b5;
   margin: 10px auto 14px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -382,11 +383,10 @@ h2 {
   font-weight: bold;
 }
 .b-screen_third ul li p {
-  margin-bottom: 1;
   color: #000;
-  font-size: 27px;
+  font-size: 1.2em;
   margin-bottom: 10px;
-  padding: 0 19px;
+  padding: 0 9px;
   line-height: 33px;
   font-family: 'a_futuraroundbold';
 }
@@ -395,7 +395,7 @@ h2 {
 }
 .b-screen_third li {
   padding: 20px 20px 27px 20px;
-  margin-bottom: 11px;
+  margin-bottom: 1px;
 }
 .b-screen_third li:nth-child(2n+1) {
   background: #f3f3ff;
@@ -422,6 +422,7 @@ h2 {
 }
 
 .b-screen_fourth {
+  margin-top: 100px;
   padding: 16px;
   min-height: 4000px;
   background: url(../images/bg-screen-2.jpg) no-repeat;
@@ -450,9 +451,18 @@ h2 {
   height: 120px;
   background-position: -708px -1066px;
 }
+.b-coupon__benefits.b-coupon__feedback {
+    margin-top: 88px;
+  
+}
 .b-screen_fourth__header p, .b-screen_fourth__header strong {
   color: #000;
-  font-size: 35px;
+  font-size: 1.4em;
+}
+.b-screen_fourth__header p {
+  font-size: 1.2em;
+  margin-top: 30px;
+  line-height: 1.1em;
 }
 .b-screen_fourth__header strong {
   font-weight: bold;
@@ -531,7 +541,7 @@ h2 {
   color: #fff;
   background: #f11c82;
   text-align: left;
-  font-size: 41px;
+  font-size: 1.6em;
   -webkit-border-top-left-radius: 5px;
           border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
@@ -542,9 +552,9 @@ h2 {
   background: #fff;
   min-height: 210px;
   padding: 25px 4px 25px 18px;
-  line-height: 38px;
+  line-height: 1.2em;
   text-indent: 25px;
-  font-size: 33px;
+  font-size: 1.3em;
 }
 .b-screen_fourth__list__arrow {
   position: absolute;
@@ -578,7 +588,7 @@ h2 {
   bottom: 31px;
   right: 30px;
   width: 140px;
-  font-size: 27px;
+  font-size: 1.1em;
   text-align: center;
   color: #df1063;
 }
@@ -594,7 +604,7 @@ h2 {
   background: #df1063;
   padding: 20px;
   color: #fff;
-  font-size: 50px;
+  font-size: 2.1em;
   display: block;
   line-height: 61px;
 }
@@ -611,9 +621,9 @@ h2 {
   display: block;
 }
 .b-slider__item__wrapper {
-  font-size: 28px;
+  font-size: 1.1em;
   color: #575757;
-  line-height: 33px;
+  line-height: 1.3em;
   text-align: center;
   background: #fff;
   margin: 0 10px;
@@ -623,12 +633,12 @@ h2 {
   text-align: center;
   margin-bottom: 16px;
   padding-top: 10px;
-  font-size: 35px;
+  font-size: 1.2em;
 }
 .b-slider__item__wrapper h6 {
   text-align: center;
-  font-size: 27px;
-  margin-bottom: 32px;
+  font-size: 1.1em;
+  margin-bottom: 26px;
   color: #6464a7;
 }
 .b-slider__controls {
@@ -656,7 +666,7 @@ h2 {
   text-decoration: underline;
   float: left;
   font-style: italic;
-  font-size: 27px;
+  font-size: 1em;
   width: 160px;
   text-align: left;
   margin-top: 102px;
@@ -732,7 +742,7 @@ h2 {
 .b-screen_fifth p {
   text-align: center;
   line-height: 36px;
-  font-size: 27px;
+  font-size: 1.2em;
   padding: 0 17px;
   margin-top: 24px;
 }
@@ -741,7 +751,7 @@ h2 {
   padding-top: 52px;
   display: block;
   text-align: center;
-  font-size: 36px;
+  font-size: 1.8em;
   margin-bottom: 20px;
 }
 .b-screen_fifth__medal {
@@ -755,12 +765,12 @@ h2 {
     text-align: center;
     font-weight: bold;
     color: #df0f63;
-    font-size: 50px;
+    font-size: 2em;
 }
 .b-screen_fifth__medal h4{
     text-align: center;
     font-weight: bold;
-    font-size: 31px;
+    font-size: 1.4em;
     margin-top: 30px;
     padding: 0 18px;
     line-height: 43px;
