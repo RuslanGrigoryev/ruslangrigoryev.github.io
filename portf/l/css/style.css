@@ -66,7 +66,7 @@ input, textarea, input:focus, textarea:focus {
   outline: none;
   padding: 5px;
   color: #727272;
-  font-size: 26px;
+  font-size: 1.1em;
   font-style: italic;
   text-align: center;
 }
@@ -78,7 +78,7 @@ input {
   margin-bottom: 24px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  height: 76px;
+  height: 60px;
   padding: 15px;
 }
 
@@ -155,7 +155,7 @@ h2 {
   text-align: center;
   color: #000;
   font-family: 'CenturyGothicBold', 'Arial', sans-serif;
-  font-size: 36px;
+  font-size: 1.7em;
   padding-top: 21px;
   line-height: 45px;
   font-weight: bold;
@@ -167,14 +167,14 @@ h2 {
   background: url(../images/bg-screen-1.jpg) no-repeat;
 }
 .b-screen_first__benefits {
-  margin-top: 22px;
-  height: 637px;
+  margin: 22px 0;
+  /* height: 637px; */
   background-position: -506px 0px;
   background-size: 100% 100%;
 }
 .b-screen_first__benefits li {
-  padding: 25px 40px 30px 38px;
-  height: 153px;
+  padding: 6% 8% 6% 8%;
+  /* height: 153px; */
 }
 .b-screen_first__benefits .b-sprite {
   float: left;
@@ -202,14 +202,14 @@ h2 {
   margin-top: 9px;
 }
 .b-screen_first__image {
-  height: 390px;
-  background-position: -70px -61px;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .b-coupon {
   max-width: 446px;
   margin: 27px auto;
-  height: 964px;
   padding-top: 31px;
   border: 1px solid rgba(110, 34, 119, 0.3);
   background-color: #fff;
@@ -222,8 +222,13 @@ h2 {
 }
 .b-coupon .b-coupon__benefits{
     margin-top: 45px;
-
     padding: 9px 10px 10px 10px;
+}
+.b-coupon__benefits-blue {
+  background-image: url(../images/benefit-blue.png);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .b-coupon h3 {
   color: #ddf793;
@@ -255,11 +260,11 @@ h2 {
   font-size: 2.2em;
 }
 .b-coupon__price span span {
-  font-size: 30px;
+  font-size: 0.6em;
   padding-left: 10px;
 }
 .b-coupon__price_old {
-  padding: 38px 0 38px 21px;
+  padding: 10% 5%;
   position: absolute;
   display: block;
   z-index: 10;
@@ -286,8 +291,8 @@ h2 {
   background: #ddf793;
 }
 .b-coupon__price_new {
-  padding: 38px 0 38px 21px;
   position: absolute;
+  padding: 10% 5%;
   display: block;
   z-index: 10;
   top: 3px;
@@ -323,11 +328,12 @@ h2 {
   font-size: 1em;
 }
 .b-coupon__form a {
-  height: 165px;
+  /* height: 165px; */
   display: block;
-  background-position: 0px -622px;
-  padding: 34px 40px 0 40px;
-  font-size: 2em;
+  background-image: url(../images/btn-coupon.png);
+  background-size: 100% 100%;
+  padding: 10%;
+  font-size: 1.7em;
   text-transform: uppercase;
   color: #2c2c2c;
   text-decoration: none;
@@ -338,15 +344,12 @@ h2 {
 .b-coupon__form p {
   color: #fff;
   padding: 0 20px;
-  font-size: 1em;
-  line-height: 31px;
+  font-size: 1.1em;
+  line-height: 1.1em;
 }
 .b-coupon__benefits {
-  height: 160px;
-  background-position: -435px -630px;
-  margin-top: 42px;
   text-align: center;
-  padding: 30px;
+  padding: 7% 0 14% 0;
 }
 .b-coupon__benefits strong, .b-coupon__benefits p {
   font-size: 1.7em;
@@ -368,7 +371,7 @@ h2 {
 
 .b-screen_third {
   background: #fff;
-  margin-top: 175px;
+  /* margin-top: 175px; */
   text-align: center;
   margin-bottom: -33px;
 }
@@ -387,7 +390,7 @@ h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
   padding: 0 9px;
-  line-height: 33px;
+  line-height: 1.3em;
   font-family: 'a_futuraroundbold';
 }
 .b-screen_third ul li p strong {
@@ -422,7 +425,7 @@ h2 {
 }
 
 .b-screen_fourth {
-  margin-top: 100px;
+  margin-top: 30px;
   padding: 16px;
   min-height: 4000px;
   background: url(../images/bg-screen-2.jpg) no-repeat;
@@ -430,8 +433,9 @@ h2 {
 .b-screen_fourth .b-coupon__benefits {
   margin: 0px auto;
   color: #fff;
-  height: 213px;
-  background-position: -258px -1066px;
+  background-image: url(../images/benefit-pink.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .b-screen_fourth__header {
   position: relative;
@@ -926,4 +930,10 @@ h2 {
   text-decoration: none;
   text-align: center;
   line-height: 45px;
+}
+
+@media all and (max-width: 320px) {
+  body {
+    font-size: 15px;
+  }
 }
