@@ -780,7 +780,7 @@ h2 {
   margin: 10px;
   background: #9e30af;
   color: #fff;
-  padding: 99px 0 110px 0;
+  padding: 25% 0;
   border-radius: 2px;
 }
 .b-instruction input {
@@ -796,12 +796,12 @@ h2 {
     margin-bottom: 15px !important;
 }
 .b-success.b-success__last h2 {
-    font-size: 31px;
-    line-height: 36px;
+    font-size: 1.3em;
+    line-height: 1.3em;
     margin-bottom: 12px;
 }
 .b-success.b-success__last h3 {
-    font-size: 35px;
+    font-size: 1.5em;
 
     margin-top: 33px;
 }
@@ -811,7 +811,7 @@ h2 {
 .b-success strong {
   display: block;
   text-align: center;
-  font-size: 35px;
+  font-size: 1.4em;
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: bold;
@@ -819,8 +819,8 @@ h2 {
 .b-success p {
   text-align: center;
   padding: 0 60px;
-  font-size: 29px;
-  line-height: 39px;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 .b-success__strong {
   font-size: 36px;
@@ -844,11 +844,11 @@ h2 {
 .b-success__phone {
   text-align: center;
   color: #fff;
-  font-size: 41px !important;
+  font-size: 1.4em !important;
 }
 .b-success__name {
   color: #fff;
-  font-size: 43px !important;
+  font-size: 1.8em !important;
   text-align: center;
   margin-top: 20px;
 }
@@ -863,42 +863,43 @@ h2 {
 }
 .b-instruction h4 {
   color: #9d30ae;
-  font-size: 29px;
+  font-size: 1.3em;
   text-align: center;
   line-height: 40px;
   text-transform: uppercase;
   font-weight: bold;
 }
 .b-instruction p {
-  font-size: 28px;
-  line-height: 38px;
-  padding: 0 66px;
+  font-size: 1em;
+  line-height: 1.1em;
+  padding: 0 7%;
   text-align: center;
-  margin: 18px 0 42px 0;
+  margin: 18px 0 29px 0;
 }
 .b-instruction span {
   font-weight: bold;
   display: block;
   text-align: center;
-  font-size: 31px;
-  line-height: 39px;
+  font-size: 1.1em;
+  line-height: 1.2em;
   margin-bottom: 10px;
   color: #9e30af;
   padding: 0 0px;
 }
 .b-instruction a {
-  width: 434px;
-  height: 164px;
-  background-position: 0px -622px;
-  display: block;
-  text-transform: uppercase;
-  margin: 10px auto;
-  padding: 37px 50px;
-  font-size: 40px;
-  color: #2c2c2c;
-  text-decoration: none;
+  /* width: 434px; */
+  /* height: 164px; */
+  /* background-position: 0px -622px; */
+  /* display: block; */
+  /* text-transform: uppercase; */
+  /* margin: 10px auto; */
+  /* padding: 37px 50px; */
+  /* font-size: 40px; */
+  /* color: #2c2c2c; */
+  /* text-decoration: none; */
   text-align: center;
-  line-height: 45px;
+  /* line-height: 45px; */
+  display: block;  background-image: url(../images/btn-coupon.png);  background-size: 100% 100%;  padding: 10%;  font-size: 1.7em;  text-transform: uppercase;  color: #2c2c2c;  text-decoration: none;  font-weight: bold;  margin-bottom: 16px;  margin-top: -10px;
 }
 
 @media all and (max-width: 320px) {
