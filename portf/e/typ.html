@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfect Eyelash</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=480, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<script type="text/javascript" href="js/script.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+	<div class="center_wrap">
+		<div class="header-b" id="header-b">
+			<div class="header-logo"></div>
+		</div>
+	</div>
+	</header>
+	
+	<div class="b_1 b_1_success">
+	    <div class="center_wrap clear">
+	    	<div class="typ_inner">
+	    		<h1>Спасибо!</h1>
+	    		<p>Мы выслали инструкции Вам на почту!</p>
+	    		<div class="typ_triangle"></div>
+	    	</div>
+		</div>
+	</div>
+
+	<footer class="clearfix">
+		<div class="center_wrap">
+			<div class="footer-l">
+				<p>Perfect Eyelash Industries</p>
+				<p>Все права защищены  2014</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script type="text/javascript" src="slick/slick.min.js"></script> 
+<script type="text/javascript">
+
+$('.slider_container').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+			speed: 1000,			
+});
+
+
+
+(function($){ 
+	$.Placeholder = {
+		settings : {
+			color : "rgb(169,169,169)",
+			dataName : "original-font-color"
+		},
+		
+		init : function(settings){
+			if(settings)
+			{
+				$.extend($.Placeholder.settings, settings);
+			}
+			
+			var getContent = function(element){
+				return $(element).val();		
+			};
+		
+			var setContent = function(element, content){
+				$(element).val(content);		
+			};
+			
+			var getPlaceholder = function(element){
+				return $(element).attr("placeholder");
+			};
+			
+			var isContentEmpty = function(element){
+				var content = getContent(element);
+				return (content.length === 0) || content == getPlaceholder(element);
+			};
+				
+			var setPlaceholderStyle = function(element){
+				$(element).data($.Placeholder.settings.dataName, $(element).css("color"));
+				$(element).css("color", $.Placeholder.settings.color);
+		
+			};
+			
+			var clearPlaceholderStyle = function(element){
+				$(element).css("color", $(element).data($.Placeholder.settings.dataName));		
+				$(element).removeData($.Placeholder.settings.dataName);
+			};
+			
+			var showPlaceholder = function(element){
+				setContent(element, getPlaceholder(element));
+				setPlaceholderStyle(element);	
+			};
+			
+			var hidePlaceholder = function(element){
+				if($(element).data($.Placeholder.settings.dataName)){
+					setContent(element, "");
+					clearPlaceholderStyle(element);
+				}
+			};
+			
+			var inputFocused = function(){
+				if(isContentEmpty(this)){
+					hidePlaceholder(this);		
+				}
+			};
+			
+			var inputBlurred = function(){
+				if(isContentEmpty(this)){
+					showPlaceholder(this);
+				}
+			};
+			
+			var parentFormSubmitted = function(){
+				if(isContentEmpty(this)){
+					hidePlaceholder(this);		
+				}	
+			};
+                        
+                        $('head').append('<style type="text/css" media="screen">[placeholder]:focus::-webkit-input-placeholder { color:transparent; }[placeholder]:focus:-moz-placeholder { color: transparent; }</style>');
+			
+                        var elementSupportsAttribute = function(element, attribute) {
+                               var test = document.createElement(element);
+                               return (attribute in test);
+                        };
+                        
+                        if (!elementSupportsAttribute('textarea', 'placeholder')) {
+                            $("textarea, input[type='text']").each(function(index, element){
+                                    if($(element).attr("placeholder")){
+                                            $(element).focus(inputFocused);
+                                            $(element).blur(inputBlurred);
+                                            $(element).bind("parentformsubmitted", parentFormSubmitted);
+
+                                            // triggers show place holder on module init
+                                            $(element).trigger("blur");
+                                            // triggers form submitted event on parent form submit
+                                            $(element).parents("form").submit(function(){
+                                                    $(element).trigger("parentformsubmitted");
+                                            });
+                                    }
+
+
+                            });
+                        }
+			
+			return this;
+		},
+        
+        cleanBeforeSubmit : function(theForm){
+            if(!theForm){
+                theForm = $("form");
+            }
+            
+            $(theForm).find("textarea, input[type='text']").trigger("parentformsubmitted");
+            
+            return theForm;
+        }
+	}
+})(jQuery);
+
+
+$(document).ready(function(){
+        $.Placeholder.init({ color : "#aaa" });
+    });
+
+
+</script>
+
+</body>
+</html>
