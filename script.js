@@ -601,4 +601,4 @@ window.scrollReveal = (function( window ) {
 
 })( window )
 
-window.sr = new scrollReveal(delay:'always');
+window.sr = new scrollReveal({delay:'always'});
