@@ -602,3 +602,4 @@ window.scrollReveal = (function( window ) {
 })( window )
 
 window.sr = new scrollReveal({delay:'always',vFactor: 1});
+sr.init();
