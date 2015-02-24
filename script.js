@@ -610,5 +610,8 @@ window.scrollReveal = (function( window ) {
 })( window )
 
 $(function() {
-	window.sr = new scrollReveal();
+	$('<img />').load( function(){
+	  console.log('loaded');
+		window.sr = new scrollReveal();
+	}).attr('src', imgUrl);
 });
