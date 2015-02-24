@@ -601,6 +601,4 @@ window.scrollReveal = (function( window ) {
 
 })( window )
 
-$(function() {
-	window.sr = new scrollReveal();
-});
+window.sr = new scrollReveal();
