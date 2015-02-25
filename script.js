@@ -600,5 +600,9 @@ window.scrollReveal = (function( window ) {
   return scrollReveal
 
 })( window )
-
-window.sr = new scrollReveal();
+var scrollRevealconfig = { 
+    complete: function( el ) {
+      $('.portfolio_screenshot_lines').fadeOut(1000);
+    }
+  }
+window.sr = new scrollReveal(scrollRevealconfig);
