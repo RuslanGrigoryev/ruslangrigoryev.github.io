@@ -602,7 +602,7 @@ window.scrollReveal = (function( window ) {
 })( window )
 var scrollRevealconfig = { 
     complete: function( el ) {
-      $('.portfolio_screenshot_lines').fadeOut(1000);
+      $('.portfolio_screenshot_lines').fadeIn(1000);
     }
   }
 window.sr = new scrollReveal(scrollRevealconfig);
