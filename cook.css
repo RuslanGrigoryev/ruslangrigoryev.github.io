@@ -1,0 +1,33 @@
+.tablesorter th.sort-asc
+{
+	background: url('/;-)/sort-asc.gif') top right no-repeat;
+	background-color: #E5E5E5;
+}
+.tablesorter th.sort-desc
+{
+	background: url('/;-)/sort-desc.gif') top right no-repeat;
+	background-color: #E5E5E5;
+}
+.random-cook,
+.upcoming-cook {
+	width: 300px;
+}
+.random-cook .cook-image {
+	width: 225px;
+	height: 225px;
+}
+.smaller_date {
+	color: grey;
+	font-size: 70%;
+	margin-top: 1.5em;
+}
+.smaller {
+	margin:0.5em 0 0.5em 0;
+	color: #464646;
+}
+blockquote {
+	margin-left: 0px;
+}
+.side__image {
+	margin: 10px 0 0 0;
+}
